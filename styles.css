@@ -329,7 +329,7 @@ th { background: #fbfcfe; }
   border-left: 0;
   border-top: 8px solid #111827;
   border-radius: 14px;
-  padding: 0;
+  padding: 1.6rem;
   background: white;
   box-shadow: var(--shadow-soft);
 }
@@ -354,7 +354,7 @@ th { background: #fbfcfe; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 1.4rem;
-  padding: 1.35rem 1.6rem 1.6rem;
+  padding: 0;
 }
 .journal-layout {
   display: grid;

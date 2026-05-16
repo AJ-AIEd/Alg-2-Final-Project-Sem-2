@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Systems Under Pressure | Algebra 2 Final Project</title>
+  <meta name="description" content="Student-facing Algebra 2 cumulative semester final project on food systems modeling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Systems Under Pressure home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Systems Under Pressure</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#scenarios">Scenarios</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#comparisons">Comparisons</a>
+        <a href="#journal">Journal</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#ai">AI Use</a>
+        <a href="#resources">Resources</a>
+        <a href="#rubrics">Rubrics</a>
+        <a class="download-link" href="#downloads">Downloads</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Algebra 2 Cumulative Semester Final Project</p>
+          <h1>The Mathematics of Food Systems</h1>
+          <blockquote>
+            “All models are wrong, but some are useful.”
+            <cite>George Box</cite>
+          </blockquote>
+          <p class="lead">Use Algebra 2 to investigate how real food systems evolve under pressure: price, transportation, labor, climate, storage, exports, infrastructure, supply, demand, and waste.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#roadmap">Start the Investigation</a>
+            <a class="button secondary" href="#downloads">Get the PDFs</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Interconnected food system model showing variables under pressure">
+          <img src="assets/system-map.svg" alt="Network diagram connecting climate, transportation, storage, exports, food loss, affordability, demand, and supply around a food system">
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="section-header">
+        <p class="eyebrow">Project Philosophy</p>
+        <h2>A model is useful, but incomplete.</h2>
+        <p>This project is about increasingly thoughtful mathematical reasoning. Perfect prediction is not the goal. Revision, critique, and clearer assumptions are evidence that your understanding is becoming more sophisticated.</p>
+      </div>
+      <div class="principle-grid">
+        <article>
+          <h3>Mathematics Helps Us</h3>
+          <p>Model change, identify patterns, test assumptions, compare possibilities, estimate outcomes, critique predictions, and reveal constraints.</p>
+        </article>
+        <article>
+          <h3>Strong Thinkers Ask</h3>
+          <p>What assumptions are we making? What variables matter most? Where does the model stop making sense? What tradeoffs appear?</p>
+        </article>
+        <article>
+          <h3>Revision Counts</h3>
+          <p>Changing a model is not failure. It shows you are testing the relationship between graph, algebra, context, and reality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <p class="eyebrow">Final Deliverables</p>
+        <h2>What you will submit</h2>
+      </div>
+      <div class="deliverable-grid">
+        <article class="card">
+          <h3>Final Mathematical Communication</h3>
+          <p>Choose the format that best communicates your investigation. The goal is mathematical clarity, not a polished slideshow.</p>
+        </article>
+        <article class="card">
+          <h3>Digital Investigation Journal</h3>
+          <p>Your living workspace: rough work, Desmos screenshots, handwritten calculations, system maps, AI interactions, and revised reasoning.</p>
+        </article>
+        <article class="card">
+          <h3>Mathematical Artifacts</h3>
+          <p>Graph annotations, recursive calculations, polynomial long division, sketches, tables, recalculations, and revised models.</p>
+        </article>
+        <article class="card">
+          <h3>Group Reflection Vlogs</h3>
+          <p>3–5 minute mathematical conversations. These should show thinking in progress, not memorized scripts or production polish.</p>
+        </article>
+      </div>
+      <div class="communication-panel">
+        <div>
+          <p class="eyebrow">Flexible Communication Format</p>
+          <h3>Explain the evolving investigation in the format that fits your reasoning.</h3>
+          <p>Possible formats include slides, filmed discussions, workbook walkthroughs, digital whiteboard explanations, screencasts, annotated journals, documentary-style explanations, or hybrid combinations.</p>
+        </div>
+        <div class="communication-list">
+          <p><strong>The mathematics must remain central:</strong> models, graph analysis, comparisons, assumptions, revisions, limitations, and final claims.</p>
+          <p><strong>Workbook walkthroughs are encouraged:</strong> explain crossed-out assumptions, revised graphs, recalculations, and changing interpretations directly from your journal.</p>
+          <p><strong>Clarity over production value:</strong> do not prioritize cinematic editing, effects, or overproduction. Prioritize reasoning and explanation.</p>
+          <p><strong>Everyone contributes:</strong> each student must visibly speak mathematical reasoning, interpretation, comparison, critique, or explanation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collaboration-section">
+      <div class="section-header">
+        <p class="eyebrow">Collaboration Structure</p>
+        <h2>One shared investigation. Visible individual thinking.</h2>
+        <p>The group functions as a collaborative mathematical inquiry team. Do not divide topics by student or assign ownership of units. Every student engages with sequences, exponentials, polynomials, graph interpretation, statistical reasoning, critique, revision, and synthesis.</p>
+      </div>
+      <div class="collab-grid">
+        <article class="collab-card">
+          <h3>Think Together</h3>
+          <p>Discuss, graph, revise, compare, critique, and synthesize together. Understanding should emerge collaboratively.</p>
+        </article>
+        <article class="collab-card">
+          <h3>Show Individual Evidence</h3>
+          <p>Each student submits smaller artifacts: annotations, recalculations, comparisons, graph interpretations, r/R² critiques, revised assumptions, and limitation reflections.</p>
+        </article>
+        <article class="collab-card">
+          <h3>Do Not Split the Math</h3>
+          <p>This is not one student doing sequences, another doing exponentials, and another doing polynomials. Everyone must speak mathematics across the project.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-strip" aria-label="Project timeline">
+      <div class="section-header">
+        <p class="eyebrow">Five-Class Arc</p>
+        <h2>One evolving investigation</h2>
+      </div>
+      <ol class="timeline">
+        <li><span>1</span> Notice relationships and variables</li>
+        <li class="green"><span>2</span> Model repeated change</li>
+        <li class="blue"><span>3</span> Analyze thresholds and acceleration</li>
+        <li class="purple"><span>4</span> Model constraints and capacity</li>
+        <li><span>5</span> Revise, synthesize, communicate</li>
+      </ol>
+    </section>
+
+    <section class="section" id="scenarios">
+      <div class="section-header">
+        <p class="eyebrow">Choose One Scenario</p>
+        <h2>Start with a real system under pressure</h2>
+        <p>Do not begin by looking for a formula. Begin by noticing quantities, relationships, and questions worth investigating.</p>
+      </div>
+      <div class="scenario-grid">
+        <article class="scenario-card">
+          <p class="scenario-label">Scenario A — United States</p>
+          <h3>The $5 Footlong Isn’t $5 Anymore</h3>
+          <p class="human-entry">Everyday food prices tell a story about affordability, labor, transportation, and changing consumer choices.</p>
+          <p><strong>Possible focus:</strong> How have changing costs reshaped the affordability of everyday food products over time?</p>
+          <p class="tag-list">inflation · food pricing · shrinkflation · labor costs · transportation</p>
+        </article>
+        <article class="scenario-card">
+          <p class="scenario-label">Scenario B — Global</p>
+          <h3>When War Changes the Price of Bread</h3>
+          <p class="human-entry">A disruption in one region can reshape wheat prices, exports, transportation, and recovery patterns across the world.</p>
+          <p><strong>Possible focus:</strong> How do global disruptions reshape food systems over time?</p>
+          <p class="tag-list">supply chains · exports · wheat pricing · recovery patterns</p>
+        </article>
+        <article class="scenario-card">
+          <p class="scenario-label">Scenario C — Sub-Saharan Africa</p>
+          <h3>What If Food Exists — But Never Arrives?</h3>
+          <p class="human-entry">Food loss can accumulate across storage, refrigeration, transport, and infrastructure gaps before it reaches people.</p>
+          <p><strong>Possible focus:</strong> How much food is lost before it reaches people?</p>
+          <p class="tag-list">spoilage · transportation loss · refrigeration · infrastructure</p>
+        </article>
+        <article class="scenario-card">
+          <p class="scenario-label">Scenario D — Colombia</p>
+          <h3>Can Climate Change the Future of Coffee?</h3>
+          <p class="human-entry">Coffee production depends on rainfall, yield, storage, exports, and thresholds that can shift over time.</p>
+          <p><strong>Possible focus:</strong> How do environmental and economic changes reshape coffee production over time?</p>
+          <p class="tag-list">rainfall · coffee yields · exports · storage · thresholds</p>
+        </article>
+      </div>
+      <div class="table-block">
+        <h3>Sharpening Your Focus</h3>
+        <table>
+          <thead><tr><th>Too Broad</th><th>Better</th></tr></thead>
+          <tbody>
+            <tr><td>How inflation affects food</td><td>How Subway sandwich prices changed over time</td></tr>
+            <tr><td>Climate and coffee</td><td>Rainfall vs coffee yield in one region</td></tr>
+            <tr><td>Food insecurity</td><td>Food spoilage during transportation stages</td></tr>
+            <tr><td>War and food systems</td><td>Wheat price recovery after export disruption</td></tr>
+            <tr><td>Food waste</td><td>How much food remains after repeated storage and transport losses</td></tr>
+            <tr><td>Coffee production</td><td>How changing yield affects storage and export needs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="section-header">
+        <p class="eyebrow">Class Roadmap</p>
+        <h2>Five phases, one investigation</h2>
+      </div>
+      <div class="phase-stack">
+        <article class="phase-card">
+          <div class="phase-meta">Class 1</div>
+          <h3>Entering the System</h3>
+          <p class="phase-question">What relationships are we beginning to notice?</p>
+          <div class="phase-grid">
+            <p><strong>Focus:</strong> Observation, variables, systems thinking, uncertainty, early assumptions.</p>
+            <p><strong>Goals:</strong> Choose a scenario, narrow focus, identify variables and changing quantities, create a system map, identify one measurable relationship.</p>
+            <p><strong>Required work:</strong> Early notes, variable lists, system sketches, possible relationships, rough observations, sketch-first predictions.</p>
+            <p><strong>Vlog 1:</strong> Observation and uncertainty. Discuss patterns, unclear ideas, assumptions, and important variables.</p>
+          </div>
+        </article>
+        <article class="phase-card green">
+          <div class="phase-meta">Class 2</div>
+          <h3>Modeling Change</h3>
+          <p class="phase-question">How is the system changing over time?</p>
+          <div class="phase-grid">
+            <p><strong>Focus:</strong> Repeated change, sequences, series, prediction, recalculation.</p>
+            <p><strong>Required comparison:</strong> discrete vs continuous, sequence vs function, arithmetic vs geometric, recursive vs explicit, finite vs infinite series.</p>
+            <p><strong>Required explanation:</strong> What does each term represent, what does the cumulative sum mean, and what evidence supports your model type?</p>
+            <p><strong>Model variants:</strong> Compare short-term and long-term predictions, such as years 0–5, 0–10, and 0–20.</p>
+            <p><strong>Vlog 2:</strong> Explain why your model makes sense, compare it to a continuous model, and identify where it begins to fail.</p>
+          </div>
+        </article>
+        <article class="phase-card blue">
+          <div class="phase-meta">Class 3</div>
+          <h3>Acceleration, Decay, and Thresholds</h3>
+          <p class="phase-question">When does repeated change become accelerated or compounding?</p>
+          <div class="phase-grid">
+            <p><strong>Focus:</strong> Exponentials, logarithms, thresholds, model breakdown.</p>
+            <p><strong>Required comparison:</strong> exponential vs linear, geometric sequence vs exponential function, discrete vs continuous variables.</p>
+            <p><strong>Required explanation:</strong> What does the base or growth factor mean, why are logarithms needed, and what threshold are you solving for?</p>
+            <p><strong>Model variants:</strong> Compare different rates, such as 3%, 5%, and 8%, and explain how thresholds change.</p>
+            <p><strong>Vlog 3:</strong> Compare your Class 2 geometric model with your exponential model and explain where exponential behavior stops being realistic.</p>
+          </div>
+        </article>
+        <article class="phase-card purple">
+          <div class="phase-meta">Class 4</div>
+          <h3>Constraints, Capacity, and Cost</h3>
+          <p class="phase-question">How do physical and economic constraints reshape the system?</p>
+          <div class="phase-grid">
+            <p><strong>Focus:</strong> Polynomials, storage systems, cost, tradeoffs, constraints.</p>
+            <p><strong>Required comparison:</strong> polynomial vs simpler linear or exponential model; factored form vs standard form.</p>
+            <p><strong>Required analysis:</strong> degree, even/odd behavior, leading coefficient, end behavior, intercepts, multiplicity, extrema, and realistic domain.</p>
+            <p><strong>Model variants:</strong> Compare different cutouts, dimensions, domains, and constraints.</p>
+            <p><strong>Vlog 4:</strong> Explain what the polynomial reveals that a simpler model would miss, and which graph regions are physically unrealistic.</p>
+          </div>
+        </article>
+        <article class="phase-card">
+          <div class="phase-meta">Class 5</div>
+          <h3>Revision, Synthesis, and Communication</h3>
+          <p class="phase-question">What story does our mathematics tell?</p>
+          <div class="phase-grid">
+            <p><strong>Focus:</strong> Synthesis, revision, interpretation, communication, limitations.</p>
+            <p><strong>Required work:</strong> Connect sequences, exponentials, and polynomials into one evidence-based explanation.</p>
+            <p><strong>Final claim:</strong> Make one mathematical claim that uses evidence, acknowledges assumptions, and recognizes limitations.</p>
+            <p><strong>Vlog 5:</strong> Discuss how your understanding evolved and what limitations remained.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section comparison-section" id="comparisons">
+      <div class="section-header">
+        <p class="eyebrow">Required Mathematical Comparisons</p>
+        <h2>Do not only make a model. Explain why this model.</h2>
+        <p>Strong Algebra 2 thinking means distinguishing nearby ideas, choosing the right representation, and explaining what the mathematics reveals and misses.</p>
+      </div>
+      <div class="comparison-grid">
+        <article class="comparison-card green">
+          <h3>Class 2 — Sequences & Series</h3>
+          <ul>
+            <li>Is the situation discrete or continuous? Why?</li>
+            <li>Why is a sequence appropriate here?</li>
+            <li>Arithmetic, geometric, or neither? What evidence supports your choice?</li>
+            <li>What is the difference between recursive and explicit formulas in this context?</li>
+            <li>Finite or infinite series? What does the cumulative sum represent?</li>
+          </ul>
+          <div class="comparison-prompt">Compare your sequence model to a continuous model. What would change? Which is more appropriate?</div>
+        </article>
+        <article class="comparison-card blue">
+          <h3>Class 3 — Exponentials & Logs</h3>
+          <ul>
+            <li>Why is this exponential rather than linear?</li>
+            <li>How is an exponential function different from a geometric sequence?</li>
+            <li>Is your variable discrete or continuous in this model?</li>
+            <li>What does the base or growth factor represent?</li>
+            <li>Why are logarithms needed, and what threshold are you solving for?</li>
+          </ul>
+          <div class="comparison-prompt">Compare your geometric sequence from Class 2 with your exponential model from Class 3.</div>
+        </article>
+        <article class="comparison-card purple">
+          <h3>Class 4 — Polynomials</h3>
+          <ul>
+            <li>Why does multiplying dimensions create a polynomial, and why is it cubic?</li>
+            <li>What does factored form reveal that standard form does not?</li>
+            <li>What do degree, leading coefficient, and end behavior tell you?</li>
+            <li>Use notation: as x → ∞ and as x → −∞.</li>
+            <li>What do intercepts, multiplicity, extrema, and domain restrictions mean in context?</li>
+          </ul>
+          <div class="comparison-prompt">Compare your polynomial model to a simpler linear or exponential model. What would the simpler model miss?</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="journal">
+      <div class="section-header">
+        <p class="eyebrow">Investigation Journal</p>
+        <h2>Your evolving mathematical workspace</h2>
+        <p>The journal should show rough work, screenshots, annotations, recalculations, revised models, system maps, AI interactions, and evolving reasoning.</p>
+      </div>
+      <div class="journal-layout">
+        <aside class="journal-side">
+          <h3>Sketch Before Desmos</h3>
+          <p>Before graphing digitally, sketch the expected behavior, estimate intercepts, discuss the domain, and predict what the graph should roughly look like.</p>
+          <h3>Revision Marker</h3>
+          <p>When your thinking changes, label what changed, why it changed, and what the revised model reveals.</p>
+        </aside>
+        <div class="accordion-list">
+          <details open>
+            <summary><span class="phase-pill exploratory">Exploratory</span>Class 1 Journal Space</summary>
+            <div class="workspace-grid">
+              <div class="workbox large"><h4>System Map and Early Notes</h4></div>
+              <div class="workbox"><h4>Variable Table</h4><p>Variable | Units | Why does it matter?</p></div>
+              <div class="workbox"><h4>Sketch First</h4><p>Predict one relationship before graphing.</p></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="phase-pill green">Pattern</span>Class 2 Journal Space</summary>
+            <div class="workspace-grid">
+              <div class="workbox"><h4>Recursive Formula</h4></div>
+              <div class="workbox"><h4>Explicit Formula</h4></div>
+              <div class="workbox large"><h4>Graph ↔ Algebra ↔ Context</h4><p>Graph observation | Algebraic meaning | Real-world meaning</p></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="phase-pill blue">Dynamic</span>Class 3 Journal Space</summary>
+            <div class="workspace-grid">
+              <div class="workbox"><h4>Exponential Model</h4></div>
+              <div class="workbox"><h4>Logarithmic Solving</h4></div>
+              <div class="workbox large"><h4>Model Breakdown Reflection</h4></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="phase-pill purple">Structural</span>Class 4 Journal Space</summary>
+            <div class="workspace-grid">
+              <div class="workbox"><h4>Diagram A: Flat Blueprint</h4></div>
+              <div class="workbox"><h4>Diagram B: Folded Structure</h4></div>
+              <div class="workbox large"><h4>Polynomial Long Division and Physical Interpretation</h4></div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="phase-pill synthesis">Synthesis</span>Class 5 Journal Space</summary>
+            <div class="workspace-grid">
+              <div class="workbox large"><h4>Final Synthesis Table</h4><p>Mathematical lens | What did it reveal? | Where did it fail?</p></div>
+              <div class="workbox large"><h4>Final Mathematical Claim</h4></div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="evidence">
+      <div class="section-header">
+        <p class="eyebrow">Evidence Checklist</p>
+        <h2>What your mathematics must show</h2>
+        <p>Use this as a progress tracker. Check items only when your journal, artifacts, or final communication show the math, the context, and the interpretation.</p>
+      </div>
+      <div class="evidence-grid">
+        <article class="evidence-card green">
+          <div class="evidence-topline"><span>Lens 1</span><h3>Sequences & Series</h3></div>
+          <p class="evidence-question">How is the system changing over time?</p>
+          <ul class="checklist">
+            <li><span class="box" aria-hidden="true"></span><span><strong>Justify</strong> why the pattern is arithmetic, geometric, recursive, or neither.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Explain</strong> what each part of the recursive and explicit formulas means in context.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Solve</strong> a contextual prediction question and interpret the answer with units.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Compare</strong> sequence vs function and discrete vs continuous models.</span></li>
+          </ul>
+          <div class="evidence-note">Where it belongs: journal calculations, graph annotations, final communication.</div>
+        </article>
+        <article class="evidence-card blue">
+          <div class="evidence-topline"><span>Lens 2</span><h3>Exponentials & Logarithms</h3></div>
+          <p class="evidence-question">When does repeated change accelerate, decay, or cross a threshold?</p>
+          <ul class="checklist">
+            <li><span class="box" aria-hidden="true"></span><span><strong>Justify</strong> why exponential growth or decay fits better than repeated addition.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Compare</strong> geometric sequences and exponential functions.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Solve</strong> a threshold question using logarithms and explain each major step.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Critique</strong> what the graph reveals and where the prediction becomes unrealistic.</span></li>
+          </ul>
+          <div class="evidence-note">Where it belongs: threshold work, Desmos/graph evidence, limitation notes.</div>
+        </article>
+        <article class="evidence-card purple">
+          <div class="evidence-topline"><span>Lens 3</span><h3>Polynomials</h3></div>
+          <p class="evidence-question">How do capacity, cost, and physical constraints reshape the system?</p>
+          <ul class="checklist">
+            <li><span class="box" aria-hidden="true"></span><span><strong>Explain</strong> how the blueprint creates a cubic relationship.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Compare</strong> factored form vs standard form and what each reveals.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Analyze</strong> degree, leading coefficient, end behavior, intercepts, multiplicity, and extrema.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Defend</strong> realistic domain restrictions and physically unrealistic graph regions.</span></li>
+          </ul>
+          <div class="evidence-note">Where it belongs: blueprint, volume model, graph annotation, division work.</div>
+        </article>
+        <article class="evidence-card">
+          <div class="evidence-topline"><span>Synthesis</span><h3>Reasoning, Communication, AI</h3></div>
+          <p class="evidence-question">What story does your mathematics tell, and how did your thinking change?</p>
+          <ul class="checklist">
+            <li><span class="box" aria-hidden="true"></span><span><strong>Connect</strong> graph, algebra, context, assumptions, and limitations in writing.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Explain</strong> what changed during revision and why the revision is mathematically stronger.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Interpret r/R²</strong> as evidence of model strength and limitation when relevant.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span><strong>Synthesize</strong> all three lenses into one evidence-based claim with tradeoffs.</span></li>
+          </ul>
+          <div class="evidence-note">Where it belongs: final synthesis table, reflection vlog, communication conclusion.</div>
+        </article>
+      </div>
+      <div class="reasoning-strip">
+        <h3>Required Explanation Moves</h3>
+        <div class="reasoning-grid">
+          <p><strong>Why this model?</strong> State why the model type fits the pattern or constraint.</p>
+          <p><strong>What does it mean?</strong> Translate variables, parameters, graph features, and solutions into the food system.</p>
+          <p><strong>How do you know?</strong> Use calculations, graph evidence, units, and comparisons to support claims.</p>
+          <p><strong>What changed?</strong> Compare related model versions and explain how assumptions reshape predictions.</p>
+          <p><strong>What are the limits?</strong> Name assumptions, unrealistic regions, hidden variables, and tradeoffs.</p>
+        </div>
+      </div>
+      <div class="submission-strip" aria-label="Before submitting checklist">
+        <h3>Before Submitting</h3>
+        <div class="submission-checks">
+          <p><span class="box" aria-hidden="true"></span>Every graph has context, units, annotations, and a realistic domain.</p>
+          <p><span class="box" aria-hidden="true"></span>Every model includes a written explanation of assumptions and limitations.</p>
+          <p><span class="box" aria-hidden="true"></span>Every lens includes at least one comparison between related models or assumptions.</p>
+          <p><span class="box" aria-hidden="true"></span>Your final format makes mathematical evidence visible, not merely narrated.</p>
+          <p><span class="box" aria-hidden="true"></span>Every group member can explain the mathematics without reading a script.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="section-header">
+        <p class="eyebrow">CNG SAIL Level L5 — Co-Create</p>
+        <h2>AI should deepen thinking, not replace thinking.</h2>
+      </div>
+      <div class="ai-grid">
+        <article class="card">
+          <h3>Permitted Uses</h3>
+          <p>Use AI to challenge assumptions, critique models, identify missing variables, compare interpretations, test assumptions, estimate or explain r and R², organize ideas, and revise explanations.</p>
+        </article>
+        <article class="card">
+          <h3>Not Permitted</h3>
+          <p>Do not submit reasoning you do not understand, ask AI to complete the project, hide meaningful AI use, or replace your own mathematical voice.</p>
+        </article>
+        <article class="card">
+          <h3>Useful Workflow</h3>
+          <p>Bring AI into moments of confusion, revision, recalculation, critique, and interpretation. Save meaningful interactions in your journal.</p>
+        </article>
+        <article class="card">
+          <h3>Sample Citation</h3>
+          <p>AI use: We asked ChatGPT to critique our assumptions about constant growth. We rejected one suggestion, revised our rate assumption, and recalculated the threshold.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section fit-section" id="model-fit">
+      <div class="section-header">
+        <p class="eyebrow">Lightweight Model Fit Check</p>
+        <h2>Correlation, r, and R²: How strong is the relationship?</h2>
+        <p>This is a credibility and critique tool, not a full statistics unit. The purpose is interpretation, not manual calculation.</p>
+      </div>
+      <div class="fit-grid">
+        <article class="fit-card">
+          <h3>r: Direction and Strength</h3>
+          <ul>
+            <li>r is the correlation coefficient.</li>
+            <li>It is between −1 and 1.</li>
+            <li>r close to 1: strong positive relationship.</li>
+            <li>r close to −1: strong negative relationship.</li>
+            <li>r close to 0: little or no linear relationship.</li>
+          </ul>
+        </article>
+        <article class="fit-card">
+          <h3>R²: Model Fit</h3>
+          <ul>
+            <li>R² is the coefficient of determination.</li>
+            <li>It tells how much variation is explained by the model.</li>
+            <li>R² = 0.85 means about 85% explained.</li>
+            <li>A higher R² can mean a better fit, but it does not prove truth or causation.</li>
+          </ul>
+        </article>
+        <article class="fit-card">
+          <h3>Quick Interpretations</h3>
+          <ul>
+            <li>r = 0.92: strong and positive.</li>
+            <li>r = −0.78: fairly strong and negative.</li>
+            <li>R² = 0.64: about 64% explained, 36% unexplained.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="fit-task">
+        <h3>Student Task</h3>
+        <ol>
+          <li>Choose two variables from your investigation.</li>
+          <li>Create a scatterplot and add or estimate a trendline/model.</li>
+          <li>Use AI to help explain r and R² in context.</li>
+          <li>If possible, verify r and R² with Desmos, Google Sheets, a graphing calculator, or another reliable tool.</li>
+          <li>If you cannot verify it, state that limitation honestly.</li>
+          <li>Interpret what r and/or R² suggests about model credibility and limitations.</li>
+        </ol>
+      </div>
+      <div class="ai-prompt-box">
+        <h3>Required AI Prompt Box</h3>
+        <p>Copy and paste your two-variable data or describe your scatterplot. Ask AI: What does r suggest about direction and strength? What does R² suggest about model fit? What limitations should we be careful about? What hidden variables might affect this relationship? Does this imply causation? Why or why not?</p>
+        <p><strong>Then critique:</strong> What did AI help us understand? What still needs verification? What limitations remain? How does this affect the credibility of our claim?</p>
+      </div>
+      <div class="fit-note">
+        <strong>Keep it small:</strong> This check should support your model’s credibility and limitations. It should not become a major assessed skill or replace graph, algebra, context, and critique.
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-header">
+        <p class="eyebrow">Resource Hub</p>
+        <h2>Choose 3–5 meaningful sources</h2>
+        <p>Research supports the mathematics. Research is not the project.</p>
+      </div>
+      <div class="resource-tabs" role="tablist" aria-label="Resource categories">
+        <button class="tab-button active" data-tab="scenarioResources" role="tab" aria-selected="true">Scenarios</button>
+        <button class="tab-button" data-tab="dataTools" role="tab" aria-selected="false">Data Tools</button>
+        <button class="tab-button" data-tab="mathSupport" role="tab" aria-selected="false">Math Support</button>
+      </div>
+      <div class="tab-panel active" id="scenarioResources" role="tabpanel">
+        <div class="resource-columns">
+          <article><h3>United States</h3><a href="https://www.bls.gov/cpi/">BLS CPI</a><a href="https://fred.stlouisfed.org/">FRED</a><a href="https://www.ers.usda.gov/data-products/food-price-outlook/">USDA Food Price Outlook</a><a href="https://www.pewresearch.org/">Pew Research Center</a><a href="https://www.businessinsider.com/retail">Business Insider Retail</a><a href="https://www.cnbc.com/retail/">CNBC Retail</a><a href="https://www.npr.org/">NPR</a><a href="https://www.theguardian.com/business">The Guardian Business</a></article>
+          <article><h3>Global</h3><a href="https://www.fao.org/worldfoodsituation/foodpricesindex/en/">FAO Food Price Index</a><a href="https://www.worldbank.org/en/research/commodity-markets">World Bank Commodities</a><a href="https://www.usda.gov/">USDA</a><a href="https://www.wfp.org/">UN World Food Programme</a><a href="https://www.cfr.org/">Council on Foreign Relations</a><a href="https://www.reuters.com/markets/commodities/">Reuters Commodities</a><a href="https://apnews.com/hub/business">AP News Business</a></article>
+          <article><h3>Sub-Saharan Africa</h3><a href="https://www.worldbank.org/">World Bank</a><a href="https://www.worldbank.org/en/programs/africa-myths-and-facts/publication/is-post-harvest-loss-significant-in-sub-saharan-africa">Post-Harvest Losses</a><a href="https://www.fao.org/platform-food-loss-waste/en/">FAO Food Loss</a><a href="https://www.aphlis.net/">APHLIS</a><a href="https://www.actionagainsthunger.org/">Action Against Hunger</a></article>
+          <article><h3>Colombia</h3><a href="https://www.ico.org/">International Coffee Organization</a><a href="https://federaciondecafeteros.org/">Federación Nacional de Cafeteros</a><a href="https://www.reuters.com/markets/commodities/">Reuters Commodities</a><a href="https://www.theguardian.com/environment">The Guardian Environment</a><a href="https://climateknowledgeportal.worldbank.org/">World Bank Climate Portal</a></article>
+        </div>
+      </div>
+      <div class="tab-panel" id="dataTools" role="tabpanel">
+        <div class="resource-list"><a href="https://fred.stlouisfed.org/">FRED Economic Data</a><a href="https://databank.worldbank.org/">World Bank DataBank</a><a href="https://www.fao.org/faostat/en/">FAOSTAT</a><a href="https://ourworldindata.org/">Our World in Data</a><a href="https://www.desmos.com/">Desmos</a><a href="https://www.geogebra.org/">GeoGebra</a><a href="https://www.google.com/sheets/about/">Google Sheets</a></div>
+      </div>
+      <div class="tab-panel" id="mathSupport" role="tabpanel">
+        <div class="resource-list"><a href="https://www.khanacademy.org/math/algebra-home/alg-sequences">Khan Academy — Sequences</a><a href="https://www.khanacademy.org/math/algebra-home/alg-exp-and-log">Khan Academy — Exponentials and Logs</a><a href="https://www.khanacademy.org/math/algebra2/polynomial-functions">Khan Academy — Polynomials</a><a href="https://www.ck12.org/student/">CK-12</a><a href="https://openstax.org/details/books/algebra-and-trigonometry-2e">OpenStax Algebra and Trigonometry</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="rubrics">
+      <div class="section-header">
+        <p class="eyebrow">Rubrics</p>
+        <h2>Assess reasoning, revision, and communication</h2>
+      </div>
+      <div class="rubric-grid">
+        <article class="card">
+          <h3>Student Self-Assessment</h3>
+          <p>I can compare model types, justify choices, explain graph ↔ algebra ↔ context connections, revise assumptions, interpret r/R² as evidence, and show my own mathematical thinking inside the group investigation.</p>
+        </article>
+        <article class="card">
+          <h3>Teacher Rubric</h3>
+          <p>Scored from 1–4. The strongest work prioritizes reasoning, comparison, critique, revision, model choice justification, r/R² interpretation, and visible mathematical thinking from every student. Format polish is not the point.</p>
+        </article>
+      </div>
+      <div class="rubric-table-wrap" aria-label="Teacher rubric scale from 1 to 4">
+        <table class="rubric-table">
+          <thead>
+            <tr>
+              <th>1 — Beginning</th>
+              <th>2 — Developing</th>
+              <th>3 — Proficient</th>
+              <th>4 — Advanced</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Minimal shared understanding; incomplete reasoning; weak evidence; few comparisons; explanations are missing, copied, unclear, or disconnected from context.</td>
+              <td>Partial understanding; explanations are procedural or inconsistent; some graph-algebra-context links; limited model comparison, revision, r/R² interpretation, or critique.</td>
+              <td>Accurate reasoning with clear model choice justification, comparisons, graph-algebra-context connections, revision, critique, individual evidence snapshots, and r/R² interpretation when relevant.</td>
+              <td>Sophisticated collaborative inquiry; strong comparisons across model types and assumptions; precise explanations, revisions, limitations, r/R² critique, synthesis, and visible thinking from all students.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section downloads-section" id="downloads">
+      <div class="section-header">
+        <p class="eyebrow">Downloads</p>
+        <h2>Printable project packet</h2>
+        <p>These PDFs include generous workspace and are designed for printing or digital annotation.</p>
+      </div>
+      <div class="download-grid">
+        <a class="download-card" href="downloads/student-handout.pdf"><strong>Student Handout PDF</strong><span>Overview, scenarios, deliverables, expectations</span></a>
+        <a class="download-card" href="downloads/investigation-journal.pdf"><strong>Investigation Journal PDF</strong><span>Class-by-class workbook and workspaces</span></a>
+        <a class="download-card" href="downloads/rubrics.pdf"><strong>Rubric PDF</strong><span>Student self-assessment and teacher rubric</span></a>
+        <a class="download-card" href="downloads/resource-hub.pdf"><strong>Resource Hub PDF</strong><span>Scenario links, data tools, math support</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Systems Under Pressure · Algebra 2 cumulative semester final project · Mathematical investigation journal</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

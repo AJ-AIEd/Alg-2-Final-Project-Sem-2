@@ -658,14 +658,12 @@ details[open] summary {
   .hero-art { min-height: 0; }
   .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .rubric-grid, .download-grid, .scenario-grid, .resource-columns, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr 1fr; }
   .journal-layout { grid-template-columns: 1fr; }
-  .phase-card summary { grid-template-columns: 1fr auto; }
-  .phase-card summary em { grid-column: 1 / -1; }
 }
 @media (max-width: 640px) {
   .section { padding: 3.5rem 1rem; }
   .hero { padding-top: 3rem; }
   h1 { font-size: 2.85rem; line-height: 1.03; }
-  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .rubric-grid, .download-grid, .scenario-grid, .resource-columns, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submission-checks, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr; }
+  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .rubric-grid, .download-grid, .scenario-grid, .resource-columns, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr; }
   .workbox.large { grid-column: auto; }
   .brand span:last-child { max-width: 190px; white-space: normal; line-height: 1.05; }
   th, td { padding: .75rem; }

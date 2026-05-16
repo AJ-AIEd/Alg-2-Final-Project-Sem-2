@@ -479,7 +479,7 @@ details[open] summary {
   padding: 0;
   list-style: none;
 }
-.checklist li, .submission-checks p {
+.checklist li {
   display: grid;
   grid-template-columns: 24px 1fr;
   gap: .75rem;

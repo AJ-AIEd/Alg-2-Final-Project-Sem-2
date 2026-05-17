@@ -188,6 +188,7 @@ blockquote cite {
 }
 .principle-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .collab-grid, .comparison-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.download-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
 .card, .scenario-card, .evidence-card, .principle-grid article, .download-card, .collab-card, .comparison-card {
   border: 1px solid var(--line);
   background: white;
@@ -639,11 +640,44 @@ details[open] summary {
   overflow-wrap: anywhere;
 }
 .download-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
-.download-card strong, .download-card span { display: block; }
-.download-card span { color: var(--muted); margin-top: .35rem; }
+.download-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6px;
+  background: #111827;
+}
+.download-card.featured-download::before { background: linear-gradient(90deg, var(--green), var(--blue), var(--purple)); }
+.download-card strong {
+  display: block;
+  margin-top: .85rem;
+  font-size: 1.16rem;
+  line-height: 1.2;
+}
+.download-card span { display: block; color: var(--muted); margin-top: .75rem; }
+.download-card small {
+  display: block;
+  margin-top: auto;
+  padding-top: 1.2rem;
+  color: #475569;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.download-label {
+  color: #475569 !important;
+  margin-top: .15rem !important;
+  font-size: .74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 2rem 1.25rem;

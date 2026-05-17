@@ -1,522 +1,517 @@
 from pathlib import Path
-import textwrap
+
+from reportlab.lib import colors
+from reportlab.lib.enums import TA_CENTER, TA_LEFT
+from reportlab.lib.pagesizes import landscape, letter
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.units import inch
+from reportlab.platypus import (
+    SimpleDocTemplate,
+    Paragraph,
+    Spacer,
+    Table,
+    TableStyle,
+    PageBreak,
+    Flowable,
+    KeepTogether,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "downloads"
 OUT.mkdir(exist_ok=True)
+PAGE_SIZE = landscape(letter)
+PAGE_W, PAGE_H = PAGE_SIZE
 
-PAGE_W = 792
-PAGE_H = 612
+INK = colors.HexColor("#111827")
+CHARCOAL = colors.HexColor("#334155")
+MUTED = colors.HexColor("#64748B")
+LINE = colors.HexColor("#DBE2EA")
+SOFT = colors.HexColor("#F8FAFC")
+GREEN = colors.HexColor("#15803D")
+GREEN_SOFT = colors.HexColor("#EDF8F1")
+BLUE = colors.HexColor("#2563EB")
+BLUE_SOFT = colors.HexColor("#EDF4FF")
+PURPLE = colors.HexColor("#7E22CE")
+PURPLE_SOFT = colors.HexColor("#F6EFFF")
+WARM = colors.HexColor("#F5F2ED")
+WHITE = colors.white
+RED = colors.HexColor("#B45353")
 
-INK = (24, 31, 42)
-CHARCOAL = (51, 65, 85)
-MUTED = (100, 116, 139)
-LINE = (211, 218, 228)
-SOFT = (248, 250, 252)
-PAPER = (255, 255, 255)
-GREEN = (34, 112, 77)
-GREEN_SOFT = (231, 243, 235)
-BLUE = (36, 91, 150)
-BLUE_SOFT = (230, 239, 250)
-PURPLE = (103, 73, 142)
-PURPLE_SOFT = (241, 235, 248)
-WARM = (245, 242, 237)
-SLATE = (71, 85, 105)
-
-
-class PDF:
-    def __init__(self, title):
-        self.title = title
-        self.width = PAGE_W
-        self.height = PAGE_H
-        self.margin = 58
-        self.pages = []
-        self.stream = []
-        self.page_number = 0
-        self.new_page()
-
-    def esc(self, value):
-        return str(value).replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
-
-    def cmd(self, value):
-        self.stream.append(value)
-
-    def color(self, value, stroke=False):
-        r, g, b = [c / 255 for c in value]
-        self.cmd(f"{r:.3f} {g:.3f} {b:.3f} {'RG' if stroke else 'rg'}")
-
-    def new_page(self, section=None, accent=INK, footer=True):
-        if self.stream:
-            if footer:
-                self.footer()
-            self.pages.append("\n".join(self.stream))
-        self.page_number += 1
-        self.stream = []
-        self.y = self.height - self.margin
-        if section:
-            self.section_label(section, accent)
-
-    def text(self, value, x, y, size=11, font="F1", color=INK):
-        self.color(color)
-        self.cmd(f"BT /{font} {size} Tf {x:.2f} {y:.2f} Td ({self.esc(value)}) Tj ET")
-
-    def wrapped(self, value, x, y, width_chars=62, size=11, leading=15, font="F1", color=CHARCOAL, max_lines=None):
-        lines = []
-        for para in str(value).split("\n"):
-            if para.strip():
-                lines.extend(textwrap.wrap(para.strip(), width=width_chars))
-            else:
-                lines.append("")
-        if max_lines:
-            lines = lines[:max_lines]
-        for line in lines:
-            self.text(line, x, y, size, font, color)
-            y -= leading
-        return y
-
-    def line(self, x1, y1, x2, y2, color=LINE, width=1):
-        self.color(color, stroke=True)
-        self.cmd(f"{width:.2f} w {x1:.2f} {y1:.2f} m {x2:.2f} {y2:.2f} l S")
-
-    def rect(self, x, y, w, h, fill=None, stroke=LINE, width=1):
-        if fill:
-            self.color(fill)
-            self.cmd(f"{x:.2f} {y:.2f} {w:.2f} {h:.2f} re f")
-        if stroke:
-            self.color(stroke, stroke=True)
-            self.cmd(f"{width:.2f} w {x:.2f} {y:.2f} {w:.2f} {h:.2f} re S")
-
-    def circle(self, x, y, r, fill=None, stroke=LINE, width=1):
-        # cubic Bezier circle approximation
-        c = 0.5522847498 * r
-        if fill:
-            self.color(fill)
-            op = "B" if stroke else "f"
-        else:
-            op = "S"
-        if stroke:
-            self.color(stroke, stroke=True)
-        self.cmd(
-            f"{width:.2f} w {x+r:.2f} {y:.2f} m "
-            f"{x+r:.2f} {y+c:.2f} {x+c:.2f} {y+r:.2f} {x:.2f} {y+r:.2f} c "
-            f"{x-c:.2f} {y+r:.2f} {x-r:.2f} {y+c:.2f} {x-r:.2f} {y:.2f} c "
-            f"{x-r:.2f} {y-c:.2f} {x-c:.2f} {y-r:.2f} {x:.2f} {y-r:.2f} c "
-            f"{x+c:.2f} {y-r:.2f} {x+r:.2f} {y-c:.2f} {x+r:.2f} {y:.2f} c {op}"
-        )
-
-    def footer(self):
-        self.line(self.margin, 38, self.width - self.margin, 38, (230, 235, 242), .7)
-        self.text("Systems Under Pressure | Algebra 2 Final Project", self.margin, 22, 8.5, color=MUTED)
-        self.text(str(self.page_number), self.width - self.margin - 10, 22, 8.5, color=MUTED)
-
-    def save(self, path):
-        self.footer()
-        self.pages.append("\n".join(self.stream))
-        objects = []
-        catalog_id = 1
-        pages_id = 2
-        font_regular = 3
-        font_bold = 4
-        font_italic = 5
-        page_ids = []
-        content_ids = []
-        next_id = 6
-        for _ in self.pages:
-            page_ids.append(next_id)
-            content_ids.append(next_id + 1)
-            next_id += 2
-        objects.append((catalog_id, f"<< /Type /Catalog /Pages {pages_id} 0 R >>"))
-        kids = " ".join(f"{pid} 0 R" for pid in page_ids)
-        objects.append((pages_id, f"<< /Type /Pages /Kids [{kids}] /Count {len(page_ids)} >>"))
-        objects.append((font_regular, "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>"))
-        objects.append((font_bold, "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>"))
-        objects.append((font_italic, "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>"))
-        for pid, cid, stream in zip(page_ids, content_ids, self.pages):
-            objects.append((pid, f"<< /Type /Page /Parent {pages_id} 0 R /MediaBox [0 0 {self.width} {self.height}] /Resources << /Font << /F1 {font_regular} 0 R /F2 {font_bold} 0 R /F3 {font_italic} 0 R >> >> /Contents {cid} 0 R >>"))
-            encoded = stream.encode("latin-1", "replace")
-            objects.append((cid, f"<< /Length {len(encoded)} >>\nstream\n{stream}\nendstream"))
-        pdf = ["%PDF-1.4\n"]
-        offsets = [0]
-        for obj_id, body in objects:
-            offsets.append(sum(len(part.encode("latin-1", "replace")) for part in pdf))
-            pdf.append(f"{obj_id} 0 obj\n{body}\nendobj\n")
-        xref = sum(len(part.encode("latin-1", "replace")) for part in pdf)
-        pdf.append(f"xref\n0 {len(objects)+1}\n0000000000 65535 f \n")
-        for off in offsets[1:]:
-            pdf.append(f"{off:010d} 00000 n \n")
-        pdf.append(f"trailer\n<< /Size {len(objects)+1} /Root {catalog_id} 0 R >>\nstartxref\n{xref}\n%%EOF")
-        path.write_bytes("".join(pdf).encode("latin-1", "replace"))
-
-    def section_label(self, label, accent=INK):
-        self.text(label.upper(), self.margin, self.height - 32, 8.5, "F2", accent)
-        self.line(self.margin, self.height - 42, self.width - self.margin, self.height - 42, (231, 235, 241), .8)
-
-    def title_page(self, subtitle):
-        self.rect(0, 0, self.width, self.height, fill=(250, 251, 253), stroke=None)
-        self.system_network(615, 300, 135)
-        self.text("ALGEBRA 2 CUMULATIVE SEMESTER FINAL PROJECT", self.margin, 505, 9.5, "F2", MUTED)
-        self.text("Systems", self.margin, 450, 42, "F2", INK)
-        self.text("Under Pressure", self.margin, 402, 42, "F2", INK)
-        self.text("The Mathematics of Food Systems", self.margin, 362, 18, "F2", CHARCOAL)
-        self.rect(self.margin, 220, 310, 92, fill=PAPER, stroke=(224, 229, 236))
-        self.rect(self.margin, 220, 7, 92, fill=INK, stroke=None)
-        self.wrapped('"All models are wrong, but some are useful."', self.margin + 22, 278, 38, 15, 20, "F2", INK)
-        self.text("George Box", self.margin + 22, 240, 10, color=MUTED)
-        self.wrapped(subtitle, self.margin, 150, 55, 12, 17, color=CHARCOAL)
-
-    def system_network(self, cx, cy, radius):
-        scale = radius / 180
-        nodes = [
-            ("Climate", GREEN, -130, 92), ("Transport", BLUE, 42, 118), ("Storage", PURPLE, 146, 28),
-            ("Exports", PURPLE, 118, -98), ("Food loss", (150, 66, 66), -44, -130),
-            ("Demand", BLUE, -160, -42), ("Supply", GREEN, -170, 35),
-        ]
-        self.circle(cx, cy, 48 * scale, fill=PAPER, stroke=(200, 208, 220), width=1.2)
-        self.text("Food", cx - 23 * scale, cy + 8 * scale, 13 * scale, "F2", INK)
-        self.text("System", cx - 30 * scale, cy - 10 * scale, 13 * scale, "F2", INK)
-        for name, color, dx, dy in nodes:
-            x, y = cx + dx * scale, cy + dy * scale
-            self.line(cx, cy, x, y, (173, 184, 199), 1.4)
-            r = 28 * scale
-            self.circle(x, y, r, fill=PAPER, stroke=color, width=1.4)
-            self.text(name, x + r + 6 * scale, y - 3 * scale, max(7.4, 8.4 * scale), "F2", color)
-        self.text("interconnected pressures", cx - 62 * scale, cy - 74 * scale, max(8, 9 * scale), color=MUTED)
-
-    def opener(self, kicker, title, body, accent=INK, note=None):
-        self.rect(0, 0, self.width, self.height, fill=(250, 251, 253), stroke=None)
-        self.rect(self.margin, 98, 7, 356, fill=accent, stroke=None)
-        self.text(kicker.upper(), self.margin + 28, 440, 9.5, "F2", accent)
-        self.wrapped(title, self.margin + 28, 392, 20, 34, 40, "F2", INK)
-        self.wrapped(body, self.margin + 28, 255, 56, 13, 18, color=CHARCOAL)
-        if note:
-            self.rect(510, 122, 200, 132, fill=PAPER, stroke=(224, 229, 236))
-            self.wrapped(note, 532, 215, 28, 11, 15, "F2", CHARCOAL)
-
-    def quote_page(self):
-        self.rect(0, 0, self.width, self.height, fill=INK, stroke=None)
-        self.rect(94, 125, 5, 345, fill=(255, 255, 255), stroke=None)
-        self.wrapped('"All models are wrong, but some are useful."', 122, 398, 34, 32, 40, "F2", (255, 255, 255))
-        self.text("George Box", 125, 270, 13, color=(204, 213, 226))
-        self.wrapped("This project is not about perfect certainty. It is about using mathematics to make a complex system clearer, then naming what the mathematics still cannot see.", 125, 205, 58, 13, 18, color=(226, 232, 240))
-
-    def card(self, x, y, w, h, title, body, accent=INK, fill=PAPER, body_chars=35):
-        self.rect(x, y, w, h, fill=fill, stroke=(224, 229, 236))
-        self.rect(x, y + h - 8, w, 8, fill=accent, stroke=None)
-        self.text(title, x + 18, y + h - 33, 14, "F2", accent)
-        self.wrapped(body, x + 18, y + h - 58, body_chars, 10.5, 14.5, color=CHARCOAL)
-
-    def side_note(self, x, y, w, h, title, body, accent=SLATE):
-        self.rect(x, y, w, h, fill=(250, 251, 253), stroke=(224, 229, 236))
-        self.text(title.upper(), x + 14, y + h - 24, 8.5, "F2", accent)
-        self.wrapped(body, x + 14, y + h - 44, max(18, int(w / 5.7)), 9.5, 13, color=CHARCOAL)
-
-    def bullets(self, x, y, items, width_chars=44, size=10.5, leading=14.5, color=CHARCOAL):
-        for item in items:
-            lines = textwrap.wrap(item, width=width_chars)
-            self.text("-", x, y, size, "F2", color)
-            self.text(lines[0], x + 16, y, size, color=color)
-            y -= leading
-            for line in lines[1:]:
-                self.text(line, x + 16, y, size, color=color)
-                y -= leading
-            y -= 5
-        return y
-
-    def workspace(self, x, y, w, h, label=None, grid=False, lines=True, accent=(226, 232, 240)):
-        self.rect(x, y, w, h, fill=PAPER, stroke=(192, 202, 216))
-        if label:
-            self.text(label, x + 14, y + h - 24, 10, "F2", MUTED)
-        if grid:
-            step = 28
-            gx = x + step
-            while gx < x + w:
-                self.line(gx, y + 12, gx, y + h - 12, (235, 239, 245), .35)
-                gx += step
-            gy = y + step
-            while gy < y + h:
-                self.line(x + 12, gy, x + w - 12, gy, (235, 239, 245), .35)
-                gy += step
-        elif lines:
-            yy = y + h - 45
-            while yy > y + 18:
-                self.line(x + 16, yy, x + w - 16, yy, accent, .45)
-                yy -= 22
-
-    def spread_title(self, label, title, subtitle, accent=INK):
-        self.section_label(label, accent)
-        self.text(title, self.margin, 518, 28, "F2", INK)
-        self.wrapped(subtitle, self.margin, 488, 82, 11.5, 16, color=CHARCOAL)
-        self.line(self.margin, 458, self.width - self.margin, 458, (226, 232, 240), .8)
+styles = getSampleStyleSheet()
+styles.add(ParagraphStyle("Kicker", parent=styles["Normal"], fontName="Helvetica-Bold", fontSize=8.5, leading=11, textColor=MUTED, spaceAfter=7, uppercase=True))
+styles.add(ParagraphStyle("TitleBig", parent=styles["Title"], fontName="Helvetica-Bold", fontSize=39, leading=42, textColor=INK, alignment=TA_LEFT, spaceAfter=14))
+styles.add(ParagraphStyle("SectionTitle", parent=styles["Heading1"], fontName="Helvetica-Bold", fontSize=25, leading=30, textColor=INK, spaceAfter=10))
+styles.add(ParagraphStyle("Subhead", parent=styles["Heading2"], fontName="Helvetica-Bold", fontSize=14, leading=18, textColor=INK, spaceAfter=7))
+styles.add(ParagraphStyle("Body", parent=styles["BodyText"], fontName="Helvetica", fontSize=10.5, leading=15.5, textColor=CHARCOAL, spaceAfter=7))
+styles.add(ParagraphStyle("Small", parent=styles["BodyText"], fontName="Helvetica", fontSize=9.2, leading=13.2, textColor=CHARCOAL, spaceAfter=4))
+styles.add(ParagraphStyle("Tiny", parent=styles["BodyText"], fontName="Helvetica", fontSize=8.1, leading=11.2, textColor=CHARCOAL, spaceAfter=3))
+styles.add(ParagraphStyle("Quote", parent=styles["BodyText"], fontName="Helvetica-Bold", fontSize=16, leading=22, textColor=INK, leftIndent=12, borderColor=INK, borderWidth=0, borderPadding=0, spaceAfter=7))
+styles.add(ParagraphStyle("CenterTitle", parent=styles["Title"], fontName="Helvetica-Bold", fontSize=20, leading=25, alignment=TA_CENTER, textColor=INK, spaceAfter=18))
+styles.add(ParagraphStyle("RubricBody", parent=styles["BodyText"], fontName="Helvetica", fontSize=9.4, leading=12.8, textColor=CHARCOAL, spaceAfter=3))
+styles.add(ParagraphStyle("RubricLevel", parent=styles["Heading3"], fontName="Helvetica-Bold", fontSize=11.2, leading=14, textColor=INK, spaceAfter=5))
 
 
-RUBRIC_CONTENT_STANDARDS = [
-    ("1", "Sequences and Series", "discrete change, arithmetic vs geometric patterns, recursive vs explicit forms, finite vs infinite reasoning, cumulative sums in context", GREEN),
-    ("2", "Exponentials and Logarithms", "growth and decay, growth factors, thresholds, logarithmic reasoning, realistic interpretation and limitations", BLUE),
-    ("3", "Polynomials", "degree, leading coefficient, end behavior, intercepts, multiplicity, extrema, polynomial forms, and realistic domain restrictions", PURPLE),
-]
-
-RUBRIC_SKILL_GRADES = [
-    ("4", "Mathematical Communication and Interpretation", "clear explanations, graph-algebra-context connections, assumptions, annotations, tables, and contextual interpretation", INK),
-    ("5", "Comparing Models, Assumptions, and Limitations", "model comparison, realism, hidden variables, tradeoffs, assumptions, unreasonable predictions, and meaningful revision", SLATE),
-    ("6", "Algebraic Precision and Flexible Number Sense", "accurate methods, factoring, logarithms, substitution, graph interpretation, rational numbers, units, and reasonableness checks", INK),
-]
+def p(text, style="Body"):
+    return Paragraph(str(text).replace("\n", "<br/>"), styles[style])
 
 
-def build_handout():
-    pdf = PDF("Student Overview")
-    pdf.title_page("A concise investigation brief for studying real food systems under mathematical pressure.")
-    pdf.new_page(footer=False)
-    pdf.quote_page()
-    pdf.new_page()
-    pdf.opener(
-        "Project Philosophy",
-        "A model is useful, but incomplete.",
-        "You are not simply completing Algebra 2 tasks. You are investigating an unstable food system and using mathematics to make its behavior more visible. Models reveal patterns, hide variables, depend on assumptions, and eventually break down. Strong mathematical thinkers name those limits honestly.",
-        INK,
-        "Revision is evidence of mathematical thinking."
+def spacer(h=12):
+    return Spacer(1, h)
+
+
+def doc(path, title):
+    return SimpleDocTemplate(
+        str(path),
+        pagesize=PAGE_SIZE,
+        rightMargin=0.58 * inch,
+        leftMargin=0.58 * inch,
+        topMargin=0.48 * inch,
+        bottomMargin=0.52 * inch,
+        title=title,
     )
-    pdf.new_page("Investigation Mindset")
-    pdf.spread_title("Investigation Mindset", "Think like a mathematical investigator.", "This project values interpretation over memorization and visible reasoning over polished certainty.", INK)
-    pdf.card(58, 312, 204, 132, "Models reveal", "patterns, rates, structure, constraints, thresholds, and possible futures", GREEN, GREEN_SOFT, 25)
-    pdf.card(294, 312, 204, 132, "Models hide", "unmeasured variables, human decisions, sudden disruptions, uncertainty, and local context", BLUE, BLUE_SOFT, 25)
-    pdf.card(530, 312, 204, 132, "Models change", "when assumptions, rates, dimensions, domains, or constraints are revised", PURPLE, PURPLE_SOFT, 25)
-    pdf.side_note(58, 132, 676, 90, "What counts as strong thinking", "Crossed-out assumptions, recalculated thresholds, revised graphs, changed interpretations, and honest limitations are not mistakes to hide. They are evidence that the investigation became more sophisticated.", INK)
-    pdf.new_page("System View")
-    pdf.spread_title("System View", "One system. Many pressures.", "Food systems are interconnected. Changes in one part can reshape the whole system.", INK)
-    pdf.system_network(246, 260, 160)
-    pdf.card(455, 315, 245, 118, "Mathematics helps us", "Model change, identify patterns, compare possibilities, estimate outcomes, critique predictions, and reveal constraints.", INK, PAPER, 30)
-    pdf.card(455, 168, 245, 118, "Strong thinkers ask", "What assumptions are we making? What variables matter most? Where does the model stop making sense? What tradeoffs appear?", INK, PAPER, 30)
-    pdf.new_page("Final Communication")
-    pdf.spread_title("Final Communication", "Choose the format that best communicates the investigation.", "The purpose is communicating mathematical reasoning, not producing a polished slideshow.", INK)
-    formats = [
-        ("Allowed formats", "slides, filmed discussions, workbook walkthroughs, digital whiteboards, screencasts, annotated journals, documentary-style explanations, or hybrid combinations"),
-        ("Math remains central", "models, graph analysis, comparisons, assumptions, revisions, limitations, final claims, and visible mathematical evidence"),
-        ("Clarity over polish", "Do not prioritize cinematic editing, effects, overproduction, or memorized performance. Prioritize reasoning and explanation."),
-    ]
-    x = pdf.margin
-    for title, body in formats:
-        pdf.card(x, 255, 204, 154, title, body, INK, PAPER, 25)
-        x += 224
-    pdf.side_note(pdf.margin, 115, 654, 82, "Workbook walkthroughs are encouraged", "The journal is a major part of the investigation. Students may explain crossed-out assumptions, revised graphs, recalculations, and changing interpretations directly from the workbook.", INK)
-    pdf.new_page("Deliverables")
-    pdf.spread_title("Deliverables", "What makes the investigation visible", "These pieces work together. The journal shows the evolving inquiry; the final communication explains the mathematical story.", INK)
-    deliverables = [
-        ("Investigation Journal", "rough work, sketches, Desmos screenshots, calculations, AI interactions, revisions, and evolving reasoning"),
-        ("Mathematical Artifacts", "graph annotations, recursive calculations, polynomial long division, tables, recalculations, and revised models"),
-        ("Group Reflection Vlogs", "short mathematical conversations showing uncertainty, revision, disagreement, critique, and progress"),
-        ("Final Communication", "the chosen format that communicates models, comparisons, assumptions, limitations, and claims"),
-    ]
-    coords = [(58, 290), (398, 290), (58, 118), (398, 118)]
-    for (title, body), (x, y) in zip(deliverables, coords):
-        pdf.card(x, y, 286, 132, title, body, INK, PAPER, 36)
-    pdf.new_page("Collaboration")
-    pdf.spread_title("Collaboration", "One shared investigation. Visible individual thinking.", "Do not divide units by student. The group functions as a collaborative mathematical inquiry team.", INK)
-    pdf.side_note(58, 292, 310, 150, "Collaborative work", "Students think together, discuss together, graph together, revise together, compare together, critique together, and synthesize together.", INK)
-    pdf.side_note(400, 292, 310, 150, "Individual evidence snapshots", "Each student contributes smaller, frequent artifacts: graph interpretations, model comparisons, recalculations, AI critique, revised assumptions, or limitation reflections.", INK)
-    pdf.side_note(58, 128, 652, 96, "Every student speaks mathematics", "Every student must visibly contribute mathematical reasoning, interpretation, comparison, critique, or explanation in group vlogs and final communication. The goal is authentic reasoning, not mechanical speaking turns.", INK)
-    pdf.new_page("Scenarios")
-    pdf.spread_title("Scenarios", "Choose one documentary investigation prompt.", "Each scenario begins with a human tension. Your group narrows it into one measurable mathematical investigation.", INK)
-    scenarios = [
-        ("A | United States", "The $5 Footlong Isn't $5 Anymore", "Changing everyday food costs reshape affordability.", "inflation, pricing, shrinkflation, labor, transportation"),
-        ("B | Global", "When War Changes the Price of Bread", "Disruption in one region can shift prices and recovery patterns elsewhere.", "exports, wheat, transport, recovery, supply chains"),
-        ("C | Sub-Saharan Africa", "What If Food Exists - But Never Arrives?", "Food can be produced and still be lost before reaching people.", "spoilage, refrigeration, storage, infrastructure"),
-        ("D | Colombia", "Can Climate Change the Future of Coffee?", "Environmental and economic changes can alter yield, exports, and thresholds.", "rainfall, coffee yield, climate, transport, exports"),
-    ]
-    coords = [(58, 312), (398, 312), (58, 118), (398, 118)]
-    accents = [GREEN, BLUE, PURPLE, CHARCOAL]
-    for (sc, title, hook, ideas), (x, y), accent in zip(scenarios, coords, accents):
-        pdf.card(x, y, 286, 150, sc, f"{title}\n\n{hook}\n\nKey tensions: {ideas}", accent, PAPER, 33)
-    pdf.new_page("Focus")
-    pdf.spread_title("Focus", "A good question is narrow enough to model.", "Avoid giant topics. Look for one changing quantity, one measurable relationship, and one meaningful constraint.", INK)
-    pdf.card(58, 315, 300, 118, "Too broad", "How inflation affects food\nClimate and coffee\nFood insecurity\nFood waste", (120, 87, 66), WARM, 34)
-    pdf.card(410, 315, 300, 118, "Better", "How sandwich prices changed over time\nRainfall vs coffee yield in one region\nFood spoilage during transport stages\nFood remaining after repeated losses", GREEN, GREEN_SOFT, 34)
-    pdf.side_note(58, 145, 652, 96, "Strong focus test", "Can your group identify one main changing quantity, one measurable relationship, one prediction or threshold question, one physical or cost constraint, and one connection across mathematical lenses?", INK)
-    pdf.new_page("Roadmap")
-    pdf.spread_title("Roadmap", "The five-class arc is one evolving investigation.", "Each phase builds on the same system. The mathematics becomes more sophisticated through comparison and revision.", INK)
-    phases = [
-        ("1", "Entering the System", "notice variables", SLATE),
-        ("2", "Modeling Change", "sequences and series", GREEN),
-        ("3", "Thresholds", "exponentials and logs", BLUE),
-        ("4", "Constraints", "polynomials", PURPLE),
-        ("5", "Synthesis", "claim and critique", INK),
-    ]
-    x = 70
-    y = 300
-    for i, (num, title, body, accent) in enumerate(phases):
-        pdf.circle(x + 36, y + 64, 25, fill=PAPER, stroke=accent, width=1.6)
-        pdf.text(num, x + 29, y + 56, 18, "F2", accent)
-        pdf.card(x, y - 65, 116, 102, title, body, accent, PAPER, 16)
-        if i < 4:
-            pdf.line(x + 118, y + 64, x + 136, y + 64, (167, 178, 193), 1.4)
-        x += 136
-    pdf.side_note(88, 108, 600, 88, "Project arc", "Notice relationships, model repeated change, recognize acceleration and thresholds, model constraints, then synthesize what each model reveals and misses.", INK)
-    pdf.new_page("Mathematical Lenses")
-    pdf.spread_title("Mathematical Lenses", "Different structures reveal different things.", "Students repeatedly answer: Why this model? What does it reveal? What does it miss? How do I know?", INK)
-    pdf.card(58, 285, 204, 145, "Sequences & Series", "How is the system changing over time? Compare discrete vs continuous, arithmetic vs geometric, recursive vs explicit, finite vs infinite.", GREEN, GREEN_SOFT, 25)
-    pdf.card(294, 285, 204, 145, "Exponentials & Logs", "When does change accelerate, decay, compound, or cross a threshold? Compare linear vs exponential and sampled values vs continuous models.", BLUE, BLUE_SOFT, 25)
-    pdf.card(530, 285, 204, 145, "Polynomials", "How do capacity, cost, and physical constraints reshape the system? Analyze structure, end behavior, extrema, and domain.", PURPLE, PURPLE_SOFT, 25)
-    pdf.side_note(58, 128, 676, 86, "Lightweight model fit", "Use r and R² as credibility and critique tools. Interpret direction, strength, fit, hidden variables, and causation limits. This is not a full statistics unit.", INK)
-    pdf.new_page("Assessment Frame")
-    pdf.spread_title("Assessment Frame", "Three content standards. Three skill grades.", "The final rubric separates Algebra 2 content from cross-cutting mathematical habits. Both matter.", INK)
-    pdf.text("CORE ALGEBRA 2 CONTENT STANDARDS", 58, 420, 9, "F2", MUTED)
-    x = 58
-    for num, title, body, accent in RUBRIC_CONTENT_STANDARDS:
-        pdf.card(x, 258, 204, 135, f"{num}. {title}", body, accent, PAPER, 25)
-        x += 236
-    pdf.text("CROSS-CUTTING SKILL GRADES", 58, 214, 9, "F2", MUTED)
-    x = 58
-    for num, title, body, accent in RUBRIC_SKILL_GRADES:
-        pdf.card(x, 68, 204, 120, f"{num}. {title}", body, accent, (250, 251, 253), 24)
-        x += 236
-    pdf.new_page("AI Use")
-    pdf.spread_title("AI Use", "SAIL L5: Co-Create", "AI is a thinking partner, not an answer machine. It should deepen reasoning and make critique sharper.", INK)
-    pdf.card(58, 286, 300, 140, "AI may help you", "challenge assumptions, critique models, identify missing variables, compare interpretations, explain r and R², organize ideas, and revise explanations", GREEN, PAPER, 36)
-    pdf.card(410, 286, 300, 140, "AI may not replace you", "Do not submit reasoning you do not understand, ask AI to complete the project, hide meaningful AI use, or replace your own mathematical voice.", (150, 66, 66), PAPER, 36)
-    pdf.side_note(58, 118, 652, 96, "Transparency sentence", "AI use: We asked ChatGPT to critique our constant-growth assumption. We rejected one suggestion, revised our rate assumption, and recalculated the threshold.", INK)
-    pdf.save(OUT / "student-handout.pdf")
 
 
-def class_opener(pdf, num, title, question, identity, accent, mood):
-    pdf.new_page(footer=False)
-    pdf.rect(0, 0, pdf.width, pdf.height, fill=(250, 251, 253), stroke=None)
-    pdf.rect(58, 106, 8, 360, fill=accent, stroke=None)
-    pdf.text(f"CLASS {num}", 92, 448, 10, "F2", accent)
-    pdf.text(title, 92, 398, 34, "F2", INK)
-    pdf.wrapped(question, 92, 342, 52, 16, 22, "F2", CHARCOAL)
-    pdf.side_note(520, 310, 190, 120, identity, mood, accent)
-    pdf.wrapped("Use this section as a field notebook. Let rough work, uncertainty, recalculation, and revision stay visible.", 92, 205, 58, 13, 18, color=CHARCOAL)
+def footer(canvas, document):
+    canvas.saveState()
+    canvas.setStrokeColor(colors.HexColor("#E5EAF0"))
+    canvas.setLineWidth(0.6)
+    canvas.line(document.leftMargin, 28, PAGE_W - document.rightMargin, 28)
+    canvas.setFont("Helvetica", 8)
+    canvas.setFillColor(MUTED)
+    canvas.drawString(document.leftMargin, 15, "Systems Under Pressure | Algebra 2 Final Project")
+    canvas.drawRightString(PAGE_W - document.rightMargin, 15, str(document.page))
+    canvas.restoreState()
+
+
+class SystemMap(Flowable):
+    def __init__(self, width=250, height=210):
+        super().__init__()
+        self.width = width
+        self.height = height
+
+    def draw(self):
+        c = self.canv
+        cx, cy = self.width * 0.48, self.height * 0.5
+        nodes = [
+            ("Climate", GREEN, -82, 66), ("Transport", BLUE, 56, 82), ("Storage", PURPLE, 111, 10),
+            ("Exports", PURPLE, 94, -72), ("Food loss", RED, -35, -82), ("Demand", BLUE, -96, -22), ("Supply", GREEN, -105, 26),
+        ]
+        c.setStrokeColor(colors.HexColor("#BAC5D2"))
+        c.setLineWidth(1.1)
+        for _, _, dx, dy in nodes:
+            c.line(cx, cy, cx + dx, cy + dy)
+        c.setFillColor(WHITE)
+        c.setStrokeColor(colors.HexColor("#CBD5E1"))
+        c.circle(cx, cy, 34, stroke=1, fill=1)
+        c.setFillColor(INK)
+        c.setFont("Helvetica-Bold", 10)
+        c.drawCentredString(cx, cy + 3, "Food")
+        c.drawCentredString(cx, cy - 10, "System")
+        for name, col, dx, dy in nodes:
+            x, y = cx + dx, cy + dy
+            c.setFillColor(WHITE)
+            c.setStrokeColor(col)
+            c.setLineWidth(1.4)
+            c.circle(x, y, 24, stroke=1, fill=1)
+            c.setFillColor(col)
+            c.setFont("Helvetica-Bold", 7.4)
+            c.drawString(x + 28, y - 3, name)
+        c.setFillColor(MUTED)
+        c.setFont("Helvetica", 8)
+        c.drawCentredString(cx, cy - 55, "interconnected pressures")
+
+
+class Workspace(Flowable):
+    def __init__(self, label="student thinking space", height=220, grid=False):
+        super().__init__()
+        self.label = label
+        self.height = height
+        self.grid = grid
+        self.width = 1
+
+    def wrap(self, availWidth, availHeight):
+        self.width = availWidth
+        return availWidth, self.height
+
+    def draw(self):
+        c = self.canv
+        c.setStrokeColor(colors.HexColor("#AEBBCC"))
+        c.setFillColor(WHITE)
+        c.roundRect(0, 0, self.width, self.height, 8, stroke=1, fill=1)
+        c.setFont("Helvetica-Bold", 8.5)
+        c.setFillColor(MUTED)
+        c.drawString(14, self.height - 22, self.label)
+        c.setStrokeColor(colors.HexColor("#E7ECF3"))
+        c.setLineWidth(0.45)
+        if self.grid:
+            step = 28
+            x = step
+            while x < self.width:
+                c.line(x, 14, x, self.height - 36)
+                x += step
+            y = 24
+            while y < self.height - 36:
+                c.line(14, y, self.width - 14, y)
+                y += step
+        else:
+            y = self.height - 48
+            while y > 16:
+                c.line(16, y, self.width - 16, y)
+                y -= 22
+
+
+def card(title, body, accent=INK, fill=WHITE, body_style="Body"):
+    content = [[p(title, "Subhead")], [p(body, body_style)]]
+    t = Table(content, colWidths=[None], hAlign="LEFT")
+    t.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), fill),
+        ("BOX", (0, 0), (-1, -1), 0.8, LINE),
+        ("LINEABOVE", (0, 0), (-1, 0), 5, accent),
+        ("LEFTPADDING", (0, 0), (-1, -1), 15),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 15),
+        ("TOPPADDING", (0, 0), (-1, -1), 13),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 13),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ]))
+    return t
+
+
+def card_grid(items, cols=3):
+    rows, row = [], []
+    for title, body, accent, fill in items:
+        row.append(card(title, body, accent, fill))
+        if len(row) == cols:
+            rows.append(row)
+            row = []
+    if row:
+        while len(row) < cols:
+            row.append(Spacer(1, 1))
+        rows.append(row)
+    usable = PAGE_W - 0.58 * inch * 2
+    col_width = usable / cols
+    t = Table(rows, colWidths=[col_width] * cols, hAlign="LEFT")
+    t.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+        ("TOPPADDING", (0, 0), (-1, -1), 7),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+    ]))
+    return t
+
+
+def section(kicker, title, body=None):
+    out = [p(kicker.upper(), "Kicker"), p(title, "SectionTitle")]
+    if body:
+        out.append(p(body, "Body"))
+    out.append(spacer(10))
+    return out
+
+
+def title_story(subtitle):
+    return [
+        Table([[[
+            p("ALGEBRA 2 CUMULATIVE SEMESTER FINAL PROJECT", "Kicker"),
+            p("Systems<br/>Under Pressure", "TitleBig"),
+            p("The Mathematics of Food Systems", "SectionTitle"),
+            spacer(18),
+            card('"All models are wrong, but some are useful."', "George Box", INK, WHITE),
+            spacer(28),
+            p(subtitle, "Body"),
+        ], SystemMap(260, 220)]], colWidths=[PAGE_W * 0.52, PAGE_W * 0.30], hAlign="LEFT", style=TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ])),
+        PageBreak(),
+    ]
+
+
+RUBRIC_STANDARDS = [
+    ("1", "Sequences and Series", "Content Standard", GREEN, GREEN_SOFT,
+     [
+         "Selects and justifies appropriate sequence and series models using strong mathematical reasoning. Clearly distinguishes arithmetic vs geometric, recursive vs explicit, finite vs infinite, and discrete vs continuous representations when relevant. Explains what terms, parameters, and cumulative sums mean in context. Predictions, recalculations, and interpretations are thoughtful, realistic, and well-supported.",
+         "Uses appropriate sequence and series models with generally accurate reasoning. Explains arithmetic vs geometric patterns and recursive vs explicit forms with minor errors or missing detail. Interpretations and predictions are mostly reasonable and connected to context.",
+         "Shows partial understanding of sequences and series. Some model choices or explanations are inaccurate, incomplete, or weakly justified. Connections between formulas, graphs, and context may be unclear or inconsistent.",
+         "Shows limited understanding of sequences and series. Models are inappropriate, incomplete, or unsupported. Explanations and interpretations are mostly missing or incorrect.",
+     ]),
+    ("2", "Exponentials and Logarithms", "Content Standard", BLUE, BLUE_SOFT,
+     [
+         "Selects and justifies exponential models appropriately. Clearly explains growth and decay, thresholds, growth factors, and logarithmic reasoning in context. Thoughtfully compares exponential behavior to linear or geometric behavior when appropriate. Solutions are interpreted realistically with strong contextual understanding and critique of limitations.",
+         "Uses exponential and logarithmic reasoning appropriately with mostly accurate explanations. Shows general understanding of growth factors, thresholds, and logarithmic solving. Interpretations are usually reasonable with only minor errors or missing detail.",
+         "Shows partial understanding of exponentials and logarithms. Makes multiple errors in solving, interpretation, or model choice. Explanations may be vague, inconsistent, or disconnected from context.",
+         "Shows limited understanding of exponential or logarithmic reasoning. Work is incomplete, incorrect, or lacks meaningful interpretation.",
+     ]),
+    ("3", "Polynomials", "Content Standard", PURPLE, PURPLE_SOFT,
+     [
+         "Creates and analyzes polynomial models with strong mathematical reasoning. Clearly explains degree, leading coefficient, end behavior, intercepts, multiplicity, extrema, and realistic domain restrictions in context. Thoughtfully compares factored and standard form and explains what each representation reveals. Uses notation such as x → ∞ and x → −∞ correctly and meaningfully.",
+         "Analyzes polynomial models accurately with generally clear explanations. Shows understanding of graph behavior, structure, and polynomial forms with only minor errors or missing detail. Most interpretations are connected to context.",
+         "Shows partial understanding of polynomial structure and graph behavior. Multiple errors or incomplete explanations weaken interpretation and analysis. Contextual meaning may be unclear or inconsistent.",
+         "Shows limited understanding of polynomial reasoning or graph behavior. Analysis is incomplete, incorrect, or unsupported by meaningful explanation.",
+     ]),
+    ("4", "Mathematical Communication and Interpretation", "Skill Grade", INK, SOFT,
+     [
+         "Mathematical thinking is communicated clearly and thoughtfully through explanations, graphs, annotations, tables, discussion, and contextual interpretation. Strong connections among graph, algebra, assumptions, and context are consistently visible. Reasoning is organized, precise, and easy to follow.",
+         "Communication is generally clear and understandable. Most mathematical ideas are connected to graphs, algebra, or context appropriately, though some explanations may lack precision or depth.",
+         "Explanations are inconsistent, incomplete, or difficult to follow. Connections between mathematics and context are weak, unclear, or only partially developed.",
+         "Mathematical thinking is minimally communicated. Explanations, interpretations, and connections are mostly missing or unclear.",
+     ]),
+    ("5", "Comparing Models, Assumptions, and Limitations", "Skill Grade", MUTED, SOFT,
+     [
+         "Thoughtfully compares multiple models, assumptions, and representations such as discrete vs continuous, recursive vs explicit, linear vs exponential, or different polynomial structures. Critiques realism, hidden variables, tradeoffs, assumptions, and unreasonable predictions with strong insight. Revision strengthens the mathematical investigation in meaningful ways.",
+         "Compares models and assumptions appropriately with some explanation of limitations or realism. Shows general understanding of how assumptions affect predictions and interpretations. Some revision or reconsideration of ideas is visible.",
+         "Comparisons are limited, superficial, or weakly justified. Explanations of assumptions, realism, or limitations are incomplete or inconsistent. Revision is minimal or mostly procedural.",
+         "Shows little or no meaningful comparison of models, assumptions, or limitations. Revision and critique are mostly absent.",
+     ]),
+    ("6", "Algebraic Precision and Flexible Number Sense", "Skill Grade", INK, SOFT,
+     [
+         "Solves equations accurately using appropriate algebraic methods such as factoring, logarithms, inverse operations, substitution, graph interpretation, and algebraic manipulation. Fractions, decimals, percentages, negative numbers, and units are used fluently and precisely. Work is organized, justified, and consistently checked for reasonableness.",
+         "Uses appropriate algebraic methods with mostly accurate calculations and organization. Rational numbers and units are generally used correctly, with only minor errors or omissions. Most answers are reasonable and interpreted appropriately.",
+         "Uses some correct methods but makes multiple algebraic, numerical, or organizational errors. Precision, units, or interpretation may be inconsistent or incomplete.",
+         "Shows little or no valid algebraic progress. Calculations, precision, organization, or interpretation are mostly incorrect or missing.",
+     ]),
+]
+
+
+def build_student_overview():
+    story = title_story("A concise investigation brief for studying real food systems under mathematical pressure.")
+    story += section("Project Philosophy", "A model is useful, but incomplete.", "You are not simply completing Algebra 2 tasks. You are investigating an unstable food system and using mathematics to make its behavior more visible. Models reveal patterns, hide variables, depend on assumptions, and eventually break down. Strong mathematical thinkers name those limits honestly.")
+    story.append(card_grid([
+        ("Models reveal", "patterns, rates, structure, constraints, thresholds, and possible futures", GREEN, GREEN_SOFT),
+        ("Models hide", "unmeasured variables, human decisions, sudden disruptions, uncertainty, and local context", BLUE, BLUE_SOFT),
+        ("Models change", "when assumptions, rates, dimensions, domains, or constraints are revised", PURPLE, PURPLE_SOFT),
+    ], 3))
+    story.append(spacer(12))
+    story.append(card("Revision is evidence of thinking", "Crossed-out assumptions, recalculated thresholds, revised graphs, changed interpretations, and honest limitations are not mistakes to hide. They are evidence that the investigation became more sophisticated.", INK, WHITE))
+    story.append(PageBreak())
+
+    story += section("System View", "One system. Many pressures.", "Food systems are interconnected. Changes in one part can reshape the whole system.")
+    story.append(Table([[SystemMap(280, 210), card_grid([
+        ("Mathematics helps us", "Model change, identify patterns, compare possibilities, estimate outcomes, critique predictions, and reveal constraints.", INK, WHITE),
+        ("Strong thinkers ask", "What assumptions are we making? What variables matter most? Where does the model stop making sense? What tradeoffs appear?", INK, WHITE),
+    ], 1)]], colWidths=[300, PAGE_W - 430], style=TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE")])) )
+    story.append(PageBreak())
+
+    story += section("Final Communication", "Choose the format that best communicates the investigation.", "The purpose is communicating mathematical reasoning, not producing a polished slideshow.")
+    story.append(card_grid([
+        ("Allowed formats", "Slides, filmed discussions, workbook walkthroughs, digital whiteboards, screencasts, annotated journals, documentary-style explanations, or hybrid combinations.", INK, WHITE),
+        ("Math remains central", "Models, graph analysis, comparisons, assumptions, revisions, limitations, final claims, and visible mathematical evidence.", INK, WHITE),
+        ("Clarity over polish", "Do not prioritize cinematic editing, effects, overproduction, or memorized performance. Prioritize reasoning and explanation.", INK, WHITE),
+    ], 3))
+    story.append(spacer(12))
+    story.append(card("Workbook walkthroughs are encouraged", "The journal is a major part of the investigation. Students may explain crossed-out assumptions, revised graphs, recalculations, and changing interpretations directly from the workbook.", INK, WHITE))
+    story.append(PageBreak())
+
+    story += section("Deliverables", "What makes the investigation visible", "These pieces work together. The journal shows the evolving inquiry; the final communication explains the mathematical story.")
+    story.append(card_grid([
+        ("Investigation Journal", "Rough work, sketches, Desmos screenshots, calculations, AI interactions, revisions, and evolving reasoning.", INK, WHITE),
+        ("Mathematical Artifacts", "Graph annotations, recursive calculations, polynomial long division, tables, recalculations, and revised models.", INK, WHITE),
+        ("Group Reflection Vlogs", "Short mathematical conversations showing uncertainty, revision, disagreement, critique, and progress.", INK, WHITE),
+        ("Final Communication", "The chosen format that communicates models, comparisons, assumptions, limitations, and claims.", INK, WHITE),
+    ], 2))
+    story.append(PageBreak())
+
+    story += section("Collaboration", "One shared investigation. Visible individual thinking.", "Do not divide units by student. The group functions as a collaborative mathematical inquiry team.")
+    story.append(card_grid([
+        ("Collaborative work", "Students think together, discuss together, graph together, revise together, compare together, critique together, and synthesize together.", INK, WHITE),
+        ("Individual evidence snapshots", "Each student contributes smaller, frequent artifacts: graph interpretations, model comparisons, recalculations, AI critique, revised assumptions, or limitation reflections.", INK, WHITE),
+        ("Every student speaks mathematics", "Every student must visibly contribute reasoning, interpretation, comparison, critique, or explanation in group vlogs and final communication.", INK, WHITE),
+    ], 3))
+    story.append(PageBreak())
+
+    story += section("Scenarios", "Choose one documentary investigation prompt.", "Each scenario begins with a human tension. Your group narrows it into one measurable mathematical investigation.")
+    story.append(card_grid([
+        ("A | United States", "The $5 Footlong Isn't $5 Anymore<br/><br/>Changing everyday food costs reshape affordability.<br/><br/><b>Key tensions:</b> inflation, pricing, shrinkflation, labor, transportation", GREEN, WHITE),
+        ("B | Global", "When War Changes the Price of Bread<br/><br/>Disruption in one region can shift prices and recovery patterns elsewhere.<br/><br/><b>Key tensions:</b> exports, wheat, transport, recovery, supply chains", BLUE, WHITE),
+        ("C | Sub-Saharan Africa", "What If Food Exists - But Never Arrives?<br/><br/>Food can be produced and still be lost before reaching people.<br/><br/><b>Key tensions:</b> spoilage, refrigeration, storage, infrastructure", PURPLE, WHITE),
+        ("D | Colombia", "Can Climate Change the Future of Coffee?<br/><br/>Environmental and economic changes can alter yield, exports, and thresholds.<br/><br/><b>Key tensions:</b> rainfall, coffee yield, climate, transport, exports", INK, WHITE),
+    ], 2))
+    story.append(PageBreak())
+
+    story += section("Focus", "A good question is narrow enough to model.", "Avoid giant topics. Look for one changing quantity, one measurable relationship, and one meaningful constraint.")
+    story.append(card_grid([
+        ("Too broad", "How inflation affects food<br/>Climate and coffee<br/>Food insecurity<br/>Food waste", RED, WARM),
+        ("Better", "How sandwich prices changed over time<br/>Rainfall vs coffee yield in one region<br/>Food spoilage during transport stages<br/>Food remaining after repeated losses", GREEN, GREEN_SOFT),
+    ], 2))
+    story.append(spacer(12))
+    story.append(card("Strong focus test", "Can your group identify one main changing quantity, one measurable relationship, one prediction or threshold question, one physical or cost constraint, and one connection across mathematical lenses?", INK, WHITE))
+    story.append(PageBreak())
+
+    story += section("Roadmap", "The five-class arc is one evolving investigation.", "Each phase builds on the same system. The mathematics becomes more sophisticated through comparison and revision.")
+    story.append(card_grid([
+        ("1. Entering the System", "Notice relationships before choosing equations. Move from topic choice to a measurable system relationship.", MUTED, WHITE),
+        ("2. Modeling Change", "Represent repeated change with terms, formulas, and accumulated totals. Predict and test reliability.", GREEN, GREEN_SOFT),
+        ("3. Thresholds", "Model compounding, decay, and threshold moments. Interpret model breakdown.", BLUE, BLUE_SOFT),
+        ("4. Constraints", "Use structure and graph behavior to understand capacity, tradeoffs, extrema, and restricted domains.", PURPLE, PURPLE_SOFT),
+        ("5. Synthesis", "Turn separate models into one defensible mathematical claim about uncertainty.", INK, WHITE),
+    ], 3))
+    story.append(PageBreak())
+
+    story += section("Mathematical Lenses", "Different structures reveal different things.", "Students repeatedly answer: Why this model? What does it reveal? What does it miss? How do I know?")
+    story.append(card_grid([
+        ("Sequences & Series", "How is the system changing over time? Compare discrete vs continuous, arithmetic vs geometric, recursive vs explicit, finite vs infinite.", GREEN, GREEN_SOFT),
+        ("Exponentials & Logs", "When does change accelerate, decay, compound, or cross a threshold? Compare linear vs exponential and sampled values vs continuous models.", BLUE, BLUE_SOFT),
+        ("Polynomials", "How do capacity, cost, and physical constraints reshape the system? Analyze structure, end behavior, extrema, and domain.", PURPLE, PURPLE_SOFT),
+    ], 3))
+    story.append(spacer(12))
+    story.append(card("Lightweight model fit", "Use r and R² as credibility and critique tools. Interpret direction, strength, fit, hidden variables, and causation limits. This is not a full statistics unit.", INK, WHITE))
+    story.append(PageBreak())
+
+    story += section("Assessment Frame", "Three content standards. Three skill grades.", "The final rubric separates Algebra 2 content from cross-cutting mathematical habits. Both matter.")
+    story.append(p("CORE ALGEBRA 2 CONTENT STANDARDS", "Kicker"))
+    story.append(card_grid([(f"{n}. {title}", desc, accent, fill) for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS[:3] for desc in ["See the rubric for performance descriptors. This standard focuses on the mathematical content of the investigation."]], 3))
+    story.append(spacer(12))
+    story.append(p("CROSS-CUTTING SKILL GRADES", "Kicker"))
+    story.append(card_grid([(f"{n}. {title}", "Assessed across the whole investigation as a mathematical habit: communication, comparison, critique, revision, precision, and flexible thinking.", accent, fill) for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS[3:]], 3))
+    story.append(PageBreak())
+
+    story += section("AI Use", "SAIL L5: Co-Create", "AI is a thinking partner, not an answer machine. It should deepen reasoning and make critique sharper.")
+    story.append(card_grid([
+        ("AI may help you", "Challenge assumptions, critique models, identify missing variables, compare interpretations, explain r and R², organize ideas, and revise explanations.", GREEN, WHITE),
+        ("AI may not replace you", "Do not submit reasoning you do not understand, ask AI to complete the project, hide meaningful AI use, or replace your own mathematical voice.", RED, WHITE),
+    ], 2))
+    story.append(spacer(12))
+    story.append(card("Transparency sentence", "AI use: We asked ChatGPT to critique our constant-growth assumption. We rejected one suggestion, revised our rate assumption, and recalculated the threshold.", INK, WHITE))
+
+    d = doc(OUT / "student-handout.pdf", "Student Overview")
+    d.build(story, onFirstPage=footer, onLaterPages=footer)
+
+
+def journal_page(story, label, prompt, workspace_label="open thinking space", grid=False):
+    story += section(label, prompt)
+    story.append(Table([[Workspace(workspace_label, 285, grid), card("Reflection prompt", "What changed in your thinking? What assumption is doing the most work? What evidence would make this stronger?", INK, SOFT)]], colWidths=[PAGE_W - 260, 145], style=TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 4),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 4),
+    ])))
+    story.append(PageBreak())
 
 
 def build_journal():
-    pdf = PDF("Investigation Journal")
-    pdf.title_page("A spacious mathematical field notebook for sketching, modeling, revising, and explaining.")
-    pdf.new_page("Journal Norms")
-    pdf.spread_title("Journal Norms", "Rough work belongs here.", "This journal is not a worksheet packet. It is the visible record of your group's evolving mathematical thinking.", INK)
-    pdf.card(58, 298, 300, 120, "Value uncertainty", "Label assumptions, questions, disagreements, and places where a model stops making sense.", INK, PAPER, 36)
-    pdf.card(410, 298, 300, 120, "Revise visibly", "Cross out, annotate, draw arrows, compare versions, and explain why your thinking changed.", INK, PAPER, 36)
-    pdf.side_note(58, 140, 652, 86, "Field note style", "Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units, limitations, and revision together.", INK)
-    pdf.new_page("Rubric Alignment")
-    pdf.spread_title("Rubric Alignment", "Use the journal to make standards visible.", "The rubric does not only score final answers. It looks for reasoning, interpretation, revision, limitations, precision, and flexible thinking across the investigation.", INK)
-    pdf.text("CORE CONTENT STANDARDS", 58, 420, 9, "F2", MUTED)
-    x = 58
-    for num, title, body, accent in RUBRIC_CONTENT_STANDARDS:
-        pdf.card(x, 270, 204, 122, f"{num}. {title}", body, accent, PAPER, 25)
-        x += 236
-    pdf.text("SKILL GRADES", 58, 226, 9, "F2", MUTED)
-    x = 58
-    for num, title, body, accent in RUBRIC_SKILL_GRADES:
-        pdf.card(x, 86, 204, 114, f"{num}. {title}", body, accent, (250, 251, 253), 24)
-        x += 236
+    story = title_story("A spacious mathematical field notebook for sketching, modeling, revising, and explaining.")
+    story += section("Journal Norms", "Rough work belongs here.", "This journal is not a worksheet packet. It is the visible record of your group's evolving mathematical thinking.")
+    story.append(card_grid([
+        ("Value uncertainty", "Label assumptions, questions, disagreements, and places where a model stops making sense.", INK, WHITE),
+        ("Revise visibly", "Cross out, annotate, draw arrows, compare versions, and explain why your thinking changed.", INK, WHITE),
+        ("Field note style", "Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units, limitations, and revision together.", INK, WHITE),
+    ], 3))
+    story.append(PageBreak())
+
+    story += section("Rubric Alignment", "Use the journal to make standards visible.", "The rubric does not only score final answers. It looks for reasoning, interpretation, revision, limitations, precision, and flexible thinking across the investigation.")
+    story.append(card_grid([(f"{n}. {title}", kind, accent, fill) for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS], 3))
+    story.append(PageBreak())
 
     phases = [
-        (1, "Entering the System", "What relationships are we beginning to notice?", "Exploratory field notes", "Open, uncertain, observational.", SLATE, [
-            ("System map canvas", "Sketch variables, links, pressures, unknowns, and possible feedback loops.", "grid"),
-            ("Variable table and measurement notes", "Variable | Units | Why it matters | What is hard to measure", "lines"),
-            ("Sketch before technology", "Predict the shape of one relationship before using Desmos, Sheets, or another tool.", "grid"),
-            ("Vlog notes", "Patterns noticed, uncertainties, assumptions, important variables.", "lines"),
+        ("Class 1", "Entering the System", "What relationships are we beginning to notice?", MUTED, [
+            ("System map canvas", "Sketch variables, links, pressures, unknowns, and possible feedback loops.", True),
+            ("Variable table and measurement notes", "Variable | Units | Why it matters | What is hard to measure", False),
+            ("Sketch before technology", "Predict the shape of one relationship before using Desmos, Sheets, or another tool.", True),
+            ("Vlog notes", "Patterns noticed, uncertainties, assumptions, important variables.", False),
         ]),
-        (2, "Modeling Change", "How is the system changing over time?", "Pattern studio", "Structured repeated change.", GREEN, [
-            ("Discrete vs continuous comparison", "Why is a sequence appropriate? What would change in a continuous model?", "lines"),
-            ("Arithmetic, geometric, or neither?", "Use evidence. Explain what each term represents in context.", "lines"),
-            ("Recursive and explicit formulas", "Write both formulas. Annotate every variable and parameter.", "grid"),
-            ("Finite or infinite series", "What does the cumulative sum represent in the real system?", "lines"),
-            ("Model versions", "Compare 0-5, 0-10, and 0-20. What changes in realism and reliability?", "grid"),
-            ("Individual artifact snapshot", "Recalculation, comparison, graph interpretation, or revised assumption.", "lines"),
+        ("Class 2", "Modeling Change", "How is the system changing over time?", GREEN, [
+            ("Discrete vs continuous comparison", "Why is a sequence appropriate? What would change in a continuous model?", False),
+            ("Arithmetic, geometric, or neither?", "Use evidence. Explain what each term represents in context.", False),
+            ("Recursive and explicit formulas", "Write both formulas. Annotate every variable and parameter.", True),
+            ("Finite or infinite series", "What does the cumulative sum represent in the real system?", False),
+            ("Model versions", "Compare 0-5, 0-10, and 0-20. What changes in realism and reliability?", True),
+            ("Individual artifact snapshot", "Recalculation, comparison, graph interpretation, or revised assumption.", False),
         ]),
-        (3, "Acceleration, Decay, and Thresholds", "When does repeated change become accelerated or compounding?", "Dynamic modeling", "Rates reshape thresholds.", BLUE, [
-            ("Exponential vs linear", "Why does exponential reasoning fit better than repeated addition?", "lines"),
-            ("Sampled values vs continuous model", "How does continuous exponential modeling change the interpretation compared to discrete terms?", "lines"),
-            ("Build the model", "Starting value, growth factor, variables, assumptions, and realistic domain.", "grid"),
-            ("Logarithmic threshold", "Show algebraic steps, graph verification, units, and interpretation.", "grid"),
-            ("Rate comparison", "Compare 3%, 5%, and 8% growth or decay. What happens to thresholds?", "grid"),
-            ("Model breakdown", "Where does exponential behavior stop being realistic? What hidden variables matter?", "lines"),
+        ("Class 3", "Acceleration, Decay, and Thresholds", "When does repeated change become accelerated or compounding?", BLUE, [
+            ("Exponential vs linear", "Why does exponential reasoning fit better than repeated addition?", False),
+            ("Sampled values vs continuous model", "How does continuous exponential modeling change the interpretation compared to discrete terms?", False),
+            ("Build the model", "Starting value, growth factor, variables, assumptions, and realistic domain.", True),
+            ("Logarithmic threshold", "Show algebraic steps, graph verification, units, and interpretation.", True),
+            ("Rate comparison", "Compare 3%, 5%, and 8% growth or decay. What happens to thresholds?", True),
+            ("Model breakdown", "Where does exponential behavior stop being realistic? What hidden variables matter?", False),
         ]),
-        (4, "Constraints, Capacity, and Cost", "How do physical and economic constraints reshape the system?", "Structural design lab", "Physical form creates algebraic structure.", PURPLE, [
-            ("Flat blueprint", "Original dimensions, square cutout variable, folding lines, units in centimeters.", "grid"),
-            ("Folded storage structure", "Height, interior dimensions, usable space, loading floor.", "grid"),
-            ("Volume polynomial", "Factored form, standard form, and why multiplying dimensions creates a cubic.", "lines"),
-            ("Graph annotation", "Intercepts, multiplicity, extrema, domain, unrealistic regions, physical meaning.", "grid"),
-            ("End behavior and structure", "Degree, even/odd, leading coefficient, as x -> infinity and as x -> -infinity.", "lines"),
-            ("Polynomial division", "Dividend, divisor, quotient, remainder, and physical interpretation.", "grid"),
-            ("Constraint revision", "Change dimensions, cost, refrigeration, transport, or available space. Compare results.", "grid"),
+        ("Class 4", "Constraints, Capacity, and Cost", "How do physical and economic constraints reshape the system?", PURPLE, [
+            ("Flat blueprint", "Original dimensions, square cutout variable, folding lines, units in centimeters.", True),
+            ("Folded storage structure", "Height, interior dimensions, usable space, loading floor.", True),
+            ("Volume polynomial", "Factored form, standard form, and why multiplying dimensions creates a cubic.", False),
+            ("Graph annotation", "Intercepts, multiplicity, extrema, domain, unrealistic regions, physical meaning.", True),
+            ("End behavior and structure", "Degree, even/odd, leading coefficient, as x → ∞ and as x → −∞.", False),
+            ("Polynomial division", "Dividend, divisor, quotient, remainder, and physical interpretation.", True),
+            ("Constraint revision", "Change dimensions, cost, refrigeration, transport, or available space. Compare results.", True),
         ]),
-        (5, "Revision, Synthesis, and Communication", "What story does our mathematics tell?", "Synthesis studio", "Evidence becomes a claim.", INK, [
-            ("Synthesis table", "Lens | What did it reveal? | Where did it fail?", "lines"),
-            ("Where models agreed or conflicted", "Compare mathematical lenses and assumptions.", "lines"),
-            ("Final mathematical claim", "Use evidence, assumptions, limitations, tradeoffs, and implications.", "lines"),
-            ("Communication storyboard", "Choose a format. Plan how mathematical evidence will be visible.", "grid"),
-            ("Individual artifact snapshot", "Revision, hidden-variable analysis, limitation critique, or r/R² interpretation.", "lines"),
+        ("Class 5", "Revision, Synthesis, and Communication", "What story does our mathematics tell?", INK, [
+            ("Synthesis table", "Lens | What did it reveal? | Where did it fail?", False),
+            ("Where models agreed or conflicted", "Compare mathematical lenses and assumptions.", False),
+            ("Final mathematical claim", "Use evidence, assumptions, limitations, tradeoffs, and implications.", False),
+            ("Communication storyboard", "Choose a format. Plan how mathematical evidence will be visible.", True),
+            ("Individual artifact snapshot", "Revision, hidden-variable analysis, limitation critique, or r/R² interpretation.", False),
         ]),
     ]
 
-    for num, title, question, identity, mood, accent, pages in phases:
-        class_opener(pdf, num, title, question, identity, accent, mood)
-        for i, (label, prompt, mode) in enumerate(pages):
-            pdf.new_page(f"Class {num}", accent)
-            pdf.text(label, pdf.margin, 520, 24, "F2", INK)
-            pdf.wrapped(prompt, pdf.margin, 492, 72, 11.5, 16, color=CHARCOAL)
-            if i % 2 == 0:
-                pdf.workspace(58, 88, 488, 344, "student thinking space", grid=(mode == "grid"), lines=(mode != "grid"))
-                pdf.side_note(570, 260, 150, 172, "Reflection prompt", "What changed in your thinking? What assumption is doing the most work? What evidence would make this stronger?", accent)
-                pdf.side_note(570, 88, 150, 128, "Revision marker", "Original idea:\n\nRevised idea:\n\nReason for change:", accent)
-            else:
-                pdf.side_note(58, 285, 164, 145, "Explain why", "Do not only write the model. Explain why this model fits and where it fails.", accent)
-                pdf.workspace(248, 88, 486, 344, "open canvas", grid=(mode == "grid"), lines=(mode != "grid"))
-        if num in [2, 3, 4]:
-            pdf.new_page(f"Class {num}", accent)
-            pdf.text("Model comparison studio", pdf.margin, 520, 24, "F2", INK)
-            pdf.wrapped("Changing assumptions creates different mathematical realities. Compare at least three related model versions.", pdf.margin, 492, 75, 11.5, 16, color=CHARCOAL)
-            pdf.workspace(58, 100, 210, 330, "version A", grid=True)
-            pdf.workspace(291, 100, 210, 330, "version B", grid=True)
-            pdf.workspace(524, 100, 210, 330, "version C", grid=True)
-        if num == 4:
-            pdf.new_page("Class 4", accent)
-            pdf.text("Polynomial interpretation studio", pdf.margin, 520, 24, "F2", INK)
-            pdf.wrapped("Use this page to connect polynomial structure to physical meaning.", pdf.margin, 492, 72, 11.5, 16, color=CHARCOAL)
-            pdf.card(58, 312, 210, 120, "Factored form", "What does it reveal about dimensions, intercepts, or zero-volume situations?", PURPLE, PURPLE_SOFT, 26)
-            pdf.card(291, 312, 210, 120, "Standard form", "What does it make easier to analyze or compare?", PURPLE, PURPLE_SOFT, 26)
-            pdf.card(524, 312, 210, 120, "Domain", "Which x-values are mathematically valid but physically unrealistic?", PURPLE, PURPLE_SOFT, 26)
-            pdf.workspace(58, 90, 676, 160, "end behavior, extrema, multiplicity, and physical interpretation", lines=True)
+    for class_num, title, question, accent, pages in phases:
+        story += section(class_num, title, question)
+        story.append(card("Field notebook expectation", "Use this section as a place for rough work, uncertainty, recalculation, and revision. Let the thinking stay visible.", accent, WHITE))
+        story.append(PageBreak())
+        for label, prompt, grid in pages:
+            journal_page(story, label, prompt, "student thinking space", grid)
+        if class_num in ["Class 2", "Class 3", "Class 4"]:
+            story += section(f"{class_num} Model Comparison Studio", "Changing assumptions creates different mathematical realities.", "Compare at least three related model versions. Focus on what changes mathematically and what changes in the real-world interpretation.")
+            story.append(Table([[Workspace("version A", 245, True), Workspace("version B", 245, True), Workspace("version C", 245, True)]], colWidths=[(PAGE_W - 100) / 3] * 3, style=TableStyle([
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 5),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+            ])))
+            story.append(PageBreak())
 
-    pdf.save(OUT / "investigation-journal.pdf")
+    d = doc(OUT / "investigation-journal.pdf", "Enhanced Investigation Journal")
+    d.build(story, onFirstPage=footer, onLaterPages=footer)
 
 
-def rubric_category(pdf, number, title, purpose, indicators, descriptors, accent):
-    pdf.new_page("Rubric", accent)
-    pdf.text(f"STANDARD {number}", pdf.margin, 520, 9.5, "F2", accent)
-    pdf.text(title, pdf.margin, 484, 26, "F2", INK)
-    pdf.wrapped(purpose, pdf.margin, 452, 76, 11.5, 16, color=CHARCOAL)
-    pdf.card(58, 268, 238, 132, "Look for", "\n".join(indicators), accent, PAPER, 28)
-    levels = [
-        ("1 Beginning", descriptors[0]),
-        ("2 Developing", descriptors[1]),
-        ("3 Proficient", descriptors[2]),
-        ("4 Advanced", descriptors[3]),
-    ]
-    x = 320
-    y = 314
-    for i, (level, desc) in enumerate(levels):
-        pdf.card(x, y, 190, 86, level, desc, accent, (250, 251, 253), 23)
-        if i % 2 == 0:
-            x = 530
-        else:
-            x = 320
-            y -= 106
-    pdf.side_note(58, 112, 238, 94, "Student self-check", "What evidence proves you are at the level you claim? Where is that evidence visible?", accent)
-    pdf.workspace(320, 92, 400, 108, "teacher notes / evidence codes", lines=True)
+def rubric_level_card(level, descriptor, accent):
+    title = level
+    t = Table([[p(title, "RubricLevel")], [p(descriptor, "RubricBody")]], colWidths=[None])
+    t.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), WHITE),
+        ("BOX", (0, 0), (-1, -1), 0.8, LINE),
+        ("LINEABOVE", (0, 0), (-1, 0), 4, accent),
+        ("LEFTPADDING", (0, 0), (-1, -1), 12),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 12),
+        ("TOPPADDING", (0, 0), (-1, -1), 10),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 10),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ]))
+    return t
 
 
-def build_rubrics():
-    # The finalized rubric is maintained directly at downloads/rubrics.pdf.
-    # It is not regenerated here, so approved language and descriptors remain intact.
-    return None
+def build_rubric():
+    story = [p("Algebra 2 Final Project - Semester 2", "CenterTitle")]
+    story += section("Rubric Philosophy", "Reasoning over polish.", "The project assesses reasoning, revision, interpretation, critique, mathematical communication, model selection, contextual understanding, limitations, visible thinking, and intellectual flexibility. It does not prioritize production polish, memorization, superficial correctness, or overproduced presentations.")
+    story.append(card_grid([
+        ("Standards 1-3", "Core Algebra 2 content standards: Sequences and Series, Exponentials and Logarithms, Polynomials.", GREEN, GREEN_SOFT),
+        ("Standards 4-6", "Cross-cutting skill grades: Communication and Interpretation, Comparing Models and Limitations, Algebraic Precision and Flexible Number Sense.", BLUE, BLUE_SOFT),
+    ], 2))
+    story.append(PageBreak())
 
-def build_resources():
-    # Resource links live on the website itself. No separate resource PDF is generated.
-    return None
+    level_names = ["4 — Exceeds Expectations", "3 — Meets Expectations", "2 — Approaching Expectations", "1 — Beginning"]
+    for n, title, kind, accent, fill, descriptors in RUBRIC_STANDARDS:
+        story += section(f"Standard {n} | {kind}", title)
+        story.append(card("Assessment focus", "Use visible mathematical evidence from the journal, artifacts, vlogs, and final communication. The strongest work connects graph, algebra, context, assumptions, revision, and limitations.", accent, fill))
+        story.append(spacer(8))
+        rows = [
+            [rubric_level_card(level_names[0], descriptors[0], accent), rubric_level_card(level_names[1], descriptors[1], accent)],
+            [rubric_level_card(level_names[2], descriptors[2], accent), rubric_level_card(level_names[3], descriptors[3], accent)],
+        ]
+        t = Table(rows, colWidths=[(PAGE_W - 100) / 2] * 2, hAlign="LEFT")
+        t.setStyle(TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 5),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+            ("TOPPADDING", (0, 0), (-1, -1), 6),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
+        ]))
+        story.append(t)
+        story.append(PageBreak())
+
+    d = doc(OUT / "rubrics.pdf", "Final Rubric")
+    d.build(story, onFirstPage=footer, onLaterPages=footer)
 
 
 if __name__ == "__main__":
-    build_handout()
+    build_student_overview()
     build_journal()
-    print("Generated student overview and investigation journal in downloads/")
+    build_rubric()
+    print("Generated polished landscape PDFs in downloads/")

@@ -1,3707 +1,805 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 33 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R 46 0 R 48 0 R 50 0 R 52 0 R 54 0 R 56 0 R 58 0 R 60 0 R 62 0 R 64 0 R 66 0 R 68 0 R 70 0 R 72 0 R 74 0 R 76 0 R 78 0 R 80 0 R 82 0 R 84 0 R] /Count 40 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<<
+/Contents 47 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+<<
+/Contents 48 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 6 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+<<
+/Contents 49 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 7 0 obj
-<< /Length 4278 >>
-stream
-0.980 0.984 0.992 rg
-0.00 0.00 792.00 612.00 re f
-1.000 1.000 1.000 rg
-0.784 0.816 0.863 RG
-1.20 w 651.00 300.00 m 651.00 319.88 634.88 336.00 615.00 336.00 c 595.12 336.00 579.00 319.88 579.00 300.00 c 579.00 280.12 595.12 264.00 615.00 264.00 c 634.88 264.00 651.00 280.12 651.00 300.00 c B
-0.094 0.122 0.165 rg
-BT /F2 9.75 Tf 597.75 306.00 Td (Food) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 9.75 Tf 592.50 292.50 Td (System) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 517.50 369.00 l S
-1.000 1.000 1.000 rg
-0.133 0.439 0.302 RG
-1.40 w 538.50 369.00 m 538.50 380.60 529.10 390.00 517.50 390.00 c 505.90 390.00 496.50 380.60 496.50 369.00 c 496.50 357.40 505.90 348.00 517.50 348.00 c 529.10 348.00 538.50 357.40 538.50 369.00 c B
-0.133 0.439 0.302 rg
-BT /F2 7.4 Tf 543.00 366.75 Td (Climate) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 646.50 388.50 l S
-1.000 1.000 1.000 rg
-0.141 0.357 0.588 RG
-1.40 w 667.50 388.50 m 667.50 400.10 658.10 409.50 646.50 409.50 c 634.90 409.50 625.50 400.10 625.50 388.50 c 625.50 376.90 634.90 367.50 646.50 367.50 c 658.10 367.50 667.50 376.90 667.50 388.50 c B
-0.141 0.357 0.588 rg
-BT /F2 7.4 Tf 672.00 386.25 Td (Transport) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 724.50 321.00 l S
-1.000 1.000 1.000 rg
-0.404 0.286 0.557 RG
-1.40 w 745.50 321.00 m 745.50 332.60 736.10 342.00 724.50 342.00 c 712.90 342.00 703.50 332.60 703.50 321.00 c 703.50 309.40 712.90 300.00 724.50 300.00 c 736.10 300.00 745.50 309.40 745.50 321.00 c B
-0.404 0.286 0.557 rg
-BT /F2 7.4 Tf 750.00 318.75 Td (Storage) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 703.50 226.50 l S
-1.000 1.000 1.000 rg
-0.404 0.286 0.557 RG
-1.40 w 724.50 226.50 m 724.50 238.10 715.10 247.50 703.50 247.50 c 691.90 247.50 682.50 238.10 682.50 226.50 c 682.50 214.90 691.90 205.50 703.50 205.50 c 715.10 205.50 724.50 214.90 724.50 226.50 c B
-0.404 0.286 0.557 rg
-BT /F2 7.4 Tf 729.00 224.25 Td (Exports) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 582.00 202.50 l S
-1.000 1.000 1.000 rg
-0.588 0.259 0.259 RG
-1.40 w 603.00 202.50 m 603.00 214.10 593.60 223.50 582.00 223.50 c 570.40 223.50 561.00 214.10 561.00 202.50 c 561.00 190.90 570.40 181.50 582.00 181.50 c 593.60 181.50 603.00 190.90 603.00 202.50 c B
-0.588 0.259 0.259 rg
-BT /F2 7.4 Tf 607.50 200.25 Td (Food loss) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 495.00 268.50 l S
-1.000 1.000 1.000 rg
-0.141 0.357 0.588 RG
-1.40 w 516.00 268.50 m 516.00 280.10 506.60 289.50 495.00 289.50 c 483.40 289.50 474.00 280.10 474.00 268.50 c 474.00 256.90 483.40 247.50 495.00 247.50 c 506.60 247.50 516.00 256.90 516.00 268.50 c B
-0.141 0.357 0.588 rg
-BT /F2 7.4 Tf 520.50 266.25 Td (Demand) Tj ET
-0.678 0.722 0.780 RG
-1.40 w 615.00 300.00 m 487.50 326.25 l S
-1.000 1.000 1.000 rg
-0.133 0.439 0.302 RG
-1.40 w 508.50 326.25 m 508.50 337.85 499.10 347.25 487.50 347.25 c 475.90 347.25 466.50 337.85 466.50 326.25 c 466.50 314.65 475.90 305.25 487.50 305.25 c 499.10 305.25 508.50 314.65 508.50 326.25 c B
-0.133 0.439 0.302 rg
-BT /F2 7.4 Tf 513.00 324.00 Td (Supply) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8 Tf 568.50 244.50 Td (interconnected pressures) Tj ET
-0.392 0.455 0.545 rg
-BT /F2 9.5 Tf 58.00 505.00 Td (ALGEBRA 2 CUMULATIVE SEMESTER FINAL PROJECT) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 42 Tf 58.00 450.00 Td (Systems) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 42 Tf 58.00 402.00 Td (Under Pressure) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 18 Tf 58.00 362.00 Td (The Mathematics of Food Systems) Tj ET
-1.000 1.000 1.000 rg
-58.00 220.00 310.00 92.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 220.00 310.00 92.00 re S
-0.094 0.122 0.165 rg
-58.00 220.00 7.00 92.00 re f
-0.094 0.122 0.165 rg
-BT /F2 15 Tf 80.00 278.00 Td ("All models are wrong, but some are) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 15 Tf 80.00 258.00 Td (useful.") Tj ET
-0.392 0.455 0.545 rg
-BT /F1 10 Tf 80.00 240.00 Td (George Box) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 12 Tf 58.00 150.00 Td (A spacious mathematical field notebook for sketching,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 12 Tf 58.00 133.00 Td (modeling, revising, and explaining.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (1) Tj ET
-endstream
+<<
+/Contents 50 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+<<
+/Contents 51 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 9 0 obj
-<< /Length 2342 >>
-stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (JOURNAL NORMS) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (JOURNAL NORMS) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 28 Tf 58.00 518.00 Td (Rough work belongs here.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 488.00 Td (This journal is not a worksheet packet. It is the visible record of your group's) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 472.00 Td (evolving mathematical thinking.) Tj ET
-0.886 0.910 0.941 RG
-0.80 w 58.00 458.00 m 734.00 458.00 l S
-1.000 1.000 1.000 rg
-58.00 298.00 300.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 298.00 300.00 120.00 re S
-0.094 0.122 0.165 rg
-58.00 410.00 300.00 8.00 re f
-0.094 0.122 0.165 rg
-BT /F2 14 Tf 76.00 385.00 Td (Value uncertainty) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 360.00 Td (Label assumptions, questions,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 345.50 Td (disagreements, and places where a) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 331.00 Td (model stops making sense.) Tj ET
-1.000 1.000 1.000 rg
-410.00 298.00 300.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 410.00 298.00 300.00 120.00 re S
-0.094 0.122 0.165 rg
-410.00 410.00 300.00 8.00 re f
-0.094 0.122 0.165 rg
-BT /F2 14 Tf 428.00 385.00 Td (Revise visibly) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 428.00 360.00 Td (Cross out, annotate, draw arrows,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 428.00 345.50 Td (compare versions, and explain why) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 428.00 331.00 Td (your thinking changed.) Tj ET
-0.980 0.984 0.992 rg
-58.00 140.00 652.00 86.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 140.00 652.00 86.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 72.00 202.00 Td (FIELD NOTE STYLE) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 182.00 Td (Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 169.00 Td (limitations, and revision together.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (2) Tj ET
-endstream
+<<
+/Contents 52 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 10 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+<<
+/Contents 53 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 11 0 obj
-<< /Length 5590 >>
-stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (RUBRIC ALIGNMENT) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (RUBRIC ALIGNMENT) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 28 Tf 58.00 518.00 Td (Use the journal to make standards visible.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 488.00 Td (The rubric does not only score final answers. It looks for reasoning,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 472.00 Td (interpretation, revision, limitations, precision, and flexible thinking across the) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 456.00 Td (investigation.) Tj ET
-0.886 0.910 0.941 RG
-0.80 w 58.00 458.00 m 734.00 458.00 l S
-0.392 0.455 0.545 rg
-BT /F2 9 Tf 58.00 420.00 Td (CORE CONTENT STANDARDS) Tj ET
-1.000 1.000 1.000 rg
-58.00 270.00 204.00 122.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 270.00 204.00 122.00 re S
-0.133 0.439 0.302 rg
-58.00 384.00 204.00 8.00 re f
-0.133 0.439 0.302 rg
-BT /F2 14 Tf 76.00 359.00 Td (1. Sequences and Series) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 334.00 Td (discrete change,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 319.50 Td (arithmetic vs geometric) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 305.00 Td (patterns, recursive vs) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 290.50 Td (explicit forms, finite vs) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 276.00 Td (infinite reasoning,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 261.50 Td (cumulative sums in) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 247.00 Td (context) Tj ET
-1.000 1.000 1.000 rg
-294.00 270.00 204.00 122.00 re f
-0.878 0.898 0.925 RG
-1.00 w 294.00 270.00 204.00 122.00 re S
-0.141 0.357 0.588 rg
-294.00 384.00 204.00 8.00 re f
-0.141 0.357 0.588 rg
-BT /F2 14 Tf 312.00 359.00 Td (2. Exponentials and Logarithms) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 334.00 Td (growth and decay, growth) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 319.50 Td (factors, thresholds,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 305.00 Td (logarithmic reasoning,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 290.50 Td (realistic interpretation) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 276.00 Td (and limitations) Tj ET
-1.000 1.000 1.000 rg
-530.00 270.00 204.00 122.00 re f
-0.878 0.898 0.925 RG
-1.00 w 530.00 270.00 204.00 122.00 re S
-0.404 0.286 0.557 rg
-530.00 384.00 204.00 8.00 re f
-0.404 0.286 0.557 rg
-BT /F2 14 Tf 548.00 359.00 Td (3. Polynomials) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 334.00 Td (degree, leading) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 319.50 Td (coefficient, end) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 305.00 Td (behavior, intercepts,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 290.50 Td (multiplicity, extrema,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 276.00 Td (polynomial forms, and) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 261.50 Td (realistic domain) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 247.00 Td (restrictions) Tj ET
-0.392 0.455 0.545 rg
-BT /F2 9 Tf 58.00 226.00 Td (SKILL GRADES) Tj ET
-0.980 0.984 0.992 rg
-58.00 86.00 204.00 114.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 86.00 204.00 114.00 re S
-0.094 0.122 0.165 rg
-58.00 192.00 204.00 8.00 re f
-0.094 0.122 0.165 rg
-BT /F2 14 Tf 76.00 167.00 Td (4. Mathematical Communication and Interpretation) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 142.00 Td (clear explanations,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 127.50 Td (graph-algebra-context) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 113.00 Td (connections,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 98.50 Td (assumptions,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 84.00 Td (annotations, tables, and) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 69.50 Td (contextual) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 55.00 Td (interpretation) Tj ET
-0.980 0.984 0.992 rg
-294.00 86.00 204.00 114.00 re f
-0.878 0.898 0.925 RG
-1.00 w 294.00 86.00 204.00 114.00 re S
-0.278 0.333 0.412 rg
-294.00 192.00 204.00 8.00 re f
-0.278 0.333 0.412 rg
-BT /F2 14 Tf 312.00 167.00 Td (5. Comparing Models, Assumptions, and Limitations) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 142.00 Td (model comparison,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 127.50 Td (realism, hidden) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 113.00 Td (variables, tradeoffs,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 98.50 Td (assumptions,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 84.00 Td (unreasonable) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 69.50 Td (predictions, and) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 55.00 Td (meaningful revision) Tj ET
-0.980 0.984 0.992 rg
-530.00 86.00 204.00 114.00 re f
-0.878 0.898 0.925 RG
-1.00 w 530.00 86.00 204.00 114.00 re S
-0.094 0.122 0.165 rg
-530.00 192.00 204.00 8.00 re f
-0.094 0.122 0.165 rg
-BT /F2 14 Tf 548.00 167.00 Td (6. Algebraic Precision and Flexible Number Sense) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 142.00 Td (accurate methods,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 127.50 Td (factoring, logarithms,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 113.00 Td (substitution, graph) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 98.50 Td (interpretation, rational) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 84.00 Td (numbers, units, and) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 548.00 69.50 Td (reasonableness checks) Tj ET
-endstream
+<<
+/Contents 54 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 12 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+<<
+/Contents 55 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 13 0 obj
-<< /Length 1092 >>
-stream
-0.980 0.984 0.992 rg
-0.00 0.00 792.00 612.00 re f
-0.278 0.333 0.412 rg
-58.00 106.00 8.00 360.00 re f
-0.278 0.333 0.412 rg
-BT /F2 10 Tf 92.00 448.00 Td (CLASS 1) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 34 Tf 92.00 398.00 Td (Entering the System) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 342.00 Td (What relationships are we beginning to notice?) Tj ET
-0.980 0.984 0.992 rg
-520.00 310.00 190.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 520.00 310.00 190.00 120.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 534.00 406.00 Td (EXPLORATORY FIELD NOTES) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 534.00 386.00 Td (Open, uncertain, observational.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 205.00 Td (Use this section as a field notebook. Let rough work,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 187.00 Td (uncertainty, recalculation, and revision stay visible.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (4) Tj ET
-endstream
+<<
+/Contents 56 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 14 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+<<
+/Contents 57 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 15 0 obj
-<< /Length 3744 >>
-stream
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 1) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (System map canvas) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Sketch variables, links, pressures, unknowns, and possible feedback) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (loops.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (5) Tj ET
-endstream
+<<
+/Contents 58 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 16 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
+<<
+/Contents 59 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 17 0 obj
-<< /Length 1997 >>
-stream
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 1) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Variable table and measurement notes) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Variable | Units | Why it matters | What is hard to measure) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (6) Tj ET
-endstream
+<<
+/Contents 60 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 18 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
+<<
+/Contents 61 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 19 0 obj
-<< /Length 3760 >>
-stream
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 1) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Sketch before technology) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Predict the shape of one relationship before using Desmos, Sheets, or) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (another tool.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (7) Tj ET
-endstream
+<<
+/Contents 62 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 20 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 21 0 R >>
+<<
+/Contents 63 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 21 0 obj
-<< /Length 1751 >>
-stream
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 1) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Vlog notes) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Patterns noticed, uncertainties, assumptions, important variables.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.278 0.333 0.412 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-endstream
+<<
+/Contents 64 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 22 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 23 0 R >>
+<<
+/Contents 65 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 23 0 obj
-<< /Length 1066 >>
-stream
-0.980 0.984 0.992 rg
-0.00 0.00 792.00 612.00 re f
-0.133 0.439 0.302 rg
-58.00 106.00 8.00 360.00 re f
-0.133 0.439 0.302 rg
-BT /F2 10 Tf 92.00 448.00 Td (CLASS 2) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 34 Tf 92.00 398.00 Td (Modeling Change) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 342.00 Td (How is the system changing over time?) Tj ET
-0.980 0.984 0.992 rg
-520.00 310.00 190.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 520.00 310.00 190.00 120.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 534.00 406.00 Td (PATTERN STUDIO) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 534.00 386.00 Td (Structured repeated change.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 205.00 Td (Use this section as a field notebook. Let rough work,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 187.00 Td (uncertainty, recalculation, and revision stay visible.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (9) Tj ET
-endstream
+<<
+/Contents 66 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 24 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 25 0 R >>
+<<
+/Contents 67 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 25 0 obj
-<< /Length 2707 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Discrete vs continuous comparison) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Why is a sequence appropriate? What would change in a continuous model?) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (10) Tj ET
-endstream
+<<
+/Contents 68 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 26 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 27 0 R >>
+<<
+/Contents 69 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 27 0 obj
-<< /Length 1996 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Arithmetic, geometric, or neither?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Use evidence. Explain what each term represents in context.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (11) Tj ET
-endstream
+<<
+/Contents 70 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 28 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 29 0 R >>
+<<
+/Contents 71 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 29 0 obj
-<< /Length 3684 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Recursive and explicit formulas) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Write both formulas. Annotate every variable and parameter.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (12) Tj ET
-endstream
+<<
+/Contents 72 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 30 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 31 0 R >>
+<<
+/Contents 73 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 31 0 obj
-<< /Length 1986 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Finite or infinite series) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (What does the cumulative sum represent in the real system?) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (13) Tj ET
-endstream
+<<
+/Contents 74 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 32 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 33 0 R >>
+<<
+/Contents 75 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 33 0 obj
-<< /Length 3677 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Model versions) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Compare 0-5, 0-10, and 0-20. What changes in realism and reliability?) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (14) Tj ET
-endstream
+<<
+/BaseFont /Symbol /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 34 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 35 0 R >>
+<<
+/Contents 76 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 35 0 obj
-<< /Length 2002 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Individual artifact snapshot) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Recalculation, comparison, graph interpretation, or revised assumption.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (15) Tj ET
-endstream
+<<
+/Contents 77 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 36 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 37 0 R >>
+<<
+/Contents 78 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 37 0 obj
-<< /Length 4323 >>
-stream
-0.133 0.439 0.302 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 2) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Model comparison studio) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Changing assumptions creates different mathematical realities. Compare at) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (least three related model versions.) Tj ET
-1.000 1.000 1.000 rg
-58.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 406.00 Td (version A) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 112.00 m 86.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 112.00 m 114.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 112.00 m 142.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 112.00 m 170.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 112.00 m 198.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 112.00 m 226.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 112.00 m 254.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 128.00 m 256.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 156.00 m 256.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 184.00 m 256.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 212.00 m 256.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 240.00 m 256.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 268.00 m 256.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 296.00 m 256.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 324.00 m 256.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 352.00 m 256.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 380.00 m 256.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 408.00 m 256.00 408.00 l S
-1.000 1.000 1.000 rg
-291.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 291.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 305.00 406.00 Td (version B) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 319.00 112.00 m 319.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 347.00 112.00 m 347.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 375.00 112.00 m 375.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 403.00 112.00 m 403.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 431.00 112.00 m 431.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 459.00 112.00 m 459.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 487.00 112.00 m 487.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 128.00 m 489.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 156.00 m 489.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 184.00 m 489.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 212.00 m 489.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 240.00 m 489.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 268.00 m 489.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 296.00 m 489.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 324.00 m 489.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 352.00 m 489.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 380.00 m 489.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 408.00 m 489.00 408.00 l S
-1.000 1.000 1.000 rg
-524.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 524.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 538.00 406.00 Td (version C) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 552.00 112.00 m 552.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 580.00 112.00 m 580.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 608.00 112.00 m 608.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 636.00 112.00 m 636.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 664.00 112.00 m 664.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 692.00 112.00 m 692.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 720.00 112.00 m 720.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 128.00 m 722.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 156.00 m 722.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 184.00 m 722.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 212.00 m 722.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 240.00 m 722.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 268.00 m 722.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 296.00 m 722.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 324.00 m 722.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 352.00 m 722.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 380.00 m 722.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 408.00 m 722.00 408.00 l S
-endstream
+<<
+/Contents 79 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 38 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 39 0 R >>
+<<
+/Contents 80 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 39 0 obj
-<< /Length 1168 >>
-stream
-0.980 0.984 0.992 rg
-0.00 0.00 792.00 612.00 re f
-0.141 0.357 0.588 rg
-58.00 106.00 8.00 360.00 re f
-0.141 0.357 0.588 rg
-BT /F2 10 Tf 92.00 448.00 Td (CLASS 3) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 34 Tf 92.00 398.00 Td (Acceleration, Decay, and Thresholds) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 342.00 Td (When does repeated change become accelerated or) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 320.00 Td (compounding?) Tj ET
-0.980 0.984 0.992 rg
-520.00 310.00 190.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 520.00 310.00 190.00 120.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 534.00 406.00 Td (DYNAMIC MODELING) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 534.00 386.00 Td (Rates reshape thresholds.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 205.00 Td (Use this section as a field notebook. Let rough work,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 187.00 Td (uncertainty, recalculation, and revision stay visible.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (17) Tj ET
-endstream
+<<
+/Contents 81 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 40 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 41 0 R >>
+<<
+/Contents 82 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 41 0 obj
-<< /Length 2689 >>
-stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Exponential vs linear) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Why does exponential reasoning fit better than repeated addition?) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (18) Tj ET
-endstream
+<<
+/Contents 83 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 42 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 43 0 R >>
+<<
+/Contents 84 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 43 0 obj
-<< /Length 2091 >>
-stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Sampled values vs continuous model) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (How does continuous exponential modeling change the interpretation) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (compared to discrete terms?) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (19) Tj ET
-endstream
+<<
+/Contents 85 0 R /MediaBox [ 0 0 792 612 ] /Parent 46 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 44 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 45 0 R >>
+<<
+/PageMode /UseNone /Pages 46 0 R /Type /Catalog
+>>
 endobj
 45 0 obj
-<< /Length 3745 >>
-stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Build the model) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Starting value, growth factor, variables, assumptions, and realistic) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (domain.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (20) Tj ET
-endstream
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260517072233-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260517072233-05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Enhanced Investigation Journal) /Trapped /False
+>>
 endobj
 46 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 47 0 R >>
+<<
+/Count 39 /Kids [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 
+  14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 
+  24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 34 0 R 
+  35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R ] /Type /Pages
+>>
 endobj
 47 0 obj
-<< /Length 2984 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1811
+>>
 stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Logarithmic threshold) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Show algebraic steps, graph verification, units, and interpretation.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 276.00 100.00 m 276.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 304.00 100.00 m 304.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 332.00 100.00 m 332.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 360.00 100.00 m 360.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 388.00 100.00 m 388.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 416.00 100.00 m 416.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 444.00 100.00 m 444.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 472.00 100.00 m 472.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 500.00 100.00 m 500.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 528.00 100.00 m 528.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 556.00 100.00 m 556.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 584.00 100.00 m 584.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 612.00 100.00 m 612.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 640.00 100.00 m 640.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 668.00 100.00 m 668.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 696.00 100.00 m 696.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 724.00 100.00 m 724.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 116.00 m 722.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 144.00 m 722.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 172.00 m 722.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 200.00 m 722.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 228.00 m 722.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 256.00 m 722.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 284.00 m 722.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 312.00 m 722.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 340.00 m 722.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 368.00 m 722.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 396.00 m 722.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 424.00 m 722.00 424.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (21) Tj ET
-endstream
+Gatm<D0+/c&H;*)Z,<I\EsP@'AGK`YV$p&.K/VNZOLc_LgV#R0b09hZgD="8BEGjd_E_.fp?g8qZOR0rr\=?>Z3<4U_t-e/`kqW\N)L5KB/#ekIhaHa;3s/=g/Pmgq!AJ^E;m.>!PT6g32:G0,IC9mXfNam%2VGg)TcTNLW-&=CMQ$NEo,@#K(@4Q3l:$J'MJj-N#E5u(61#]%bmj$i-fh&CuF]X)2?m?"961,qRZL,=b)4T<OZ)j<r].%DL[65-^[+ED\J>"o;\hXB[f^N]u*7EkDI_C)DafuE(BM[`5a9?7`f8$9Lc@16$^k(>b2k8icq&e>)4GuAODcENmD%W:<nnT\JO_l]K\KL^\W!U(UH',Mtu]Z:1*sKHj4N8s*-\R1#GRah+gAhq_=fc[uS-_:4dlR'r,Q@"+Dq;:"L@N)/iBhT^sb>0626CHQD"#_*jJa3Tsj0]J>+K)3[rS-M*9-]NK&82XOtc=q8nd_.he6NkT^H4:mE(-'mB-+\I-,]>2g9pb3>&:)aog4Q?TGh:9up(Bg%mGQ0OC2eHqIRuNs6PN2<SgA\B\&$Wi'^23Z6qH*H2]7lqs)h)rl1fq/%p#KNW(lp+E1g#ku<G'@F#D&[$T_q\r&d/ombGO0%2fR4&m;_e;s*d;kn1c+'W#1/hI-(t!NQAbpn81[KGt#BnE<Q*JhKc&tkOOIb7Ll,Orr)TI^O&d5:-U:sa2;Su3fN,S$oa++WkTRIc#o">G-u)9QdGE[k!S$UL9#b*_rkXDr4&J*k;m!be,6lt=B]h@D:%(oX;@oIT<!UPJ>c;u'f%Z`W2^+F9V\U9+hTd=,%LhD;2-5Mf&>F&_g#AuOX]B=VHYB^P*'K$m\*@<XkpO",0FKPZP@6imCjT63cX&;+WXKRKXn:+"9`"=4[dGQlP!bX.F#"L5*"p'N:ne"?o'!FLu:`]-nPh%K@8>:]WCd*7oj;?=g2!IAaq$hp8C>7NbtJ?VFDXiqVmN)Nbhjg4T,;I0R<#*d\J(H_3%*n8tLZ6rqtoOY*:9Ud!@I%-YMm6eH2K9g=3rH9@3/9;EKnRV[+Hr9:J>^;QR21*hgC<')P'i<KXL:CeYSl<4q;7a==J.aB/jOiH3+C1$Tl$WBsHa(>/pE`Vl`uj%?iL:ZNSK8hhikg\;?6MD)UT?sg!:fZhZI]SsK2W041laUqkp69W<2C6tBf9sW;5V-c;Z#:M?A2NeW1:f73m2LO.Si[*9qF!=[_+NS:E`3FT%*Z!E@/Q4p0dX?KEgjtD*$(TQ1Jf2,pB$h&HrFWYX4#`J<d&i2XcE>s=cI[n`g/0IqJ\eoYV1dZnaGARfgFRn@)oR^L-!=D(99HK1"bomV%`qsM2j)qC@u2=DjPU0N"6ho`\54q6<77JpI^?Q@?ZM3XNB7@?[nWSUS3OGoBdK<X'2&SAG:G4?*`l;k'+J*1@hfUFPWlR_++[1q%-'R`TZ9A$=_!EVVZ>kXp>tu<BQcmG2XJD`de!Tn"YJ2"^*[M:J'(H"PN[&T\s-/J8KM-\5ugJ27!SOlH!XWG01\7']X*>+1GWg1D$T&XT?cs48peI*,Xtm2ABO*2!:,*dO4')GbZbt3X[koSg-j8DPAs,rR;P>d,DY=-m:_<LA\eI)k<5CI:<WjX.9jh-qp"<EG^]j60onf?kr4!6lRr5#FED)?=)!l^d\n\>&Z)/L)bhI;OO=DcQd;2-pF<HuM2"F*j/C-^`[4oKpq72)SDB5U3Neu/*F0te.TCP;F0kj,Ja<3JQhUDJ_K>3T1,t-'gr-5I2Oe:8Fj4s]>f'53JNA2MK4!L,U%fEbfq'A~>endstream
 endobj
 48 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 49 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1066
+>>
+stream
+Gb!l]?Z4[W&A[3%.IM%UOg-*!=jge=/DH&h>og?AN-(2H8>Jo,E=MQXmjM=2ZJ(+m'a'1NLddHHqnr=$c5\&)j26)o"8lE>b6neb5]Hm21'toGr)tX8/Qe<O;4Ia3H+K4h4XI!<XF=BX-#=A9,\Qa%1?]lU+sph;GAstB/'W[kS:jCt/C"Dp8<HSV*XQ529VOWO>DEZ8n(=S'-W'GSG-uB4HNtX7KbjZpkhO0%I">@)NRq3^J;[I/Ng@m@QMsB&DP;:eX?BILb(QV%R$<Iu;XZ']fl@u^-d.<;8S8]si$=@.&8]_knj5SWL3/S@"F^"?h1sP8=-rFMh<N88'=.oPMtk,-[%n3MNl%K&^j%&:oTeCgX;J%Yd9q*.2K]++A+/=o4/6Qr%9d;g3$@gWEkHUHJee0Uj5G('2R*q_@nsn)lk`C^i7;^\a:&NcnXp)9>_D6KXi``t%0#a)eMdd.X_Y+%"H0+]'pormd<;IjfrT[BJG5qQDflN&,&-mg9@E0r<o;<kZZ0R(5-D*@i`OJ\8&NIdjqu\]Q'cL.[$@!h)':c!(^t];@>QXO?3n[J&q1bV#hPO^Vs>[!ZXcs_.L'q1JBL5q2Pf<,l8Ane?)%"leUD`7SB*+>:JQ;M4IZ(=7DOJK>M?9/CU?0Y:E+E9E&)oD[8,6fYt+1Q6Knj.SLW%'2K0"<QL%=7qOBK[8%B/P#)CnQ7/8_=hbqusZA^7FbHds8PIZ!nWg+#nCJ%Mi-#.f:F\<6"c3r$`alnT>/94##Z*]W(a`B)Is''5k'LCYA!Se%H*`&-u?_Hd&CRbL5nUVi51<SW;<*!j%=_kI,Lau37<cg%iB\eJUJ.=dWG-*+VG!is2`M^i[AYX@,ec,k5R:[ucO<.kjk%E+Ur9^$ELjorZ/m@VAcr?)V_lgoG"Br[qnWrm'IX19H[o-doCTj[>1&/Ga.b&M]U?.dcnr?#`":m(A?n-_+6Zh6)Z_c6Mf$+;iCA^59%].Po582E`h1jqA[=(\Ucd9s!Cq+:<%GoT*?.&X=81C;EI*g%cJBhU/nD(4<!p:`U':@en(4QA2-\p:~>endstream
 endobj
 49 0 obj
-<< /Length 3676 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1214
+>>
 stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Rate comparison) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Compare 3%, 5%, and 8% growth or decay. What happens to thresholds?) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (22) Tj ET
-endstream
+Gb"/&>u0K?'RfGR\<$!4p"5:q30+IL`!R&C_[d$Tkl_WgM:7kYg)n)]c:?>t]2Z+G"Oa_nj0.6bII?X1c%+f?L&Y9Zn0s!NV[ODtllMN:!jW1naX1@B7&>c1.?Kc?Yt4@5(ma+BCdMV+4u"/s_)bXo5p@c:_O!o_:-,/mgIuU+CQ_(7B+bX[.8n<>80M]ITO.C0=;P(TPY&qG31)nA7TU(;c!8k>?#/Vh[>)HTW*JPu3X6.mKum!SZ4D94quPIQA08InOi^!^P,,`L)N@47`eb1s'CT)DPR)imGR4##Qi\YOo#FZ=aqkX]jsPRrF8P4ar"tGHcHiXG:Tgu\cWbegB]Y`'pd*fej0!ndag&53Hgo73j+mo[[n]<^7Dja`efLI'6BscME(t64Gs-B@X`26bWQ>Mk$,osh+Tf;D+psr:,\R\lEf,$B8H6W$1(:*fhUTRRk#OPt[K10dB5fYb=hP?6b`2M&CId<qJ^W7B#PYZ]>3F2"_CQ1j0TE6-C>IrF@Efs=q5O-e=]@iEl4*hbbdqtf1>J5mLS$5o;OBs2"So.-c?YY##S%459tR9)"<0!<'?^lRbs'ERW6ru@!nG.#5iKUIlX**3`u_N%ldTPdJPHjh\R0bJoaHj]*`L>f@57Zt.NZA9q`D^'+N<8T:TfPGCJ4l;.\r=AR-LkJD.]/6O7cK(Km#Q:6e<mCRo-f^FDR'GVL`I%kq*DF_VYGFR8aODM's,16k5+:PtV?-lN"&5841WPR0djAm<#ImNlMSR2N89JGU+Mu&'E=fiKV$Y"=9?5mf)fRcuHmM58/F.-Se_B"KZ5AUX=lAD=)OdK_);ki<2o)4B[:C/+PIbA6=!kG*1BFo;-bGS7t80ZIW(N@*NrS->cesKXGTe7*6/KA&-nK:<1$#)8a_D&W%\D?WS)7%untOKG#M2b]uk8&eVX^jg24WB?g=Ja/_gikg=4E8/+d_LjhWf@Rtf/oK/$sp3B)@=kDsGB4F(2[GSh/\s4+a^h&OQGD1D:/2%5[3OVqq1t^lun26Ik?TU3Z3gHS'79RK1S^6tY':FCCC5%H.4sDd$\4'q_hHbCDMp/=8G&0tCP#.;AEp!`f,!6fNg:8iliP;!/]Q[=Nh8s\SlWP;hs(><WW#`@E?XZpCD/m*.V;Bdk-RSdT'lQ4drI&495H"IfjD%iRi>$R:NSBcT2p.rJ4ojuD9eRN;g*]Sn!Ci-l;u~>endstream
 endobj
 50 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 51 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 707
+>>
+stream
+Gatm8?#Q2d'Rf.GSB%et>hdn=Su-C?-;Anj(TKV3i[,qhA3cG\g5k.!6WgCrlR!&Dq"(#&cS8LOdk/GKg]6ea>YYET7",Z?QpQ7SlTG"Z0p<IrB4.,u':%!I$#8GBa+u%o7h/-Fl:Za=;U(V/^0P4e%A:^NB!h=5al5u$9gD=ON(Yk,1sZTaL#4#-^^d#(,N%EqqU"nYe)ATsD2Z`BmCHS=nIo!s_Tpj:&sLHQ2,,qY>P;usYE5B'[RZFYdO`Z(&QCnsF\@RObc,7+$"lkm2I;!MMO6c:J:'A>0YU+N$D6tDLRY@/']KGX1R'Zo:!"'[Lm!+q%@GM*=soOZTaZ<'%t*!3[r(4Bka*%inQt0T=\?[Dgm"KP16'3E&hP+@4s[0,Q`.YOM]T"&MnWq2\#d"Y$F4Db0sce\\I_aCfCW'Whn9ejiBpSBF)e'I[3uLfD&b,]5*R<cQnin*3lHMt*q?K5ONA[<&@`]Uq@T@FLK:eLT8ZT:,D6E.-E&YuCd%O7g0)n+@=N+XF9ZGcbad<Sr#^m-lR^^rFm+XE#Z6Zsf[`J_C,@NrB"(lOhmD\Wls+8Z^8P<:E'\6(7:#<k%UPfIEuOm]Fjsp2Z$eT2K^@:HbH<K>i+H]1A^;XpM4PFs&T%pk#%gOQ;`tm0?URR9,(jg'UN<-lMhhbONoU&Z+Fh%A>]C,AdN;0\qTnfCiC<GInr#HW~>endstream
 endobj
 51 0 obj
-<< /Length 2061 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1132
+>>
 stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Model breakdown) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Where does exponential behavior stop being realistic? What hidden) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (variables matter?) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (23) Tj ET
-endstream
+Gat%"9lJcG&A@C2bV:&Q)3Q14l;XQJ;dcj^RbDV`7n%$!`VT'rEe=GlnXU7@M.nm#ej2FE:ZT0ViG`T6*<3tL?8_ee[W$445Y0PaJl#.Wp2>2^:&[kSbq2_4@(@tZ12)q<"<ZMJ/;&_R"XP"7Q51AmRPUoKf<@hu;bK;q>jPb%1m^P(,GeDc,quGXcRnd5ZpBA\]MkM4gVDM)gG$3NJ5>RXp$eZ!_f4l]I##oAcJA*r8@Y\RU;f^Z]dq,f@!`F=F&Ip$)PrkDjm5r:X0+2)7G3d.c8\`0CI9ECV2.-&2L3$HP$eT*,m>TC[eXRBIIds*?%.=UQg[.GDB;A6'j#[lMXq6`.*eg](7<G]d1c%ld?]u<b.[G`NTD4q(4B3<e8G$plDd"?3JK"-4LKsQHY=!+m;<F$m+;b7Kj3Kd\_TtW*h_r4j1tXIFu./[5LTfE,-5%timS"%`70'[Wg?ueDXe&_m9l?IWD8#4P[;-VFWg+)W>'2YEHRIYOeJlj/b/T][NYs9mjZ_?%Mb[k1*J0-RFY6E$GUc;,cq:A7(,M0AEtL#TauP,`$\>,-A5*SmpT3M`8V5!p;s@VTBb,LGZB4Y8dGhV9;gVe`m`5@,E-t3bc8@/iE2<s3Z46)D(U(V-+ZM)Rt`PtdaP>;4,OLeZ4^6cI;Q7T4c+>.Xn!akPn\IB'2'IB'b<-QLsCSjJV_U(*eBTRZMN3a/1G_',S8@hc^D_7.1_RE,!$0r"<ol7Oousi&!@&r>0.mY+JMkt,S8?M8.p_nc%@9m\:XL,=@')k&p*alJq_.%4c*Pi"h0%/[*k=\TFn;J2QIEnl$V&,["]o?77'kiFpZhp5.^YkF)JiWb=uYAqHBR&[</aQ92)B<2L9,r"Tb.`\*(Li.WDVM<;tb,P]@h7Qj1+/e(FT^DJT.oWOd8DLOIboa(M=-,Ta<I.iE5FlGqH$Z?H&HTR=UAct$#ObJ"geg_]@KgHjB,\*ha!@E_gP-.&rO/o[1fGSi,6"7/'R&T)O7FMe@p?%;W`TDMgN,Uj`t44QE+MM$h`"rP@o_a+'bs,m+apj\@>&89QA*6C+&7PDLjB\:sOf(``lVLp2UqhAkE3W=ind2N&Wn]p<X(A7=+En;IJD^"oW].*k'~>endstream
 endobj
 52 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 53 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1006
+>>
+stream
+Gat%!hbVu\&:Vr4EK:NB`]rJ8GsXqMdjAIt%GPqp6Q9\OQ@pEWrUIM+P;HjD5nUZn`P1g4q7E[-Ndno/ZP)1AJYQ-E6:,\p,%MiBB/!,5?NIL<jXLHM$PS3uD(*b``TMb?n/,+9$ARH7KbB@,9SVVH@2\]//`hq2YtrJ@/;;)3TakQbJa$#&fKupA%AG64P6qaj#m\YO[`ci0Y,YLY_"T0ogP7,25;:ipoBR_,$)^4WDXg_TRqLO^88]S2,d^-8'5D,g3@'S2X"Nq8,I/J'*H;jL=;ra+Ri$4.b[it!Q!h_Q8d[WO_2m:/bO";+%Z,PX/j@,II($[kbg5Gg$!_jNk0#nG0CY*=a+m1[5sCh,_?(BSUA#1jOc=Hn'_c.dVF[o"<5,E5kZY>X2c!7l:o7Nb2a3=H:pdGuRh^$&P^,k9ruX`pE1FYk#&>B9*9hP=_NT,:j/u@%Ph_W@'^]:jPtEQ77aVI.-1TqXE(@&4MlY#dM[8].ck:7lU'e.*pf'p+=2,<#Qj%#s0lA!<<VWu^->>>6-F+M$-G'``,kQfZ2K>'4_ZQUhn_(,2%7RP4Jk^3)k`<<="a8#"\j7ID83,A3h8:_G3p8IjF]VOXB^aDdH8@,7g02]792(2^MhCj`e?36EGfjF+C2TS4c0E4!)grR:0e?eaLWS;)N>TOrmD=\5LXFk1jT%m/0$FPko#@mS&FBTS)XsI-S/Tc('Pt_Y:j[dnKPL?iMG7G)RW;@b958ObU=C$;NtqL^%Z['K_mdf*.k$X0?cu&%oIO</V7!I=(\u;kk?:_a_aP[&2g'E'^"SSY]Z8#ja^/8q\'T1u4,tpS:G5U?(;\f\a>Rb?c<!hAn5MV/,E5!Da)5LJi=mXrdR1l.7TMCLQu'm<XP44+lfRWg^AN2+lHXEtpTRr^7(UR>:bB%[;^7Fepk=o]`W'0?_'8]13$rGeN?3SZVua!K^VA@J>qC8-2,jr*j*MA%=l\E-msOM;&Pp.KGM/2R(4s:,(:45~>endstream
 endobj
 53 0 obj
-<< /Length 4323 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1157
+>>
 stream
-0.141 0.357 0.588 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 3) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Model comparison studio) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Changing assumptions creates different mathematical realities. Compare at) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (least three related model versions.) Tj ET
-1.000 1.000 1.000 rg
-58.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 406.00 Td (version A) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 112.00 m 86.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 112.00 m 114.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 112.00 m 142.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 112.00 m 170.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 112.00 m 198.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 112.00 m 226.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 112.00 m 254.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 128.00 m 256.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 156.00 m 256.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 184.00 m 256.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 212.00 m 256.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 240.00 m 256.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 268.00 m 256.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 296.00 m 256.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 324.00 m 256.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 352.00 m 256.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 380.00 m 256.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 408.00 m 256.00 408.00 l S
-1.000 1.000 1.000 rg
-291.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 291.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 305.00 406.00 Td (version B) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 319.00 112.00 m 319.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 347.00 112.00 m 347.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 375.00 112.00 m 375.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 403.00 112.00 m 403.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 431.00 112.00 m 431.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 459.00 112.00 m 459.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 487.00 112.00 m 487.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 128.00 m 489.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 156.00 m 489.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 184.00 m 489.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 212.00 m 489.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 240.00 m 489.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 268.00 m 489.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 296.00 m 489.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 324.00 m 489.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 352.00 m 489.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 380.00 m 489.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 408.00 m 489.00 408.00 l S
-1.000 1.000 1.000 rg
-524.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 524.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 538.00 406.00 Td (version C) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 552.00 112.00 m 552.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 580.00 112.00 m 580.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 608.00 112.00 m 608.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 636.00 112.00 m 636.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 664.00 112.00 m 664.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 692.00 112.00 m 692.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 720.00 112.00 m 720.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 128.00 m 722.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 156.00 m 722.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 184.00 m 722.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 212.00 m 722.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 240.00 m 722.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 268.00 m 722.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 296.00 m 722.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 324.00 m 722.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 352.00 m 722.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 380.00 m 722.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 408.00 m 722.00 408.00 l S
-endstream
+Gat%"9lJfF&A@C2bgA.KL87A&3X'Z;:='2f@k/sR<4#o6Cjg+GD1_ienXU7@M,%eB=i6];:Xm%F+_S.`3<"d1>."?3"h_J`+=%X+&;hnbhSH?cr^rR&/PgFq\M0F,BU(gc[r2nF_5F(2,oD)t(0WD\1T:X=E0g^*Q@.i)fXk[./qlbb8unIT?s799>8Zem!>,D):5+FsKo<Rhj5eo+5'2-1_!cmpa7J6I+8DhGG9;SQ,[Ar,g#0"3_,\ql-m#%k,dk^i;4<nX/l#-Jl9-K*.N;::).uQMD5[Tp'JTj7B$W-6-!5b$8O5pTh#4f7?GD2ph=]%[%Z9*.\%gb3]6X#2P6em_607>H"4-Ih0lX/-"X^TEoMl=a)M4J(8GO5+ene\p'21n$j0:^,kRZ$a%L1OL;r)ZXYs,uoGNc<7kHXICQe3p>G%99f5JZ+&\I!+;5hYhoBRm)N)tnbQQmIUaSi0[n@HEq"T5XL@k**mLqT8CMY$N9J-WjtlW`*:PV%57Q-PE&(\L(TkEHRaaOeHV)/TEiu*_d+_Y:7qT2Ar3B.Np=%RFfjN'n5QHOL,qI'A3^UPAQK@KYHsC+[17Q0Hk66]S9G&&;qQq*0[ErTB^T#Y][[\70Eg\V=Rh2Vt8bf[(UVVLmnY0WN9@31G%_C>4e%PFG\#0*bo/\k:XcG7>EHtM(>NS47!#EU>8A@4Ge5+"`Dl7&r:5?"-"FtZ_0c1U@Y$J@&'^&4uO9O8f]/`7'u&K-F%+(K-Z#(:4jgCLsCStJV_U(,_:qU1.W%6BGDd!7'm8`"JT)k+A!]Y+FYJ7OR%nES3;^:,r&n*,$7FQD.!Ze1aX2U6lV[KC4nK+?h=V@Tuf`c:_^0?6hZ[=R\+??9c.]W#tL.b1NYr8FnXV/[+aM*:C[4m!,'d>o%QY<%XO8[n!fqI0(Tb*+LcNcT==78i/7aDjZ42R6f4K4B;aW<*jdXP)*0eNj6B9?]=p?TT.gg5=VUnr=AD[5bO46SU$gi[Iid/pQBm"(ZtuR3HpqLh(bjGam/)%%dn9[2q?3GeiUMihgtstaP02asF0gY1HuuXC#idc6(s)435;N6Bru^_H"-"4Q,M?\Wkk18E%3%CT)S`EA]Wm.f\Y32ON^$rs[)V!OqW)^%MgG5&\b@7\D^"om)DVNc~>endstream
 endobj
 54 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 55 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 989
+>>
+stream
+Gat%!gJ6Nh%"6H'plQa]bU&I@4J<r";ME7FD4f;DYT(YpRq+fUrV5*1.o93te]*Wij(!FrB*E8P$NJ=BJE$bB:B_"1aXr=1KohhB8J:q2R#N\!0sFcI-o<>>JJqdc"Y>8GTRouoI$YU@0Uad8P$Ypu0Eect1IgOk,ZCr^)?Y[SN4B(g6d9*Kc'gPH+gF50d#aKrGOs=-Y&*'D[;l^]2Qgn@NIsIbV-(?:9aVM.o-u>2WP3FVpBd!E8G3@,&^l?$R95J8mDA/r$_<@g+mXrj0Z;gE$f7.'#K_AS_c$l-<:$ERUA',,?_"sAMr`s])<P_a0NKtZO77e#S2tP=#q]#$KrQIrkqNqIR$VO=\Ya,8Wk1B7Wrq!SR;9AjYI`Ms#EWC.bAETt'u&bj[`5^iC>I`6g>qM%_R8`[3L_bdjdJ*[!Fb(h%eg?Znt'UO2b6\3S"bM/*A"KoBa)^/q>dii3SXkR"]\sX]*u'&:_nVJG[;#na$J`a0l?+g;72Jh,c*6PO6A$=heA:])CQ6?$mUreJftE5n9G]AOYSHn=cUhECCk$qOU="_nU=j19Eq#H&']X?`$4<bg31)nX#fH&H$,`\CM:1kjq]>^@]liP8?p*p.!i2GP_RnQ.@$e>%]SUACG_d!)(/lIUGeN/X9LIpZe:/^N7r);eA7*tCmH:kBsX4gOJGT_4!NA^?o6k3$TL#<W?p2MeO)JEU`rbobZ8P72UU>M?*hI-:Fu(FfR3&4B2\5n\_Va"IBeDkacDFcPiE&0O],BJ8,1fo(3l>-KMGIVD/,To2^d%+&(k!L*8%+a&UFb!V[JFJ)+^c!,5BJYg-N/=X0l.t?GTRRCSipX)BJpi:$27DJ\6\:N?4!0%a)BMi3@1f?gMhE3O1_f\@*ng:o<u)$.VAs2)Q`/*;uZ'YP>`I^F>n,Lt@<>Us[ZK'b,]dr9o]SoES#mcPl(;Dr].pI,WPX52Z1ed3>02'CKU+\sF!+"gM==BE~>endstream
 endobj
 55 0 obj
-<< /Length 1246 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 717
+>>
 stream
-0.980 0.984 0.992 rg
-0.00 0.00 792.00 612.00 re f
-0.404 0.286 0.557 rg
-58.00 106.00 8.00 360.00 re f
-0.404 0.286 0.557 rg
-BT /F2 10 Tf 92.00 448.00 Td (CLASS 4) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 34 Tf 92.00 398.00 Td (Constraints, Capacity, and Cost) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 342.00 Td (How do physical and economic constraints reshape the) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 320.00 Td (system?) Tj ET
-0.980 0.984 0.992 rg
-520.00 310.00 190.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 520.00 310.00 190.00 120.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 534.00 406.00 Td (STRUCTURAL DESIGN LAB) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 534.00 386.00 Td (Physical form creates algebraic) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 534.00 373.00 Td (structure.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 205.00 Td (Use this section as a field notebook. Let rough work,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 187.00 Td (uncertainty, recalculation, and revision stay visible.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (25) Tj ET
-endstream
+Gatm8gJ6NX&:Ml+S4AI8YoPp2T.5`0XXYfcDYSaD2+r,!%Sa6*Ujd^3hJ<N#8h2br&mrZAbab)[!2j&>GI7J.(H@um#`7OJ68=2R$m1AfHbt_!4LJQtjI+0TWs"FOm:4!gga+"60UbXe%<B^]<+4QiSrB<h?s5>B6*f!4Ta=8(A[qrm8ondp/].TD3jo,*)T;mcoD<uURiWApiAuAR>i0H]LS$P?QL;%/+Yg$Gg!Ed3En0X``<sRm@!_mA/'W)bpRq52eN!do1$=*jB:LD>g&q`]b$tq',4b7t_Ls'].72AdVe7CK3TMF%B..?fS!%E+&L@s.)_ds3NLisAKJN+p4S!o7(Tsb9&uX?X?b0<`Q-CbW,;2J5a!fD]]gPH2_T*dAp_)tlp'u5+iS'ud)+,/6K-Tb8-#TY?mbM[((d:"PF>(%J&r>``jmZegJd7^gQnin*-WD*fLC'$^G6.%mNrI2#\G,bt&mE\fJ'qZj[21=0ROH%SG0L*&*Sb5\Y2Oib:dLC7h>.p4-[(XO#Q6<%8)dGOHD2ZOPW_Xo1hB*jZlQ`$]=c-hgT?O@op+itZM)37&ZJcq9sni4Rn"n*JsL<?Sn8CDDMT_fAA8Vbm"b-Q@J@'Im$XM1e$Gd_ToGaP^l6BGY,D72qM'iTA'E\>T=HohIDa*-VfhuPO[$4B/=qGIDIfbGqH:A5R35YM?QAs/r\OLu]TN*nhCgX,~>endstream
 endobj
 56 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 57 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1021
+>>
+stream
+Gat%!gJZck%"7kOk`IW!ZPTgYIU[goLJH#=1$.)2QGh]SYamPno]%Ihg5Z8H$=U.Q=fZV>PnX]:s1!Jh-,=L%#A5$dJE.2bi!5?kLXX1goR%Zp-=cOT*ecn51>o+Im&T<)nDmR\E$)h&%4+E"q'$rpJ@X8:eJ'f/B,B!_Z/>rk"Y,=r!+,ne`>Y0k*T0(8(R-F@9%]Ut\"+sP\>^7@JZHetmA;W-#EF\<q:28`i%2([!ajLP-L3i]EY$8UThRjC(fLXT&<sMXgGNS(6:V0\6KY%a<`0C`7@A_rD<QU.!Lct=-)[j=^7<MFAuEa"r1([Hj[F3=EH?CmlAr!@g%kR:@Y`*A1-mJ#A6=X0,fAgm2#(;^e6\9",8Xdf87njVY+?eT+beK0DG6<58D!1)?8m/`R7"JiV&_\KRplEO.]o!@nd<frhHj5a?!_C59abOG0ZE#NLdqR;krTVgFgr2s:<^Fk);%,`[Wl9J_D*N23oPit80u*5,^mJ[e;nhaC`P!$UNbrO*hk2J-1EMj2C8N[:[+p9DAZ@_R7C.COnGL+jj&'4,d[W16o)[$,R^dd6=8C=&@7KS9F+,gT=n;ZaGTTOXh<\BQg2"VE,[ut+<65ldWTZcD&0#6TNgO.6XD@<?)O*Ygl*=2V):`""boG(3eg*`:j.RB4W32]/#KF<oBXU[0"i.1dEH+RRn;A',<hJlgR8_^2l!f=MZK!JXdKW[UlAtL+R08@38fK(3'!YR.G0I<TQV5O&o,o,=<.!FU;]W&e'r6CZ,g-ZnZbEQ8\m!#\,ZI$`<pW74uUGJ%!.A/:1:Q$j-dG.E7O&m2%D!oEOkMoS4F%E@q/Q6mk3iokU!;OQPno62lS!8QO%I8[iZBm+J.mn1X[,ocn1I/SDqsdH:XFsc_<miaUs1&Unu>b4M3XdIch*NVqb<&dg%[_C8($`)Mp<Ng-sogruQ[-W;Qg''06hi)LoqD!4;-CGHI^T=OLI+:bA2sm9&#Za1^:lq:=(?SpD(<\gQkjG^faPbIY^~>endstream
 endobj
 57 0 obj
-<< /Length 3749 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1006
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Flat blueprint) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Original dimensions, square cutout variable, folding lines, units in) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (centimeters.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (26) Tj ET
-endstream
+Gat%!gJZc[&:O:Slm$(FTo3L*:CM=HV:1_Cbk0S26t5X3[7u4?IXHA$CS4?ER95s/C<t;a/:cb^\7\tF*63#;,!\\TY<hs-L\M6.@dfZ(9OtYjJ41Xjr")q:TENG:Ns0LkQ/E%)s.t8J6Htqj8^?;Cl^\sb)52'5P,UtZNK/DR7pH,E^?1Q/H;+W4:TSUe1rKRa>s:0K/K2,K=13kP[;DAEg;4pkb1H?"SUcBWXA!ZiWbuY,^4Z1bidF._\I?l`o)6D(&2UX#]]f\B'!r-.6fYPH(qb_]#K`M%K+eQG6k#ob>ONRacf.`-(\-2!pMd]'7qkQSq%CCnE+cF<gu7goN?>-V%1hr\CcJ9.!#&P1oSebJa[jH@EQ@1@Z!`&o.pJm:_;\mm-WpcMS"p4WU`3ua>sN89(hHp[%:nS9D(i$6eipJ-Iq6HJm!MTa(_U9<GRs4#3nCJ/\;Q^o95jG0MGCCk8>R'*:sfN8Td%Eri9jot#-A8/MZDAadh3<BYo5W9Hn)!\8h5c';NFirL<bed<cke1+_`cp-X'I@9Pa(h:?W4\%WUY\`=$,1j0Q5[(XccVGoQ3s^Urc1*S;r^l3`*\!p.S6C%!a0/[V"K]ZnSV1ts:`ZcoY0CLb^i,gdnj?'S7DqV!eZ>u-1,[[J-_;:B]'m#bV6d\mqDlI@.Sl;.n(PU88^p1fg=[2^;\Rac_8,\^5I!R]*kK)mWm_5RH0c+ulN%Vhma'qpA1;ak+:-CT)l2+,pV$B(tp"s5)^JHQrUfDDa)?]:XSnnl&jjj:W,EcPr#mk4!MNq4j'VOlSo<O$CJlpqB<A)j\%?X9[ITr5,,S7$H2^.:,`#l]HG7(Pt4[9_`jJB-rX*bc$oGR.h<WY:oP8.Q"of"e:PMqJ[M7Feba?e)V]c4'j_p[7Se'ZmJJ6T*5tFbN6KIgs]Lpq+?Y(R;arA&8@(eDgpq)SilZn'YCL`0/VM%E5'jnJr(2flXj<-XTItioq9</pbt%$Jo-ue[@7~>endstream
 endobj
 58 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 59 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1145
+>>
+stream
+Gat%"9iKh,&A@sBoT;tXMBkj'HqKM([RcNs!lJoY`Zl=Q5D\]XU2#2UG"]+mP#.Xle6(&C;SR+K]0-3TIYGC7/\p*M]KQoM,]'VL.&LBn#034o>Ja'BGZk(t7%U@t7jS__q4@u:i%aI]$&83&5RY-b9Idmg>U7.a+e&X1p*NpG8>4Fmd]24<Qr]Xl#)4(#+G++[W6hb_iS`^0S8::(A[f&LHlhW6mKX."_GPAaYD*Z8SCCiti1p;&<mrSOgqr38e0:):g.[d#N=$Otqgsq_dQ'nbN&-u/[Bp1Rj>$t^SE\WQ&e%(]8jQ;rS0,MX4MNlSq\Y>W]nbXOT?g9iSSmBHYOdgAB1Eca*;Rts<MZZG4Mq]@_W`$K0VKee+'_AR:S`%Wjj'!<L3g.EePA9:mY>uCPTtgUY3VtuH2D!)-[7%p]"Dc/PhgNVm,5Stb19=2@/oD+5!']JdlHiO0QN#&]*I2.Q[.A'QX'*!YmMq^@%!.V:4_LUI=N3X5[4OHp+A'Z]1oZRE,6.=nan*(+pX+ZPj+^`'VU(-Ti's_Rn)-]r7kkG1`FFJN>5WoYt9NZ]&Ds!mOV?T&10PH_lPO'M\VQEP.-31e29+f<.:kn"?MjF/pG?M^U;l#e#r-,lL"krqm*NTafpA4A'e*sd3K2c9;lNhG#aGXM?[9'--i00m4dcfM;q2Hj[gFn;W(D4Q9[hg*bYZgSHUkP&R>N&!\7""l@"l$Usq\n5XZPT7hSIl4@g*@kVPgCM!-B\&r>`q8.o$=-%dIoLfQg)5Xad$P!HD+4@g*@G7\\K'kDV:0kO3*=@eD'P6_q%E"c>?.uaQ7)UV/iZPoO&/nR75X(u`V,SYN?(72_qZf7lGkBU`K735?i?7V86L+:pm1!MVDk\1NV&AT?:IJE-1!ZSaBjmVk6.H`mO@?=XP)n*Ftn3p7Lh:_mb^:g.Fm!_\lBOb!s<-%9Yeb?@]Gu[['Tcn(fWCcR$$*%:ah:O=/*Ba#l@<#d0q):Rf(:qFc,.`O>6Tr;p`u38;$Z/+'nCS7qhlX3q20P/*ij4'>KsnY#Z.''>2"^"QnE)*\J&'qnr^3>ZUTc&69]gZsVa/MH\6e3V[<2^IaQF$"L$/4eL.?=_e)r5g3a1%^0?S\L:AYWdrrAm?!6"~>endstream
 endobj
 59 0 obj
-<< /Length 2976 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 994
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Folded storage structure) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Height, interior dimensions, usable space, loading floor.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 276.00 100.00 m 276.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 304.00 100.00 m 304.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 332.00 100.00 m 332.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 360.00 100.00 m 360.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 388.00 100.00 m 388.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 416.00 100.00 m 416.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 444.00 100.00 m 444.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 472.00 100.00 m 472.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 500.00 100.00 m 500.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 528.00 100.00 m 528.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 556.00 100.00 m 556.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 584.00 100.00 m 584.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 612.00 100.00 m 612.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 640.00 100.00 m 640.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 668.00 100.00 m 668.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 696.00 100.00 m 696.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 724.00 100.00 m 724.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 116.00 m 722.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 144.00 m 722.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 172.00 m 722.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 200.00 m 722.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 228.00 m 722.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 256.00 m 722.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 284.00 m 722.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 312.00 m 722.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 340.00 m 722.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 368.00 m 722.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 396.00 m 722.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 424.00 m 722.00 424.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (27) Tj ET
-endstream
+Gat%!gMYb"%"7kOn?FJt<>WiAT8F@SL($GY-6DmI3GRR)Fu%fd;.(J1;SL(`=0,+-MkMPj,O/)@_!rrQ1FiL/'"F;:&/(.1&0VE)q$OGRp`2%->HVFCYqT$gE!unRYl#KF#TeU*6G`0+ZquA%SB6lZ!`hUZe5FR/K=d@A`DUAC'^@C7&ss.dO"Jj#=s/-#>uI@>.H,+9e?lApi((1u212T5di<*-J)F81EPLcQ,g>j0/T>HKkHad`,^5??'A=_._42t`LSR72_JX=j,IAV-*H?hM=\1Jq'4hZ:q:$4%$'n79V4_+dbnnuiA-UqWYdj,geSMd`X\L:W,SA&]8:jA,5n]\_^]G0QU@j+k)EC>a6#f]Zk;I0c]lOXi>6iiT4;;M!5<*<d-.Hgn7<MT<H0+4)QPK\4Zc8@3npaoh^i_]9%2M943GsKHM2ns0*;=T=UYs.nTP+LeXAi@(1Q"B3/4gB(J_tbg=H"j7/Ku0m5YF3tM&PHJnYqm6FI6`Fa9!9V0g:V.._=8POgH#T'9*lAVQgF',kQj6(NH&r_[W<nn_$G*"*q/ZJo,ILhJMqa$1*duon#G<On,5`g;BA>WSQ^eI9pc`fr(7-S.(=d[MC[<&l[f:M1iGte@o4&Hcfa&C2U^RXkL=j1O:u`UKb[:GE[/k)_nkM3k>p2GGB;&b5md-URMdUA;tIg+PI-01uLe93&RA..G0I,6(J9Z&ZY)B.Q2^Ck`2F<=]1_*(.DFY5$$kl)0k,qT"eRF=@&YAqc[(DTlonH.BW9F]6(LchJ2kh)I%5hn&g(UC.EU>*ZK;LHZc<jKq?39n_U#=oHMgB%eiH$9rj7Xe*ZY344GL76&(^k@A>p'q\eWA@E9D#F>.10`'LqL>'SiQpWqF$LE+j83Li/FCFIYY2hc">C$QcPWW.)WIDOe]^91$++^Pg?P"(M9/SY:Op"pd*kms)]:,Q"/cGr^CHkOoQT!!J.BG"%T$?ss_mR@K]!m&Tld/~>endstream
 endobj
 60 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 61 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1120
+>>
+stream
+Gat%"?#uPp&:N_Cm%`l<La45W:RS)f1We^QZ#AB0_SnDkE#laaGc!^>B-dS!;GWMB0mi=s[:`RBQ7GPb:V(>t'><,IMc32FdI)U^:,VFqdE+$:P,,On+tG)oAWc9[<_FPrH_$rmh'W;=RGtiae5KdDW\iarcBAghEm,0A5%L+I8f@i\7[HG=C:"SLV=B]baH2c".Lkck3]_bXk,+d7cXG^ioZ,TXe(r['5P/`8fmFhk;KUV&<JOe6l_^8'U"qTnN`dq@=Wh=Rob(6haR'Wj?)7pp2RuB;>kbl95ErGrQ+G<q:)-odfLj7c+2.^LqoLqrlf@F1c,U@XO*&-<en)9=M]<fe$f6&"WAFtG46:8n<_bRe:A;4bIp6?Z`,kMY(FbqQ2=,mY8EoTDC8Uj-)D7M9g4@8@lIr4MO!V]=Z0C!-F5++o_or'Q]3*LAn!O4r+g"ou'(1M#hmJtnqkVet>GG*9/(34Qb[cqR)1O'Bgj3'mDAS&G_RiU&b[J-%TJEXrK7XN7=_\:mR"1LfKWQ^2kJqEh^$iO'=[O0cD2lVQ]-IO<04J-2>bi8AU"aPr?GS=RUQo(1YE"%1>>O19r7"l281`(ldn]Mj^):OOYM.s4*A2';Xm.6Z12/1r[>7d3KS8mo_P^BQG?f,I&[5oKi5#Y@5du(QFsF-_,j[um4=\B,LhJ@A%1pp4:h('aA^FqkdCcSF2\et8'-nG`ZkZ4[Z",25,_LouJg>u)c@[BpLb=<*K8nG382?!7*@)LjF:fc97!gM;,_L=HnV(,fTf3TAHP0^4;6_JL<`08D=@O6hJccIhdJ9NVBVWa>O3s8^=qhiC);@#[0DXi$o:CjaN3]_p/]mGpmSM(SgDsbs[V5<7T]Z_;Z7_/eHrOLJb=qli`)LK>QmdU)=uS1^RYqYoOS1B01[oS+'V1kdISN"=UFI!REotEm\$C1*7rUV"+;hNuO!aFh-h>16DHtXmNr2O/\6$8Y]+F3M@;71D+5d__BrF6i1Yj.mRr?k8?X$3e]"u(lDGP\'e&5,t:%NTp,3+0trO;R:`_Q[X2&[^mk,L-$:BV^sf$,-5=F9dM)>V#*^$qP:`/)LThgN0.WCI=Zo;(0>OL2K]r!Uq$r#>~>endstream
 endobj
 61 0 obj
-<< /Length 2757 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1011
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Volume polynomial) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Factored form, standard form, and why multiplying dimensions creates a) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (cubic.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (28) Tj ET
-endstream
+Gat%!gJZck%"7kOk`IXfZ59^XIUYVm/KKQI1$u=5/;_30e98tgduU]>^&hjQai%)a=rg1]ZkgII/)2p4!01MJ3"[8Y`&Afdk!OM#T478Ua%U$RML\,>%/^[502R;%cQ3JPhCHDY%0&s&"b`=#l'%^Vdd)N(MA`+/(Qtag$B9Uam71C_e%Xt,JU1$07%[Qt<+q'qfNUNrXXtI$/m#K9MqU)6Y.!g)(AZ\`X:p\7P*JV!9@^.=gNO4d6G-*-Z]H?M<5(R"'mf"cM3X+J+[PFE1NZA"lG9N!jrg'"I;gCHOG^.S<;#,4q=3_De)Tc5)(_rMe!%bk(ma?CMrg:DnY7Y,kM\pGb(Bro_)s[tJcR4*7."+uC.q"+//3;2>hLsUdp8QP=]N1kZmrLUSMd4HlX[VYXDDaeX_lg><:u@.?>Y1)NEni%XY7,ibl3rR3$^[pdigV=(cg0ch*P1oUEFc/P9U+KW1[f/$]J%g!=KWjJ/P(*mK;'rdPL)mGZk4uF&,Fk7Z!YrT^f"K%d@q023<,0AJdHmU93X,a%auqTL^>,N(c#$qB5Ec:RekPP[Zr"IXLiq]c\hcR^_gIp:F3MNo8-oBf6)@(+;]4VVS@jfg<<mb.F`[6aKKb4$+;qEGZ+RMBmpEd4pBQf@OnfWB:pTn7lj27\e_+EDh*=C84p"W]-,"R6r]r;4Gdcg7(s/b]84ZD)1\`P-iVQ#"16L$jO@P#,_Y^2$Y)*3iGQ%<.l1`!u?T=S*8.mXr1]<,8PPDCd*%+""AHqh<_nJ^=Y`FjP/g!b$g>#a=44TkP-CE>7P:b*7&J]_q_scOUf%E`i<Rq0%Gs.;ckj4@oQ6";G@e?Ir(8`dS3WBnM\H\Gc5f7/MYWA&BJ]F:R;8r%BM&OQu0*)<)!bp<IOUP+5T$!maU7M/mgo,gt=\e"&3!$Qq2Z#O355smhT8;7"6;^#ntBVO0:8V!9<k3*GaUDQF)Z0e;MVl+'JB_Vd"S^o;/3N4T-JZAY4&l_>=UN,.^S~>endstream
 endobj
 62 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 63 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 940
+>>
+stream
+Gb"/$btd:Q&AI<Vk/\aKYoPp2O6*8i,hN/-&!0L[)jI.7&f)YX_s`PJ-E/u?EoPG8np"d5nMfKH>QGg/iQ&#&3)/=A/jMru*^D-N+M!)^,krB6@grr#0Iu-R`@."e);P/r=9L9C"\LJuV1B7gc'_Nf045[i5n1f?\@;pg67[c05Y<QM,quGX[g)+TD%Jk7/u[-YP]4!WD-C"!E*o_P%6(\1RciD@?^MRDpT%%T_E>$M!aXPNQaP]nH%b7G:7Hoq0kRB6/uXRQbAK&`iTQYhee)Q)3%Ls4++h^&1*?@'0#>mK9.;:TUU.#SEeu3J(ZuT9E439jRGD.$(I)>rgn.q+p40f0U22eUi=Z&#$E&5)^kA"5HNPQ6O@Tm-j;j=V>-7C2%4RUIHtr7ieNd0IZulhZnqRHO];gQ?D)Vr[4A1SQ\0G6YjDF<'p)`'=7[E[kZ!+H:>3LHST_:p=ICq5%-:qm[j\q$QS[MA)ZtZ5ieBUAI$H0Q.Ek?>qr,HjHBeYomZf_P$'te@%7n0Ie<mt<2=%KCB^-AeT/-Sb+mk<G,=J;R6oi(83Pj7jX[`J7sgSn!/@-pbpm`f&"?)g(c3OIJD%mo!d+sTGq!fO[Z0gcD*qnQQ]'c:1]##\"Sl+iuX-"bq7:IN;dHcU;&c+2:4AAOq[0W&]>MZ'4o[I5`0<#UK98BL@+P!uS_N!^YNEZ[*TFR]OMZ!Z#hZJop=CkC-rXq5*8i4JMdmt3lm1A$R]'*)X.Mdhuf@rSb#ntG9YKH;^59Wo5G;&H&R.Co-?<J=0)),ZD`UH0XBd4"MP]TjfWZf8Y9-PLRNT15$$g%OUVA/YS$9$hgi/,e\ZEp>r-n/+@^TJh#t2cCNlUG%T"I&N(>BFb<HUX/?/+dIH(*^Br(/3Hc*F-JjO;#4s)>"+SR)`pmmZ]mX8;#4s(qUU--quZt)RhP~>endstream
 endobj
 63 0 obj
-<< /Length 3052 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 749
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Graph annotation) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Intercepts, multiplicity, extrema, domain, unrealistic regions, physical) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (meaning.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 276.00 100.00 m 276.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 304.00 100.00 m 304.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 332.00 100.00 m 332.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 360.00 100.00 m 360.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 388.00 100.00 m 388.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 416.00 100.00 m 416.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 444.00 100.00 m 444.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 472.00 100.00 m 472.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 500.00 100.00 m 500.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 528.00 100.00 m 528.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 556.00 100.00 m 556.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 584.00 100.00 m 584.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 612.00 100.00 m 612.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 640.00 100.00 m 640.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 668.00 100.00 m 668.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 696.00 100.00 m 696.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 724.00 100.00 m 724.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 116.00 m 722.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 144.00 m 722.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 172.00 m 722.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 200.00 m 722.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 228.00 m 722.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 256.00 m 722.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 284.00 m 722.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 312.00 m 722.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 340.00 m 722.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 368.00 m 722.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 396.00 m 722.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 424.00 m 722.00 424.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (29) Tj ET
-endstream
+Gatm8?#Q2d'Rf.GSB%et>hdn=Su1p#PGUOF$e:gT\-XaS%*6"Pqsh:A#]%t6h5#T7r,I/1\KANeS6cg,b8,>lj)cFe,k<Gk`>%laI)r($&Moj6E<__c1f5]MQ(S`'I#M0ZgW2Ye7WW:j,1W2Tji7grd0+2HAk'de8/>i9BED(8AR'h$V0Q\"YPeJV$/:(>NP*6Xnno:]45eOe[`@Rf%`>HYpkc=hD-),dM+-fhL:4[/>E5nK?R%f/D"f&N_Mja@J;Wujf`cX^;l?3j-_-<=g%lQ`Q"1BH!qb_D_Y>:.;L#C+hOU8jQ\Z^p5!^XXhip6sLFB]o[fI.Gdc_;)9IL!MbQHa*=k^mh`E7?P"Rg21gmt*W(%Me;DppSon:DF@V3L49$[F9Ncf=LW-\En):QB5j,q31[etMBqJDP0\1"lurVJp=/PqBW!U,Zh_SZW4"D7c@>C:AZ`P"*>:NK<hn9[Bsh<="_.A73'S,YOL[GTA,18QWqE&'+Enm2ZLNaS@#"n>UfBU1=4f-?VkC:]].#fIUdl<,gZ,='^"PqdW:<)j9orkJT"4s,`Pi_.)3L!sYJF650M/Cn%/pBM]WDDR\K\[d.j,Y]HZ.a.d`%<DcQ2e<IRWW\%RW^&;7J1h/MS,G><PG=*7d0G\m%];rrW-_1$$^ME*hg)0)oba:eqHL<Z)a-b4`VS'<lb_;JR0eW5^YO`!Wr4_!'nJHq9rI&94abW)E?2#W9r;+b3(Z@gT$S:.$V#~>endstream
 endobj
 64 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 65 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1007
+>>
+stream
+Gat%!gJ6Nh%"6H'plQbCQqJb^GsWW*'c!HJd`ZFIc7XZBZ;!Y7;EqnhjLS/ef[XTH*flB&5'@'Jr!NJJ$@q.>%Sd-4$-<NBa?iGC@$(RV"(l&d<=CDo-413bTg/pe4p<Kha.S)^0`3RU'OWb11*h,If0SlTP0Xu)4-rX[;J:.dl7h?5Qju!7/_"Ps+Srl7Va<aK^u"`_e%29)YN=3_E)F6EH)Mb]JYUKDh:*lE36B?cK3QlsbM!Jggd/5ABJYtZIB"t@S-h>6]>U2!d"\39`#0J+"m+Z:+`iah]083:?qJ:9$G,oeilB$)o>PuqH?9AKY2Sa>HuX89"91-,0NM*P4MhU5^a]-rR*ZJB(BLHH?[?t94oG'/-WjEP!V^qFQ*+qEbZ4&YVCM1X%BI-q)qVNcg\*NWEG+Uceh)XWpX8.YDtBtkr*RNW#^O.^%H]uZ3SoMfN@oD#3poom8'[*#6.#uS=fJb0Ae]ZD=^iJE".t-"Y\7;F>"#l<!\LZt&o#EQj&7[LW1GD@a9#PA1#@qX.QZ>SOL,qI'<N-uVKERE:?W4\%WUqd_[@XHn_%.>$YclXK%o4.^Urc!$Z)#N[=c91,3=+)Zk#e\+dOT2n#:]Z2U1$Y1+_SA>4`M%FGWZ2'l)Atqi7N=.>.T!\b-SXCT#27kg_)@C([LQ:"#gq@SigVW=cO>UGSt3!(kV7joZl#UY636Fp8cmGgQpp%;9Jd2I^f*4+pRdCAQM=9qNaNF-JOTD"GRhCQ$<T%"0B%B?k8lmI\@+$74T]_,:a`N$Tj\ep$VK>A\>`@1SAm\ZMoAgV2C(*k]P5>KNIBWb\<kY]_!lFJ#/#RT;X:dM=U.$u<>*]S*3JTcV)gBQsen2N8+bd23o/%!dKC#;'OX*#)E%_IHU'5<J%WjiHl6iSMIa#t91/k"lLDD-^QmotP+dBDgTE)iNo%ig?s41jXOj;$0qHs/rGW0.][8CFC!iNpgZVbbj.N4o&8q&Pp.KGM*5WXUtC6/P!4n~>endstream
 endobj
 65 0 obj
-<< /Length 2767 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1044
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (End behavior and structure) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Degree, even/odd, leading coefficient, as x -> infinity and as x ->) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (-infinity.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (30) Tj ET
-endstream
+Gat%!a`>iq&A@B[qA<+aQpi6Z:/jOmQHB9]J[:FcM%WH:P"_O+O6?1LYl^^,G$3Ydl06g3,mesqJ*&')iK@N;8<Sjr=!XOpU?*gE08$GoBN$F'8ms353(cF\$'%3`%`4V$K8Lijia#\:.5<#G&bBdA"G9Rp2H)$u-:==RBj`>E;(<96-8HdQe6MSK3B5S/Q%kSNm4EdoSL[pUXB)KtpPitCD<'h-*NZI#QR3qG-Uj<&EE(i,]R*,k>?^GNg<=(/RlZErUGAC>I6aSAFMcBO(*Sq6P&p+<QNaA8Rso@Oa>/ZQ8re49EH(XNo_=5+*LpFW0Bgl:?<s'Shk"1]>V>7,iop10JM2M!';^$<NJR+U2hF\2.?m;Qqnj@93MX5?>'OE2eG$>M>t]HKF[`^?[k5/ZS%<Wb71RLejjlkC:&.La>s%=hh!!O";0B%p1p5$5U97mtgglCK;-25HBQG.Yh_f!BnmCo4@m'?=P9=YhW[Up+&,O(hIgVfI20J(mPr.A(A#lua'IK85'O'p'g`rG_.^78P"!_=&F^PnuXO+2'%%]L:$!/1LV*&.cP/Q[+:Wm'g\tlDN[_t"XAZ"d$0Z#JPG=d$P3<I'2i&PH[KVb'Ri$LG=mmGng&-hF7#"QP8=SiSH]Boqo70SV7N[rh$ZJ<\S';iWK$VRIN8W^ZKGdJ^UB:Hff#q"C4lT(R&?ApTW`8DuI9_BN?DC83?-jI-o"*G0-gPOGdakTWB7S)YgYoOGD$nramiYe7-dI\Dp_Wmg91o+a5A=0tc):HG2OgAZ1gO*M9[RKbLU$'X-4'h5<]mZ#/WR_$.[o272UZ?7BqXORKY1?^+(sco22\"oVHZUGppje@&eBhL4+/.S#mBkq6StS^b;h0A3agto!XJi)]8%iad2o[b'8ZXh,1G!UWa8;ZGZ'h7>]Ag&Ug5bUek3f^*mTY81c5k3=lP5]<SXW!Se94Oq8".3[U3HCgikLK-5JiknYtE74+3+IkIK0%Q/U_&qlaqmmdEBH1M4!Q"V[m]0<a+FL8)ZW?:A:!)?[C_Mi;~>endstream
 endobj
 66 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 67 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1131
+>>
+stream
+Gat%"gMYe)&:N/3bbJ[X%'L<:'\%rp$XC&q2s@TBV0?M:i_%oA!W)>W+Xr7CC*_KOMFU1tS=/>TZiW49Ktl1Z^uZ&4?OIDXG'>&ce$-H8X'PEp`b]A".Y3kZaE<'/(5UoI0,_sl.I08-LA0+_#DM,1C;MRXB$mP'RjCf>-CH?[0PEur?#g7qBZ!INj+.u%kZBMg%.$#7]DXk:Y++?:^NUq#27dK_N=PrATA,"q3*%0\]'672*t@tISmT>%*d6_BQC'5MVUBcF.X<f:*CdV4(F3j<c>[g[;%C=`AIalKe$#r$=Fuo45uF7[Ie`<m/aRr"Jj96^HZepRphOSLW_JrFpd&UhH+1SBObg`7<i`Ou_MW^!gUS6cVE_koW]dm#3/kc(I"],3Sqlh;fs.M?[Vi[,$?OoacHX_b9tt%_4<%SV2UgI2YTLHVl.NPY0,F$*B;WIt#V4NB\:5(,n>40R^>rIBX&W!'K&p#_UOX):5/8_7+Kbg=N'=R-]??/SEGREUEVh$4+pWa%`CrReMU4\\d3spic_GLq@IC]t=p&;l`YpGXfOiM:h=,7npQfP&#cf#MEE4'8`?UZhZchqOl;ejK<ds7+#]qV!^3HRO[!2HWo<IO%BRcr#WclM0Y`]r@d8DF@,S$MakgXA-O"DDN1t^2(E<[H9*ihJd3,YPBJ])OQ"`BT<#pcn?O[bGZGuQ#Mct1]OYgJ]di1!CdV2:?<'&)n&P#P?L-qPPT<Knbjd!:j$OO.R',d>["7S*XfXeR.mKJ&uEJL&i08eOZNLc<6Z1;/eeF!)'r,XrbE"=kq2N@^c_`df:nBVY/fNR1.]M]SS:27Y+J8j'P_b<b^PiMW4;,'L?!La>X]'rk)'-ef_PRVf=V<<5;r^a=PTrr&r#41e>[`u:k?9B3rEaK5&oo=_bOnP+W&E,C8hj+%U0`U;p.UGbRfj%3:F?%"/;f67D;',uOs&]Oc6<\r7GW^"!V1d-4-:?1WZEoc*X9j?kaImZ##X2Z%!&dR5Hc1!QK%puDZT,R&A[DQXTFq7mOi)6N\VKj0.On$]r7/f:ImdVq3[2P#Vg#fRolX'g12V.VkYcXJR=@/^!-l7HpcPW7t#u@1sHtd@ncb(\#/ik"BaSl:Zf`GL~>endstream
 endobj
 67 0 obj
-<< /Length 2982 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1136
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Polynomial division) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Dividend, divisor, quotient, remainder, and physical interpretation.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 276.00 100.00 m 276.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 304.00 100.00 m 304.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 332.00 100.00 m 332.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 360.00 100.00 m 360.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 388.00 100.00 m 388.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 416.00 100.00 m 416.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 444.00 100.00 m 444.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 472.00 100.00 m 472.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 500.00 100.00 m 500.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 528.00 100.00 m 528.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 556.00 100.00 m 556.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 584.00 100.00 m 584.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 612.00 100.00 m 612.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 640.00 100.00 m 640.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 668.00 100.00 m 668.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 696.00 100.00 m 696.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 724.00 100.00 m 724.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 116.00 m 722.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 144.00 m 722.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 172.00 m 722.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 200.00 m 722.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 228.00 m 722.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 256.00 m 722.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 284.00 m 722.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 312.00 m 722.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 340.00 m 722.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 368.00 m 722.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 396.00 m 722.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 424.00 m 722.00 424.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (31) Tj ET
-endstream
+Gat%"gN&fD&:N^lqU':oZ*#4@>e)l?QFE%0V"U31ndP3l'4Bfl<BblD,lr$!f-]N53ccS>l#*ntiP=rD]4]q$]I`%.Jccfch?$cXK(99*Pf]7;22,JEJ@+6[VK*Xk7g.F^P;IoIU]\S7r%8DbODC-h7<f>%8MFo#Aq>lRa]'%-CG_io.[Y`c/'SD'_j34Mi0ZIG23]\_gjC%ggQ(d&gXlNj%!EVOK8&d`@_]=CLC+/h1gRN0WW(2odk`E@TKFO.aCL;hV,FWs_4tQ`1"&KO-Y]-V'Go@Qjl!UQAfsuaqWpP!+c*,Y'_TSuqmS5]hj'Q.]R'hDjn5+4bP,)A+3FQLJ1BXF!6aka%PZ&>JWsr$kU-VrU+`%LA5<,9f0;O^F4JcjaZPO.@67GD*IP7^F5,3peF_R<3-NQ";cU;p]fTr>aUX*B:2WZ"IpV<EfC>BV0cf&*,p;=s]_el$R*1dtb&4HkP'3Xh&Q27mF%IHE%2C#R".+Zn0t=eh1s^-r-X,He$*6N!)P8e83?9P8"*Hr*aE+hNMO"(Hb9gXSO<kf\ZqTLD#tF+d>;n9LWQ'Imk4'<iKn3@=@*($HH0Rb&.g'_4+5I3_Nb-Y(mPl4G[[U[Y2;N]0D.,P+[>dp./XSF#/JS=]io&"6m]=k)dc)!1K.W&a=3u*WYi\**j%:6O8K:fpj&%h&5X[+<BESp<"Z6>n>m*:l.nsaN^55rikTEG>U(*S:M'XGUOout4#"\k.SHVRd&R>N2!\:B@O<bCb.S(2.kWDBKLiUal,_7q-pk;gFVH4C?p*>6D`/$R5?m.NdJL.\O(iZ,[X`QJ%&R+F.eg%Q5->#\5OiM'Rfh4N?r028gLJCn2Td8m)65=8!B"L]0WsoiUbi(2Vf]$gFJ%nuk?ft>b=i1q_DO;7FR5M-U?JF3t^.5Eb/T'u2o^-(5ZMQZPTT)g*E0I,:=$Oirj\8&2KSH.67.GbNeHGQJlF(j<9aBSPj06$J?hnc9AIDf&)\LmnLS5Soe)Q=!MhSS]-[=j1q]GObY75Z<g>^n-^O`i)\$=G=mu!f/7u$VB7/f.Ehr,(KC,H?&ZH5M;QQHRaClI[;r`EBKY_7D[:bFlN*\f3Lj(BJ&I-PBB:Hp<&0f\Pj8H&](ScOE~>endstream
 endobj
 68 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 69 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1129
+>>
+stream
+Gat%"9lJfF&A@C2bU%dTZjK#Dl4c3D>dS16`875$<@dO@]olVlY$mtf^2HQF6mjj\lsdr3-Z\'_3&=`0!ak2q9h4i!6a&-h8O]*fOsW,pq1[[DZG3^#<DMb8nk,4%.5;_I6ruTbGsRKo:IaKV=,o<kXiQc9I&-'Z)Kfl&_W5)[f9ML7L5\!T:m>0o7HJ4<nH'RK$V$th9h/jJ:Xe*B'E-d+gQ=[[m5-tb/cA$Qa'JT*=HfK&6XLr*BXhoKq)d<cdcR(M&sFVXC1C".PtIp%_G1p3P,3"=E_L@3Nknf-/4emZo]o.=NZg_<H.Q\1(Rt0km_c4M0<Tc8rp\Yui@h$%V,qA.hud]0EHdX?X+7pGer-j)_HM3CG=-R],?4NipLNfpq^o?[Zl=e@Gu)=KgU=)REr'9Qca9nEn(W:PH$;.W2")%CrG^OeDuS)Io&Oohba+';FDBKin.1-F53%;,P?RNoYtCHdjFpOdC<B2o+3GU:*nHI76(^0]mP6:#N5s-lS=2bO$F72,gm3>RJ<$(W7obk(*bVG\F-f><=^k#d2R(Ec0oJNr7]_N$\("eQ89S7uX>hnlb0'G2g[hZ"2'l'Chc'pqNYU:2lngqCgO@/I*;[97^SC&-DVF/^nk*$I@&[$XM'6C;(TXgT>#CbCf^YmoKBom7Z3M$&8idVVN%6>s<1[Z_cpgDA+JF^l`ZUtUW5i;B3NU%UPtEMF,oIu8';qCsP$17F"pqE,,_Lb&U*PAEY+d1oPr:*a1.Z'l,oItM)'p.GYng3"5oN&E0ItiK8n-+t"B\4]304+J.><[2UQriR,7V$.`CZ':8lmB'7]U=iUrXtSfI\]\a_/T=0c+D;A5sLGP$]T,ToLYX(GX6Z89A.c%h-ghDU-#2<M6$YXhLoE.Wt$CfERgfTi&9X8%_(s6bd`Zq[ku5I^/cqnYhFQWE@8'[&_Mah=?H]rPXFuH%`\G_Tfg_GO:\+4Zs5bj4]H%ahRAZHD,,e$K3$GVSbgV!Aflb/Tnrfe)N.=IC?<Wqg_Gi[!;:`geq52[AhYDdl\+ZAGiXFs"f,5ph.CE`h4Wi6Bu`iLVV0Sq-F_p[IXXH.-(iX,&lNZ,Eb(Gl1:/n*A-pMMfPGadp]'=?O5*XU&~>endstream
 endobj
 69 0 obj
-<< /Length 3760 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1014
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Constraint revision) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Change dimensions, cost, refrigeration, transport, or available space.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (Compare results.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 100.00 m 86.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 100.00 m 114.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 100.00 m 142.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 100.00 m 170.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 100.00 m 198.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 100.00 m 226.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 100.00 m 254.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 282.00 100.00 m 282.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 310.00 100.00 m 310.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 338.00 100.00 m 338.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 366.00 100.00 m 366.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 394.00 100.00 m 394.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 422.00 100.00 m 422.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 450.00 100.00 m 450.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 478.00 100.00 m 478.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 506.00 100.00 m 506.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 534.00 100.00 m 534.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 116.00 m 534.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 144.00 m 534.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 172.00 m 534.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 200.00 m 534.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 228.00 m 534.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 256.00 m 534.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 284.00 m 534.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 312.00 m 534.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 340.00 m 534.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 368.00 m 534.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 396.00 m 534.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 424.00 m 534.00 424.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (32) Tj ET
-endstream
+Gat%!gJ6Nh%"6H'pp!8&QqJco4J<sl;G/[Y<]l0(^]ni4-37;L+5c,#AOB[$\uX(8*fnY"55%S]pe(S1/#'orm@Qq4MH8=SUG/Fm.35UDDaA&8.s+Bl.[)haYXT6<S\GQLQl^mK+rTBG=fNl),#f/t-!^YK;p.@'(_85dSLS@3-o+XL'SRkh,.5qWn,YOUCiCj5XX\X>nY>DUe^;upm99A7\urY`*W;eCjc-le1K&<me6.X1k18YmCKfQBC6-aX/ee$0;)C:5H=:uO88%.>ThR())!;Xsi'g]_UdFNrs$Vu\&ZM!7orF.GO,d$#nGN(KLSN1^T:Q&_#p#jg#;'D4!%g2!Q9o:"Ud(OFN3#.G(*<6kj,g3^j#V5<[nZ8T^-J9mga7@rR[1P!g#B-4Dl@e]=`f(S+&(;(l)^dWZ!P&2*jW5qY"C[RZG(PM_7tRmVBD1O-:(t6<HEQ)D[b$<"q$t\2=kb[8t&P/YuTLk$5:Z+$8"%GkK)h^%P4]^^rR@.)&S&W.Ss$)_,H+9iS$W*PR"k$,k6'%=uk6\LQj[7Sp8N=RFa22Sa_Qi*>74-NdsBD4@cGl@4aMlfE?tV6`<)(TOn,'2'adiCX:tB^IN-el8M.[a$o@'=md&j#ub96Kr7nd-'j*Fgq8d>h94dA"MJT(ob)K:TLP]8C.P[7VKu4JZr8>m;FB0;JNBeSmF5m&A8.qW'-p5Wg.mHI!>nUWnH)H]BR0tC@gu71#cS\!)4N3P`\d5,j/cBqRjStU>9k:.HG]g<l?_p\oL/t\<r^e#8khI.P-\BYHhuN'QPaa3;pUH7D4>:p5MM;AI)JKRC1NYP>3L044-)+VB-aJ8olM/[q'N.\gmX+hIPgfdI#Wu;#K15\3lAJIol+=h3Xd68/<2]iR]`R/VS2loS9l["mbD7>^0G19gpn_1L[!>I\B&#id<ke/naFHhO"_nsX:d>hMfAi$ci9]?PqO[]")Bk4K2+PVLkX*Xqt/rjV$3H9(@H"OoWV6_$WC0=T)~>endstream
 endobj
 70 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 71 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 940
+>>
+stream
+Gb"/$btd:Q&AI<Vk/\aKYoPp2O6*8i,hN/-&!0L[)jI.7&f)YX_s`PJ-E/u?EoPG8np"d5nMfKH>QGg/iQ&#&3)/=A/jMru*^D-N+M!)^,krB6@grr#0Iu-R`@."e);P/r=9L9C"\LJuV1B7gc'_Nf045[i5n1f?\@;pg67[c05Y<QM,quGX[g)+TD%Jk7/u[-YP]4!WD-C"!E*o_P%6(\1RciD@?^MRDpT%%T_E>$M!aXPNQaP]nH%b7G:7Hoq0kRB6/uVa5A[e&kE-+cDl\I?%S<['+%mf>#R1F^$QXFKaV%f0edFm&d\V(Ns(ZuT9E439jRGD.$(I)>rgn.q+p40f0U22eUi=Z&#$E&5)^kA"5HNPQ6O@Tm-j;j=V>-7C2%4RUIHtr7ieNd0IZulhZnqRHO];gQ?D)Vr[4A1SQ\0G6YjDF<'p)`'=7[E[kZ!+H:>3LHST_:p=ICq5%-:qm[j\q$QS[MA)ZtZ5ieBUAI$H0Q.Ek?>qr,HjHBeYomZf_P$'te@%7n0Ie<mt<2=%KCB^-AeT/-Sb+mk<G,=J;R6oi(83Pj7jX[`J7sgSn!/@-pbpm`f&"?)g(c3OIJD%p=KG=Cbs@6XXn81M3TEE$+kUXoa6Vb<QEV4<6BqW5OW6l\R$8B+LDjWB#16JLhWP)90%#:pE6LV"WUJP"NW2"=Y4[9<nhHJPkCd:@;V(QnH)Q3;0D!5urANJk^31g_F;b'7;b<l[9<M;hi#KHNM!!E`(&$D%(<j6p;;jQdDL]M!<I,2[X&Z,UKr!]rJ=$4!VnqBN/V43>r(XS[[$X@TL-#j()VZqU9+51#)[iRS8?A70slnG,69D>#%5Z%3EEb*n1CTi+D6uFnCC8Se'B!([]$]FnF?M+Jb0=g&oFSSqRDAIu_sT#>0It8ujB2Iq&^UJ!SMq#>0IT9&KIUJq!deRhP~>endstream
 endobj
 71 0 obj
-<< /Length 4551 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 739
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Model comparison studio) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Changing assumptions creates different mathematical realities. Compare at) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (least three related model versions.) Tj ET
-1.000 1.000 1.000 rg
-58.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 406.00 Td (version A) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 86.00 112.00 m 86.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 114.00 112.00 m 114.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 142.00 112.00 m 142.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 170.00 112.00 m 170.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 198.00 112.00 m 198.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 226.00 112.00 m 226.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 254.00 112.00 m 254.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 128.00 m 256.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 156.00 m 256.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 184.00 m 256.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 212.00 m 256.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 240.00 m 256.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 268.00 m 256.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 296.00 m 256.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 324.00 m 256.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 352.00 m 256.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 380.00 m 256.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 70.00 408.00 m 256.00 408.00 l S
-1.000 1.000 1.000 rg
-291.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 291.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 305.00 406.00 Td (version B) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 319.00 112.00 m 319.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 347.00 112.00 m 347.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 375.00 112.00 m 375.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 403.00 112.00 m 403.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 431.00 112.00 m 431.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 459.00 112.00 m 459.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 487.00 112.00 m 487.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 128.00 m 489.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 156.00 m 489.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 184.00 m 489.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 212.00 m 489.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 240.00 m 489.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 268.00 m 489.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 296.00 m 489.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 324.00 m 489.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 352.00 m 489.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 380.00 m 489.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 303.00 408.00 m 489.00 408.00 l S
-1.000 1.000 1.000 rg
-524.00 100.00 210.00 330.00 re f
-0.753 0.792 0.847 RG
-1.00 w 524.00 100.00 210.00 330.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 538.00 406.00 Td (version C) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 552.00 112.00 m 552.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 580.00 112.00 m 580.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 608.00 112.00 m 608.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 636.00 112.00 m 636.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 664.00 112.00 m 664.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 692.00 112.00 m 692.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 720.00 112.00 m 720.00 418.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 128.00 m 722.00 128.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 156.00 m 722.00 156.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 184.00 m 722.00 184.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 212.00 m 722.00 212.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 240.00 m 722.00 240.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 268.00 m 722.00 268.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 296.00 m 722.00 296.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 324.00 m 722.00 324.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 352.00 m 722.00 352.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 380.00 m 722.00 380.00 l S
-0.922 0.937 0.961 RG
-0.35 w 536.00 408.00 m 722.00 408.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (33) Tj ET
-endstream
+Gatm8>u03/'Re<230+J&@lnkn4A?6dRjK2b2>hudRPp7g/l'G:mDn\L8HT58S$YS#m.gFIF76ZE!2j%Ss0;[^k;Z`Q#`8Ht68=2l![%!sHc/TiGas=r,#)$/:F0\-D]^3ii%Ac<"J`LaBTQuSV"3Oab@gr7*]'SL&X(,$'UjQ:<Z.63>%sQGoP;3-9Ys7qToh8n>413S)i)U[AUAghX`M,2iYTo*[Cti581^dLW+i6CZ/tHZq$ln)ch7>o--TJj"/s][_S/pF1Nhu^Fi#""Q]82b?V0CA/3og[,`EgC.>?+EkksFV\V,8sp^F!XmjWNK(K#3[DZ_>nUsTjuR8=+%R#cW#l\<-Pg;0?<]\"!22=++8Zn%YjDKnU*b#38*dQuR/.I/ru01hi)iD\1Y5=rkmmLH9-gWeST-/%>SD:u=&;jAd"21ch('O-K(A)W$mmp=IVpn[HE>+FifNhd#UC+TT+0.b3XV@;=9$$FYgEQ#cg0s<<oOG98iJce3EN`NOST.EkFMhDGA-IcX)fm8@\)sgSVh890H;WAN[e[7&B:@'2(&%5_(?g5_L&LA$`E%%rmMit*fp#s$DH@ri4^HKE9/T!^sQ`,C[9.lOB3li;qWOG)A7l,l-3s>Qh\\5-!2;D$piE*3tbFV;j1];4TI*os\RDFhRA?+g6`h+n2S1g(Ec,$qEoB/acEh2+Z7ka\U\2iOt#ZD!&`\K<e;kmgJYQ%;r2;F":"$D9'?i~>endstream
 endobj
 72 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 73 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1139
+>>
+stream
+Gat%"gMYe)&:N/3bbJ[X%'L<:'Z<7AZnU4P;:&rE9<Vpmi^hc+!W)>W+Xr7CC*_KOMFU1tS=/>TZiW49KtfN/^h![&Y65+;eL_'O1fW)rVTM)6ba+Qq&m-T?>SfA7JI$.BcWCZaZ2q=?GV:Z@:`.KR-JZH7//kp,Zc'u%,ZCNR"q>:A9.kc5D0Tc'3mn'A*=G>jJZ=L3pL!+&oeUt4%W6m-PFLaajPXBih&Y=lW<NZ1m8/$%BY8Q6ncGh<W6Rsd0j1/DV=eS&k/juS)!NAQOL3+i_oYVK3VY%i3Cr:,^V#_;$">@f7=B?%rORU(lORpjhYcnFogJP$AR2<ARHO?2APQsK^k@i+^/J(%Yk5MaHelH7p?302BR;\^m5W<+0Rl.6R(_XhN2HhCf2Gn'm+_d"NnpBLNmP1dRkIeicV?j>bg6jH\7%ZZMjn>PUC`;?K_1Z]0Ial]/NW;AKNNWtEM#%t(#NU<'WkcRQ-(L_Kq])394`qF^h73!/C*Z>,B=d9bXgMUM=ns+i)ML1d)I9:ct"uUU@@cQA4;lt/X"Zb=e`/eb;=BF1dX-K?c9XS"p;`ba(q1[#@d4jATuhhGmJPr%m2M[F=m\WQ7H=Xo5ZnMQG@Om%M,pdo4-UdA7o#dNO<H!P\:\b:cic>[IHa'%k8LaBp:T0%dee3+%RAqdcs*W\<@!'b-M3`>4Y908E`19&P2+@l4MZ_8o*ojVNT@q8HK38q&2gSWHaXQOO,IL&kM4K8eO\Y1.i23Be?)*JV;TOP!D>M;3F2-CE=c.U`%)i@Ki1V8W5Zk#W<;?%O?Xc'\l0Dcq\)dO[c_,q5QntVor)$d-d?-'aZ0-gWeh&q;h$Dc?U#V>$8e,Uj!2HW25^F%l)>;=Qlc8h[!Vj\ip)h<e9(4./@Z7;p)Lp@MiY,qX/XhDEE68@+X2&iSucgO3=lcc\k;1N(V*RX?sPq<n;0W$]6;i"@FDks)V6pd+m0hd2f1_IN;55k/M`.?NEmUkSi?:kT2bnm0na^B-^+io]*U"QZ7?HAtAhS@OGk05!*llkj&J?9$K%Cdtj#XYPop?5OirYIhSd2BPbdKQ\F,l/l8mZ^=S$TmJY$;$?\_H#TS?2n75:=qK1h?>Dmgi=h/b(kqGHt+*ho1H2~>endstream
 endobj
 73 0 obj
-<< /Length 2271 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1127
+>>
 stream
-0.404 0.286 0.557 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 4) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Polynomial interpretation studio) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Use this page to connect polynomial structure to physical meaning.) Tj ET
-0.945 0.922 0.973 rg
-58.00 312.00 210.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 312.00 210.00 120.00 re S
-0.404 0.286 0.557 rg
-58.00 424.00 210.00 8.00 re f
-0.404 0.286 0.557 rg
-BT /F2 14 Tf 76.00 399.00 Td (Factored form) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 374.00 Td (What does it reveal about) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 359.50 Td (dimensions, intercepts, or) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 76.00 345.00 Td (zero-volume situations?) Tj ET
-0.945 0.922 0.973 rg
-291.00 312.00 210.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 291.00 312.00 210.00 120.00 re S
-0.404 0.286 0.557 rg
-291.00 424.00 210.00 8.00 re f
-0.404 0.286 0.557 rg
-BT /F2 14 Tf 309.00 399.00 Td (Standard form) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 309.00 374.00 Td (What does it make easier) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 309.00 359.50 Td (to analyze or compare?) Tj ET
-0.945 0.922 0.973 rg
-524.00 312.00 210.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 524.00 312.00 210.00 120.00 re S
-0.404 0.286 0.557 rg
-524.00 424.00 210.00 8.00 re f
-0.404 0.286 0.557 rg
-BT /F2 14 Tf 542.00 399.00 Td (Domain) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 542.00 374.00 Td (Which x-values are) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 542.00 359.50 Td (mathematically valid but) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 542.00 345.00 Td (physically unrealistic?) Tj ET
-1.000 1.000 1.000 rg
-58.00 90.00 676.00 160.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 90.00 676.00 160.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 226.00 Td (end behavior, extrema, multiplicity, and physical interpretation) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 205.00 m 718.00 205.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 183.00 m 718.00 183.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 161.00 m 718.00 161.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 139.00 m 718.00 139.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 117.00 m 718.00 117.00 l S
-endstream
+Gat%"?#S4R&:Mm.R)e'`f@Z+S3)9f4/I3L#gJmo-ADQ(Kq'\fMKQM]+1U`LW5]pM9m[QGFkKMR7ZR^RdT5a7A#Oo$PB3,.fK^on3@LC8%E*4N['4qThdfNVpnkA.YPs>Jaf*TXYCXRhJ$pRAe*TWYFW<ftPSHPjFHks6E]4>V!KgnR)X+EuP>%q:[(_<u>KYY6!TqUi2m/#HngMVV4IW%aO0\U5%N>DMG([]%f)Cpngeauk"O+o`#c[S6+#N[tF74rZRR4>U(Q$Kb',A+MZk9R/cc>[dZd2Dj_a;cIHY+Juk0Egno"_E+*p&<dJb?&Xg^>HVKI>N,ko1sY<]6k=/04L%-('DnPKe[PX!!>o.M<LiSed/&Z+QY5+2mt^dk6ku"foF<2_S58N5;bem?,10S5.)0'LT7d!cjnU?kmqaf%`?Be01*B@(dHJ0AhSjCKBMZR&(T2JGD@Ep.U0SQ8ip-eA?&R9GtK_tL?]6BJP3LK%'K"2/Ma\MU*\Z]`59FanNCGEGGh@Cp?I=4b]C7RC/ao8lR$=&O=.=kH7%An_$PPJgEu>NeX-o6351/J_%;P'PT5mRk<@Fu&?mngVu[#*QDL`^Vtm^/r=&;&l0mkOgeC3r_[<Q+5u32&QY:b\:l?gjH5&FR*Hks>Y+Y4LZ,Ae^FsE";,he4lGZBbM&CH@?)F6c(6&e,t(I=+t7anX=fOQN^Fc[j[d=s<B`0)P[Oousi%?^i<3X_)R,.\&C"?'H*+A!]M<KJI;d<Ug!&=kZhOp'bX`"0cnEkRU&ZR6?d,\HC7"=kq2#qVd0`e4GRBVVn&NR1-2M]SQD1q>"IMBXroaBnF7o@'-!4A;k$%jaeS,#k7j3nlMHXYs;FBb#V+^kmMerqiGla1+\%T++:>Qg'<?OB^bBj3HMippG\%E+u>YLN2N!jsR(!'+`faPmj4RqJl2'XBE:T.%`1)1g(OmpK5[:+05BKpGef(gMe(_0UA#S%^^&K/,TIen1\6`-J/j=,2-M")l=Le%cdKuqs9XR-V81Ffr<dp=5DV5C4^.@#7P-jreo"Xir:%u*hZB*E$UoHk'Hu35f:UO=lZ]nEu.Kjf+":)kP-9V7r/%Oa#fp)>1D"sb'a[aHOIr>bY%cN~>endstream
 endobj
 74 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 75 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1015
+>>
+stream
+Gat%!gMYb"%"7kOn?FK%<>WiAT8FCtL(3Nr9/l4bFd0hH0:D4/.'SaS.:;)C/(Q&'78jm28KBPf3.?R2V?Od**"HQ^KS9.67*%]^T>J]4p_>J%>HVFCYqT$gE")tCE:l5!&Ng1BKS&0pZqu;#SB6lR*3OqNW?n/k)L!g%MP\\`.+D\L,qp?S*a>REF?oJLF\[XFGl`9DO%nqt#&_S;X5Tdr9s^rBr.1Vjj_jAe,g<PLa`4AmF(tLPk'&N:-a\_'K0E9P%SijkQsF0u,IAV-*H?hRBgFV$;ofq(o<&U9&hJlA8jQVKI6Ts03BMeMo@'>hcHj3ESN_UR#p.*$#L4Rl+?6:A>@9cjP[8m@&R0Qp`BEiE8_^7g$WpGPnI_3J.2PQ=]]';]X<4.gk&%QK+1#uFKXSA2$<K,g<Aori/nnSn$)H>1/7nhhh[JI>pU%c*#V3s>\DQN@nEf2LA9-bfkS4f&@$-^H.ptio#FHeQi]6MY-j,CY7A*)&CE@/G2^jfK*&Khodt[9*713fpX#.iN&S"7B4!'Pc"*pUu7F/@'619J5q!J^fSl/5fM3$!>WaA;T>o'Moj8CU\*BgW4hUNAC",iE,DprS?Y&'e;BB;;5)`4$0Fd&;'1"Y!NVc]Zd>WU_<j+c93/u>HSp9!K.9@UA?)OmO(UGSu>XEl`q41,ZQ)PruC;0t/m41-%N8_U0>!(kV;[KE7p!(I&s1kAR-R[Shf=<5m)67P;ZI@J3Q0,'=,WgY6BH")oD`StB]5*:B%B=\%cqI0V^P4.^K.>Mf\.jqgWGOq)(juD;'.E=@&e5`bf?gUAphIC%rZ=fNh>3IuJ*Cgt.e!!b[MVp_M8IOcD.9AK(Z4\4ZD*<V.d-qUfCfDcAW\HUE(pX>]eTAU6CBm;Y[.$oBpWq-qh\i^]Fh"p*(JlCOD@4qP+KI"$Ud"]Hk$RY&L]:UIrt*5(NMOt^58Z8.p&+9][I=u*;TB]U7Ao0A1jic]m63]/g=7C=IMM:V&%Ysgp^8UN\@h~>endstream
 endobj
 75 0 obj
-<< /Length 1090 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1146
+>>
 stream
-0.980 0.984 0.992 rg
-0.00 0.00 792.00 612.00 re f
-0.094 0.122 0.165 rg
-58.00 106.00 8.00 360.00 re f
-0.094 0.122 0.165 rg
-BT /F2 10 Tf 92.00 448.00 Td (CLASS 5) Tj ET
-0.094 0.122 0.165 rg
-BT /F2 34 Tf 92.00 398.00 Td (Revision, Synthesis, and Communication) Tj ET
-0.200 0.255 0.333 rg
-BT /F2 16 Tf 92.00 342.00 Td (What story does our mathematics tell?) Tj ET
-0.980 0.984 0.992 rg
-520.00 310.00 190.00 120.00 re f
-0.878 0.898 0.925 RG
-1.00 w 520.00 310.00 190.00 120.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 534.00 406.00 Td (SYNTHESIS STUDIO) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 534.00 386.00 Td (Evidence becomes a claim.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 205.00 Td (Use this section as a field notebook. Let rough work,) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 13 Tf 92.00 187.00 Td (uncertainty, recalculation, and revision stay visible.) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (35) Tj ET
-endstream
+Gat%"9lJfF&A@C2bgA:QL7]*$$65^6;\W!dW9@C7d^ue2m8hXn2:*H&)3U0HUdgPRXSDEUcC5ti7Os#L=86R["2(VkeVsPPTt1K&R>1!.po2F8ba9t6=!b(K'Y,i8e,g6;^!0XhT<eR*@!F=VoM?CMUaFm5V^raoA@'4r_'DsU'F#"\UJ!4j)/XV4@GK<5&KM6KKn67ZMbd-tm.q$;)g6+P&#5VkoB>*S\F0(YO0Jlq2sjFcpuqM2Re[2e*h^(i[DZU,2O2jO;->6p5%:=gF@">%k6r^s4mg'E\]d>pDu/"D"A9<8;GbjZDsshnr!_2d\*pB`lJ;?lB?FRslV_TR4N@tIF4tjH9GiWM.rD[d9<YG,=+3*PDJ\*BT!"_NGB8,rg8:F5Y/(!!O05[i@!Cu'G.<.q0Y4i2Vn$X[s"6dMDiY"'4WU,k[_XQ`>s5R4T)E"%`=bN6bS7Q=_TF_smN7*aHie?'CN<.aeLDtN_/_&k;8<N-+(1BI&_DTkOWh%j]?cGWEU5G*nIR!Y,R8s'`CrQfMpOeSd3spic_I9N@IC]t=p&;l`We$DfO`G9h=,7npQc^+#]h)kEE4'8`Bq`Xfpg.rlBWSq1#GtK!ZfIL:Z6"On(]V7Ht\:*4;=/XFlSXK@3mk`U8:b^8K:(b;!i#XM\f#$%JDVNS3^^J@."74a,RGeO>q-R^n^HOJV;T:dKgIHO(ne1\r:q<2O_'3pa/p2Bqcl(KXQ8b,aD=k8eO[.'dX/3F<2_7,]jnM$#Hu7;3F12lR5=ITo1<j+PCNO,mgA/Lc<6Z1;/eeF!)'r,XrbE"=kq2N@^c_`df:nBVY/fNR1.]M]SS:27Y+J8j'P_b<b]%n^F*$,.=nbLabo6(WoQIQ0jKsAm7rN<PXXuYgqW<IXA-2r[sH5^@!H3dQK;n12D=4]Q<ff^/(s:Xr[$h*rFFa@e]KR;&c9nZ'&+#='s,(oo29-`.hZ57.K.FoaK*=*qjIVm/Tr&o=2B:Pl,<iBe*KLRh=IDLS:9CZf@!TM1bdec1(Ng5(9c^rRG@)BcK;uG<>$S8!chB0[8Vi*>r5a8*%GCmfEG::oi!rP&2fZZi4C+An-7m$-1csK-_6&L@ug1r#*D93T95oPqO.0lBrIM5";Hf#hcul+pB(~>endstream
 endobj
 76 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 77 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1059
+>>
+stream
+Gat=)92jS1%)2U?ka4-0fn\0cT,9!'a)p#J9RH$C[5Yo5gXJ,XB):O<XWMPUR?iTDP-pH:X^2dYnP?Z-=o]P_0L$3n,fE=e54]rs!2m*r_db#K>XcFP&I*]?e/-3Bif1t[Gjn>p"iGOuTR]j[-@On*E8gIb%JbrZ\T>kl,_\]X^@id(JSAK_a?[E_"47A)3>EIl!bN709l#Xk0$DJin@>u%F&uT@"\7mDrE^ioi@HXG2',cL2JleeHk#TeThSdHkYq<Vi)K6'g,\#3KFS;l#FqK.>#5_..:`pO3S3jY$&2PUV4_&=:-Y>cn`ef'0CM(Vi!<[Bil1$Fpi:Ac'uTVkr((\!huWg2$;Mm$^kA#p4c;Xd5tDfEiY992<[LY[@"f\1G%+O\[JOA#D)nf*C`h4damsHUBk<XS4O%`rmR,F<:N.K&cd\8mff,m_raZs][aW%D3t.9-q_'AA)lN!aZT-SH`r;:oE6.hH9SZ_G9\rk[mLHhX]?0$7giApSd46WN@"FG4.q#'F+#$%qKQc8\=F(1Z$VuZ\l.XT!]2.E7ER=J[9S_,]a;RT4U,!.J*_i-fF@RQi1ls)Z.=*>Pp3J+Y_Das>GtRTn34/JI[<b/;g^r>-GJ)O5Fjo's:bN`$JUn!Ic!JlUA_:D;?KL8XF^9'XUioWR(3+2q='6fr-'GF]C$GEHD&p3Z$?>6BDB).cV\A*@pL<2QZ%u@4->k%<`?7Wf,=^0hN8-lR#>!i4@Qm$i2i>k1BI88GJ/:o;e:=En?mA\W[FL@r:r@`<6t)]7>1Jip6f$lCMmNp?+#A"(%.;C%hS6NQAl'oOZ3;N8Y^it=jOUi_>M/$UQZHJu6_S/%F]I5*4"&I-pXj^@flreJ7d);&):pOtVf,I-'Z%Oj,qYoo8\),Ej<ZohGP)fmd"[<@C83c)cO>P`!CP^/<h[OO`'R<Y/Nd#*bnE0cT4<)C(=2F")&12PSO,3\Zuq(Re;&O`q0W%S`ih#&^Q30I">\Kef9Z]W\Gks>>.DE^f6%PaU6G+!$(pF'Vq[NL8rIq?-erthF@X1E%14'0BE~>endstream
 endobj
 77 0 obj
-<< /Length 2665 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1137
+>>
 stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 5) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Synthesis table) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Lens | What did it reveal? | Where did it fail?) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (36) Tj ET
-endstream
+Gat%"hf%"(&:Vr40or0r)?3C#-NrFTlD[:)/tdR8A_h7X9sQ%t6^@)#^DYct>bD.A[IKS:p3\[VnRMfBr!IqU>C]coG^_818D)^JcqM@>&q8_KT/1(Pb>ekM'Lf/4*48$7n,LI2%UZLOZs\,3/[S=kcD2f"L[-K0[:HV^ah]6$V%a+CBqn<RJJi<LBjnNJ"X5uCN!]ZV(/D"S`lYV5I-A"VJ@C.Ma5c+95Bs`RFoMjb82tP!C6+GP4',5(?ulRB;c67^(2-W\4W@BFRJ%+8?).jk2E>D0\S`i$5NOX*ah6m$k7T=39VnD\:YoD`rr)!EYD\a6nG;/)`V%4#Rn)Jqb3Ms-niXr'b&b_="X]0roSpLee>3s_gl&pbrb]*HgRc4sdF\tBnG1^4NU*Gt(gL9&Ph%Xh\h+nF%qAO>qq8TFVOQ@[(u/(b:#E2tH!SX#VpA%faUhK*!HJ,^\F7V$qcq7>kSC4lBEcS]<(6m='RbL7.R./C4pbM,EH[fhOlNstN5Vi^=GIk)?557"D(%^YF[i,W$9sSD<J7p+,&%LJ,oUR+9]J<p7d,T1Mn$5q@mF/dG`B&h5V*t[CmVgr%ABqIJ`l*\c@\C&Eod[QS;t+M'26$8]5P8b(_9X6P+?#-2qF_";PH`&6FkI"e]&\64J6AlV,?4\3ij?&Hm!E68ZMrMj%9[6.aJ_uB[%c]+JJD*7NeDJW(16l.BUEFR7^'b,mbj(j`;]HUuG775XMM"8Ka_u-qPPTb:#qiV6u8F";4m.8HK3(6qIGOY'H6WOCf&BL_XHH,r+OI,$7Bp304C];K*RX67\#r7iKcIkHc)#PqH]46E=mB<[<oSC_rFjjJ0Ug3TiitA7Z?GP27WeTpAH^5K#D5@\Kh(INs@ProWk9>6T1mU#`C79I].ZM.)KKlPnu5GI,?!#kkm,%3C8<4\SXp5;+(c0e+&:Z3p!aCK\9^-RbS=&.FOHrb5G.;"(FPenq,Fi1W@FM];8MIfVBCTdtL4U3l)X1a?g`S<5@Bd.ZK&?i&a\X*)_&(i"iPNr(E8e\+VP7Mr%s7n8:Mhhh8,r8$>h")9\3>I)Lb@@"Y7e825T2.9]n^TiGYh,#^*`ud#uR1l/U?MW+%U7QX.mTjoqN0*uK9KiIq~>endstream
 endobj
 78 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 79 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1147
+>>
+stream
+Gat%"gN(e'&:O:SoOCF'Ks%l^6if`bZF(F5A/:br8!u@,-#7k#W8ck%Q=O2#;@A\Gqok2P8)7(P7f^RoiLb5tn7i3ScNOR\],M<MC"W@nDg'f`)7-1$WWZ@[,1d!%/J,bKT,Gi2F4PsZ%)5FC*>F5aW<p%QSOKHBI$Q`P\7DV(_Or,jFNGg_UCAk.N!EN/il6RK@:7^'an;!7G23<$p3Sa85GO^Fj65DO]PJ,Hj&gkco;8]p*#e6M4[4ST*UHNm/TFpd:SmaD<68\)4,e9H/kF^WSDiP?UE'3[Q8qLu>sCQ??jU9l"\!k1qX*D;mcroQjUSHM]YCtjG^K6Wr'u$<W_K)Jpd'1#\[TA-ObeIJ=0&q)iee!2gT!ItfJfAeVe5.j1T6(C5(h8=N6T1ueVri4b[]1!&&X2J_mjOOV#"%JD=t/V0KiCCA+4g.*\,AtT#.b'-h`%@'MBS5Qmj^R_TF`*mKZ'Hr[)ZX5.TOfeLN%O_/_&k;8<N-+(1CP,d%6AQTh`8]??/SdC,I*Ga]8K-3o0!`CrR1N6jn^Od/AokL&Z3@IC]t=p*iBClP%.[TR]=?hh'cHVZL'KLLF;3%GnVZ/W(Dm+#eUFh9,*3knZ=!]QDqJ![)/\9Il[o52t62uOni<H9jrjMkBq<(_7h-JT^n@VpK-A'LacNi^/:<51R35p4QmUt(#a]9*/Ub-M3`>4Y908E`19&P2+@l4MZ^8o*(K9I6NlOouEOng0Gu;Xl/,+JDf",`pAuPU)@;AX"IEd99"2!XZ!(,_:V$U*P:8f/uY<82H'/L_\us,;J=G,$7Eq304DH;K*RX65tmb7iKcEkDL7PN@l#16JL)PU.?]cZ!FgY,Tdacjd[-l\WoUrP4Y3:)eu@XI1aqEM\fY6n-9!\3]EtOhC>bW$RL;+LJ#,L:^i!3>2M]NgeE\[(@76#@sf,u&^F0q5;+(c0e+%k=bV%l]rYLH*>D:c#_jmfJ%2UmW-oK>6drr>iOJRDV;tt`:#"A[^*7QD\7'%tfFKqd=lQ*l2ZS4H`r#5U\PEZXP1nmIZ/%cKh7HX$JnZ82grT9M-^"F_s*+6rJQe&QQ>CVFR.ZdJ2&kk.9fU_L+"X+)D^ZEQj,Y%KbR(&*=$Cc6W+V]dHP\U]/7dW<4AZ:2~>endstream
 endobj
 79 0 obj
-<< /Length 1980 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 939
+>>
 stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 5) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Where models agreed or conflicted) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Compare mathematical lenses and assumptions.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 264.00 387.00 m 718.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 365.00 m 718.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 343.00 m 718.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 321.00 m 718.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 299.00 m 718.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 277.00 m 718.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 255.00 m 718.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 233.00 m 718.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 211.00 m 718.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 189.00 m 718.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 167.00 m 718.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 145.00 m 718.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 264.00 123.00 m 718.00 123.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (37) Tj ET
-endstream
+Gb"/$btd:Q&AI<Vk/\aKnQuq+=FRhJJh>@=!85l/5tT3G@1gpOr6@99P)9>m-Osu=O(ZHRIl%)D'u9>QI`tE7df`G.!ec6f!JG&'Ot4%5K&6Sbeo52O=V4.b7]?R:i9j+N,'XDDd"7rD%?qEZS4QHH!gZ+oe5/hsMn>'E=XcZGUdK"0";^9a>6FPe2M`DV(K?'LP]4!WD-C"!E*o_P%6(\1RciD@?^MRDpT%%T_E>$M!aXPNQaP]nH%b7G:7Hoq0rEBF(K@BUZ<POp3'*q3_h^*RS<['+%mf>#R1F^$QXFKaV%f0edFm&d\HEAnMt;iW3*TYFbjI*MMk@4Ima!O&HU-FSd8l6'G_A;7_W`*M0G-pI]n)m^,glcl]E>H2X*%aN+iP([:MmhJ)TZZ[[]Y0]rp\i\=1(l%mDe+HB5+UQGD*#S]Zja"hSU;OaH@St<_N-d;uZLqC6'(^a8;Tb,RNkHHqNq'dhW:W2D);*g,Z*;JTt6mDHEuk5H\lP%0lE@p>!HlJsQr7a=('4C77fc$>Hp%pZE9GV4_PmrFK1L/$u[dI]?\C;LREH(-18`48":e=?DauHZPO!Q`<h\%W+,j"%>:RA>BPIYdg_O1XpBR&,]F/J\flJ+GF?t%NGgT@`FE#7$P?j.i-.SS3,Ol((?("0l7k/ljk\II<U7<%Uh>KPRPka=Tl@PW:4dSpG"Ht(LI.^qc1<P.m>o.-9+0V$8M5\^)R+F4pZfjQ#G`T!&0mI'XKnY"ufa1+,[3okg;`8oP3>(KeZ2_P$@rm<S6r7&`m[_\hg'#N<8Ro>A5iICYkP#1,2;tBf)6FD1<U$VEqG\"H>p`dZ9tr:-GNb*lFlse-:ulB'LR_oVlNML[+)]p0`tCqWo77;TUlb!G$/q_?6W!8*SJ)V8!eBFVOYdYlgge9BibbV8!52DuBpW57<+5'`~>endstream
 endobj
 80 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 81 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 717
+>>
+stream
+Gatm8?#Q2d'Rf.GSB%eT>hdn=Su/Yo-;Anj)lc&"i[2$?3_\*ng5k.1+fn]?Yt;h7g\CW8F$FaM3"6J6AHR>(EAA=A');ui@LDok53:2dLmcKV3!7>lR])H_-"r"UcOih>&32/TBJ0f5Uma*=L38JE1kM.s1F(p#,`=H-1]]&-1+pDMdQB>L<l5(q$JU+=NP**T@dABqG[.eUmI7NihJYH5?T>/hp:;as0s=hZdntI-bPiOQ>NEg,gEXe(0OpsQTWrfRG!V]peEK6#'@+\/Ck`f)Q"1BH!qaT>_@0'EV&6j/3]fQ3/>/UH5!pdZ5En:(LFDs0DZ_>nUt#M-6mr.EbQHb!rDEBjFYbSWY$YC?q&'OK`*(hO)cr:n:T&-P;-?N5*p&L4EcaJTcV$m/M"p2G*bJ=AD-cf'IG8VDCop4>l-L+iM`t/*dG)83n<Op/7kod3EMfYD&NrIF*#Y,06'<Nf)8$J!Wg]F;Lkk:X#BkuW?9&c!*hQ%n/%YFM.8fu,#Sg`A#f=6[ob+Fpm<.1?_>_*F6@D!+`%L'L&H=8!dB>&2:R"8'_P=np?'H%_[R8Ya<bjh)h;&JY=5'f1.bATO'Wn[>b=s!fmL#m3.uWBAp4O?Gh-K,CPi6)0iUj^ilku_8d!JFa6lSKVJf0cn<)7pRkU._LP;."#5'(-koFi$gSc84.5P\g$al3lmV(<7oI\$H^$q.i26'==M~>endstream
 endobj
 81 0 obj
-<< /Length 2695 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 972
+>>
 stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 5) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Final mathematical claim) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Use evidence, assumptions, limitations, tradeoffs, and implications.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (38) Tj ET
-endstream
+Gat%!gMYb"%"7kOn?FJt<>WiAT8FCtG<ms"NJCr'StdQKIHbRG7=fmb8GS^W`S(GL)2dDsWC'ega05!YX9:LYi8dddOH=9DKIhf;$8.M"GJJ$2\VbsW_F1(`)%+mOqEr%BGR,c)"iLAg64$,&-:?2h=9V&g9/0pumR&`E9;+(:W5Fuq?ole"[a8i)K,>6eK*i&Z#tM&:[W?!fhlF/#i+qB,G2G:S")#U(rG#5lE1'dAJP5ZqbIVnZgd#mRBT%rVA#_4&K.=QRqhCA2d"\39`#1UK-2$1r.<CTpLH`85?qJ=<$EEr9p%(iInRD0*"j,Hne\qRY1XK%Ecof/U6?DG("X^TEm2tNu=F+5k4mnT9>&;ZK?/!+U?UN[9j6g2VS9h6R-4]04RMVn%bDVF,/_@AG;PfIRb1nZB$$oKhh[);?C5N@UG-K%[V%k\ZkQB$A\SrYc1983bG8Y'+Te$6snR*WJ%#`-'@bUUKKh/R%+=W<?IRHTOqbEWVeNf6fAf-qH&I^th&"be#+">*ZOO*\A]EUZ&*1gOSS0.L%cDQ\$n0YRO9Is)5Q>O*<];gL$QWLYA[>"<,c.q;h=Nn1\(b(af&k,S%R`A8%JY_k$_/[u[HB!Za2^A&%1MW+V`+gui2Of[Cc)Am!6ljLMc"8t&OuAg*#YE`\[NhMP!(J2>[")("RTb;;=?Y.7+Vg]>@=DZA[#&ZTlC'$-H")oF`TCZchNNQ?YW7.qIBeDkag[8/PiJ:nO],BJkOdJF$G<k=\f)+UkcUo.]C*Xpo\]g0<[@uoWIBMl_V46dU3[$,C6AkjDhi.q<a1>\5m<>B^7!CdBmAnrOia-Q%?0O[_N;72Y0gaa`BdY9*B_irm?;td5"Bd/%bLEn)Tq^'/YQ?]];ES9Rcj+5chP,g(D>+[`,!4Zdcfr76j$g[s8-:XrP=ZJZ\EeRg\?>R07<WH_jrG$/`Q"2iP#ampC`(mc(V,&~>endstream
 endobj
 82 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 83 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 996
+>>
+stream
+Gat%!gMYb"%"7kOn?FJt<>WiET8Hs<DF:n9WJ<W`NgdKN-*uD:"nqI2j_MFCCD4Ws.#NeU%V5Y\^VW._!oPniUSRr6+he-=1EYUL=N'&lO."(.'`j4\)#,7H?_@V($]bJ\gFL)V%0&s&"b`=#l'%^VNRnCm'Ji)=/gOAX'H.)Lg5i`HVL?]6"8.C,Ld&'rW6c(lE,bF$['jZ+>Ih1"I'%874Ob/G^e)8F5O&@s/@.+REN-OUC&8D"4,=CRD&+nFR*,/YTIQ>>?"9]UF@ab>i!c1*JpQpdPW;:s66@d*(fIW(JuV$0raE'8^uqci`T7Q!>c\^!F1>Dig!uGNji=]PEP@d^1W`0F-,Ti_?o"6I_>k6QU@qA<@k,o<U:AD-X=AB"p9$s?Xi3er@bYp-2R\14>XO+F/Ttu3Pn!Ut;LD#M^8=9!>RELRbM>LOS`:Q2NKGI'`i,PD#7HJi=of!GI=N3p)X[]/A*Fm'/j(]ePe!\<Ss)Rj@E&"@9S]cZ54U?!8BNW.I`+n,q2Ur?d6NgbVAP_3me&m0&"bb"(Fd=TOP]d!]m;tFS0`+>SK;sN:*dWKGSBlV-5J#Md\_FpgTlNVS!E_N\Ue@ZUipo:/E5A#N"ehlM5"J^NMiu9Hr>5>`9Ge,3/qOV1ZKnUB%0;VLfA:>D)-lU0V^Oo&[aQm2OWY,8_R_;"!hTUfaN[K"rIbn_$j'JBPJ#8@WbLoKN*UCp;7PtI@KFuUTPJDRj/\o)f.]]kWL@S-+AZ5V_<3i./C:hQ#[^>4E:dEglS]*D3!3b%cMBR#J1lZ[s`6?*I*X)<QUh<WZ.Y0Y\(PHW1KTVRO$]hgSBOFS!4l(L9-'KlCf9J(he.&j>NI)>6D/8eeNMT[bu"$2(ea/lMDt+m&piNSQ]9FaObYch:jqh"&3!$Qq2Z'9]_o9GDGW7U;)c@KF)1fa7g8WJ8tMUNjWg293T@Sl:#@GHPSg:kuRP&^3$`<VdG+hmZ[&aG^f`cfWP,~>endstream
 endobj
 83 0 obj
-<< /Length 2983 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 997
+>>
 stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 5) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Communication storyboard) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Choose a format. Plan how mathematical evidence will be visible.) Tj ET
-0.980 0.984 0.992 rg
-58.00 285.00 164.00 145.00 re f
-0.878 0.898 0.925 RG
-1.00 w 58.00 285.00 164.00 145.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 72.00 406.00 Td (EXPLAIN WHY) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 386.00 Td (Do not only write the model.) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 373.00 Td (Explain why this model fits) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 72.00 360.00 Td (and where it fails.) Tj ET
-1.000 1.000 1.000 rg
-248.00 88.00 486.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 248.00 88.00 486.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 262.00 408.00 Td (open canvas) Tj ET
-0.922 0.937 0.961 RG
-0.35 w 276.00 100.00 m 276.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 304.00 100.00 m 304.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 332.00 100.00 m 332.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 360.00 100.00 m 360.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 388.00 100.00 m 388.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 416.00 100.00 m 416.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 444.00 100.00 m 444.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 472.00 100.00 m 472.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 500.00 100.00 m 500.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 528.00 100.00 m 528.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 556.00 100.00 m 556.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 584.00 100.00 m 584.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 612.00 100.00 m 612.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 640.00 100.00 m 640.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 668.00 100.00 m 668.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 696.00 100.00 m 696.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 724.00 100.00 m 724.00 420.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 116.00 m 722.00 116.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 144.00 m 722.00 144.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 172.00 m 722.00 172.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 200.00 m 722.00 200.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 228.00 m 722.00 228.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 256.00 m 722.00 256.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 284.00 m 722.00 284.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 312.00 m 722.00 312.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 340.00 m 722.00 340.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 368.00 m 722.00 368.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 396.00 m 722.00 396.00 l S
-0.922 0.937 0.961 RG
-0.35 w 260.00 424.00 m 722.00 424.00 l S
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (39) Tj ET
-endstream
+Gat%!gJZck%"7kOk`IWBfo+IoIUW@G=us#h^eCA+a%6]RUp__i9L$8>qALb\81'Y(e`phEUQ#86?f@SJ!H8snnPXn!&?S7nb_PBpc6MeEa)#G"$A!oJ"MR1d$e4,2PK*`LoLeTV_fogg!2DQ<53Y)_G^WC]0gg'N68B9JTeVY4rK'Z[g=JHo:iC$"kS*96$4Ti5#<,FQRhcIgQE.BImrd>@%s85/@$,BUT61PTQ<>*g\5_:\8c&O_4,=@QD&1Q-9]c.=:h=6V=*W.*g(:V$3()l)TGkHlAIam6d)SccQ;fE3TMlp`0>9"jiTh]aI#a8G1OM3p>[2[4bMZqAI]0+`G^pm[JPuY%0VKe-060m!$IWLY\BEg=8Kn&'XjSsrO!)FD(:uK*b2s!#XN9,*Iqe4nPud3.Wc>QfniOpM?(N@5'Dl.fB#o;4V@?Qo=?.FY]7hkca$&ht-:d3X;*iS>(0IQC!bN-pJ6CkSmK6ODd^/.CGZk4uF&,HqT0tGTd.gR6)sSoQ((u\(1rf>'?Ua->DN\$&73\.-A<OLT#GDqtD;m0GJd4Wrj0SLF"^,ib]WHC(fH#)Y#7eqhL-f9WJTC*og'?tU$gfi&n$@$:bq;c>=_CjX[C$i#PSb$%7i*(J?b<kFj!fUZX1<?kc"q%4&a@Q=NFid&hFuX62I\A82OP/b2kr:!jT%m+AEEt>Bqs>kLirt>%!]Ss:(:lO%Q7d=:j[jpKPLAJ$;FkS]'QA1QIt>U7G\f<NtqL^$Jmo2_me)2.k$X0h[iF@$o,2\_HJn:fBG?:lOAVg*6_\oi?5lrOUf%E``(!N?)ej;kHK-B_!!mD8Ms'Bs07Pf8@ENK8QV"=n5MR#@i>FY:Oq4io5r;Df"e:PO4fg5MQ1CLZ)[8bm2Kpm>^OOn:rN+m*3+ReXXd)@55E7@^YnPjs0mg`5$em\O@G<2?Shc6n\8jTi>P?m`u:sHBB+=S54e#>pNO@&>/\mn_Hlh+G7qR'me!tT~>endstream
 endobj
 84 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 85 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1134
+>>
+stream
+Gat%"?#S4R&:Mm.R)e&U(k3mX'5G&lJUg'+K^N?=Fh;AZ;3I0D&jMtUfL]>@]!/5p:JSoNB'f%u"`XBsq-(0+`s"Ri&Ki>5QQS-6:qVE^7Ii<E2RcrQ^iGR63l=f&6u_i\@4BtZ*GE:Y?<V"c1Rq$2\:O5s347g'7q;"NWE]d_NjR1oQb\P<4L["Ld0($_o1k!jU4n6kLN.A%#bS`")rTc7`pmqcn/[OX.sE_4+Q9-aap&s\f<1SAJ`7T*6W/hIB'<0-]f9"M1Ac`mY0n1ZS!5]cY$,"]573g2A@(Ub-P@sr>Y7:b+1s^as8MVF2_U5L2l@bU]Jr(On+cP=m,(;Fr#145eJ86_nUiQ8g&MLS(l@IC(t9IUS0Lkc8$MIZd6S)*rQpiDK9&a[_7mYh]\>N\e.jU/qc</j=#mdoRg(M#'&^U8HE8b<a8RaOCl(-#AhmU#@HEpdT-*jTkIT^F@`c%C<j/00#"u't7KL[HI=PJ#5F_uM!d'8flS^IA`N`!n`4_@:L`?h0'f-`p-pe;A6DMc1foBfIGh[A(Zj+SbN>6c:Yt9N\]&DBh5's:`+Y7oO#-0EhMruVD-c_!+eZCOpT`!>k&/\NLk/n^B45?V<VL@:VeD1ju[q4ZqSRFN;etT'IU.ZJRWR-dXAj3PG6IB47UI5JNXW<_?-ZRp4X$)="7LIqNR3`ElRKj`s7&N>15Xad$O2+66ZMN3a/1F;T,S8@h0:BbAM?c]S&ZpX1JV['R,_:csK-Z#-ehTc/LhIeS#t/kN,RHkSc%@9mGQmVl=@')K&p*alJsF954c*Pm"h0%/[*b7[TFl$_\u64pk^:c&["ThC77'kiFq*+t5!&VKjua#W/C-XSdS#9DeC)I1%l%3k/9I/n1BQ4f0+\)q<FB#I9)`,&P]CK(Qj1+/F0duMQOUYulFpL"hsJe"\'pPsD\`l;R$A(-=o!76Z`IG>'U2C,#_ke_s0=:*W:jeHj`XIEnBg&%CDb6WIfX)gdNuU=0g#j]l4J2&>!u:/[/Du#I6ZNb1iI1(rEZbI=2BlSV+)<"TuTEQ(Ve)i/cMpCrrKMGN@ih\1,J7r"DTi<mPTGtgNd98q7<9-n/QqrnArU6I6@,#X[PDEUthjZZl^Ie!MsW5;u~>endstream
 endobj
 85 0 obj
-<< /Length 2771 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1036
+>>
 stream
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 58.00 580.00 Td (CLASS 5) Tj ET
-0.906 0.922 0.945 RG
-0.80 w 58.00 570.00 m 734.00 570.00 l S
-0.094 0.122 0.165 rg
-BT /F2 24 Tf 58.00 520.00 Td (Individual artifact snapshot) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 492.00 Td (Revision, hidden-variable analysis, limitation critique, or r/R²) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 11.5 Tf 58.00 476.00 Td (interpretation.) Tj ET
-1.000 1.000 1.000 rg
-58.00 88.00 488.00 344.00 re f
-0.753 0.792 0.847 RG
-1.00 w 58.00 88.00 488.00 344.00 re S
-0.392 0.455 0.545 rg
-BT /F2 10 Tf 72.00 408.00 Td (student thinking space) Tj ET
-0.886 0.910 0.941 RG
-0.45 w 74.00 387.00 m 530.00 387.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 365.00 m 530.00 365.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 343.00 m 530.00 343.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 321.00 m 530.00 321.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 299.00 m 530.00 299.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 277.00 m 530.00 277.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 255.00 m 530.00 255.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 233.00 m 530.00 233.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 211.00 m 530.00 211.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 189.00 m 530.00 189.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 167.00 m 530.00 167.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 145.00 m 530.00 145.00 l S
-0.886 0.910 0.941 RG
-0.45 w 74.00 123.00 m 530.00 123.00 l S
-0.980 0.984 0.992 rg
-570.00 260.00 150.00 172.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 260.00 150.00 172.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 584.00 408.00 Td (REFLECTION PROMPT) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 388.00 Td (What changed in your) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 375.00 Td (thinking? What assumption) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 362.00 Td (is doing the most work?) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 349.00 Td (What evidence would make) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 336.00 Td (this stronger?) Tj ET
-0.980 0.984 0.992 rg
-570.00 88.00 150.00 128.00 re f
-0.878 0.898 0.925 RG
-1.00 w 570.00 88.00 150.00 128.00 re S
-0.094 0.122 0.165 rg
-BT /F2 8.5 Tf 584.00 192.00 Td (REVISION MARKER) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 172.00 Td (Original idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 159.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 146.00 Td (Revised idea:) Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 133.00 Td () Tj ET
-0.200 0.255 0.333 rg
-BT /F1 9.5 Tf 584.00 120.00 Td (Reason for change:) Tj ET
-0.902 0.922 0.949 RG
-0.70 w 58.00 38.00 m 734.00 38.00 l S
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
-0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (40) Tj ET
-endstream
+Gat%!92jS1%)2U?kXZRnp>NF2-RP(TV8H+NVS2V2S0]ob!O`*J9RhGdocj[`'U";Sd;&>Gg/#!SNaLb:B`W/a_qnXKO:YcOn<jgW0mnhkH]OT9E"rD36l>\BY.d.-cG+ZVJ4HdG?SMC2%29@gcD46V%MrI?e<%u^NB<J#78df@jD.!>&t&AMNssN23[":73i>;3>enq0;q'HpJ]i(BCH/G5e#[<mIpeQqm8]^-KR$TF3GqhU2JkZEHirmsThSdHkYq<Vi)E,YZSTgIKFS;l#FqK->#5[b'f$$9SEml!"@FB!;GbqK7jj'^5E?:-B?)\fO,rG0cS8[pbYBh*rJ7(7nN%.E;O]XjJ00`&dj5i=6;*PL`M(:*Ul.QZ(WEq5aI91[G@6[f(:N"H8Eqb:at4l@]Vd)lFs,+gXA)m*K!`hWm!`eqTW3bi\*CZuh_L:TQ*%1WC>7FIs!86e8PJl#Ld_qGNqm\(d:MA%aB]8:8B0%--p#0G,F)<F6:Du(L1lG,^t#7Q$sFI=('1SKV^5ZK7"01'pf'qBFO;KT83L-f(cjaQYiooD6dfWj:UI"_RF^0ZS^8Im3Q.Jd'GJ>Y^h7T90;QRqo2a_aG*hKK0A&K2l4\`""j.FgC"IU//[VR[]ZnSF1j;N+-TApeY)P_CO[PPGFR5\rp9e[I8l(/naI4%q;&a^om$_7?d\mqDlI@.se=d`/-uIIig8e*)W9""NdRMId8<QHM)%b$q0Gs;2$(Mp\e.c`;lCa^\;A!Zr2d7!iAYSuj<AVQO7kCr(=F@3s/dXLrY.*:a?`]nsnmag7jj;J$jlG"b4aim]`5<W9>P,)$MS&T,Nca2B2J+7^G,_Wu?G`.NVGTN?8N!UUrbIe+OKOaeBbr`@i2Kmu-H/6fI3>jnS`&kSn7]UJ%4j!9QlNA-<)!a]<IOc(*6p0IGA;,9SM-X,DXA.<JYoP"%&Db[8*8_!GD!(SU;)b!_?;XDj"$*-^c;=;f35\B-)kA`eY:O_B,Wt=l#r\kI-YMZ:VR3[ed($5i;EgF^V./~>endstream
 endobj
 xref
 0 86
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000388 00000 n 
-0000000458 00000 n 
-0000000533 00000 n 
-0000000611 00000 n 
-0000000757 00000 n 
-0000005087 00000 n 
-0000005233 00000 n 
-0000007627 00000 n 
-0000007775 00000 n 
-0000013418 00000 n 
-0000013566 00000 n 
-0000014711 00000 n 
-0000014859 00000 n 
-0000018656 00000 n 
-0000018804 00000 n 
-0000020854 00000 n 
-0000021002 00000 n 
-0000024815 00000 n 
-0000024963 00000 n 
-0000026767 00000 n 
-0000026915 00000 n 
-0000028034 00000 n 
-0000028182 00000 n 
-0000030942 00000 n 
-0000031090 00000 n 
-0000033139 00000 n 
-0000033287 00000 n 
-0000037024 00000 n 
-0000037172 00000 n 
-0000039211 00000 n 
-0000039359 00000 n 
-0000043089 00000 n 
-0000043237 00000 n 
-0000045292 00000 n 
-0000045440 00000 n 
-0000049816 00000 n 
-0000049964 00000 n 
-0000051185 00000 n 
-0000051333 00000 n 
-0000054075 00000 n 
-0000054223 00000 n 
-0000056367 00000 n 
-0000056515 00000 n 
-0000060313 00000 n 
-0000060461 00000 n 
-0000063498 00000 n 
-0000063646 00000 n 
-0000067375 00000 n 
-0000067523 00000 n 
-0000069637 00000 n 
-0000069785 00000 n 
-0000074161 00000 n 
-0000074309 00000 n 
-0000075608 00000 n 
-0000075756 00000 n 
-0000079558 00000 n 
-0000079706 00000 n 
-0000082735 00000 n 
-0000082883 00000 n 
-0000085693 00000 n 
-0000085841 00000 n 
-0000088946 00000 n 
-0000089094 00000 n 
-0000091914 00000 n 
-0000092062 00000 n 
-0000095097 00000 n 
-0000095245 00000 n 
-0000099058 00000 n 
-0000099206 00000 n 
-0000103810 00000 n 
-0000103958 00000 n 
-0000106282 00000 n 
-0000106430 00000 n 
-0000107573 00000 n 
-0000107721 00000 n 
-0000110439 00000 n 
-0000110587 00000 n 
-0000112620 00000 n 
-0000112768 00000 n 
-0000115516 00000 n 
-0000115664 00000 n 
-0000118700 00000 n 
-0000118848 00000 n 
+0000000061 00000 n 
+0000000113 00000 n 
+0000000220 00000 n 
+0000000332 00000 n 
+0000000527 00000 n 
+0000000722 00000 n 
+0000000917 00000 n 
+0000001112 00000 n 
+0000001307 00000 n 
+0000001502 00000 n 
+0000001698 00000 n 
+0000001894 00000 n 
+0000002090 00000 n 
+0000002286 00000 n 
+0000002482 00000 n 
+0000002678 00000 n 
+0000002874 00000 n 
+0000003070 00000 n 
+0000003266 00000 n 
+0000003462 00000 n 
+0000003658 00000 n 
+0000003854 00000 n 
+0000004050 00000 n 
+0000004246 00000 n 
+0000004442 00000 n 
+0000004638 00000 n 
+0000004834 00000 n 
+0000005030 00000 n 
+0000005226 00000 n 
+0000005422 00000 n 
+0000005618 00000 n 
+0000005814 00000 n 
+0000006010 00000 n 
+0000006088 00000 n 
+0000006284 00000 n 
+0000006480 00000 n 
+0000006676 00000 n 
+0000006872 00000 n 
+0000007068 00000 n 
+0000007264 00000 n 
+0000007460 00000 n 
+0000007656 00000 n 
+0000007852 00000 n 
+0000008048 00000 n 
+0000008118 00000 n 
+0000008416 00000 n 
+0000008747 00000 n 
+0000010650 00000 n 
+0000011808 00000 n 
+0000013114 00000 n 
+0000013912 00000 n 
+0000015136 00000 n 
+0000016234 00000 n 
+0000017483 00000 n 
+0000018563 00000 n 
+0000019371 00000 n 
+0000020484 00000 n 
+0000021582 00000 n 
+0000022819 00000 n 
+0000023904 00000 n 
+0000025116 00000 n 
+0000026219 00000 n 
+0000027250 00000 n 
+0000028090 00000 n 
+0000029189 00000 n 
+0000030325 00000 n 
+0000031548 00000 n 
+0000032776 00000 n 
+0000033997 00000 n 
+0000035103 00000 n 
+0000036134 00000 n 
+0000036964 00000 n 
+0000038195 00000 n 
+0000039414 00000 n 
+0000040521 00000 n 
+0000041759 00000 n 
+0000042910 00000 n 
+0000044139 00000 n 
+0000045378 00000 n 
+0000046408 00000 n 
+0000047216 00000 n 
+0000048279 00000 n 
+0000049366 00000 n 
+0000050454 00000 n 
+0000051680 00000 n 
 trailer
-<< /Size 86 /Root 1 0 R >>
+<<
+/ID 
+[<a639bdf35118dc26a8d842eced1c123f><a639bdf35118dc26a8d842eced1c123f>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 45 0 R
+/Root 44 0 R
+/Size 86
+>>
 startxref
-121672
+52808
 %%EOF

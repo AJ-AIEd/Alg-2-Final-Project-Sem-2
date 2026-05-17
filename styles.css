@@ -469,21 +469,43 @@ summary em {
 .journal-block > p {
   max-width: 840px;
   color: #334155;
+  line-height: 1.72;
+  margin-bottom: .85rem;
+}
+.journal-rubric-link {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--green);
+  border-radius: 12px;
+  background: #f8fafc;
+  font-weight: 750;
+  color: #1f2937 !important;
 }
 .journal-tile-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: .8rem;
+  gap: .9rem;
 }
 .journal-tile-grid article {
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 1rem;
-  min-height: 88px;
+  padding: 1rem 1rem 1.05rem;
+  min-height: 126px;
   background: #ffffff;
   color: #334155;
-  font-weight: 800;
   box-shadow: 0 8px 22px rgba(15, 23, 42, .035);
+}
+.journal-tile-grid h4 {
+  margin: 0 0 .45rem;
+  color: var(--ink);
+  font-size: .98rem;
+  line-height: 1.2;
+}
+.journal-tile-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.45;
 }
 .individual-thinking {
   display: grid;
@@ -501,12 +523,44 @@ summary em {
   box-shadow: var(--shadow-soft);
 }
 .individual-thinking aside {
+  position: relative;
   display: grid;
-  align-items: center;
+  place-items: center;
   border-left: 6px solid var(--purple);
   color: var(--ink);
-  font-size: 1.35rem;
-  line-height: 1.2;
+  font-size: clamp(1.65rem, 2.7vw, 2.25rem);
+  line-height: 1.12;
+  text-align: center;
+  min-height: 260px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(153, 53, 86, .08) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(180deg, rgba(153, 53, 86, .06) 1px, transparent 1px) 0 0 / 24px 24px,
+    #ffffff;
+}
+.individual-thinking aside strong {
+  position: relative;
+  z-index: 1;
+  max-width: 12ch;
+}
+.annotation-mark {
+  position: absolute;
+  top: 1.3rem;
+  left: 1.35rem;
+  width: 56px;
+  height: 56px;
+  border-top: 2px solid rgba(153, 53, 86, .45);
+  border-left: 2px solid rgba(153, 53, 86, .45);
+}
+.annotation-mark::after {
+  content: "";
+  position: absolute;
+  right: -46px;
+  top: 10px;
+  width: 72px;
+  height: 2px;
+  background: rgba(153, 53, 86, .22);
+  transform: rotate(-18deg);
 }
 .journal-lens-grid {
   display: grid;

@@ -355,62 +355,92 @@
       </div>
     </section>
 
-    <section class="section dashboard-section" id="journal" data-dashboard-tab="journal" hidden>
+    <section class="section dashboard-section journal-guide" id="journal" data-dashboard-tab="journal" hidden>
       <div class="section-header">
         <p class="eyebrow">Investigation Journal</p>
         <h2>Your evolving mathematical workspace</h2>
-        <p>The journal is where rough thinking stays visible.</p>
+        <p>The journal is not a worksheet packet. It is the visible record of your group’s evolving mathematical thinking.</p>
       </div>
-      <div class="journal-layout">
-        <aside class="journal-side">
-          <h3>Sketch Before Desmos</h3>
-          <p>Before graphing digitally, sketch the expected behavior, estimate intercepts, discuss the domain, and predict what the graph should roughly look like.</p>
-          <h3>Revision Marker</h3>
-          <p>When your thinking changes, label what changed, why it changed, and what the revised model reveals.</p>
-          <a class="button secondary journal-download" href="downloads/investigation-journal.pdf">Download the Journal PDF</a>
-        </aside>
-        <div class="accordion-list">
-          <details>
-            <summary><span class="phase-pill exploratory">Exploratory</span>Class 1 Journal Space</summary>
-            <div class="workspace-grid">
-              <div class="workbox large"><h4>System Map and Early Notes</h4></div>
-              <div class="workbox"><h4>Variable Table</h4><p>Variable | Units | Why does it matter?</p></div>
-              <div class="workbox"><h4>Sketch First</h4><p>Predict one relationship before graphing.</p></div>
-            </div>
-          </details>
-          <details>
-            <summary><span class="phase-pill green">Pattern</span>Class 2 Journal Space</summary>
-            <div class="workspace-grid">
-              <div class="workbox"><h4>Recursive Formula</h4></div>
-              <div class="workbox"><h4>Explicit Formula</h4></div>
-              <div class="workbox large"><h4>Graph ↔ Algebra ↔ Context</h4><p>Graph observation | Algebraic meaning | Real-world meaning</p></div>
-            </div>
-          </details>
-          <details>
-            <summary><span class="phase-pill blue">Dynamic</span>Class 3 Journal Space</summary>
-            <div class="workspace-grid">
-              <div class="workbox"><h4>Exponential Model</h4></div>
-              <div class="workbox"><h4>Logarithmic Solving</h4></div>
-              <div class="workbox large"><h4>Model Breakdown Reflection</h4></div>
-            </div>
-          </details>
-          <details>
-            <summary><span class="phase-pill purple">Structural</span>Class 4 Journal Space</summary>
-            <div class="workspace-grid">
-              <div class="workbox"><h4>Diagram A: Flat Blueprint</h4></div>
-              <div class="workbox"><h4>Diagram B: Folded Structure</h4></div>
-              <div class="workbox large"><h4>Polynomial Long Division and Physical Interpretation</h4></div>
-            </div>
-          </details>
-          <details>
-            <summary><span class="phase-pill synthesis">Synthesis</span>Class 5 Journal Space</summary>
-            <div class="workspace-grid">
-              <div class="workbox large"><h4>Final Synthesis Table</h4><p>Mathematical lens | What did it reveal? | Where did it fail?</p></div>
-              <div class="workbox large"><h4>Final Mathematical Claim</h4></div>
-            </div>
-          </details>
+
+      <div class="journal-callout">
+        <p>“A clean page is not always evidence of strong thinking.”</p>
+      </div>
+
+      <section class="journal-block" aria-labelledby="journal-philosophy">
+        <h3 id="journal-philosophy">Journal Philosophy</h3>
+        <p>Strong journals show uncertainty, revision, recalculation, critique, graph interpretation, changing assumptions, and visible reasoning. Crossed-out thinking belongs here.</p>
+      </section>
+
+      <section class="journal-block" aria-labelledby="journal-belongs">
+        <h3 id="journal-belongs">What Belongs in the Journal</h3>
+        <div class="journal-tile-grid">
+          <article>system maps</article>
+          <article>rough sketches</article>
+          <article>graph annotations</article>
+          <article>Desmos screenshots</article>
+          <article>recursive and explicit formulas</article>
+          <article>model comparisons</article>
+          <article>threshold work</article>
+          <article>polynomial interpretations</article>
+          <article>revisions</article>
+          <article>hidden-variable analysis</article>
+          <article>AI critique notes</article>
+          <article>realism and limitation reflections</article>
         </div>
-      </div>
+      </section>
+
+      <section class="journal-block individual-thinking" aria-labelledby="individual-thinking">
+        <div>
+          <h3 id="individual-thinking">Visible Individual Thinking</h3>
+          <p>This is a collaborative investigation, but every student must contribute visible individual mathematical evidence.</p>
+          <p>Individual artifacts may include graph annotations, recalculations, comparison notes, revised assumptions, model critiques, threshold interpretations, polynomial analysis, scatterplot interpretation, limitation reflections, or synthesis explanations.</p>
+          <p><strong>Do not divide the mathematics by topic.</strong> This is not one student doing sequences, another doing exponentials, and another doing polynomials.</p>
+          <p>Every student must engage with sequences, exponentials, polynomials, interpretation, and revision.</p>
+        </div>
+        <aside>
+          <strong>Individual thinking must remain visible inside collaborative work.</strong>
+        </aside>
+      </section>
+
+      <section class="journal-block revision-thinking" aria-labelledby="revision-thinking">
+        <h3 id="revision-thinking">Revision is evidence of stronger understanding</h3>
+        <p>Students are expected to revise assumptions, update graphs, change models, critique unrealistic predictions, and explain why their thinking evolved.</p>
+        <p>The strongest journals often contain arrows, annotations, crossed-out models, recalculations, competing ideas, and revised interpretations.</p>
+        <div class="journal-callout dark">
+          <p>Messy thinking is acceptable. Hidden thinking is not.</p>
+        </div>
+      </section>
+
+      <section class="journal-block" aria-labelledby="journal-lenses">
+        <h3 id="journal-lenses">Mathematical Lenses</h3>
+        <div class="journal-lens-grid">
+          <article class="green">
+            <h4>Sequences & Series</h4>
+            <p>Repeated change, accumulation, recursive vs explicit reasoning, discrete vs continuous interpretation.</p>
+          </article>
+          <article class="blue">
+            <h4>Exponentials & Logarithms</h4>
+            <p>Growth, decay, thresholds, logarithmic solving, realism, and model breakdown.</p>
+          </article>
+          <article class="purple">
+            <h4>Polynomials</h4>
+            <p>Structure, constraints, extrema, end behavior, multiplicity, and realistic domains.</p>
+          </article>
+          <article>
+            <h4>Synthesis & Interpretation</h4>
+            <p>Comparisons, assumptions, limitations, graph ↔ algebra ↔ context connections, and final claims.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="journal-download-panel" aria-label="Download investigation journal">
+        <div>
+          <p class="eyebrow">Download</p>
+          <h3>Enhanced Investigation Journal PDF</h3>
+          <p>The PDF contains the full workspace pages and structured investigation prompts.</p>
+        </div>
+        <a class="button primary" href="downloads/investigation-journal.pdf">Download Investigation Journal PDF</a>
+      </section>
     </section>
 
     <section class="section dashboard-section" id="evidence" data-dashboard-tab="lenses" hidden>
@@ -608,30 +638,18 @@
     <section class="section dashboard-section" id="rubrics" data-dashboard-tab="rubric" hidden>
       <div class="section-header">
         <p class="eyebrow">Rubrics</p>
-        <h2>The rubric separates content standards from skill grades.</h2>
-        <p>The project assesses reasoning, interpretation, critique, revision, contextual understanding, visible thinking, and algebraic precision. It does not reward production polish as mathematical achievement.</p>
+        <h2>Use the official final rubric.</h2>
+        <p>This PDF is the single source of truth for assessment language, standards, skill grades, and performance descriptors.</p>
       </div>
-      <div class="rubric-grid">
-        <article class="card">
-          <span class="standard-type">Standards 1–3</span>
-          <h3>Core Algebra 2 Content</h3>
-          <p>Sequences and series, exponentials and logarithms, and polynomials are assessed as mathematical content standards.</p>
-        </article>
-        <article class="card">
-          <span class="standard-type">Standards 4–6</span>
-          <h3>Cross-Cutting Skill Grades</h3>
-          <p>Communication, model comparison, limitations, revision, algebraic precision, and flexible number sense are assessed across the whole investigation.</p>
-        </article>
+      <div class="rubric-single-card">
+        <div>
+          <span class="standard-type">Official Assessment Document</span>
+          <h3>Algebra 2 Final Project Rubric</h3>
+          <p>The rubric assesses content standards, cross-cutting skill grades, reasoning, interpretation, critique, revision, mathematical communication, and algebraic precision.</p>
+          <p>Use this document when self-assessing, preparing final communication, and checking that mathematical evidence is visible.</p>
+        </div>
+        <a class="button primary rubric-download" href="downloads/rubrics.pdf">Download the Final Rubric PDF</a>
       </div>
-      <div class="rubric-standards">
-        <details><summary>1. Sequences and Series</summary><p>Select and justify sequence and series models. Distinguish arithmetic vs geometric, recursive vs explicit, finite vs infinite, and discrete vs continuous representations when relevant. Explain terms, parameters, cumulative sums, predictions, recalculations, and interpretations in context.</p></details>
-        <details><summary>2. Exponentials and Logarithms</summary><p>Select and justify exponential models. Explain growth and decay, thresholds, growth factors, and logarithmic reasoning in context. Compare exponential behavior to linear or geometric behavior when appropriate and critique limitations realistically.</p></details>
-        <details><summary>3. Polynomials</summary><p>Create and analyze polynomial models. Explain degree, leading coefficient, end behavior, intercepts, multiplicity, extrema, realistic domain restrictions, factored form, standard form, and notation such as x → ∞ and x → −∞ in context.</p></details>
-        <details><summary>4. Mathematical Communication and Interpretation <em>Skill Grade</em></summary><p>Communicate mathematical thinking clearly through explanations, graphs, annotations, tables, discussion, and contextual interpretation. Make connections among graph, algebra, assumptions, and context visible.</p></details>
-        <details><summary>5. Comparing Models, Assumptions, and Limitations <em>Skill Grade</em></summary><p>Compare multiple models, assumptions, and representations. Critique realism, hidden variables, tradeoffs, assumptions, unreasonable predictions, and show revision that strengthens the investigation.</p></details>
-        <details><summary>6. Algebraic Precision and Flexible Number Sense <em>Skill Grade</em></summary><p>Solve accurately using appropriate algebraic methods such as factoring, logarithms, inverse operations, substitution, graph interpretation, and algebraic manipulation. Use rational numbers, percentages, negative values, and units precisely.</p></details>
-      </div>
-      <a class="button primary rubric-download" href="downloads/rubrics.pdf">Download the Final Rubric PDF</a>
     </section>
 
     <section class="section downloads-section dashboard-section" id="downloads" data-dashboard-tab="downloads" hidden>

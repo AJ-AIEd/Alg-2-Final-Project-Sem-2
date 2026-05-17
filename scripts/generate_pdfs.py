@@ -360,56 +360,12 @@ def build_journal():
     d.build(story, onFirstPage=footer, onLaterPages=footer)
 
 
-def rubric_level_card(level, descriptor, accent):
-    title = level
-    t = Table([[p(title, "RubricLevel")], [p(descriptor, "RubricBody")]], colWidths=[None])
-    t.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), WHITE),
-        ("BOX", (0, 0), (-1, -1), 0.8, LINE),
-        ("LINEABOVE", (0, 0), (-1, 0), 4, accent),
-        ("LEFTPADDING", (0, 0), (-1, -1), 12),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 12),
-        ("TOPPADDING", (0, 0), (-1, -1), 10),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 10),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-    ]))
-    return t
-
-
 def build_rubric():
-    story = [p("Algebra 2 Final Project - Semester 2", "CenterTitle")]
-    story += section("Rubric Philosophy", "Reasoning over polish.", "The project assesses reasoning, revision, interpretation, critique, mathematical communication, model selection, contextual understanding, limitations, visible thinking, and intellectual flexibility. It does not prioritize production polish, memorization, superficial correctness, or overproduced presentations.")
-    story.append(card_grid([
-        ("Standards 1-3", "Core Algebra 2 content standards: Sequences and Series, Exponentials and Logarithms, Polynomials.", GREEN, GREEN_SOFT),
-        ("Standards 4-6", "Cross-cutting skill grades: Communication and Interpretation, Comparing Models and Limitations, Algebraic Precision and Flexible Number Sense.", BLUE, BLUE_SOFT),
-    ], 2))
-    story.append(PageBreak())
-
-    level_names = ["4 — Exceeds Expectations", "3 — Meets Expectations", "2 — Approaching Expectations", "1 — Beginning"]
-    for n, title, kind, accent, fill, descriptors in RUBRIC_STANDARDS:
-        story += section(f"Standard {n} | {kind}", title)
-        story.append(card("Assessment focus", "Use visible mathematical evidence from the journal, artifacts, vlogs, and final communication. The strongest work connects graph, algebra, context, assumptions, revision, and limitations.", accent, fill))
-        story.append(spacer(8))
-        rows = [
-            [rubric_level_card(level_names[0], descriptors[0], accent), rubric_level_card(level_names[1], descriptors[1], accent)],
-            [rubric_level_card(level_names[2], descriptors[2], accent), rubric_level_card(level_names[3], descriptors[3], accent)],
-        ]
-        t = Table(rows, colWidths=[(PAGE_W - 100) / 2] * 2, hAlign="LEFT")
-        t.setStyle(TableStyle([
-            ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("LEFTPADDING", (0, 0), (-1, -1), 5),
-            ("RIGHTPADDING", (0, 0), (-1, -1), 5),
-            ("TOPPADDING", (0, 0), (-1, -1), 6),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
-        ]))
-        story.append(t)
-        story.append(PageBreak())
-
-    d = doc(OUT / "rubrics.pdf", "Final Rubric")
-    d.build(story, onFirstPage=footer, onLaterPages=footer)
+    # The official rubric is maintained directly at downloads/rubrics.pdf.
+    # Do not regenerate it; the uploaded PDF is the single source of truth.
+    return None
 
 
 if __name__ == "__main__":
     build_journal()
-    build_rubric()
-    print("Generated journal and rubric PDFs in downloads/")
+    print("Generated journal PDF in downloads/. Rubric PDF is preserved as the official uploaded file.")

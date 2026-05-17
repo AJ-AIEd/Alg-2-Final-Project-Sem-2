@@ -162,6 +162,23 @@ MODELING_ANCHORS = [
     "Every model simplifies something.",
 ]
 
+FORMATIVE_CHECKPOINTS = {
+    "Class 2": {
+        "title": "System Plan + Model Connection Check-In",
+        "timing": "End of Class 2",
+        "purpose": "Ensure your system, variables, early sequence work, data, assumptions, and planned models connect into a coherent mathematical investigation before deeper modeling begins.",
+        "students_show": "chosen system; key variables; changing relationships; planned models; why each model makes sense; what each model reveals; what each may fail to capture; data sources; assumptions",
+        "teacher_focus": "meaningful variables; appropriate models; measurable context; realistic assumptions; whether the work is too broad, too shallow, or forcing functions unnaturally",
+    },
+    "Class 4": {
+        "title": "Polynomial + Physical Constraints Check-In",
+        "timing": "Beginning of Class 4",
+        "purpose": "Ensure the polynomial work is connected to physical constraints, not treated as an isolated polynomial unit.",
+        "students_show": "blueprint or sketch; dimensions; polynomial model; graph; annotations; early interpretation; domain reasoning",
+        "teacher_focus": "why the relationship is polynomial; why it is not linear or exponential; cubic vs quadratic behavior; turning points; unrealistic regions; long division; factor interpretation; model comparison",
+    },
+}
+
 styles = getSampleStyleSheet()
 styles.add(ParagraphStyle("Kicker", parent=styles["Normal"], fontName="Helvetica-Bold", fontSize=8.5, leading=11, textColor=MUTED, spaceAfter=7, uppercase=True))
 styles.add(ParagraphStyle("TitleBig", parent=styles["Title"], fontName="Helvetica-Bold", fontSize=39, leading=42, textColor=INK, alignment=TA_LEFT, spaceAfter=14))
@@ -456,6 +473,19 @@ def individual_snapshot_page(story, class_num):
     story.append(PageBreak())
 
 
+def formative_checkpoint_page(story, class_num):
+    data = FORMATIVE_CHECKPOINTS[class_num]
+    story += section(data["timing"].upper(), data["title"], data["purpose"])
+    story.append(card_grid([
+        ("Students should show", data["students_show"], BLUE, BLUE_SOFT),
+        ("Teacher feedback focus", data["teacher_focus"], PURPLE, PURPLE_SOFT),
+        ("Formative purpose", "This is a low-stakes check-in for redirection, clarity, rigor, and coherence. The goal is support before final submission, not punishment.", GREEN, GREEN_SOFT),
+    ], 3))
+    story.append(spacer(12))
+    story.append(Workspace("checkpoint notes, feedback, and next revisions", 250, False))
+    story.append(PageBreak())
+
+
 def strong_modeling_page(story):
     story += section("Modeling Habits", "What strong modeling looks like.", "This page is a guide for the kind of thinking the journal should make visible. It is not a checklist; it is a way to recognize stronger mathematical investigation.")
     story.append(card_grid([
@@ -519,6 +549,10 @@ def build_journal():
         individual_snapshot_page(story, class_num)
         if class_num in ["Class 2", "Class 3", "Class 4"]:
             stop_and_critique_page(story)
+        if class_num == "Class 2":
+            formative_checkpoint_page(story, "Class 2")
+        if class_num == "Class 4":
+            formative_checkpoint_page(story, "Class 4")
         if class_num in ["Class 2", "Class 3", "Class 4"]:
             story += section(f"{class_num} Model Comparison Studio", "Changing assumptions creates different mathematical realities.", "Choose model versions that are meaningful for your context. Which model is more useful, more realistic, or more honest about uncertainty? Which model hides constraints, exaggerates certainty, or breaks first?")
             story.append(Table([[Workspace("version A", 245, True), Workspace("version B", 245, True), Workspace("version C", 245, True)]], colWidths=[(PAGE_W - 100) / 3] * 3, style=TableStyle([
@@ -724,6 +758,19 @@ def add_docx_individual_snapshot(document, class_num):
     add_docx_workspace(document, "Individual reasoning snapshot", "Type your personal explanation or paste your individual artifact here.", False, "What part of the mathematics can you defend without reading a script?", "personal graph note, critique, recalculation, limitation analysis, or revised assumption")
 
 
+def add_docx_formative_checkpoint(document, class_num):
+    data = FORMATIVE_CHECKPOINTS[class_num]
+    add_docx_para(document, data["timing"].upper(), bold=True, color="#64748B")
+    add_docx_para(document, data["title"], "Heading 1")
+    add_docx_para(document, data["purpose"])
+    add_docx_card_grid(document, [
+        ("Students should show", data["students_show"], "#EDF4FF", "#2563EB"),
+        ("Teacher feedback focus", data["teacher_focus"], "#F6EFFF", "#7E22CE"),
+        ("Formative purpose", "This is a low-stakes check-in for redirection, clarity, rigor, and coherence. The goal is support before final submission, not punishment.", "#EDF8F1", "#15803D"),
+    ], 3)
+    add_docx_workspace(document, "Checkpoint notes, feedback, and next revisions", "Record teacher feedback, decisions, narrowing moves, and the next model revision.", False, "What needs to be clarified before the final submission?")
+
+
 def build_journal_docx():
     document = Document()
     style_docx(document)
@@ -788,6 +835,12 @@ def build_journal_docx():
         document.add_page_break()
         if class_num in ["Class 2", "Class 3", "Class 4"]:
             add_docx_stop_and_critique(document)
+            document.add_page_break()
+        if class_num == "Class 2":
+            add_docx_formative_checkpoint(document, "Class 2")
+            document.add_page_break()
+        if class_num == "Class 4":
+            add_docx_formative_checkpoint(document, "Class 4")
             document.add_page_break()
         if class_num in ["Class 2", "Class 3", "Class 4"]:
             add_docx_para(document, f"{class_num} Model Comparison Studio", "Heading 1")

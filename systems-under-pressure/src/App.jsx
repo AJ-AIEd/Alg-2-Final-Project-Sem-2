@@ -102,6 +102,15 @@ const CLASSES = [
         ],
       },
       {
+        title: "Checkpoint 1 — System Plan + Model Connection Check-In",
+        items: [
+          "Show your chosen system, key variables, changing relationships, data sources, and assumptions",
+          "Explain which models you are planning to use and why each model makes sense",
+          "Explain what each model may reveal and what each model may fail to capture",
+          "Use teacher feedback to narrow, redirect, or clarify the investigation before moving deeper",
+        ],
+      },
+      {
         title: "Vlog 2 — Model justification & comparison",
         vlog: true,
         items: [
@@ -236,6 +245,15 @@ const CLASSES = [
           "Optimization analysis: what value maximizes or minimizes the key quantity?",
           "Written explanation: how do constraints shape your solution?",
           "Comparison: what would a linear or exponential model miss here?",
+        ],
+      },
+      {
+        title: "Checkpoint 2 — Polynomial + Physical Constraints Check-In",
+        items: [
+          "Show blueprint or sketch, dimensions, polynomial model, graph, annotations, and domain reasoning",
+          "Explain why the relationship is polynomial and why it is not linear or exponential",
+          "Compare quadratic vs cubic behavior: shape, turning points, end behavior, and physical realism",
+          "Explain polynomial long division, factor interpretation, and how changing structure changes constraints or interpretation",
         ],
       },
       {

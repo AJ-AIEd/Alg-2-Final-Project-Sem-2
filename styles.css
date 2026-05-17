@@ -964,6 +964,17 @@ details[open] summary {
   border: 0;
   background: #ffffff;
 }
+.tracker-launch-note {
+  max-width: 820px;
+  margin: 1rem auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: .95rem;
+}
+.tracker-launch-note a {
+  color: var(--blue);
+  font-weight: 800;
+}
 .tracker-guidance {
   max-width: 1400px;
   margin: 0 auto;

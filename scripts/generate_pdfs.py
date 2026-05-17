@@ -524,6 +524,9 @@ def add_docx_card_grid(document, items, cols=3):
 def add_docx_workspace(document, label, prompt, grid=False):
     add_docx_para(document, label, "Heading 2")
     add_docx_card(document, "Prompt", prompt, "#F8FAFC", "#111827")
+    guidance = "Use this space for typing, pasted screenshots, graph notes, revised assumptions, or teacher-approved digital annotation."
+    if grid:
+        guidance += " For sketches or diagrams, paste an image or use Word's Draw tools."
     table = document.add_table(rows=1, cols=1)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     cell = table.cell(0, 0)
@@ -531,10 +534,14 @@ def add_docx_workspace(document, label, prompt, grid=False):
     set_cell_border(cell, "AEBBCC", "10")
     set_cell_margins(cell, 220)
     cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
-    cell.paragraphs[0].add_run("Student thinking space").bold = True
-    for _ in range(13 if grid else 11):
-        p_blank = cell.add_paragraph("□ " if grid else " ")
-        p_blank.paragraph_format.space_after = Pt(9)
+    first = cell.paragraphs[0]
+    first.paragraph_format.space_after = Pt(4)
+    first.add_run("Editable thinking space").bold = True
+    second = cell.add_paragraph(guidance)
+    second.paragraph_format.space_after = Pt(8)
+    for _ in range(9):
+        p_blank = cell.add_paragraph(" ")
+        p_blank.paragraph_format.space_after = Pt(12)
     add_docx_card(document, "Reflection prompt", "What changed in your thinking? What assumption is doing the most work? What evidence would make this stronger?", "#F8FAFC", "#111827")
 
 
@@ -547,6 +554,7 @@ def build_journal_docx():
     add_docx_para(document, "The Mathematics of Food Systems", "Heading 1")
     add_docx_card(document, '"All models are wrong, but some are useful."', "George Box", "#FFFFFF", "#111827")
     add_docx_para(document, "A collaborative mathematical field notebook for sketching, modeling, revising, annotating, and explaining.", None)
+    add_docx_card(document, "DOCX use note", "This editable version prioritizes usability over matching the print PDF exactly. Type directly into the spaces, paste screenshots, add comments, use Draw tools, or adapt prompts for accommodations and hybrid workflows.", "#F8FAFC", "#111827")
     document.add_page_break()
 
     add_docx_para(document, "Journal Norms", "Heading 1")
@@ -590,8 +598,10 @@ def build_journal_docx():
                 set_cell_border(cell, "AEBBCC", "10")
                 set_cell_margins(cell, 180)
                 cell.paragraphs[0].add_run(f"Version {chr(65 + i)}").bold = True
-                for _ in range(12):
-                    cell.add_paragraph(" ")
+                cell.add_paragraph("Type or paste your model version here.")
+                for _ in range(8):
+                    p_blank = cell.add_paragraph(" ")
+                    p_blank.paragraph_format.space_after = Pt(12)
             document.add_page_break()
 
     path = OUT / "investigation-journal.docx"

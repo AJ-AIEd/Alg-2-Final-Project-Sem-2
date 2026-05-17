@@ -79,9 +79,10 @@ PHASES = [
         ("Model breakdown", "Where does exponential behavior stop being realistic? What real-world forces might interrupt it? What hidden variables matter?", False),
     ]),
     ("Class 4", "Constraints, Capacity, and Cost", "How do physical and economic constraints reshape the system?", PURPLE, [
-        ("Flat blueprint", "Original dimensions, square cutout variable, folding lines, units in centimeters.", True),
-        ("Folded storage structure", "Height, interior dimensions, usable space, loading floor.", True),
-        ("Volume polynomial", "Factored form, standard form, and why multiplying dimensions creates a cubic.", False),
+        ("System constraint framing", "Before building a polynomial, identify the real constraint: storage capacity, reservoir volume, transportation packing, refrigeration space, warehouse limits, shipping optimization, or another physical tradeoff. Why does capacity matter in your system?", False),
+        ("Flat blueprint", "Original dimensions, square cutout variable, folding lines, units in centimeters. Connect the drawing to a real storage, packing, refrigeration, or distribution constraint.", True),
+        ("Folded storage structure", "Height, interior dimensions, usable space, loading floor. Explain what the structure represents in your food system.", True),
+        ("Volume polynomial", "Factored form, standard form, and why multiplying interacting dimensions creates a cubic relationship.", False),
         ("Graph annotation", "Intercepts, multiplicity, extrema, domain, unrealistic regions, physical meaning.", True),
         ("End behavior and structure", "Degree, even/odd, leading coefficient, as x → ∞ and as x → −∞.", False),
         ("Polynomial division", "How could division help analyze storage, packing, capacity, grouping, or remaining space? Interpret the quotient and remainder physically.", True),
@@ -95,6 +96,70 @@ PHASES = [
         ("If we repeated this investigation", "With better data, what would change? Which assumption, measurement, or model would you revisit first?", False),
         ("Individual artifact snapshot", "Revision, hidden-variable analysis, limitation critique, or r/R² interpretation. A high R² can still mislead; correlation can support a claim without proving causation.", False),
     ]),
+]
+
+POSSIBLE_ARTIFACTS = {
+    "System map canvas": "system map, arrows between variables, uncertainty notes, pressure labels, feedback loop sketch",
+    "Variable table and measurement notes": "variable table, units list, source notes, measurement concern, highlighted hard-to-measure variable",
+    "Sketch before technology": "rough graph sketch, predicted trend, estimated intercept, domain note, comparison to later Desmos graph",
+    "Vlog notes": "conversation bullets, changed assumption, unclear question, photo of journal page, next-step note",
+    "Discrete vs continuous reasoning": "short paragraph, timeline, sampled data table, continuous curve sketch, units annotation",
+    "Pattern behavior": "difference/ratio table, highlighted trend, model choice note, evidence for add/multiply/phase behavior",
+    "Recursive and explicit formulas": "recursive formula, explicit formula, variable definitions, annotated parameters, substitution example",
+    "Accumulated change": "partial sum table, cumulative graph, written interpretation, finite/infinite note, realism critique",
+    "Meaningful time scales": "short vs long range graph, table of predictions, reliability note, revised domain",
+    "Pattern breakdown": "crossed-out prediction, revised assumption, graph annotation, note explaining why pattern changed",
+    "Exponential vs linear": "linear/exponential graph comparison, residual or fit note, written explanation, trendline screenshot",
+    "Sampled values vs continuous model": "sequence table, continuous curve, interpretation note, domain or time-unit comparison",
+    "Build the model": "exponential equation, parameter labels, Desmos screenshot, assumption note, realistic domain",
+    "Logarithmic threshold": "threshold equation, logarithmic solving steps, graph verification, contextual interpretation",
+    "Rate or assumption comparison": "multiple-rate graph, comparison table, threshold shift note, revised prediction",
+    "Model breakdown": "limitation reflection, hidden-variable list, unrealistic prediction, interrupted-growth explanation",
+    "System constraint framing": "constraint map, storage/transport sketch, capacity note, cost or space tradeoff",
+    "Flat blueprint": "labeled blueprint, dimensions, units, cutout variable, folding lines",
+    "Folded storage structure": "folded sketch, interior dimensions, height annotation, usable capacity note",
+    "Volume polynomial": "factored form, standard form, expanded work, explanation of interacting dimensions",
+    "Graph annotation": "annotated polynomial graph, intercept labels, extrema, domain restriction, physical interpretation",
+    "End behavior and structure": "degree note, leading coefficient explanation, x → ∞ and x → −∞ interpretation",
+    "Polynomial division": "long division work, quotient/remainder interpretation, grouping or remaining-space explanation",
+    "Constraint revision": "revised dimensions, new graph, comparison note, tradeoff explanation, impossible-region annotation",
+    "Synthesis table": "lens table, reveal/fail notes, agreement/conflict annotations",
+    "Where models agreed or conflicted": "comparison paragraph, color-coded model notes, assumptions table, contradiction note",
+    "Final mathematical claim": "claim draft, evidence list, limitation statement, implication note",
+    "Communication storyboard": "format plan, journal-page sequence, graph order, speaking notes, evidence map",
+    "If we repeated this investigation": "better-data plan, source wishlist, revised measurement idea, next-model note",
+    "Individual artifact snapshot": "personal graph note, individual critique, threshold interpretation, limitation analysis, revised assumption",
+}
+
+REFLECTION_PROMPTS = [
+    "What assumption became weaker?",
+    "What evidence became more convincing?",
+    "What hidden variable appeared?",
+    "What still feels uncertain?",
+    "What graph feature mattered most?",
+    "What made the model less realistic?",
+    "What tradeoff emerged?",
+    "What would strengthen this claim?",
+    "What revision improved the model most?",
+]
+
+EXAMPLE_THINKING = {
+    "Variable table and measurement notes": "Example thinking: Transportation time may be measurable, but informal delays or refrigeration failures may be harder to capture.",
+    "Accumulated change": "Example thinking: Total loss can accumulate across storage and transport stages, but it cannot continue forever because the remaining food eventually reaches zero.",
+    "Model breakdown": "Example thinking: A price model may keep rising mathematically, but consumer behavior, policy changes, or supply shifts could interrupt the trend.",
+    "System constraint framing": "Example thinking: If food exists but cannot be stored cold, refrigeration volume becomes a system constraint rather than just a design detail.",
+    "Graph annotation": "Example thinking: A negative volume may appear on the graph, but it has no physical meaning for a storage system.",
+    "Individual artifact snapshot": "Example thinking: I supported changing the growth rate because the original assumption made the long-term prediction unrealistic.",
+}
+
+MODELING_ANCHORS = [
+    "Models are arguments.",
+    "Models reveal and hide.",
+    "Assumptions shape predictions.",
+    "Revision strengthens modeling.",
+    "Correlation is not causation.",
+    "Realism matters.",
+    "Every model simplifies something.",
 ]
 
 styles = getSampleStyleSheet()
@@ -333,13 +398,71 @@ RUBRIC_STANDARDS = [
 ]
 
 
-def journal_page(story, label, prompt, workspace_label="open thinking space", grid=False):
+def stacked_cards(items):
+    out = []
+    for idx, item in enumerate(items):
+        if idx:
+            out.append(spacer(8))
+        out.append(item)
+    return out
+
+
+def journal_page(story, label, prompt, workspace_label="open thinking space", grid=False, reflection=None, artifact_text=None, example_text=None):
     story += section(label, prompt)
-    story.append(Table([[Workspace(workspace_label, 285, grid), card("Reflection prompt", "What changed in your thinking? What assumption is doing the most work? What evidence would make this stronger?", INK, SOFT)]], colWidths=[PAGE_W - 260, 145], style=TableStyle([
+    side = [
+        card("Possible artifacts", artifact_text or "graph sketch, table of values, annotated screenshot, written interpretation, revised assumption note", BLUE, BLUE_SOFT, "Small"),
+        card("Reflection prompt", reflection or "What changed in your thinking?", INK, SOFT, "Small"),
+    ]
+    if example_text:
+        side.append(card("Example thinking", example_text, MUTED, SOFT, "Small"))
+    story.append(Table([[Workspace(workspace_label, 285, grid), stacked_cards(side)]], colWidths=[PAGE_W - 315, 210], style=TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 4),
         ("RIGHTPADDING", (0, 0), (-1, -1), 4),
     ])))
+    story.append(PageBreak())
+
+
+def stop_and_critique_page(story, title="STOP AND CRITIQUE"):
+    story += section(title, "Pause before you keep building.", "A strong investigation interrupts itself. Use this page to evaluate whether your current model is becoming more credible or just more polished.")
+    prompts = [
+        "What currently feels misleading?",
+        "What assumption is dominating the model?",
+        "What variable is missing?",
+        "What evidence would weaken your claim?",
+        "Which prediction currently feels least realistic?",
+        "What would an opposing interpretation say?",
+        "Which graph feature might be overinterpreted?",
+    ]
+    story.append(card_grid([
+        ("Credibility questions", "<br/>".join(prompts[:4]), RED, SOFT),
+        ("Model honesty", "<br/>".join(prompts[4:]), INK, WHITE),
+        ("Anchor", "Models are arguments. Revision strengthens modeling when it makes assumptions, evidence, and limits clearer.", PURPLE, PURPLE_SOFT),
+    ], 3))
+    story.append(spacer(12))
+    story.append(Workspace("critique notes and revised decisions", 250, False))
+    story.append(PageBreak())
+
+
+def individual_snapshot_page(story, class_num):
+    story += section(f"{class_num} Individual Snapshot", "Make your own reasoning visible.", "This is a small individual accountability moment inside the shared investigation. Choose one mathematical contribution you personally understand and can defend.")
+    story.append(card_grid([
+        ("Possible focus", "Explain one graph feature, critique one assumption, interpret one threshold, identify one limitation, explain one revision, or defend one modeling decision.", BLUE, BLUE_SOFT),
+        ("Evidence to attach or reference", "graph annotation, recalculation, model critique, revised assumption note, scatterplot interpretation, limitation analysis, or synthesis explanation", GREEN, GREEN_SOFT),
+        ("Keep it personal", "Write in your own mathematical voice. Do not divide the project by topic; every student should engage across the major lenses.", PURPLE, PURPLE_SOFT),
+    ], 3))
+    story.append(spacer(12))
+    story.append(Workspace("individual reasoning snapshot", 250, False))
+    story.append(PageBreak())
+
+
+def strong_modeling_page(story):
+    story += section("Modeling Habits", "What strong modeling looks like.", "This page is a guide for the kind of thinking the journal should make visible. It is not a checklist; it is a way to recognize stronger mathematical investigation.")
+    story.append(card_grid([
+        ("Strong modeling", "explains assumptions<br/>critiques realism<br/>revises predictions<br/>compares models<br/>identifies limitations<br/>connects graph ↔ algebra ↔ context<br/>interprets uncertainty", GREEN, GREEN_SOFT),
+        ("Weak modeling", "only calculates<br/>ignores unrealistic outputs<br/>hides uncertainty<br/>treats models as perfect truth<br/>separates math from context<br/>copies technology output without interpretation", RED, SOFT),
+        ("Core idea", "Models are arguments. They become stronger when evidence, assumptions, revisions, and limits become more visible.", INK, WHITE),
+    ], 3))
     story.append(PageBreak())
 
 
@@ -354,6 +477,7 @@ def build_journal():
     story.append(spacer(12))
     story.append(card("Field note style", "Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units, limitations, and revision together.", INK, WHITE))
     story.append(PageBreak())
+    strong_modeling_page(story)
 
     story += section("Use Model", "Shared field notebook. Individual accountability.", "The project is collaborative, but grading is individual. The journal and individual evidence serve different purposes.")
     story.append(card_grid([
@@ -369,12 +493,32 @@ def build_journal():
     story.append(card_grid([(f"{n}. {title}", kind, accent, fill) for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS], 3))
     story.append(PageBreak())
 
+    page_counter = 0
     for class_num, title, question, accent, pages in PHASES:
         story += section(class_num, title, question)
         story.append(card("Field notebook expectation", "Use this section as a place for rough work, uncertainty, recalculation, and revision. Let the thinking stay visible.", accent, WHITE))
+        if class_num == "Class 4":
+            story.append(spacer(10))
+            story.append(card("Why polynomial structure belongs here", "Physical systems have dimensions, limits, packing constraints, refrigeration volume, warehouse capacity, shipping tradeoffs, and cost interactions. Polynomial models help reveal how those interacting constraints reshape what is possible.", PURPLE, PURPLE_SOFT))
+        story.append(spacer(10))
+        story.append(card("Modeling anchor", MODELING_ANCHORS[(int(class_num.split()[1]) - 1) % len(MODELING_ANCHORS)], INK, SOFT))
         story.append(PageBreak())
         for label, prompt, grid in pages:
-            journal_page(story, label, prompt, "student thinking space", grid)
+            reflection = REFLECTION_PROMPTS[page_counter % len(REFLECTION_PROMPTS)]
+            journal_page(
+                story,
+                label,
+                prompt,
+                "student thinking space",
+                grid,
+                reflection,
+                POSSIBLE_ARTIFACTS.get(label),
+                EXAMPLE_THINKING.get(label),
+            )
+            page_counter += 1
+        individual_snapshot_page(story, class_num)
+        if class_num in ["Class 2", "Class 3", "Class 4"]:
+            stop_and_critique_page(story)
         if class_num in ["Class 2", "Class 3", "Class 4"]:
             story += section(f"{class_num} Model Comparison Studio", "Changing assumptions creates different mathematical realities.", "Choose model versions that are meaningful for your context. Which model is more useful, more realistic, or more honest about uncertainty? Which model hides constraints, exaggerates certainty, or breaks first?")
             story.append(Table([[Workspace("version A", 245, True), Workspace("version B", 245, True), Workspace("version C", 245, True)]], colWidths=[(PAGE_W - 100) / 3] * 3, style=TableStyle([
@@ -521,9 +665,12 @@ def add_docx_card_grid(document, items, cols=3):
     return table
 
 
-def add_docx_workspace(document, label, prompt, grid=False):
+def add_docx_workspace(document, label, prompt, grid=False, reflection=None, artifact_text=None, example_text=None):
     add_docx_para(document, label, "Heading 2")
     add_docx_card(document, "Prompt", prompt, "#F8FAFC", "#111827")
+    add_docx_card(document, "Possible artifacts", artifact_text or "graph sketch, table of values, annotated screenshot, written interpretation, revised assumption note", "#EDF4FF", "#2563EB")
+    if example_text:
+        add_docx_card(document, "Example thinking", example_text, "#F8FAFC", "#64748B")
     guidance = "Use this space for typing, pasted screenshots, graph notes, revised assumptions, or teacher-approved digital annotation."
     if grid:
         guidance += " For sketches or diagrams, paste an image or use Word's Draw tools."
@@ -542,7 +689,39 @@ def add_docx_workspace(document, label, prompt, grid=False):
     for _ in range(9):
         p_blank = cell.add_paragraph(" ")
         p_blank.paragraph_format.space_after = Pt(12)
-    add_docx_card(document, "Reflection prompt", "What changed in your thinking? What assumption is doing the most work? What evidence would make this stronger?", "#F8FAFC", "#111827")
+    add_docx_card(document, "Reflection prompt", reflection or "What changed in your thinking?", "#F8FAFC", "#111827")
+
+
+def add_docx_strong_modeling_page(document):
+    add_docx_para(document, "What strong modeling looks like.", "Heading 1")
+    add_docx_para(document, "This page is a guide for the kind of thinking the journal should make visible. It is not a checklist; it is a way to recognize stronger mathematical investigation.")
+    add_docx_card_grid(document, [
+        ("Strong modeling", "Explains assumptions; critiques realism; revises predictions; compares models; identifies limitations; connects graph, algebra, and context; interprets uncertainty.", "#EDF8F1", "#15803D"),
+        ("Weak modeling", "Only calculates; ignores unrealistic outputs; hides uncertainty; treats models as perfect truth; separates math from context; copies technology output without interpretation.", "#F8FAFC", "#B45353"),
+        ("Core idea", "Models are arguments. They become stronger when evidence, assumptions, revisions, and limits become more visible.", "#FFFFFF", "#111827"),
+    ], 3)
+
+
+def add_docx_stop_and_critique(document):
+    add_docx_para(document, "STOP AND CRITIQUE", "Heading 1")
+    add_docx_para(document, "A strong investigation interrupts itself. Use this page to evaluate whether your current model is becoming more credible or just more polished.")
+    add_docx_card_grid(document, [
+        ("Credibility questions", "What currently feels misleading? What assumption is dominating the model? What variable is missing? What evidence would weaken your claim?", "#F8FAFC", "#B45353"),
+        ("Model honesty", "Which prediction feels least realistic? What would an opposing interpretation say? Which graph feature might be overinterpreted?", "#FFFFFF", "#111827"),
+        ("Anchor", "Models are arguments. Revision strengthens modeling when it makes assumptions, evidence, and limits clearer.", "#F6EFFF", "#7E22CE"),
+    ], 3)
+    add_docx_workspace(document, "Critique notes and revised decisions", "Record what your group needs to question, revise, verify, or stop claiming too strongly.", False, "What would make your current claim more honest?")
+
+
+def add_docx_individual_snapshot(document, class_num):
+    add_docx_para(document, f"{class_num} Individual Snapshot", "Heading 1")
+    add_docx_para(document, "This is a small individual accountability moment inside the shared investigation. Choose one mathematical contribution you personally understand and can defend.")
+    add_docx_card_grid(document, [
+        ("Possible focus", "Explain one graph feature, critique one assumption, interpret one threshold, identify one limitation, explain one revision, or defend one modeling decision.", "#EDF4FF", "#2563EB"),
+        ("Evidence to attach or reference", "Graph annotation, recalculation, model critique, revised assumption note, scatterplot interpretation, limitation analysis, or synthesis explanation.", "#EDF8F1", "#15803D"),
+        ("Keep it personal", "Write in your own mathematical voice. Do not divide the project by topic; every student should engage across the major lenses.", "#F6EFFF", "#7E22CE"),
+    ], 3)
+    add_docx_workspace(document, "Individual reasoning snapshot", "Type your personal explanation or paste your individual artifact here.", False, "What part of the mathematics can you defend without reading a script?", "personal graph note, critique, recalculation, limitation analysis, or revised assumption")
 
 
 def build_journal_docx():
@@ -565,6 +744,8 @@ def build_journal_docx():
     ], 3)
     add_docx_card(document, "Field note style", "Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units, limitations, and revision together.", "#FFFFFF", "#111827")
     document.add_page_break()
+    add_docx_strong_modeling_page(document)
+    document.add_page_break()
 
     add_docx_para(document, "Shared field notebook. Individual accountability.", "Heading 1")
     add_docx_para(document, "The project is collaborative, but grading is individual. The journal and individual evidence serve different purposes.")
@@ -581,13 +762,32 @@ def build_journal_docx():
     add_docx_card_grid(document, [(f"{n}. {title}", kind, "#F8FAFC", "#111827") for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS], 3)
     document.add_page_break()
 
+    page_counter = 0
     for class_num, title_text, question, accent, pages in PHASES:
         add_docx_para(document, f"{class_num} — {title_text}", "Heading 1")
         add_docx_para(document, question, None)
         add_docx_card(document, "Field notebook expectation", "Use this section as a place for rough work, uncertainty, recalculation, and revision. Let the thinking stay visible.", "#FFFFFF", "#111827")
+        if class_num == "Class 4":
+            add_docx_card(document, "Why polynomial structure belongs here", "Physical systems have dimensions, limits, packing constraints, refrigeration volume, warehouse capacity, shipping tradeoffs, and cost interactions. Polynomial models help reveal how those interacting constraints reshape what is possible.", "#F6EFFF", "#7E22CE")
+        add_docx_card(document, "Modeling anchor", MODELING_ANCHORS[(int(class_num.split()[1]) - 1) % len(MODELING_ANCHORS)], "#F8FAFC", "#111827")
         document.add_page_break()
         for label, prompt, grid in pages:
-            add_docx_workspace(document, label, prompt, grid)
+            reflection = REFLECTION_PROMPTS[page_counter % len(REFLECTION_PROMPTS)]
+            add_docx_workspace(
+                document,
+                label,
+                prompt,
+                grid,
+                reflection,
+                POSSIBLE_ARTIFACTS.get(label),
+                EXAMPLE_THINKING.get(label),
+            )
+            document.add_page_break()
+            page_counter += 1
+        add_docx_individual_snapshot(document, class_num)
+        document.add_page_break()
+        if class_num in ["Class 2", "Class 3", "Class 4"]:
+            add_docx_stop_and_critique(document)
             document.add_page_break()
         if class_num in ["Class 2", "Class 3", "Class 4"]:
             add_docx_para(document, f"{class_num} Model Comparison Studio", "Heading 1")

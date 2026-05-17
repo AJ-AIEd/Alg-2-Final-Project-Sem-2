@@ -273,110 +273,6 @@ RUBRIC_STANDARDS = [
 ]
 
 
-def build_student_overview():
-    story = title_story("A concise investigation brief for studying real food systems under mathematical pressure.")
-    story += section("Project Philosophy", "A model is useful, but incomplete.", "You are not simply completing Algebra 2 tasks. You are investigating an unstable food system and using mathematics to make its behavior more visible. Models reveal patterns, hide variables, depend on assumptions, and eventually break down. Strong mathematical thinkers name those limits honestly.")
-    story.append(card_grid([
-        ("Models reveal", "patterns, rates, structure, constraints, thresholds, and possible futures", GREEN, GREEN_SOFT),
-        ("Models hide", "unmeasured variables, human decisions, sudden disruptions, uncertainty, and local context", BLUE, BLUE_SOFT),
-        ("Models change", "when assumptions, rates, dimensions, domains, or constraints are revised", PURPLE, PURPLE_SOFT),
-    ], 3))
-    story.append(spacer(12))
-    story.append(card("Revision is evidence of thinking", "Crossed-out assumptions, recalculated thresholds, revised graphs, changed interpretations, and honest limitations are not mistakes to hide. They are evidence that the investigation became more sophisticated.", INK, WHITE))
-    story.append(PageBreak())
-
-    story += section("System View", "One system. Many pressures.", "Food systems are interconnected. Changes in one part can reshape the whole system.")
-    story.append(Table([[SystemMap(280, 210), card_grid([
-        ("Mathematics helps us", "Model change, identify patterns, compare possibilities, estimate outcomes, critique predictions, and reveal constraints.", INK, WHITE),
-        ("Strong thinkers ask", "What assumptions are we making? What variables matter most? Where does the model stop making sense? What tradeoffs appear?", INK, WHITE),
-    ], 1)]], colWidths=[300, PAGE_W - 430], style=TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE")])) )
-    story.append(PageBreak())
-
-    story += section("Final Communication", "Choose the format that best communicates the investigation.", "The purpose is communicating mathematical reasoning, not producing a polished slideshow.")
-    story.append(card_grid([
-        ("Allowed formats", "Slides, filmed discussions, workbook walkthroughs, digital whiteboards, screencasts, annotated journals, documentary-style explanations, or hybrid combinations.", INK, WHITE),
-        ("Math remains central", "Models, graph analysis, comparisons, assumptions, revisions, limitations, final claims, and visible mathematical evidence.", INK, WHITE),
-        ("Clarity over polish", "Do not prioritize cinematic editing, effects, overproduction, or memorized performance. Prioritize reasoning and explanation.", INK, WHITE),
-    ], 3))
-    story.append(spacer(12))
-    story.append(card("Workbook walkthroughs are encouraged", "The journal is a major part of the investigation. Students may explain crossed-out assumptions, revised graphs, recalculations, and changing interpretations directly from the workbook.", INK, WHITE))
-    story.append(PageBreak())
-
-    story += section("Deliverables", "What makes the investigation visible", "These pieces work together. The journal shows the evolving inquiry; the final communication explains the mathematical story.")
-    story.append(card_grid([
-        ("Investigation Journal", "Rough work, sketches, Desmos screenshots, calculations, AI interactions, revisions, and evolving reasoning.", INK, WHITE),
-        ("Mathematical Artifacts", "Graph annotations, recursive calculations, polynomial long division, tables, recalculations, and revised models.", INK, WHITE),
-        ("Group Reflection Vlogs", "Short mathematical conversations showing uncertainty, revision, disagreement, critique, and progress.", INK, WHITE),
-        ("Final Communication", "The chosen format that communicates models, comparisons, assumptions, limitations, and claims.", INK, WHITE),
-    ], 2))
-    story.append(PageBreak())
-
-    story += section("Collaboration", "One shared investigation. Visible individual thinking.", "Do not divide units by student. The group functions as a collaborative mathematical inquiry team.")
-    story.append(card_grid([
-        ("Collaborative work", "Students think together, discuss together, graph together, revise together, compare together, critique together, and synthesize together.", INK, WHITE),
-        ("Individual evidence snapshots", "Each student contributes smaller, frequent artifacts: graph interpretations, model comparisons, recalculations, AI critique, revised assumptions, or limitation reflections.", INK, WHITE),
-        ("Every student speaks mathematics", "Every student must visibly contribute reasoning, interpretation, comparison, critique, or explanation in group vlogs and final communication.", INK, WHITE),
-    ], 3))
-    story.append(PageBreak())
-
-    story += section("Scenarios", "Choose one documentary investigation prompt.", "Each scenario begins with a human tension. Your group narrows it into one measurable mathematical investigation.")
-    story.append(card_grid([
-        ("A | United States", "The $5 Footlong Isn't $5 Anymore<br/><br/>Changing everyday food costs reshape affordability.<br/><br/><b>Key tensions:</b> inflation, pricing, shrinkflation, labor, transportation", GREEN, WHITE),
-        ("B | Global", "When War Changes the Price of Bread<br/><br/>Disruption in one region can shift prices and recovery patterns elsewhere.<br/><br/><b>Key tensions:</b> exports, wheat, transport, recovery, supply chains", BLUE, WHITE),
-        ("C | Sub-Saharan Africa", "What If Food Exists - But Never Arrives?<br/><br/>Food can be produced and still be lost before reaching people.<br/><br/><b>Key tensions:</b> spoilage, refrigeration, storage, infrastructure", PURPLE, WHITE),
-        ("D | Colombia", "Can Climate Change the Future of Coffee?<br/><br/>Environmental and economic changes can alter yield, exports, and thresholds.<br/><br/><b>Key tensions:</b> rainfall, coffee yield, climate, transport, exports", INK, WHITE),
-    ], 2))
-    story.append(PageBreak())
-
-    story += section("Focus", "A good question is narrow enough to model.", "Avoid giant topics. Look for one changing quantity, one measurable relationship, and one meaningful constraint.")
-    story.append(card_grid([
-        ("Too broad", "How inflation affects food<br/>Climate and coffee<br/>Food insecurity<br/>Food waste", RED, WARM),
-        ("Better", "How sandwich prices changed over time<br/>Rainfall vs coffee yield in one region<br/>Food spoilage during transport stages<br/>Food remaining after repeated losses", GREEN, GREEN_SOFT),
-    ], 2))
-    story.append(spacer(12))
-    story.append(card("Strong focus test", "Can your group identify one main changing quantity, one measurable relationship, one prediction or threshold question, one physical or cost constraint, and one connection across mathematical lenses?", INK, WHITE))
-    story.append(PageBreak())
-
-    story += section("Roadmap", "The five-class arc is one evolving investigation.", "Each phase builds on the same system. The mathematics becomes more sophisticated through comparison and revision.")
-    story.append(card_grid([
-        ("1. Entering the System", "Notice relationships before choosing equations. Move from topic choice to a measurable system relationship.", MUTED, WHITE),
-        ("2. Modeling Change", "Represent repeated change with terms, formulas, and accumulated totals. Predict and test reliability.", GREEN, GREEN_SOFT),
-        ("3. Thresholds", "Model compounding, decay, and threshold moments. Interpret model breakdown.", BLUE, BLUE_SOFT),
-        ("4. Constraints", "Use structure and graph behavior to understand capacity, tradeoffs, extrema, and restricted domains.", PURPLE, PURPLE_SOFT),
-        ("5. Synthesis", "Turn separate models into one defensible mathematical claim about uncertainty.", INK, WHITE),
-    ], 3))
-    story.append(PageBreak())
-
-    story += section("Mathematical Lenses", "Different structures reveal different things.", "Students repeatedly answer: Why this model? What does it reveal? What does it miss? How do I know?")
-    story.append(card_grid([
-        ("Sequences & Series", "How is the system changing over time? Compare discrete vs continuous, arithmetic vs geometric, recursive vs explicit, finite vs infinite.", GREEN, GREEN_SOFT),
-        ("Exponentials & Logs", "When does change accelerate, decay, compound, or cross a threshold? Compare linear vs exponential and sampled values vs continuous models.", BLUE, BLUE_SOFT),
-        ("Polynomials", "How do capacity, cost, and physical constraints reshape the system? Analyze structure, end behavior, extrema, and domain.", PURPLE, PURPLE_SOFT),
-    ], 3))
-    story.append(spacer(12))
-    story.append(card("Lightweight model fit", "Use r and R² as credibility and critique tools. Interpret direction, strength, fit, hidden variables, and causation limits. This is not a full statistics unit.", INK, WHITE))
-    story.append(PageBreak())
-
-    story += section("Assessment Frame", "Three content standards. Three skill grades.", "The final rubric separates Algebra 2 content from cross-cutting mathematical habits. Both matter.")
-    story.append(p("CORE ALGEBRA 2 CONTENT STANDARDS", "Kicker"))
-    story.append(card_grid([(f"{n}. {title}", desc, accent, fill) for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS[:3] for desc in ["See the rubric for performance descriptors. This standard focuses on the mathematical content of the investigation."]], 3))
-    story.append(spacer(12))
-    story.append(p("CROSS-CUTTING SKILL GRADES", "Kicker"))
-    story.append(card_grid([(f"{n}. {title}", "Assessed across the whole investigation as a mathematical habit: communication, comparison, critique, revision, precision, and flexible thinking.", accent, fill) for n, title, kind, accent, fill, descs in RUBRIC_STANDARDS[3:]], 3))
-    story.append(PageBreak())
-
-    story += section("AI Use", "SAIL L5: Co-Create", "AI is a thinking partner, not an answer machine. It should deepen reasoning and make critique sharper.")
-    story.append(card_grid([
-        ("AI may help you", "Challenge assumptions, critique models, identify missing variables, compare interpretations, explain r and R², organize ideas, and revise explanations.", GREEN, WHITE),
-        ("AI may not replace you", "Do not submit reasoning you do not understand, ask AI to complete the project, hide meaningful AI use, or replace your own mathematical voice.", RED, WHITE),
-    ], 2))
-    story.append(spacer(12))
-    story.append(card("Transparency sentence", "AI use: We asked ChatGPT to critique our constant-growth assumption. We rejected one suggestion, revised our rate assumption, and recalculated the threshold.", INK, WHITE))
-
-    d = doc(OUT / "student-handout.pdf", "Student Overview")
-    d.build(story, onFirstPage=footer, onLaterPages=footer)
-
-
 def journal_page(story, label, prompt, workspace_label="open thinking space", grid=False):
     story += section(label, prompt)
     story.append(Table([[Workspace(workspace_label, 285, grid), card("Reflection prompt", "What changed in your thinking? What assumption is doing the most work? What evidence would make this stronger?", INK, SOFT)]], colWidths=[PAGE_W - 260, 145], style=TableStyle([
@@ -514,7 +410,6 @@ def build_rubric():
 
 
 if __name__ == "__main__":
-    build_student_overview()
     build_journal()
     build_rubric()
-    print("Generated polished landscape PDFs in downloads/")
+    print("Generated journal and rubric PDFs in downloads/")

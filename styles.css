@@ -565,6 +565,44 @@ details[open] summary {
 .quiet-details > .fit-note {
   margin: 1rem 1.2rem 1.2rem;
 }
+.ai-responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.ai-grid ul,
+.fit-card ul {
+  margin: .35rem 0 0;
+  padding-left: 1.15rem;
+}
+.flint-card,
+.final-reminder {
+  margin-top: 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.55rem;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, .05), rgba(21, 128, 61, .04)),
+    #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+.flint-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+.flint-card .button {
+  min-width: 150px;
+}
+.final-reminder {
+  border-left: 6px solid var(--ink);
+}
+.final-reminder p:last-child,
+.flint-card p:last-child {
+  margin-bottom: 0;
+}
 .reasoning-strip {
   margin-top: 1.5rem;
   border: 1px solid var(--line);
@@ -785,7 +823,8 @@ details[open] summary {
   .dashboard-tab { flex: 0 0 auto; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-art { min-height: 0; }
-  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr 1fr; }
+  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr 1fr; }
+  .flint-card { grid-template-columns: 1fr; }
   .journal-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
@@ -795,7 +834,7 @@ details[open] summary {
   .tracker-frame, .tracker-frame iframe { min-height: 78vh; }
   .hero { padding-top: 3rem; }
   h1 { font-size: 2.85rem; line-height: 1.03; }
-  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr; }
+  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .rubric-standards { grid-template-columns: 1fr; }
   .workbox.large { grid-column: auto; }
   .brand span:last-child { max-width: 190px; white-space: normal; line-height: 1.05; }
   th, td { padding: .75rem; }

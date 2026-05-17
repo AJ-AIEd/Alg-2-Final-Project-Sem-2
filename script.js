@@ -1,6 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector("#nav-links");
-const dashboardTabs = [...document.querySelectorAll(".dashboard-tab")];
+const dashboardTabs = [...document.querySelectorAll(".dashboard-tab[data-tab]")];
 const dashboardLinks = [...document.querySelectorAll(".dashboard-link")];
 const dashboardSections = [...document.querySelectorAll(".dashboard-section")];
 
@@ -55,17 +55,19 @@ if (navToggle && navLinks) {
   });
 }
 
-dashboardTabs.forEach((tab) => {
-  tab.addEventListener("click", () => setDashboardTab(tab.dataset.tab));
-});
+if (dashboardSections.length) {
+  dashboardTabs.forEach((tab) => {
+    tab.addEventListener("click", () => setDashboardTab(tab.dataset.tab));
+  });
 
-dashboardLinks.forEach((link) => {
-  link.addEventListener("click", () => setDashboardTab(link.dataset.tab));
-});
+  dashboardLinks.forEach((link) => {
+    link.addEventListener("click", () => setDashboardTab(link.dataset.tab));
+  });
 
-const initialHash = window.location.hash.replace("#", "");
-setDashboardTab(initialHash || "overview", false);
+  const initialHash = window.location.hash.replace("#", "");
+  setDashboardTab(initialHash || "overview", false);
 
-window.addEventListener("hashchange", () => {
-  setDashboardTab(window.location.hash.replace("#", "") || "overview", false);
-});
+  window.addEventListener("hashchange", () => {
+    setDashboardTab(window.location.hash.replace("#", "") || "overview", false);
+  });
+}

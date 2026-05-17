@@ -391,10 +391,12 @@ def build_journal():
     story = title_story("A spacious mathematical field notebook for sketching, modeling, revising, and explaining.")
     story += section("Journal Norms", "Rough work belongs here.", "This journal is not a worksheet packet. It is the visible record of your group's evolving mathematical thinking.")
     story.append(card_grid([
-        ("Value uncertainty", "Label assumptions, questions, disagreements, and places where a model stops making sense.", INK, WHITE),
+        ("Value uncertainty", "A strong investigation often begins confused. Label assumptions, questions, disagreements, and places where a model stops making sense.", INK, WHITE),
         ("Revise visibly", "Cross out, annotate, draw arrows, compare versions, and explain why your thinking changed.", INK, WHITE),
-        ("Field note style", "Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units, limitations, and revision together.", INK, WHITE),
+        ("Models are arguments", "A model is not an answer. It is a claim built from assumptions, evidence, representations, and limits.", INK, WHITE),
     ], 3))
+    story.append(spacer(12))
+    story.append(card("Field note style", "Messy is acceptable. Hidden thinking is not. The strongest journals show graph, algebra, context, units, limitations, and revision together.", INK, WHITE))
     story.append(PageBreak())
 
     story += section("Rubric Alignment", "Use the journal to make standards visible.", "The rubric does not only score final answers. It looks for reasoning, interpretation, revision, limitations, precision, and flexible thinking across the investigation.")
@@ -404,25 +406,25 @@ def build_journal():
     phases = [
         ("Class 1", "Entering the System", "What relationships are we beginning to notice?", MUTED, [
             ("System map canvas", "Sketch variables, links, pressures, unknowns, and possible feedback loops.", True),
-            ("Variable table and measurement notes", "Variable | Units | Why it matters | What is hard to measure", False),
-            ("Sketch before technology", "Predict the shape of one relationship before using Desmos, Sheets, or another tool.", True),
-            ("Vlog notes", "Patterns noticed, uncertainties, assumptions, important variables.", False),
+            ("Variable table and measurement notes", "Variable | Units | Why it matters | What is hard to measure. Which variables seem politically, socially, or physically difficult to measure?", False),
+            ("Sketch before technology", "Predict the shape of one relationship before using Desmos, Sheets, or another tool. What relationship seems obvious at first but may be misleading?", True),
+            ("Vlog notes", "Discuss uncertainty, early assumptions, possible misleading patterns, and variables that may be hard to measure reliably.", False),
         ]),
         ("Class 2", "Modeling Change", "How is the system changing over time?", GREEN, [
-            ("Discrete vs continuous comparison", "Why is a sequence appropriate? What would change in a continuous model?", False),
-            ("Arithmetic, geometric, or neither?", "Use evidence. Explain what each term represents in context.", False),
-            ("Recursive and explicit formulas", "Write both formulas. Annotate every variable and parameter.", True),
-            ("Finite or infinite series", "What does the cumulative sum represent in the real system?", False),
-            ("Model versions", "Compare 0-5, 0-10, and 0-20. What changes in realism and reliability?", True),
-            ("Individual artifact snapshot", "Recalculation, comparison, graph interpretation, or revised assumption.", False),
+            ("Discrete vs continuous reasoning", "Does your context change in steps, continuously, or both? Justify the representation that best fits your system.", False),
+            ("Pattern behavior", "Does the system behave additively, multiplicatively, unpredictably, or in phases? What evidence supports this?", False),
+            ("Recursive and explicit formulas", "Write useful formulas if the pattern supports them. Annotate what each term, parameter, and assumption means in your context.", True),
+            ("Accumulated change", "What does accumulated change represent in your system? Would accumulation realistically continue forever? Why or why not?", False),
+            ("Meaningful time scales", "Choose multiple time ranges that matter for your investigation. How does the model behave differently across those scales?", True),
+            ("Pattern breakdown", "When does the pattern stop behaving consistently? What evidence would make you revise or reject it?", False),
         ]),
         ("Class 3", "Acceleration, Decay, and Thresholds", "When does repeated change become accelerated or compounding?", BLUE, [
-            ("Exponential vs linear", "Why does exponential reasoning fit better than repeated addition?", False),
-            ("Sampled values vs continuous model", "How does continuous exponential modeling change the interpretation compared to discrete terms?", False),
-            ("Build the model", "Starting value, growth factor, variables, assumptions, and realistic domain.", True),
-            ("Logarithmic threshold", "Show algebraic steps, graph verification, units, and interpretation.", True),
-            ("Rate comparison", "Compare 3%, 5%, and 8% growth or decay. What happens to thresholds?", True),
-            ("Model breakdown", "Where does exponential behavior stop being realistic? What hidden variables matter?", False),
+            ("Exponential vs linear", "What evidence suggests the change depends on the current amount rather than a constant added amount?", False),
+            ("Sampled values vs continuous model", "How does continuous exponential modeling change the interpretation compared to sampled or discrete terms in your context?", False),
+            ("Build the model", "Define starting value, growth or decay factor, variables, assumptions, and realistic domain. Which assumption is doing the most work?", True),
+            ("Logarithmic threshold", "Use logarithms when you need to solve for an unknown time or threshold. What does that threshold mean in the real system?", True),
+            ("Rate or assumption comparison", "Compare multiple realistic rates or assumptions relevant to your investigation. Which assumptions cause the prediction to change dramatically?", True),
+            ("Model breakdown", "Where does exponential behavior stop being realistic? What real-world forces might interrupt it? What hidden variables matter?", False),
         ]),
         ("Class 4", "Constraints, Capacity, and Cost", "How do physical and economic constraints reshape the system?", PURPLE, [
             ("Flat blueprint", "Original dimensions, square cutout variable, folding lines, units in centimeters.", True),
@@ -430,15 +432,16 @@ def build_journal():
             ("Volume polynomial", "Factored form, standard form, and why multiplying dimensions creates a cubic.", False),
             ("Graph annotation", "Intercepts, multiplicity, extrema, domain, unrealistic regions, physical meaning.", True),
             ("End behavior and structure", "Degree, even/odd, leading coefficient, as x → ∞ and as x → −∞.", False),
-            ("Polynomial division", "Dividend, divisor, quotient, remainder, and physical interpretation.", True),
-            ("Constraint revision", "Change dimensions, cost, refrigeration, transport, or available space. Compare results.", True),
+            ("Polynomial division", "How could division help analyze storage, packing, capacity, grouping, or remaining space? Interpret the quotient and remainder physically.", True),
+            ("Constraint revision", "Change a realistic physical or economic constraint from your context. What tradeoff appears, and which graph regions become impossible?", True),
         ]),
         ("Class 5", "Revision, Synthesis, and Communication", "What story does our mathematics tell?", INK, [
             ("Synthesis table", "Lens | What did it reveal? | Where did it fail?", False),
             ("Where models agreed or conflicted", "Compare mathematical lenses and assumptions.", False),
-            ("Final mathematical claim", "Use evidence, assumptions, limitations, tradeoffs, and implications.", False),
-            ("Communication storyboard", "Choose a format. Plan how mathematical evidence will be visible.", True),
-            ("Individual artifact snapshot", "Revision, hidden-variable analysis, limitation critique, or r/R² interpretation.", False),
+            ("Final mathematical claim", "Use evidence, assumptions, limitations, tradeoffs, and implications. What remained uncertain even after modeling?", False),
+            ("Communication storyboard", "Choose a format. Plan how mathematical evidence, revisions, and uncertainty will be visible.", True),
+            ("If we repeated this investigation", "With better data, what would change? Which assumption, measurement, or model would you revisit first?", False),
+            ("Individual artifact snapshot", "Revision, hidden-variable analysis, limitation critique, or r/R² interpretation. A high R² can still mislead; correlation can support a claim without proving causation.", False),
         ]),
     ]
 
@@ -449,7 +452,7 @@ def build_journal():
         for label, prompt, grid in pages:
             journal_page(story, label, prompt, "student thinking space", grid)
         if class_num in ["Class 2", "Class 3", "Class 4"]:
-            story += section(f"{class_num} Model Comparison Studio", "Changing assumptions creates different mathematical realities.", "Compare at least three related model versions. Focus on what changes mathematically and what changes in the real-world interpretation.")
+            story += section(f"{class_num} Model Comparison Studio", "Changing assumptions creates different mathematical realities.", "Choose model versions that are meaningful for your context. Which model is more useful, more realistic, or more honest about uncertainty? Which model hides constraints, exaggerates certainty, or breaks first?")
             story.append(Table([[Workspace("version A", 245, True), Workspace("version B", 245, True), Workspace("version C", 245, True)]], colWidths=[(PAGE_W - 100) / 3] * 3, style=TableStyle([
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 5),

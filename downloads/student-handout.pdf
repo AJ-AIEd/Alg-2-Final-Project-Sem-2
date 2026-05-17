@@ -3,7 +3,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R] /Count 12 >>
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R] /Count 14 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -18,7 +18,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
 endobj
 7 0 obj
-<< /Length 4052 >>
+<< /Length 4051 >>
 stream
 0.980 0.984 0.992 rg
 0.00 0.00 792.00 612.00 re f
@@ -101,9 +101,9 @@ BT /F2 15 Tf 80.00 258.00 Td (useful.") Tj ET
 0.392 0.455 0.545 rg
 BT /F1 10 Tf 80.00 240.00 Td (George Box) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 12 Tf 58.00 150.00 Td (A student-facing project handout for an inquiry-driven) Tj ET
+BT /F1 12 Tf 58.00 150.00 Td (A concise investigation brief for studying real food) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 12 Tf 58.00 133.00 Td (cumulative Algebra 2 investigation.) Tj ET
+BT /F1 12 Tf 58.00 133.00 Td (systems under mathematical pressure.) Tj ET
 endstream
 endobj
 8 0 obj
@@ -140,7 +140,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
 endobj
 11 0 obj
-<< /Length 1367 >>
+<< /Length 1480 >>
 stream
 0.980 0.984 0.992 rg
 0.00 0.00 792.00 612.00 re f
@@ -153,15 +153,17 @@ BT /F2 34 Tf 86.00 392.00 Td (A model is useful,) Tj ET
 0.094 0.122 0.165 rg
 BT /F2 34 Tf 86.00 352.00 Td (but incomplete.) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 13 Tf 86.00 255.00 Td (You are not simply doing units. You are using Algebra 2) Tj ET
+BT /F1 13 Tf 86.00 255.00 Td (You are not simply completing Algebra 2 tasks. You are) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 13 Tf 86.00 237.00 Td (to investigate how real systems evolve under pressure.) Tj ET
+BT /F1 13 Tf 86.00 237.00 Td (investigating an unstable food system and using) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 13 Tf 86.00 219.00 Td (Strong mathematical thinkers compare models, revise) Tj ET
+BT /F1 13 Tf 86.00 219.00 Td (mathematics to make its behavior more visible. Models) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 13 Tf 86.00 201.00 Td (assumptions, critique limitations, and explain why the) Tj ET
+BT /F1 13 Tf 86.00 201.00 Td (reveal patterns, hide variables, depend on assumptions,) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 13 Tf 86.00 183.00 Td (mathematics makes sense.) Tj ET
+BT /F1 13 Tf 86.00 183.00 Td (and eventually break down. Strong mathematical thinkers) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 13 Tf 86.00 165.00 Td (name those limits honestly.) Tj ET
 1.000 1.000 1.000 rg
 510.00 122.00 200.00 132.00 re f
 0.878 0.898 0.925 RG
@@ -169,7 +171,7 @@ BT /F1 13 Tf 86.00 183.00 Td (mathematics makes sense.) Tj ET
 0.200 0.255 0.333 rg
 BT /F2 11 Tf 532.00 215.00 Td (Revision is evidence of) Tj ET
 0.200 0.255 0.333 rg
-BT /F2 11 Tf 532.00 200.00 Td (deeper understanding.) Tj ET
+BT /F2 11 Tf 532.00 200.00 Td (mathematical thinking.) Tj ET
 0.902 0.922 0.949 RG
 0.70 w 58.00 38.00 m 734.00 38.00 l S
 0.392 0.455 0.545 rg
@@ -182,6 +184,92 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
 endobj
 13 0 obj
+<< /Length 3034 >>
+stream
+0.094 0.122 0.165 rg
+BT /F2 8.5 Tf 58.00 580.00 Td (INVESTIGATION MINDSET) Tj ET
+0.906 0.922 0.945 RG
+0.80 w 58.00 570.00 m 734.00 570.00 l S
+0.094 0.122 0.165 rg
+BT /F2 8.5 Tf 58.00 580.00 Td (INVESTIGATION MINDSET) Tj ET
+0.906 0.922 0.945 RG
+0.80 w 58.00 570.00 m 734.00 570.00 l S
+0.094 0.122 0.165 rg
+BT /F2 28 Tf 58.00 518.00 Td (Think like a mathematical investigator.) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 11.5 Tf 58.00 488.00 Td (This project values interpretation over memorization and visible reasoning over) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 11.5 Tf 58.00 472.00 Td (polished certainty.) Tj ET
+0.886 0.910 0.941 RG
+0.80 w 58.00 458.00 m 734.00 458.00 l S
+0.906 0.953 0.922 rg
+58.00 312.00 204.00 132.00 re f
+0.878 0.898 0.925 RG
+1.00 w 58.00 312.00 204.00 132.00 re S
+0.133 0.439 0.302 rg
+58.00 436.00 204.00 8.00 re f
+0.133 0.439 0.302 rg
+BT /F2 14 Tf 76.00 411.00 Td (Models reveal) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 386.00 Td (patterns, rates,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 371.50 Td (structure, constraints,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 357.00 Td (thresholds, and possible) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 342.50 Td (futures) Tj ET
+0.902 0.937 0.980 rg
+294.00 312.00 204.00 132.00 re f
+0.878 0.898 0.925 RG
+1.00 w 294.00 312.00 204.00 132.00 re S
+0.141 0.357 0.588 rg
+294.00 436.00 204.00 8.00 re f
+0.141 0.357 0.588 rg
+BT /F2 14 Tf 312.00 411.00 Td (Models hide) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 386.00 Td (unmeasured variables,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 371.50 Td (human decisions, sudden) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 357.00 Td (disruptions, uncertainty,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 342.50 Td (and local context) Tj ET
+0.945 0.922 0.973 rg
+530.00 312.00 204.00 132.00 re f
+0.878 0.898 0.925 RG
+1.00 w 530.00 312.00 204.00 132.00 re S
+0.404 0.286 0.557 rg
+530.00 436.00 204.00 8.00 re f
+0.404 0.286 0.557 rg
+BT /F2 14 Tf 548.00 411.00 Td (Models change) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 386.00 Td (when assumptions, rates,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 371.50 Td (dimensions, domains, or) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 357.00 Td (constraints are revised) Tj ET
+0.980 0.984 0.992 rg
+58.00 132.00 676.00 90.00 re f
+0.878 0.898 0.925 RG
+1.00 w 58.00 132.00 676.00 90.00 re S
+0.094 0.122 0.165 rg
+BT /F2 8.5 Tf 72.00 198.00 Td (WHAT COUNTS AS STRONG THINKING) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 9.5 Tf 72.00 178.00 Td (Crossed-out assumptions, recalculated thresholds, revised graphs, changed interpretations, and honest limitations are) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 9.5 Tf 72.00 165.00 Td (not mistakes to hide. They are evidence that the investigation became more sophisticated.) Tj ET
+0.902 0.922 0.949 RG
+0.70 w 58.00 38.00 m 734.00 38.00 l S
+0.392 0.455 0.545 rg
+BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
+0.392 0.455 0.545 rg
+BT /F1 8.5 Tf 724.00 22.00 Td (4) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
 << /Length 5374 >>
 stream
 0.094 0.122 0.165 rg
@@ -299,13 +387,13 @@ BT /F1 10.5 Tf 473.00 170.00 Td (tradeoffs appear?) Tj ET
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (4) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (5) Tj ET
 endstream
 endobj
-14 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
 endobj
-15 0 obj
+17 0 obj
 << /Length 3694 >>
 stream
 0.094 0.122 0.165 rg
@@ -401,14 +489,14 @@ BT /F1 9.5 Tf 72.00 140.00 Td (recalculations, and changing interpretations dire
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (5) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (6) Tj ET
 endstream
 endobj
-16 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
 endobj
-17 0 obj
-<< /Length 3125 >>
+19 0 obj
+<< /Length 3138 >>
 stream
 0.094 0.122 0.165 rg
 BT /F2 8.5 Tf 58.00 580.00 Td (DELIVERABLES) Tj ET
@@ -419,7 +507,7 @@ BT /F2 8.5 Tf 58.00 580.00 Td (DELIVERABLES) Tj ET
 0.906 0.922 0.945 RG
 0.80 w 58.00 570.00 m 734.00 570.00 l S
 0.094 0.122 0.165 rg
-BT /F2 28 Tf 58.00 518.00 Td (What you submit) Tj ET
+BT /F2 28 Tf 58.00 518.00 Td (What makes the investigation visible) Tj ET
 0.200 0.255 0.333 rg
 BT /F1 11.5 Tf 58.00 488.00 Td (These pieces work together. The journal shows the evolving inquiry; the final) Tj ET
 0.200 0.255 0.333 rg
@@ -433,7 +521,7 @@ BT /F1 11.5 Tf 58.00 472.00 Td (communication explains the mathematical story.) 
 0.094 0.122 0.165 rg
 58.00 414.00 286.00 8.00 re f
 0.094 0.122 0.165 rg
-BT /F2 14 Tf 76.00 389.00 Td (Digital Investigation Journal) Tj ET
+BT /F2 14 Tf 76.00 389.00 Td (Investigation Journal) Tj ET
 0.200 0.255 0.333 rg
 BT /F1 10.5 Tf 76.00 364.00 Td (rough work, sketches, Desmos) Tj ET
 0.200 0.255 0.333 rg
@@ -491,13 +579,13 @@ BT /F1 10.5 Tf 416.00 163.00 Td (limitations, and claims) Tj ET
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (6) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (7) Tj ET
 endstream
 endobj
-18 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 21 0 R >>
 endobj
-19 0 obj
+21 0 obj
 << /Length 2550 >>
 stream
 0.094 0.122 0.165 rg
@@ -557,13 +645,13 @@ BT /F1 9.5 Tf 72.00 167.00 Td (in group vlogs and final communication. The goal 
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (7) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (8) Tj ET
 endstream
 endobj
-20 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 21 0 R >>
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 23 0 R >>
 endobj
-21 0 obj
+23 0 obj
 << /Length 4772 >>
 stream
 0.094 0.122 0.165 rg
@@ -693,14 +781,14 @@ BT /F1 10.5 Tf 416.00 79.50 Td (exports) Tj ET
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (8) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (9) Tj ET
 endstream
 endobj
-22 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 23 0 R >>
+24 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 25 0 R >>
 endobj
-23 0 obj
-<< /Length 2795 >>
+25 0 obj
+<< /Length 2796 >>
 stream
 0.094 0.122 0.165 rg
 BT /F2 8.5 Tf 58.00 580.00 Td (FOCUS) Tj ET
@@ -773,13 +861,13 @@ BT /F1 9.5 Tf 72.00 184.00 Td (question, one physical or cost constraint, and on
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (9) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (10) Tj ET
 endstream
 endobj
-24 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 25 0 R >>
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 27 0 R >>
 endobj
-25 0 obj
+27 0 obj
 << /Length 4879 >>
 stream
 0.094 0.122 0.165 rg
@@ -902,14 +990,14 @@ BT /F1 9.5 Tf 102.00 139.00 Td (then synthesize what each model reveals and miss
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (10) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (11) Tj ET
 endstream
 endobj
-26 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 27 0 R >>
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 29 0 R >>
 endobj
-27 0 obj
-<< /Length 3626 >>
+29 0 obj
+<< /Length 3698 >>
 stream
 0.094 0.122 0.165 rg
 BT /F2 8.5 Tf 58.00 580.00 Td (MATHEMATICAL LENSES) Tj ET
@@ -964,11 +1052,13 @@ BT /F1 10.5 Tf 312.00 357.50 Td (accelerate, decay,) Tj ET
 0.200 0.255 0.333 rg
 BT /F1 10.5 Tf 312.00 343.00 Td (compound, or cross a) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 328.50 Td (threshold? Compare) Tj ET
+BT /F1 10.5 Tf 312.00 328.50 Td (threshold? Compare linear) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 314.00 Td (exponential vs linear and) Tj ET
+BT /F1 10.5 Tf 312.00 314.00 Td (vs exponential and) Tj ET
 0.200 0.255 0.333 rg
-BT /F1 10.5 Tf 312.00 299.50 Td (geometric vs exponential.) Tj ET
+BT /F1 10.5 Tf 312.00 299.50 Td (sampled values vs) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 285.00 Td (continuous models.) Tj ET
 0.945 0.922 0.973 rg
 530.00 285.00 204.00 145.00 re f
 0.878 0.898 0.925 RG
@@ -1004,13 +1094,173 @@ BT /F1 9.5 Tf 72.00 157.00 Td (limits. This is not a full statistics unit.) Tj E
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (11) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (12) Tj ET
 endstream
 endobj
-28 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 29 0 R >>
+30 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 31 0 R >>
 endobj
-29 0 obj
+31 0 obj
+<< /Length 5714 >>
+stream
+0.094 0.122 0.165 rg
+BT /F2 8.5 Tf 58.00 580.00 Td (ASSESSMENT FRAME) Tj ET
+0.906 0.922 0.945 RG
+0.80 w 58.00 570.00 m 734.00 570.00 l S
+0.094 0.122 0.165 rg
+BT /F2 8.5 Tf 58.00 580.00 Td (ASSESSMENT FRAME) Tj ET
+0.906 0.922 0.945 RG
+0.80 w 58.00 570.00 m 734.00 570.00 l S
+0.094 0.122 0.165 rg
+BT /F2 28 Tf 58.00 518.00 Td (Three content standards. Three skill grades.) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 11.5 Tf 58.00 488.00 Td (The final rubric separates Algebra 2 content from cross-cutting mathematical) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 11.5 Tf 58.00 472.00 Td (habits. Both matter.) Tj ET
+0.886 0.910 0.941 RG
+0.80 w 58.00 458.00 m 734.00 458.00 l S
+0.392 0.455 0.545 rg
+BT /F2 9 Tf 58.00 420.00 Td (CORE ALGEBRA 2 CONTENT STANDARDS) Tj ET
+1.000 1.000 1.000 rg
+58.00 258.00 204.00 135.00 re f
+0.878 0.898 0.925 RG
+1.00 w 58.00 258.00 204.00 135.00 re S
+0.133 0.439 0.302 rg
+58.00 385.00 204.00 8.00 re f
+0.133 0.439 0.302 rg
+BT /F2 14 Tf 76.00 360.00 Td (1. Sequences and Series) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 335.00 Td (discrete change,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 320.50 Td (arithmetic vs geometric) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 306.00 Td (patterns, recursive vs) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 291.50 Td (explicit forms, finite vs) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 277.00 Td (infinite reasoning,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 262.50 Td (cumulative sums in) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 248.00 Td (context) Tj ET
+1.000 1.000 1.000 rg
+294.00 258.00 204.00 135.00 re f
+0.878 0.898 0.925 RG
+1.00 w 294.00 258.00 204.00 135.00 re S
+0.141 0.357 0.588 rg
+294.00 385.00 204.00 8.00 re f
+0.141 0.357 0.588 rg
+BT /F2 14 Tf 312.00 360.00 Td (2. Exponentials and Logarithms) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 335.00 Td (growth and decay, growth) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 320.50 Td (factors, thresholds,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 306.00 Td (logarithmic reasoning,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 291.50 Td (realistic interpretation) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 277.00 Td (and limitations) Tj ET
+1.000 1.000 1.000 rg
+530.00 258.00 204.00 135.00 re f
+0.878 0.898 0.925 RG
+1.00 w 530.00 258.00 204.00 135.00 re S
+0.404 0.286 0.557 rg
+530.00 385.00 204.00 8.00 re f
+0.404 0.286 0.557 rg
+BT /F2 14 Tf 548.00 360.00 Td (3. Polynomials) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 335.00 Td (degree, leading) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 320.50 Td (coefficient, end) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 306.00 Td (behavior, intercepts,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 291.50 Td (multiplicity, extrema,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 277.00 Td (polynomial forms, and) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 262.50 Td (realistic domain) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 248.00 Td (restrictions) Tj ET
+0.392 0.455 0.545 rg
+BT /F2 9 Tf 58.00 214.00 Td (CROSS-CUTTING SKILL GRADES) Tj ET
+0.980 0.984 0.992 rg
+58.00 68.00 204.00 120.00 re f
+0.878 0.898 0.925 RG
+1.00 w 58.00 68.00 204.00 120.00 re S
+0.094 0.122 0.165 rg
+58.00 180.00 204.00 8.00 re f
+0.094 0.122 0.165 rg
+BT /F2 14 Tf 76.00 155.00 Td (4. Mathematical Communication and Interpretation) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 130.00 Td (clear explanations,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 115.50 Td (graph-algebra-context) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 101.00 Td (connections,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 86.50 Td (assumptions,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 72.00 Td (annotations, tables, and) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 57.50 Td (contextual) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 76.00 43.00 Td (interpretation) Tj ET
+0.980 0.984 0.992 rg
+294.00 68.00 204.00 120.00 re f
+0.878 0.898 0.925 RG
+1.00 w 294.00 68.00 204.00 120.00 re S
+0.278 0.333 0.412 rg
+294.00 180.00 204.00 8.00 re f
+0.278 0.333 0.412 rg
+BT /F2 14 Tf 312.00 155.00 Td (5. Comparing Models, Assumptions, and Limitations) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 130.00 Td (model comparison,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 115.50 Td (realism, hidden) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 101.00 Td (variables, tradeoffs,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 86.50 Td (assumptions,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 72.00 Td (unreasonable) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 57.50 Td (predictions, and) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 312.00 43.00 Td (meaningful revision) Tj ET
+0.980 0.984 0.992 rg
+530.00 68.00 204.00 120.00 re f
+0.878 0.898 0.925 RG
+1.00 w 530.00 68.00 204.00 120.00 re S
+0.094 0.122 0.165 rg
+530.00 180.00 204.00 8.00 re f
+0.094 0.122 0.165 rg
+BT /F2 14 Tf 548.00 155.00 Td (6. Algebraic Precision and Flexible Number Sense) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 130.00 Td (accurate methods,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 115.50 Td (factoring, logarithms,) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 101.00 Td (substitution, graph) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 86.50 Td (interpretation, rational) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 72.00 Td (numbers, units, and) Tj ET
+0.200 0.255 0.333 rg
+BT /F1 10.5 Tf 548.00 57.50 Td (reasonableness checks) Tj ET
+0.902 0.922 0.949 RG
+0.70 w 58.00 38.00 m 734.00 38.00 l S
+0.392 0.455 0.545 rg
+BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
+0.392 0.455 0.545 rg
+BT /F1 8.5 Tf 724.00 22.00 Td (13) Tj ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 33 0 R >>
+endobj
+33 0 obj
 << /Length 2635 >>
 stream
 0.094 0.122 0.165 rg
@@ -1078,43 +1328,47 @@ BT /F1 9.5 Tf 72.00 157.00 Td (assumption, and recalculated the threshold.) Tj E
 0.392 0.455 0.545 rg
 BT /F1 8.5 Tf 58.00 22.00 Td (Systems Under Pressure | Algebra 2 Final Project) Tj ET
 0.392 0.455 0.545 rg
-BT /F1 8.5 Tf 724.00 22.00 Td (12) Tj ET
+BT /F1 8.5 Tf 724.00 22.00 Td (14) Tj ET
 endstream
 endobj
 xref
-0 30
+0 34
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000192 00000 n 
-0000000262 00000 n 
-0000000337 00000 n 
-0000000415 00000 n 
-0000000561 00000 n 
-0000004665 00000 n 
-0000004811 00000 n 
-0000005759 00000 n 
-0000005907 00000 n 
-0000007327 00000 n 
-0000007475 00000 n 
-0000012902 00000 n 
-0000013050 00000 n 
-0000016797 00000 n 
-0000016945 00000 n 
-0000020123 00000 n 
-0000020271 00000 n 
-0000022874 00000 n 
-0000023022 00000 n 
-0000027847 00000 n 
-0000027995 00000 n 
-0000030843 00000 n 
-0000030991 00000 n 
-0000035923 00000 n 
-0000036071 00000 n 
-0000039750 00000 n 
-0000039898 00000 n 
+0000000206 00000 n 
+0000000276 00000 n 
+0000000351 00000 n 
+0000000429 00000 n 
+0000000575 00000 n 
+0000004678 00000 n 
+0000004824 00000 n 
+0000005772 00000 n 
+0000005920 00000 n 
+0000007453 00000 n 
+0000007601 00000 n 
+0000010688 00000 n 
+0000010836 00000 n 
+0000016263 00000 n 
+0000016411 00000 n 
+0000020158 00000 n 
+0000020306 00000 n 
+0000023497 00000 n 
+0000023645 00000 n 
+0000026248 00000 n 
+0000026396 00000 n 
+0000031221 00000 n 
+0000031369 00000 n 
+0000034218 00000 n 
+0000034366 00000 n 
+0000039298 00000 n 
+0000039446 00000 n 
+0000043197 00000 n 
+0000043345 00000 n 
+0000049112 00000 n 
+0000049260 00000 n 
 trailer
-<< /Size 30 /Root 1 0 R >>
+<< /Size 34 /Root 1 0 R >>
 startxref
-42586
+51948
 %%EOF

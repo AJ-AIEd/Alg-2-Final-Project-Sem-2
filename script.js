@@ -1,42 +1,71 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector("#nav-links");
+const dashboardTabs = [...document.querySelectorAll(".dashboard-tab")];
+const dashboardLinks = [...document.querySelectorAll(".dashboard-link")];
+const dashboardSections = [...document.querySelectorAll(".dashboard-section")];
+
+const tabAliases = {
+  home: "overview",
+  overview: "overview",
+  scenarios: "scenarios",
+  roadmap: "roadmap",
+  lenses: "lenses",
+  comparisons: "lenses",
+  evidence: "lenses",
+  journal: "journal",
+  ai: "ai-fit",
+  "model-fit": "ai-fit",
+  "ai-fit": "ai-fit",
+  rubrics: "rubric",
+  rubric: "rubric",
+  downloads: "downloads"
+};
+
+function setDashboardTab(tabName, updateHash = true) {
+  const activeTab = tabAliases[tabName] || "overview";
+
+  dashboardTabs.forEach((tab) => {
+    const isActive = tab.dataset.tab === activeTab;
+    tab.classList.toggle("active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
+
+  dashboardSections.forEach((section) => {
+    const isActive = section.dataset.dashboardTab === activeTab;
+    section.classList.toggle("active", isActive);
+    section.hidden = !isActive;
+  });
+
+  if (navLinks && navToggle) {
+    navLinks.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+
+  if (updateHash) {
+    history.replaceState(null, "", `#${activeTab}`);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {
     const open = navLinks.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(open));
   });
-  navLinks.addEventListener("click", (event) => {
-    if (event.target.matches("a")) {
-      navLinks.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
-    }
-  });
 }
 
-document.querySelectorAll(".tab-button").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".tab-button").forEach((tab) => {
-      tab.classList.remove("active");
-      tab.setAttribute("aria-selected", "false");
-    });
-    document.querySelectorAll(".tab-panel").forEach((panel) => {
-      panel.classList.remove("active");
-    });
-    button.classList.add("active");
-    button.setAttribute("aria-selected", "true");
-    document.getElementById(button.dataset.tab)?.classList.add("active");
-  });
+dashboardTabs.forEach((tab) => {
+  tab.addEventListener("click", () => setDashboardTab(tab.dataset.tab));
 });
 
-const sections = [...document.querySelectorAll("main section[id]")];
-const links = [...document.querySelectorAll(".nav-links a[href^='#']")];
+dashboardLinks.forEach((link) => {
+  link.addEventListener("click", () => setDashboardTab(link.dataset.tab));
+});
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    links.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
-  });
-}, { rootMargin: "-40% 0px -55% 0px" });
+const initialHash = window.location.hash.replace("#", "");
+setDashboardTab(initialHash || "overview", false);
 
-sections.forEach((section) => observer.observe(section));
+window.addEventListener("hashchange", () => {
+  setDashboardTab(window.location.hash.replace("#", "") || "overview", false);
+});

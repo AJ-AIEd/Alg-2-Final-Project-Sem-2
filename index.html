@@ -19,22 +19,21 @@
         <span>Systems Under Pressure</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <div class="nav-links" id="nav-links">
-        <a href="#scenarios">Scenarios</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#comparisons">Comparisons</a>
-        <a href="#journal">Journal</a>
-        <a href="#evidence">Evidence</a>
-        <a href="#ai">AI Use</a>
-        <a href="#resources">Resources</a>
-        <a href="#rubrics">Rubrics</a>
-        <a class="download-link" href="#downloads">Downloads</a>
+      <div class="nav-links dashboard-tabs" id="nav-links" role="tablist" aria-label="Project areas">
+        <button class="dashboard-tab active" type="button" data-tab="overview" role="tab" aria-selected="true">Overview</button>
+        <button class="dashboard-tab" type="button" data-tab="scenarios" role="tab" aria-selected="false">Scenarios</button>
+        <button class="dashboard-tab" type="button" data-tab="roadmap" role="tab" aria-selected="false">Roadmap</button>
+        <button class="dashboard-tab" type="button" data-tab="lenses" role="tab" aria-selected="false">Mathematical Lenses</button>
+        <button class="dashboard-tab" type="button" data-tab="journal" role="tab" aria-selected="false">Journal</button>
+        <button class="dashboard-tab" type="button" data-tab="ai-fit" role="tab" aria-selected="false">AI + Model Fit</button>
+        <button class="dashboard-tab" type="button" data-tab="rubric" role="tab" aria-selected="false">Rubric</button>
+        <button class="dashboard-tab download-link" type="button" data-tab="downloads" role="tab" aria-selected="false">Downloads</button>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section" id="home">
+    <section class="hero section dashboard-section active" id="home" data-dashboard-tab="overview">
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Algebra 2 Cumulative Semester Final Project</p>
@@ -45,8 +44,8 @@
           </blockquote>
           <p class="lead">Use Algebra 2 to investigate how real food systems evolve under pressure: price, transportation, labor, climate, storage, exports, infrastructure, supply, demand, and waste.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#roadmap">Start the Investigation</a>
-            <a class="button secondary" href="#downloads">Get the PDFs</a>
+            <button class="button primary dashboard-link" type="button" data-tab="roadmap">Start the Investigation</button>
+            <button class="button secondary dashboard-link" type="button" data-tab="downloads">Get the PDFs</button>
           </div>
         </div>
         <div class="hero-art" aria-label="Interconnected food system model showing variables under pressure">
@@ -55,7 +54,7 @@
       </div>
     </section>
 
-    <section class="section compact">
+    <section class="section compact dashboard-section active" data-dashboard-tab="overview">
       <div class="section-header">
         <p class="eyebrow">Project Philosophy</p>
         <h2>A model is useful, but incomplete.</h2>
@@ -77,7 +76,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section dashboard-section active" data-dashboard-tab="overview">
       <div class="section-header">
         <p class="eyebrow">Final Deliverables</p>
         <h2>What you will submit</h2>
@@ -115,7 +114,7 @@
       </div>
     </section>
 
-    <section class="section collaboration-section">
+    <section class="section collaboration-section dashboard-section active" data-dashboard-tab="overview">
       <div class="section-header">
         <p class="eyebrow">Collaboration Structure</p>
         <h2>One shared investigation. Visible individual thinking.</h2>
@@ -137,7 +136,7 @@
       </div>
     </section>
 
-    <section class="section anchor-section" aria-label="Project anchors">
+    <section class="section anchor-section dashboard-section active" data-dashboard-tab="overview" aria-label="Project anchors">
       <div class="anchor-grid">
         <article><strong>A model is useful, but incomplete.</strong><span>Name what the model reveals and what it cannot see.</span></article>
         <article><strong>Do not split the math.</strong><span>Everyone reasons across every mathematical lens.</span></article>
@@ -147,7 +146,7 @@
       </div>
     </section>
 
-    <section class="section timeline-strip" aria-label="Project timeline">
+    <section class="section timeline-strip dashboard-section" data-dashboard-tab="roadmap" aria-label="Project timeline">
       <div class="section-header">
         <p class="eyebrow">Five-Class Arc</p>
         <h2>One evolving investigation</h2>
@@ -161,7 +160,7 @@
       </ol>
     </section>
 
-    <section class="section" id="scenarios">
+    <section class="section dashboard-section" id="scenarios" data-dashboard-tab="scenarios">
       <div class="section-header">
         <p class="eyebrow">Choose One Scenario</p>
         <h2>Start with a real system under pressure</h2>
@@ -211,9 +210,13 @@
           </tbody>
         </table>
       </div>
+      <div class="focus-test">
+        <h3>Strong Focus Test</h3>
+        <p>A strong investigation usually includes one main changing quantity, one measurable relationship, one prediction or threshold question, one physical or cost constraint, and one clear connection across mathematical lenses.</p>
+      </div>
     </section>
 
-    <section class="section" id="roadmap">
+    <section class="section dashboard-section" id="roadmap" data-dashboard-tab="roadmap">
       <div class="section-header">
         <p class="eyebrow">Class Roadmap</p>
         <h2>Five phases, one investigation</h2>
@@ -283,7 +286,32 @@
       </div>
     </section>
 
-    <section class="section comparison-section" id="comparisons">
+    <section class="section dashboard-section" id="mathematical-lenses" data-dashboard-tab="lenses">
+      <div class="section-header">
+        <p class="eyebrow">Mathematical Lenses</p>
+        <h2>Different structures reveal different parts of the system.</h2>
+        <p>Use each lens to make a different kind of mathematical meaning. The goal is not to complete units in order; the goal is to understand the system more clearly.</p>
+      </div>
+      <div class="comparison-grid lens-grid">
+        <article class="comparison-card green">
+          <h3>Sequences & Series</h3>
+          <p><strong>Big question:</strong> How is the system changing over time?</p>
+          <p>Use this lens for repeated change, terms, totals, prediction, recalculation, and cumulative effects.</p>
+        </article>
+        <article class="comparison-card blue">
+          <h3>Exponentials & Logarithms</h3>
+          <p><strong>Big question:</strong> When does repeated change become accelerated, compounding, decaying, or threshold-based?</p>
+          <p>Use this lens for growth factors, thresholds, logarithmic solving, and model breakdown.</p>
+        </article>
+        <article class="comparison-card purple">
+          <h3>Polynomials</h3>
+          <p><strong>Big question:</strong> How do physical and economic constraints reshape the system?</p>
+          <p>Use this lens for structure, capacity, cost, extrema, end behavior, and realistic domains.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section comparison-section dashboard-section" id="comparisons" data-dashboard-tab="lenses">
       <div class="section-header">
         <p class="eyebrow">Required Mathematical Comparisons</p>
         <h2>Use comparisons only when they clarify the model.</h2>
@@ -326,7 +354,7 @@
       </div>
     </section>
 
-    <section class="section" id="journal">
+    <section class="section dashboard-section" id="journal" data-dashboard-tab="journal">
       <div class="section-header">
         <p class="eyebrow">Investigation Journal</p>
         <h2>Your evolving mathematical workspace</h2>
@@ -338,6 +366,7 @@
           <p>Before graphing digitally, sketch the expected behavior, estimate intercepts, discuss the domain, and predict what the graph should roughly look like.</p>
           <h3>Revision Marker</h3>
           <p>When your thinking changes, label what changed, why it changed, and what the revised model reveals.</p>
+          <a class="button secondary journal-download" href="downloads/investigation-journal.pdf">Download the Journal PDF</a>
         </aside>
         <div class="accordion-list">
           <details>
@@ -383,7 +412,7 @@
       </div>
     </section>
 
-    <section class="section" id="evidence">
+    <section class="section dashboard-section" id="evidence" data-dashboard-tab="lenses">
       <div class="section-header">
         <p class="eyebrow">Evidence Checklist</p>
         <h2>What your mathematics must show</h2>
@@ -456,7 +485,7 @@
       </div>
     </section>
 
-    <section class="section" id="ai">
+    <section class="section dashboard-section" id="ai" data-dashboard-tab="ai-fit">
       <div class="section-header">
         <p class="eyebrow">CNG SAIL Level L5 — Co-Create</p>
         <h2>AI should deepen thinking, not replace thinking.</h2>
@@ -485,7 +514,7 @@
       </details>
     </section>
 
-    <section class="section fit-section" id="model-fit">
+    <section class="section fit-section dashboard-section" id="model-fit" data-dashboard-tab="ai-fit">
       <div class="section-header">
         <p class="eyebrow">Lightweight Model Fit Check</p>
         <h2>Correlation, r, and R²: How strong is the relationship?</h2>
@@ -547,59 +576,36 @@
       </details>
     </section>
 
-    <section class="section" id="resources">
-      <div class="section-header">
-        <p class="eyebrow">Resource Hub</p>
-        <h2>Choose 3–5 meaningful sources</h2>
-        <p>Research supports the mathematics. Research is not the project.</p>
-      </div>
-      <div class="resource-tabs" role="tablist" aria-label="Resource categories">
-        <button class="tab-button active" data-tab="scenarioResources" role="tab" aria-selected="true">Scenarios</button>
-        <button class="tab-button" data-tab="dataTools" role="tab" aria-selected="false">Data Tools</button>
-        <button class="tab-button" data-tab="mathSupport" role="tab" aria-selected="false">Math Support</button>
-      </div>
-      <div class="tab-panel active" id="scenarioResources" role="tabpanel">
-        <div class="resource-columns">
-          <article><h3>United States</h3><a href="https://www.bls.gov/cpi/">BLS CPI</a><a href="https://fred.stlouisfed.org/">FRED</a><a href="https://www.ers.usda.gov/data-products/food-price-outlook/">USDA Food Price Outlook</a><a href="https://www.pewresearch.org/">Pew Research Center</a><a href="https://www.businessinsider.com/retail">Business Insider Retail</a><a href="https://www.cnbc.com/retail/">CNBC Retail</a><a href="https://www.npr.org/">NPR</a><a href="https://www.theguardian.com/business">The Guardian Business</a></article>
-          <article><h3>Global</h3><a href="https://www.fao.org/worldfoodsituation/foodpricesindex/en/">FAO Food Price Index</a><a href="https://www.worldbank.org/en/research/commodity-markets">World Bank Commodities</a><a href="https://www.usda.gov/">USDA</a><a href="https://www.wfp.org/">UN World Food Programme</a><a href="https://www.cfr.org/">Council on Foreign Relations</a><a href="https://www.reuters.com/markets/commodities/">Reuters Commodities</a><a href="https://apnews.com/hub/business">AP News Business</a></article>
-          <article><h3>Sub-Saharan Africa</h3><a href="https://www.worldbank.org/">World Bank</a><a href="https://www.worldbank.org/en/programs/africa-myths-and-facts/publication/is-post-harvest-loss-significant-in-sub-saharan-africa">Post-Harvest Losses</a><a href="https://www.fao.org/platform-food-loss-waste/en/">FAO Food Loss</a><a href="https://www.aphlis.net/">APHLIS</a><a href="https://www.actionagainsthunger.org/">Action Against Hunger</a></article>
-          <article><h3>Colombia</h3><a href="https://www.ico.org/">International Coffee Organization</a><a href="https://federaciondecafeteros.org/">Federación Nacional de Cafeteros</a><a href="https://www.reuters.com/markets/commodities/">Reuters Commodities</a><a href="https://www.theguardian.com/environment">The Guardian Environment</a><a href="https://climateknowledgeportal.worldbank.org/">World Bank Climate Portal</a></article>
-        </div>
-      </div>
-      <div class="tab-panel" id="dataTools" role="tabpanel">
-        <div class="resource-list"><a href="https://fred.stlouisfed.org/">FRED Economic Data</a><a href="https://databank.worldbank.org/">World Bank DataBank</a><a href="https://www.fao.org/faostat/en/">FAOSTAT</a><a href="https://ourworldindata.org/">Our World in Data</a><a href="https://www.desmos.com/">Desmos</a><a href="https://www.geogebra.org/">GeoGebra</a><a href="https://www.google.com/sheets/about/">Google Sheets</a></div>
-      </div>
-      <div class="tab-panel" id="mathSupport" role="tabpanel">
-        <div class="resource-list"><a href="https://www.khanacademy.org/math/algebra-home/alg-sequences">Khan Academy — Sequences</a><a href="https://www.khanacademy.org/math/algebra-home/alg-exp-and-log">Khan Academy — Exponentials and Logs</a><a href="https://www.khanacademy.org/math/algebra2/polynomial-functions">Khan Academy — Polynomials</a><a href="https://www.ck12.org/student/">CK-12</a><a href="https://openstax.org/details/books/algebra-and-trigonometry-2e">OpenStax Algebra and Trigonometry</a></div>
-      </div>
-    </section>
-
-    <section class="section" id="rubrics">
+    <section class="section dashboard-section" id="rubrics" data-dashboard-tab="rubric">
       <div class="section-header">
         <p class="eyebrow">Rubrics</p>
-        <h2>Assess reasoning, revision, and communication</h2>
+        <h2>The rubric separates content standards from skill grades.</h2>
+        <p>The project assesses reasoning, interpretation, critique, revision, contextual understanding, visible thinking, and algebraic precision. It does not reward production polish as mathematical achievement.</p>
       </div>
       <div class="rubric-grid">
         <article class="card">
-          <h3>Student Self-Assessment</h3>
-          <p>I can compare model types, justify choices, explain graph ↔ algebra ↔ context connections, revise assumptions, interpret r/R² as evidence, and show my own mathematical thinking inside the group investigation.</p>
+          <span class="standard-type">Standards 1–3</span>
+          <h3>Core Algebra 2 Content</h3>
+          <p>Sequences and series, exponentials and logarithms, and polynomials are assessed as mathematical content standards.</p>
         </article>
         <article class="card">
-          <h3>Teacher Rubric</h3>
-          <p>Scored from 1–4. The strongest work prioritizes reasoning, comparison, critique, revision, model choice justification, r/R² interpretation, and visible mathematical thinking from every student. Format polish is not the point.</p>
+          <span class="standard-type">Standards 4–6</span>
+          <h3>Cross-Cutting Skill Grades</h3>
+          <p>Communication, model comparison, limitations, revision, algebraic precision, and flexible number sense are assessed across the whole investigation.</p>
         </article>
       </div>
       <div class="rubric-standards">
-        <details><summary>1. Sequences and Series</summary><p>Students model discrete change, connect recursive and explicit forms, interpret cumulative totals, and explain when sequence reasoning is appropriate.</p></details>
-        <details><summary>2. Exponentials and Logarithms</summary><p>Students model growth or decay, use logarithms to interpret thresholds, and critique when exponential behavior stops being realistic.</p></details>
-        <details><summary>3. Polynomials</summary><p>Students connect polynomial structure to physical constraints, graph behavior, extrema, multiplicity, end behavior, and realistic domains.</p></details>
-        <details><summary>4. Mathematical Communication and Interpretation</summary><p>Students explain models clearly, connect representations to context, and communicate reasoning in a format that makes mathematical evidence visible.</p></details>
-        <details><summary>5. Comparing Models, Assumptions, and Limitations</summary><p>Students compare model versions, revise assumptions, interpret limitations, and use r/R² lightly as evidence of fit and uncertainty.</p></details>
-        <details><summary>6. Algebraic Precision and Flexible Number Sense</summary><p>Students use algebraic notation, units, calculations, graph features, and numerical reasoning accurately and flexibly.</p></details>
+        <details><summary>1. Sequences and Series</summary><p>Select and justify sequence and series models. Distinguish arithmetic vs geometric, recursive vs explicit, finite vs infinite, and discrete vs continuous representations when relevant. Explain terms, parameters, cumulative sums, predictions, recalculations, and interpretations in context.</p></details>
+        <details><summary>2. Exponentials and Logarithms</summary><p>Select and justify exponential models. Explain growth and decay, thresholds, growth factors, and logarithmic reasoning in context. Compare exponential behavior to linear or geometric behavior when appropriate and critique limitations realistically.</p></details>
+        <details><summary>3. Polynomials</summary><p>Create and analyze polynomial models. Explain degree, leading coefficient, end behavior, intercepts, multiplicity, extrema, realistic domain restrictions, factored form, standard form, and notation such as x → ∞ and x → −∞ in context.</p></details>
+        <details><summary>4. Mathematical Communication and Interpretation <em>Skill Grade</em></summary><p>Communicate mathematical thinking clearly through explanations, graphs, annotations, tables, discussion, and contextual interpretation. Make connections among graph, algebra, assumptions, and context visible.</p></details>
+        <details><summary>5. Comparing Models, Assumptions, and Limitations <em>Skill Grade</em></summary><p>Compare multiple models, assumptions, and representations. Critique realism, hidden variables, tradeoffs, assumptions, unreasonable predictions, and show revision that strengthens the investigation.</p></details>
+        <details><summary>6. Algebraic Precision and Flexible Number Sense <em>Skill Grade</em></summary><p>Solve accurately using appropriate algebraic methods such as factoring, logarithms, inverse operations, substitution, graph interpretation, and algebraic manipulation. Use rational numbers, percentages, negative values, and units precisely.</p></details>
       </div>
+      <a class="button primary rubric-download" href="downloads/rubrics.pdf">Download the Final Rubric PDF</a>
     </section>
 
-    <section class="section downloads-section" id="downloads">
+    <section class="section downloads-section dashboard-section" id="downloads" data-dashboard-tab="downloads">
       <div class="section-header">
         <p class="eyebrow">Downloads</p>
         <h2>Three core tools for the investigation</h2>
@@ -609,7 +615,7 @@
         <a class="download-card" href="downloads/student-handout.pdf">
           <span class="download-label">Onboarding Document</span>
           <strong>Student Overview PDF</strong>
-          <span>Project philosophy, scenarios, deliverables, collaboration expectations, five-class arc, mathematical lenses, and AI expectations.</span>
+          <span>Project philosophy, systems thinking, scenarios, deliverables, collaboration expectations, five-class arc, mathematical lenses, AI expectations, and rubric frame.</span>
         </a>
         <a class="download-card featured-download" href="downloads/investigation-journal.pdf">
           <span class="download-label">Field Notebook</span>
@@ -619,8 +625,8 @@
         <a class="download-card" href="downloads/rubrics.pdf">
           <span class="download-label">Evaluation Guide</span>
           <strong>Final Rubric PDF</strong>
-          <span>Standards-based guidance for reasoning over polish, model comparison, critique, revision, interpretation, communication, and algebraic precision.</span>
-          <small>Standards: sequences, exponentials, polynomials, communication, assumptions and limitations, precision and number sense.</small>
+          <span>The official 1–4 assessment guide: content standards for Algebra 2 and skill grades for communication, comparison, critique, revision, and precision.</span>
+          <small>Content: sequences, exponentials, polynomials. Skills: communication, assumptions and limitations, algebraic precision and number sense.</small>
         </a>
       </div>
     </section>

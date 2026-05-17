@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Systems Investigation Tracker | Systems Under Pressure</title>
+  <meta name="description" content="Interactive modeling dashboard for the Algebra 2 Systems Under Pressure investigation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="tracker-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="../" aria-label="Systems Under Pressure home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Systems Under Pressure</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links dashboard-tabs" id="nav-links" aria-label="Project areas">
+        <a class="dashboard-tab" href="../#overview">Overview</a>
+        <a class="dashboard-tab" href="../#scenarios">Scenarios</a>
+        <a class="dashboard-tab" href="../#roadmap">Roadmap</a>
+        <a class="dashboard-tab" href="../#lenses">Mathematical Lenses</a>
+        <a class="dashboard-tab" href="../#journal">Journal</a>
+        <a class="dashboard-tab" href="../#ai-fit">AI + Model Fit</a>
+        <a class="dashboard-tab" href="../#rubric">Rubric</a>
+        <a class="dashboard-tab tracker-tab" href="./" aria-current="page">Tracker</a>
+        <a class="dashboard-tab download-link" href="../#downloads">Downloads</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section tracker-hero">
+      <div class="section-header">
+        <p class="eyebrow">Interactive Workspace</p>
+        <h1>Systems Investigation Tracker</h1>
+        <p class="lead">Track revisions, assumptions, model comparisons, evidence, and evolving mathematical thinking.</p>
+      </div>
+      <div class="tracker-callout">
+        <p>Strong modeling is iterative.<br>Revision is evidence of deeper understanding.</p>
+      </div>
+    </section>
+
+    <section class="tracker-shell" aria-label="Embedded systems investigation tracker">
+      <div class="tracker-frame">
+        <iframe
+          src="https://claude.site/public/artifacts/db19781b-206b-4f47-97b7-6481082e5bd9/embed"
+          title="systems-under-pressure-tracker"
+          width="100%"
+          height="900"
+          frameborder="0"
+          allow="clipboard-write"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="tracker-guidance">
+      <details class="quiet-details">
+        <summary>How should students use this?</summary>
+        <p>This tool supports the investigation journal. It does not replace it.</p>
+        <ul>
+          <li>Track revisions and changed assumptions.</li>
+          <li>Compare assumptions, rates, constraints, and model versions.</li>
+          <li>Document model changes and what caused them.</li>
+          <li>Annotate reasoning as it evolves.</li>
+          <li>Record limitations, hidden variables, and uncertainty.</li>
+          <li>Connect graph ↔ algebra ↔ context.</li>
+          <li>Keep visible evidence of mathematical thinking.</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Systems Under Pressure · Algebra 2 cumulative semester final project · Mathematical investigation tracker</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

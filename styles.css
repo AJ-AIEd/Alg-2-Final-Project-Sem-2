@@ -377,6 +377,21 @@ th { background: #fbfcfe; }
   background: white;
   box-shadow: var(--shadow-soft);
 }
+.checkpoint-card {
+  border: 1px solid var(--line);
+  border-left: 8px solid var(--ink);
+  border-radius: 14px;
+  padding: 1.6rem;
+  background:
+    linear-gradient(90deg, rgba(15, 23, 42, .045) 1px, transparent 1px) 0 0 / 28px 28px,
+    #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+.checkpoint-card.green { border-left-color: var(--green); background-color: #ffffff; }
+.checkpoint-card.purple { border-left-color: var(--purple); background-color: #ffffff; }
+.checkpoint-card h3 {
+  margin-bottom: .45rem;
+}
 .phase-card.green { border-top-color: var(--green); background: linear-gradient(180deg, var(--green-soft), #fff 28%); }
 .phase-card.blue { border-top-color: var(--blue); background: linear-gradient(180deg, var(--blue-soft), #fff 28%); }
 .phase-card.purple { border-top-color: var(--purple); background: linear-gradient(180deg, var(--purple-soft), #fff 28%); }

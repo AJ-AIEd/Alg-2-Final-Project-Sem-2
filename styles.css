@@ -589,6 +589,15 @@ summary em {
 .journal-download-panel p:last-child {
   margin-bottom: 0;
 }
+.download-actions {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.downloads-section .download-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 details {
   border: 1px solid var(--line);
   border-radius: 14px;

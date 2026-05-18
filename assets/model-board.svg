@@ -1,0 +1,68 @@
+<svg width="860" height="620" viewBox="0 0 860 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="620" rx="34" fill="#FBFCFE"/>
+  <rect x="28" y="28" width="804" height="564" rx="28" fill="#FFFFFF" stroke="#D8E0EA" stroke-width="2"/>
+  <g opacity="0.56">
+    <path d="M80 92H780M80 142H780M80 192H780M80 242H780M80 292H780M80 342H780M80 392H780M80 442H780M80 492H780M80 542H780" stroke="#E6ECF3"/>
+    <path d="M110 70V552M170 70V552M230 70V552M290 70V552M350 70V552M410 70V552M470 70V552M530 70V552M590 70V552M650 70V552M710 70V552M770 70V552" stroke="#E6ECF3"/>
+  </g>
+  <path d="M88 532H786" stroke="#1F2937" stroke-width="2"/>
+  <path d="M98 552V76" stroke="#1F2937" stroke-width="2"/>
+  <text x="109" y="88" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">system pressure board</text>
+  <text x="690" y="558" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">time / input</text>
+  <text x="48" y="118" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" transform="rotate(-90 48 118)">quantity</text>
+
+  <path d="M108 505C168 490 217 473 266 450C324 423 379 383 430 329C479 276 522 208 562 121" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/>
+  <path d="M108 496C174 455 242 415 310 376C378 337 446 298 514 258C582 219 650 180 718 140" stroke="#15803D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M108 512C167 496 225 477 282 449C344 419 394 366 442 319C483 279 524 269 566 304C610 341 661 405 724 459" stroke="#7E22CE" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M574 96V538" stroke="#B45309" stroke-width="3" stroke-dasharray="8 8"/>
+  <circle cx="574" cy="126" r="7" fill="#B45309"/>
+  <rect x="594" y="91" width="162" height="62" rx="14" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="610" y="116" fill="#9A3412" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">threshold?</text>
+  <text x="610" y="137" fill="#9A3412" font-family="Inter, Arial, sans-serif" font-size="12">when pressure changes behavior</text>
+
+  <circle cx="346" cy="355" r="7" fill="#15803D"/>
+  <circle cx="442" cy="319" r="7" fill="#7E22CE"/>
+  <circle cx="514" cy="258" r="7" fill="#15803D"/>
+  <path d="M346 355C361 322 378 289 407 258" stroke="#64748B" stroke-width="2" stroke-dasharray="5 7"/>
+  <path d="M442 319C456 348 474 374 503 397" stroke="#64748B" stroke-width="2" stroke-dasharray="5 7"/>
+
+  <rect x="128" y="120" width="214" height="96" rx="18" fill="#F8FAFC" stroke="#D8E0EA"/>
+  <text x="146" y="150" fill="#2563EB" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="850">exponential / geometric</text>
+  <text x="146" y="175" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="13">demand can compound</text>
+  <text x="146" y="197" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="13">but not forever</text>
+
+  <rect x="124" y="394" width="220" height="84" rx="18" fill="#F8FAFC" stroke="#D8E0EA"/>
+  <text x="143" y="424" fill="#15803D" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="850">linear infrastructure</text>
+  <text x="143" y="449" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="13">supply may improve steadily</text>
+
+  <rect x="487" y="412" width="225" height="92" rx="18" fill="#F8FAFC" stroke="#D8E0EA"/>
+  <text x="507" y="442" fill="#7E22CE" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="850">polynomial constraints</text>
+  <text x="507" y="467" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="13">storage, volume, capacity, cost</text>
+
+  <path d="M692 242C728 240 752 255 770 288" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M770 288L754 282M770 288L766 271" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="608" y="210" width="154" height="44" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="626" y="237" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">hidden variables</text>
+
+  <path d="M278 260L333 231" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M333 231L321 230M333 231L326 241" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="126" y="248" width="154" height="44" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="143" y="276" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">data window matters</text>
+
+  <rect x="354" y="66" width="220" height="46" rx="13" fill="#111827"/>
+  <text x="376" y="95" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="850">what does this model hide?</text>
+
+  <path d="M396 146C421 133 450 130 476 139" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M476 139L462 131M476 139L463 146" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="394" y="164" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">revise assumption</text>
+
+  <g>
+    <rect x="108" y="562" width="16" height="6" rx="3" fill="#2563EB"/>
+    <text x="130" y="569" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">accelerating pressure</text>
+    <rect x="286" y="562" width="16" height="6" rx="3" fill="#15803D"/>
+    <text x="308" y="569" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">steady capacity</text>
+    <rect x="432" y="562" width="16" height="6" rx="3" fill="#7E22CE"/>
+    <text x="454" y="569" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">physical constraint</text>
+  </g>
+</svg>

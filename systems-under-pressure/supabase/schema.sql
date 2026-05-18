@@ -4,6 +4,9 @@ create table if not exists groups (
   id uuid primary key default gen_random_uuid(),
   group_name text not null unique,
   student_names text,
+  scenario_id text,
+  custom_title text default '',
+  custom_focus text default '',
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
@@ -22,10 +25,15 @@ create table if not exists group_notes (
   id uuid primary key default gen_random_uuid(),
   group_id uuid not null references groups(id) on delete cascade,
   class_phase text not null,
+  note_author text not null default 'Unidentified student',
   note_text text default '',
-  updated_at timestamptz not null default now(),
-  unique(group_id, class_phase)
+  updated_at timestamptz not null default now()
 );
+
+alter table group_notes add column if not exists note_author text not null default 'Unidentified student';
+alter table group_notes drop constraint if exists group_notes_group_id_class_phase_key;
+create unique index if not exists group_notes_group_class_author_idx
+  on group_notes(group_id, class_phase, note_author);
 
 create table if not exists checkpoints (
   id uuid primary key default gen_random_uuid(),

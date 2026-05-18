@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 // ─── DATA ───────────────────────────────────────────────────────────────────
 
@@ -362,585 +362,369 @@ const SCENARIOS = [
   { id: "D", label: "Scenario D — Colombia", title: "Can Climate Change the Future of Coffee?", color: "#993556", tags: "rainfall · coffee yields · exports · storage · thresholds" },
 ];
 
-// ─── STORAGE ─────────────────────────────────────────────────────────────────
 
-const KEY_GROUPS = "sup_v3_groups";
-const stateKey = (id) => `sup_v3_state_${id}`;
+// ─── SHARED DATABASE + UI ───────────────────────────────────────────────────
 
-async function loadGroups() {
-  try { const raw = localStorage.getItem(KEY_GROUPS); return raw ? JSON.parse(raw) : []; }
-  catch { return []; }
-}
-async function saveGroups(g) {
-  try { localStorage.setItem(KEY_GROUPS, JSON.stringify(g)); } catch {}
-}
-async function loadGroupState(id) {
-  try { const raw = localStorage.getItem(stateKey(id)); return raw ? JSON.parse(raw) : { checks: {}, notes: {}, scenario: null }; }
-  catch { return { checks: {}, notes: {}, scenario: null }; }
-}
-async function saveGroupState(id, s) {
-  try { localStorage.setItem(stateKey(id), JSON.stringify(s)); } catch {}
+const CHECKPOINTS = [
+  { number: 1, title: "System Plan + Model Connection Check-In", timing: "End of Class 2" },
+  { number: 2, title: "Polynomial + Physical Constraints Check-In", timing: "Beginning of Class 4" },
+];
+const CHECKPOINT_STATUSES = ["Not started", "In progress", "Ready for feedback", "Feedback given", "Revised"];
+const API = "/api/data";
+
+const sx = {
+  page: { fontFamily: "Georgia, serif", maxWidth: 980, margin: "0 auto", padding: "28px 18px 52px", color: "#111827" },
+  narrow: { fontFamily: "Georgia, serif", maxWidth: 560, margin: "0 auto", padding: "32px 20px 52px", color: "#111827" },
+  card: { border: "1.5px solid #e5e7eb", borderRadius: 14, background: "white", padding: 16, marginBottom: 12 },
+  btn: { border: "none", borderRadius: 9, padding: "9px 14px", fontWeight: 700, cursor: "pointer", fontFamily: "Georgia, serif" },
+  input: { border: "1.5px solid #e5e7eb", borderRadius: 8, padding: "9px 11px", fontSize: 13, fontFamily: "Georgia, serif", boxSizing: "border-box" },
+  label: { fontSize: 10, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#64748b", marginBottom: 7 },
+};
+
+async function api(action, { method = "GET", body, passcode } = {}) {
+  const response = await fetch(`${API}?action=${action}`, {
+    method,
+    headers: {
+      "Content-Type": "application/json",
+      ...(passcode ? { "x-teacher-passcode": passcode } : {}),
+    },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.error || "Request failed");
+  return data;
 }
 
-// ─── HELPERS ─────────────────────────────────────────────────────────────────
-
-function classProgress(classId, checks) {
-  const cls = CLASSES.find(c => c.id === classId);
-  if (!cls) return { done: 0, total: 0 };
-  let total = 0, done = 0;
-  cls.sections.forEach(s => {
-    if (s.flint) return;
-    s.items.forEach((_, i) => {
-      total++;
-      if (checks[`${classId}__${s.title}__${i}`]) done++;
+function trackableItems() {
+  const rows = [];
+  CLASSES.forEach((cls) => {
+    cls.sections.forEach((sec) => {
+      if (sec.flint) return;
+      sec.items.forEach((item, index) => {
+        rows.push({ classId: cls.id, classNum: cls.num, classLabel: cls.label, section: sec.title, item, key: `${cls.id}__${sec.title}__${index}` });
+      });
     });
   });
-  return { done, total };
+  return rows;
+}
+const ALL_ITEMS = trackableItems();
+
+function groupToState(group) {
+  const checks = {};
+  const checkpoints = {};
+  (group.progress_items || []).forEach((item) => { checks[item.item_key] = !!item.completed; });
+  (group.checkpoints || []).forEach((checkpoint) => { checkpoints[checkpoint.checkpoint_number] = checkpoint; });
+  return {
+    checks,
+    notes: group.group_notes || [],
+    checkpoints,
+    scenario: group.scenario_id || null,
+    customTitle: group.custom_title || "",
+    customFocus: group.custom_focus || "",
+  };
+}
+
+function classProgress(classId, checks) {
+  const items = ALL_ITEMS.filter((item) => item.classId === classId);
+  const done = items.filter((item) => checks[item.key]).length;
+  return { done, total: items.length };
+}
+
+function overallProgress(checks) {
+  const done = ALL_ITEMS.filter((item) => checks[item.key]).length;
+  return { done, total: ALL_ITEMS.length, pct: ALL_ITEMS.length ? Math.round((done / ALL_ITEMS.length) * 100) : 0 };
 }
 
 function Ring({ done, total, color, size = 46 }) {
   const pct = total ? done / total : 0;
   const r = 17, cx = size / 2, cy = size / 2, circ = 2 * Math.PI * r;
-  return (
-    <svg width={size} height={size} style={{ flexShrink: 0 }}>
-      <circle cx={cx} cy={cy} r={r} fill="none" stroke="#e5e7eb" strokeWidth="3.5" />
-      <circle cx={cx} cy={cy} r={r} fill="none" stroke={color} strokeWidth="3.5"
-        strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round"
-        transform={`rotate(-90 ${cx} ${cy})`}
-        style={{ transition: "stroke-dasharray 0.4s ease" }} />
-      <text x={cx} y={cy + 4} textAnchor="middle" fontSize="10" fontWeight="700" fill={color}>
-        {total ? `${done}/${total}` : "—"}
-      </text>
-    </svg>
-  );
+  return <svg width={size} height={size} style={{ flexShrink: 0 }}>
+    <circle cx={cx} cy={cy} r={r} fill="none" stroke="#e5e7eb" strokeWidth="3.5" />
+    <circle cx={cx} cy={cy} r={r} fill="none" stroke={color} strokeWidth="3.5" strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" transform={`rotate(-90 ${cx} ${cy})`} />
+    <text x={cx} y={cy + 4} textAnchor="middle" fontSize="10" fontWeight="700" fill={color}>{total ? `${done}/${total}` : "—"}</text>
+  </svg>;
 }
 
-// ─── FLINT SECTION ───────────────────────────────────────────────────────────
-
-function FlintSection({ sec }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div style={{ marginBottom: 20 }}>
-      <button
-        onClick={() => setOpen(o => !o)}
-        style={{
-          width: "100%", display: "flex", alignItems: "center", gap: 8,
-          background: open ? "#FFF8E1" : "#FFFDE7",
-          border: "1.5px solid #F9A825",
-          borderRadius: open ? "8px 8px 0 0" : 8,
-          padding: "9px 13px", cursor: "pointer", textAlign: "left",
-        }}
-      >
-        <span style={{ fontSize: 15 }}>🤖</span>
-        <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#E65100", flex: 1 }}>
-          Consult Flint AI
-        </span>
-        <span style={{ fontSize: 13, color: "#9ca3af", transform: open ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}>▾</span>
-      </button>
-      {open && (
-        <div style={{
-          background: "#FFFDE7", border: "1.5px solid #F9A825", borderTop: "none",
-          borderRadius: "0 0 8px 8px", padding: "10px 14px",
-        }}>
-          <p style={{ fontSize: 12, color: "#5D4037", margin: "0 0 10px", lineHeight: 1.6, fontStyle: "italic" }}>
-            Use Flint when you are stuck, revising, or uncertain. Bring your data and specific questions — not blank prompts. Record Flint's response, what you kept, and what you rejected in your journal.
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            {sec.items.map((item, i) => (
-              <div key={i} style={{
-                fontSize: 12, color: item.startsWith("After:") ? "#5D4037" : "#37474F",
-                padding: "7px 10px", borderRadius: 6,
-                background: item.startsWith("After:") ? "#FFF3E0" : "white",
-                border: `1px solid ${item.startsWith("After:") ? "#FFCC80" : "#e5e7eb"}`,
-                lineHeight: 1.6, fontStyle: item.startsWith("After:") ? "italic" : "normal",
-              }}>
-                {item}
-              </div>
-            ))}
-          </div>
-          <div style={{ marginTop: 10, fontSize: 11, color: "#8D6E63", lineHeight: 1.5, padding: "8px 10px", background: "#FFF3E0", borderRadius: 6 }}>
-            <strong>CNG SAIL Level L5 — Co-Create:</strong> AI should deepen thinking, not replace it. Do not submit reasoning you do not understand or ask AI to complete the project for you.
-          </div>
-        </div>
-      )}
+function SetupError({ error }) {
+  return <div style={{ ...sx.narrow }}>
+    <h1>Tracker database setup needed</h1>
+    <p style={{ color: "#475569", lineHeight: 1.6 }}>The tracker is configured for shared progress, but the backend is not reachable yet.</p>
+    <div style={{ ...sx.card, borderLeft: "6px solid #b45353" }}>
+      <strong>Error:</strong> {error}
+      <p>Set these Vercel environment variables, then redeploy:</p>
+      <code>SUPABASE_URL</code><br />
+      <code>SUPABASE_SERVICE_ROLE_KEY</code><br />
+      <code>TEACHER_PASSCODE</code>
+      <p>Run <code>systems-under-pressure/supabase/schema.sql</code> in Supabase SQL Editor first.</p>
     </div>
-  );
+  </div>;
 }
 
-// ─── CLASS PANEL ─────────────────────────────────────────────────────────────
+function CheckpointBox({ groupId, number, checkpoint, onUpdate }) {
+  const meta = CHECKPOINTS.find((c) => c.number === number);
+  const [status, setStatus] = useState(checkpoint?.status || "Not started");
+  const [summary, setSummary] = useState(checkpoint?.student_summary || "");
+  useEffect(() => {
+    setStatus(checkpoint?.status || "Not started");
+    setSummary(checkpoint?.student_summary || "");
+  }, [checkpoint?.status, checkpoint?.student_summary]);
+  const save = async () => {
+    await api("checkpoint", { method: "PATCH", body: { group_id: groupId, checkpoint_number: number, status, student_summary: summary } });
+    await onUpdate();
+  };
+  return <div style={{ ...sx.card, borderLeft: `6px solid ${number === 1 ? "#185FA5" : "#993556"}` }}>
+    <div style={sx.label}>{meta.timing}</div>
+    <h3 style={{ marginTop: 0 }}>{meta.title}</h3>
+    <div style={{ display: "grid", gridTemplateColumns: "170px 1fr auto", gap: 8, alignItems: "start" }}>
+      <select value={status} onChange={(e) => setStatus(e.target.value)} style={sx.input}>{CHECKPOINT_STATUSES.map((s) => <option key={s}>{s}</option>)}</select>
+      <textarea rows={3} value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="Student summary: what is ready for feedback, what changed, what still needs help?" style={{ ...sx.input, width: "100%" }} />
+      <button onClick={save} style={{ ...sx.btn, background: "#111827", color: "white" }}>Save</button>
+    </div>
+    {(checkpoint?.strengths || checkpoint?.next_steps || checkpoint?.concerns || checkpoint?.teacher_notes) && <div style={{ marginTop: 12, padding: 12, borderRadius: 10, background: "#f8fafc", lineHeight: 1.55 }}>
+      <strong>Teacher feedback</strong>
+      {checkpoint.strengths && <p><strong>Strengths:</strong> {checkpoint.strengths}</p>}
+      {checkpoint.next_steps && <p><strong>Next steps:</strong> {checkpoint.next_steps}</p>}
+      {checkpoint.concerns && <p><strong>Concerns:</strong> {checkpoint.concerns}</p>}
+      {checkpoint.teacher_notes && <p><strong>Notes:</strong> {checkpoint.teacher_notes}</p>}
+    </div>}
+  </div>;
+}
 
-function ClassPanel({ cls, checks, notes, onCheck, onNote, defaultOpen }) {
+function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOpen }) {
   const [open, setOpen] = useState(!!defaultOpen);
+  const [draft, setDraft] = useState("");
   const { done, total } = classProgress(cls.id, checks);
-  const pct = total ? Math.round((done / total) * 100) : 0;
-  const complete = done === total && total > 0;
-
-  return (
-    <div style={{
-      border: `1.5px solid ${open ? cls.color + "60" : complete ? cls.color + "40" : "#e5e7eb"}`,
-      borderRadius: 14, overflow: "hidden", marginBottom: 10,
-      background: "white", transition: "border-color 0.2s",
-    }}>
-      <button onClick={() => setOpen(o => !o)} style={{
-        width: "100%", display: "flex", alignItems: "center", gap: 12,
-        padding: "13px 16px",
-        background: open ? cls.light : complete ? cls.light + "88" : "white",
-        border: "none", cursor: "pointer", textAlign: "left", transition: "background 0.2s",
-      }}>
-        <div style={{
-          width: 30, height: 30, borderRadius: "50%",
-          background: complete ? cls.color : open ? cls.color : "#e5e7eb",
-          color: complete || open ? "white" : "#9ca3af",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontSize: 13, fontWeight: 700, flexShrink: 0, transition: "all 0.2s",
-        }}>
-          {complete ? "✓" : cls.num}
-        </div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontWeight: 700, fontSize: 14, color: "#111", lineHeight: 1.25, fontFamily: "Georgia, serif" }}>{cls.label}</div>
-          <div style={{ fontSize: 11, color: "#6b7280", marginTop: 1 }}>{cls.sub}</div>
-        </div>
-        <Ring done={done} total={total} color={cls.color} />
-        <span style={{ fontSize: 11, fontWeight: 700, color: cls.color, minWidth: 32, textAlign: "right" }}>{pct}%</span>
-        <span style={{ fontSize: 16, color: "#9ca3af", transform: open ? "rotate(180deg)" : "none", transition: "transform 0.2s", marginLeft: 2 }}>▾</span>
-      </button>
-
-      {open && (
-        <div style={{ padding: "4px 16px 18px" }}>
-          <div style={{
-            fontSize: 12, color: "#4b5563", padding: "10px 13px",
-            background: cls.light, borderRadius: 8, marginBottom: 14,
-            borderLeft: `3px solid ${cls.color}`,
-          }}>
-            <div style={{ marginBottom: 4 }}><strong style={{ color: cls.color }}>Conceptual move:</strong> {cls.conceptualMove}</div>
-            <div style={{ marginBottom: 4 }}><strong style={{ color: cls.color }}>Modeling question:</strong> {cls.modelingQ}</div>
-            <div><strong style={{ color: cls.color }}>Thinking shift:</strong> {cls.thinkingShift}</div>
-          </div>
-
-          {cls.sections.map(sec => {
-            if (sec.flint) return <FlintSection key={sec.title} sec={sec} />;
-            return (
-              <div key={sec.title} style={{ marginBottom: 20 }}>
-                <div style={{
-                  fontSize: 10, fontWeight: 800, letterSpacing: "0.08em",
-                  textTransform: "uppercase", marginBottom: 8,
-                  display: "flex", alignItems: "center", gap: 7,
-                  color: sec.vlog ? cls.color : "#374151",
-                }}>
-                  {sec.vlog && (
-                    <span style={{
-                      background: cls.color, color: "white",
-                      fontSize: 9, padding: "2px 6px", borderRadius: 4, fontWeight: 800,
-                    }}>VLOG</span>
-                  )}
-                  {sec.title}
-                </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
-                  {sec.items.map((item, i) => {
-                    const key = `${cls.id}__${sec.title}__${i}`;
-                    const checked = !!checks[key];
-                    return (
-                      <label key={key} style={{
-                        display: "flex", alignItems: "flex-start", gap: 10,
-                        cursor: "pointer", padding: "8px 11px", borderRadius: 8,
-                        background: checked ? cls.light : "#f9fafb",
-                        border: `1px solid ${checked ? cls.color + "50" : "#e5e7eb"}`,
-                        transition: "all 0.15s",
-                      }}>
-                        <input type="checkbox" checked={checked}
-                          onChange={() => onCheck(key, !checked)}
-                          style={{ accentColor: cls.color, width: 15, height: 15, marginTop: 2, flexShrink: 0 }} />
-                        <span style={{ fontSize: 13, color: "#374151", lineHeight: 1.5 }}>{item}</span>
-                      </label>
-                    );
-                  })}
-                </div>
-              </div>
-            );
+  const classNotes = (notes || []).filter((note) => note.class_phase === cls.id);
+  return <div style={{ border: `1.5px solid ${open ? cls.color + "66" : "#e5e7eb"}`, borderRadius: 14, overflow: "hidden", marginBottom: 10, background: "white" }}>
+    <button onClick={() => setOpen((o) => !o)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "13px 16px", background: open ? cls.light : "white", border: 0, cursor: "pointer", textAlign: "left" }}>
+      <div style={{ width: 30, height: 30, borderRadius: "50%", background: cls.color, color: "white", display: "grid", placeItems: "center", fontWeight: 700 }}>{cls.num}</div>
+      <div style={{ flex: 1 }}><strong>{cls.label}</strong><div style={{ fontSize: 11, color: "#64748b" }}>{cls.sub}</div></div>
+      <Ring done={done} total={total} color={cls.color} />
+      <span>{open ? "−" : "+"}</span>
+    </button>
+    {open && <div style={{ padding: "12px 16px 18px" }}>
+      <div style={{ fontSize: 12, color: "#475569", padding: 10, background: cls.light, borderRadius: 8, marginBottom: 14 }}>
+        <strong>Modeling question:</strong> {cls.modelingQ}<br /><strong>Thinking shift:</strong> {cls.thinkingShift}
+      </div>
+      {cls.sections.map((sec) => sec.flint ? null : <div key={sec.title} style={{ marginBottom: 18 }}>
+        <div style={sx.label}>{sec.title}</div>
+        <div style={{ display: "grid", gap: 6 }}>
+          {sec.items.map((item, index) => {
+            const key = `${cls.id}__${sec.title}__${index}`;
+            return <label key={key} style={{ display: "flex", gap: 10, alignItems: "flex-start", padding: 9, borderRadius: 8, background: checks[key] ? cls.light : "#f8fafc", border: "1px solid #e5e7eb" }}>
+              <input type="checkbox" checked={!!checks[key]} onChange={(e) => onCheck(cls.id, key, e.target.checked)} style={{ marginTop: 3, accentColor: cls.color }} />
+              <span style={{ fontSize: 13, lineHeight: 1.45 }}>{item}</span>
+            </label>;
           })}
-
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#374151", marginBottom: 8 }}>
-            Group notes
-          </div>
-          <textarea
-            value={notes[cls.id] || ""}
-            onChange={e => onNote(cls.id, e.target.value)}
-            placeholder="Rough work, revision thoughts, data links, Flint AI interactions, decisions, or anything your group wants to remember for this class…"
-            rows={3}
-            style={{
-              width: "100%", borderRadius: 8, border: "1.5px solid #e5e7eb",
-              padding: "9px 11px", fontSize: 13, fontFamily: "Georgia, serif",
-              resize: "vertical", outline: "none", color: "#374151",
-              background: "#fafafa", lineHeight: 1.55, boxSizing: "border-box",
-            }}
-            onFocus={e => e.target.style.borderColor = cls.color}
-            onBlur={e => e.target.style.borderColor = "#e5e7eb"}
-          />
         </div>
-      )}
-    </div>
-  );
+      </div>)}
+      <div style={sx.label}>Named notes / reflections</div>
+      {classNotes.length > 0 && <div style={{ display: "grid", gap: 8, marginBottom: 10 }}>
+        {classNotes.map((note) => <div key={note.id || `${note.class_phase}-${note.note_author}`} style={{ padding: 10, borderRadius: 10, background: "#f8fafc", border: "1px solid #e5e7eb" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", gap: 8, color: "#64748b", fontSize: 11, marginBottom: 4 }}>
+            <strong style={{ color: "#111827" }}>{note.note_author || "Unidentified student"}</strong>
+            <span>{note.updated_at ? new Date(note.updated_at).toLocaleString() : ""}</span>
+          </div>
+          <div style={{ fontSize: 13, lineHeight: 1.5, whiteSpace: "pre-wrap" }}>{note.note_text || "—"}</div>
+        </div>)}
+      </div>}
+      <textarea value={draft} onChange={(e) => setDraft(e.target.value)} rows={4} placeholder={noteAuthor ? "Write your own named note: revisions, assumptions, model comparisons, evidence, limitations, questions..." : "Enter your name near the top before saving notes."} style={{ ...sx.input, width: "100%", resize: "vertical" }} />
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 8 }}>
+        <button disabled={!noteAuthor.trim() || !draft.trim()} onClick={async () => { await onNote(cls.id, draft); setDraft(""); }} style={{ ...sx.btn, background: noteAuthor.trim() && draft.trim() ? cls.color : "#e5e7eb", color: noteAuthor.trim() && draft.trim() ? "white" : "#94a3b8" }}>Save named note</button>
+        <span style={{ color: "#64748b", fontSize: 12 }}>{noteAuthor.trim() ? `Saving as ${noteAuthor.trim()}` : "Name required so your teacher can see who wrote the note."}</span>
+      </div>
+    </div>}
+  </div>;
 }
 
-// ─── MAIN APP ────────────────────────────────────────────────────────────────
-
-export default function App() {
+function StudentApp() {
   const [screen, setScreen] = useState("loading");
   const [groups, setGroups] = useState([]);
   const [newName, setNewName] = useState("");
+  const [studentNames, setStudentNames] = useState("");
+  const [currentStudentName, setCurrentStudentName] = useState(localStorage.getItem("sup_student_name") || "");
   const [selectedGroup, setSelectedGroup] = useState(null);
-  const [groupState, setGroupState] = useState({ checks: {}, notes: {}, scenario: null });
+  const [state, setState] = useState({ checks: {}, notes: [], checkpoints: {}, scenario: null, customTitle: "", customFocus: "" });
   const [saveStatus, setSaveStatus] = useState("");
-  const saveTimer = useRef(null);
-  const pendingRef = useRef(null);
+  const [error, setError] = useState("");
 
-  useEffect(() => {
-    loadGroups().then(g => { setGroups(g); setScreen("home"); });
-  }, []);
-
-  const scheduleAutoSave = useCallback((gId, state) => {
-    if (!gId) return;
-    pendingRef.current = state;
-    setSaveStatus("saving");
-    clearTimeout(saveTimer.current);
-    saveTimer.current = setTimeout(async () => {
-      await saveGroupState(gId, pendingRef.current);
-      setSaveStatus("saved");
-      setTimeout(() => setSaveStatus(""), 2000);
-    }, 700);
-  }, []);
-
-  const handleCheck = (key, val) => {
-    const next = { ...groupState, checks: { ...groupState.checks, [key]: val } };
-    setGroupState(next);
-    scheduleAutoSave(selectedGroup?.id, next);
+  const loadGroups = async () => {
+    try {
+      const data = await api("groups");
+      setGroups(data.groups || []);
+      setScreen("home");
+    } catch (err) {
+      setError(err.message);
+      setScreen("error");
+    }
   };
+  useEffect(() => { loadGroups(); }, []);
 
-  const handleNote = (classId, val) => {
-    const next = { ...groupState, notes: { ...groupState.notes, [classId]: val } };
-    setGroupState(next);
-    scheduleAutoSave(selectedGroup?.id, next);
-  };
-
-  const handleScenario = (scenarioId) => {
-    const next = { ...groupState, scenario: scenarioId };
-    setGroupState(next);
-    scheduleAutoSave(selectedGroup?.id, next);
-  };
-
-  const createGroup = async () => {
-    const name = newName.trim();
-    if (!name) return;
-    const g = { id: `g_${Date.now()}`, name, created: new Date().toLocaleDateString() };
-    const next = [...groups, g];
-    setGroups(next);
-    setNewName("");
-    await saveGroups(next);
-  };
-
-  const openGroup = async (group) => {
-    const state = await loadGroupState(group.id);
-    setGroupState(state);
-    setSelectedGroup(group);
+  const loadGroup = async (group) => {
+    const fresh = await fetch(`${API}?action=group&group_id=${group.id}`).then((r) => r.json());
+    if (fresh.error) throw new Error(fresh.error);
+    setSelectedGroup(fresh.group);
+    setState(groupToState(fresh.group));
     setScreen("tracker");
   };
 
-  const deleteGroup = async (id, e) => {
-    e.stopPropagation();
-    if (!window.confirm("Delete this group and all its progress? This cannot be undone.")) return;
-    const next = groups.filter(g => g.id !== id);
-    setGroups(next);
-    await saveGroups(next);
-    try { localStorage.removeItem(stateKey(id)); } catch {}
+  const createGroup = async () => {
+    if (!newName.trim()) return;
+    const data = await api("createGroup", { method: "POST", body: { group_name: newName.trim(), student_names: studentNames.trim() } });
+    setNewName(""); setStudentNames("");
+    await loadGroups();
+    await loadGroup(data.group);
   };
 
-  const totalItems = CLASSES.reduce((a, cls) => a + cls.sections.reduce((b, s) => b + (s.flint ? 0 : s.items.length), 0), 0);
-  const totalDone = Object.values(groupState.checks).filter(Boolean).length;
-  const overallPct = Math.round((totalDone / totalItems) * 100);
-  const selectedScenario = SCENARIOS.find(s => s.id === groupState.scenario);
+  const updateGroup = async (patch) => {
+    if (!selectedGroup) return;
+    const nextGroup = { ...selectedGroup, ...patch };
+    setSelectedGroup(nextGroup);
+    setSaveStatus("saving");
+    await api("updateGroup", { method: "PATCH", body: { group_id: selectedGroup.id, ...patch } });
+    setSaveStatus("saved"); setTimeout(() => setSaveStatus(""), 1200);
+  };
 
-  if (screen === "loading") return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: 180, color: "#9ca3af", fontSize: 14, fontFamily: "Georgia, serif" }}>
-      Loading…
+  const handleCheck = async (classId, key, completed) => {
+    setState((s) => ({ ...s, checks: { ...s.checks, [key]: completed } }));
+    setSaveStatus("saving");
+    await api("progress", { method: "PATCH", body: { group_id: selectedGroup.id, class_phase: classId, item_key: key, completed } });
+    setSaveStatus("saved"); setTimeout(() => setSaveStatus(""), 1200);
+  };
+
+  const handleNote = async (classId, value) => {
+    const noteAuthor = currentStudentName.trim();
+    if (!noteAuthor) return;
+    setSaveStatus("saving");
+    await api("note", { method: "PATCH", body: { group_id: selectedGroup.id, class_phase: classId, note_author: noteAuthor, note_text: value } });
+    await loadGroup(selectedGroup);
+    setSaveStatus("saved"); setTimeout(() => setSaveStatus(""), 1200);
+  };
+
+  if (screen === "error") return <SetupError error={error} />;
+  if (screen === "loading") return <div style={sx.narrow}>Loading shared tracker…</div>;
+
+  if (screen === "tracker" && selectedGroup) {
+    const progress = overallProgress(state.checks);
+    const selectedScenario = SCENARIOS.find((s) => s.id === selectedGroup.scenario_id);
+    return <div style={sx.page}>
+      <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 18, flexWrap: "wrap" }}>
+        <button onClick={() => { setScreen("home"); loadGroups(); }} style={{ ...sx.btn, background: "white", border: "1px solid #e5e7eb" }}>← Groups</button>
+        <div style={{ flex: 1 }}><h1 style={{ margin: 0 }}>{selectedGroup.group_name}</h1><div style={{ color: "#64748b" }}>{selectedGroup.student_names || "No student names yet"}</div></div>
+        <a href="/teacher" style={{ color: "#64748b", fontSize: 12 }}>Teacher dashboard</a>
+        <div style={{ fontWeight: 800, color: "#534AB7", background: "#EEEDFE", padding: "7px 12px", borderRadius: 999 }}>{progress.pct}% complete</div>
+        <div style={{ minWidth: 62, fontSize: 12, color: saveStatus === "saved" ? "#0F6E56" : "#64748b" }}>{saveStatus}</div>
+      </div>
+
+      <div style={{ ...sx.card, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+        <div><div style={sx.label}>Scenario</div><select value={selectedGroup.scenario_id || ""} onChange={(e) => updateGroup({ scenario_id: e.target.value || null })} style={{ ...sx.input, width: "100%" }}><option value="">Select scenario</option>{SCENARIOS.map((s) => <option key={s.id} value={s.id}>{s.label}: {s.title}</option>)}<option value="custom">Our own scenario</option></select>{selectedScenario && <p style={{ color: selectedScenario.color, marginBottom: 0 }}>{selectedScenario.tags}</p>}</div>
+        <div><div style={sx.label}>Student names</div><input value={selectedGroup.student_names || ""} onChange={(e) => updateGroup({ student_names: e.target.value })} style={{ ...sx.input, width: "100%" }} /></div>
+        {selectedGroup.scenario_id === "custom" && <><input placeholder="Custom scenario title" value={selectedGroup.custom_title || ""} onChange={(e) => updateGroup({ custom_title: e.target.value })} style={{ ...sx.input, width: "100%" }} /><input placeholder="Key variables" value={selectedGroup.custom_focus || ""} onChange={(e) => updateGroup({ custom_focus: e.target.value })} style={{ ...sx.input, width: "100%" }} /></>}
+      </div>
+
+      <div style={{ ...sx.card, borderLeft: "6px solid #0F6E56" }}>
+        <div style={sx.label}>Your note identity</div>
+        <p style={{ color: "#475569", marginTop: 0, lineHeight: 1.55 }}>Progress belongs to the group. Notes are saved with your name so your teacher can see who wrote each reflection, critique, revision, or question.</p>
+        <input value={currentStudentName} onChange={(e) => { setCurrentStudentName(e.target.value); localStorage.setItem("sup_student_name", e.target.value); }} placeholder="Your name" style={{ ...sx.input, width: "100%", maxWidth: 420 }} />
+      </div>
+
+      <div style={{ ...sx.card }}><div style={sx.label}>Formative checkpoints</div>{CHECKPOINTS.map((cp) => <CheckpointBox key={cp.number} groupId={selectedGroup.id} number={cp.number} checkpoint={state.checkpoints[cp.number]} onUpdate={() => loadGroup(selectedGroup)} />)}</div>
+
+      {CLASSES.map((cls, index) => <ClassPanel key={cls.id} cls={cls} checks={state.checks} notes={state.notes} noteAuthor={currentStudentName} onCheck={handleCheck} onNote={handleNote} defaultOpen={index === 0} />)}
+    </div>;
+  }
+
+  return <div style={sx.narrow}>
+    <h1>Systems Investigation Tracker</h1>
+    <p style={{ color: "#475569", lineHeight: 1.6 }}>Shared progress saves to the class database, so group members and the teacher can see updates across devices.</p>
+    <div style={sx.card}>
+      <h3>Create a new group</h3>
+      <input value={newName} onChange={(e) => setNewName(e.target.value)} placeholder="Group name" style={{ ...sx.input, width: "100%", marginBottom: 8 }} />
+      <input value={studentNames} onChange={(e) => setStudentNames(e.target.value)} placeholder="Student names (optional)" style={{ ...sx.input, width: "100%", marginBottom: 10 }} />
+      <button onClick={createGroup} style={{ ...sx.btn, background: "#0F6E56", color: "white" }}>Create group</button>
     </div>
-  );
-
-  if (screen === "tracker" && selectedGroup) return (
-    <div style={{ fontFamily: "Georgia, serif", maxWidth: 680, margin: "0 auto", paddingBottom: 48 }}>
-      <div style={{
-        display: "flex", alignItems: "center", gap: 10,
-        padding: "12px 16px", borderBottom: "1px solid #e5e7eb",
-        background: "white", position: "sticky", top: 0, zIndex: 20, marginBottom: 18,
-      }}>
-        <button onClick={() => setScreen("home")} style={{
-          background: "none", border: "1px solid #e5e7eb", borderRadius: 8,
-          padding: "5px 11px", fontSize: 12, cursor: "pointer", color: "#374151", fontFamily: "Georgia, serif",
-        }}>← Groups</button>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontWeight: 700, fontSize: 15, color: "#111" }}>{selectedGroup.name}</div>
-          {selectedScenario && (
-            <div style={{ fontSize: 11, color: selectedScenario.color, fontWeight: 600 }}>
-              {selectedScenario.label}
-            </div>
-          )}
-          {groupState.scenario === "custom" && groupState.customTitle && (
-            <div style={{ fontSize: 11, color: "#6B7280", fontWeight: 600 }}>
-              {groupState.customTitle}
-            </div>
-          )}
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          {saveStatus === "saving" && <span style={{ fontSize: 11, color: "#9ca3af" }}>Saving…</span>}
-          {saveStatus === "saved" && <span style={{ fontSize: 11, color: "#0F6E56", fontWeight: 600 }}>✓ Saved</span>}
-          <div style={{ fontSize: 12, fontWeight: 700, color: "#534AB7", background: "#EEEDFE", padding: "4px 11px", borderRadius: 20 }}>
-            {overallPct}% complete
-          </div>
-        </div>
-      </div>
-
-      <div style={{ padding: "0 16px 20px" }}>
-        <div style={{ height: 5, borderRadius: 3, background: "#e5e7eb", overflow: "hidden", marginBottom: 8 }}>
-          <div style={{
-            height: "100%", width: `${overallPct}%`,
-            background: "linear-gradient(90deg, #0F6E56 0%, #185FA5 40%, #993556 70%, #534AB7 100%)",
-            borderRadius: 3, transition: "width 0.5s ease",
-          }} />
-        </div>
-        <div style={{ display: "flex", gap: 4 }}>
-          {CLASSES.map(cls => {
-            const { done, total } = classProgress(cls.id, groupState.checks);
-            const p = total ? Math.round((done / total) * 100) : 0;
-            return (
-              <div key={cls.id} style={{ flex: 1, textAlign: "center" }}>
-                <div style={{ fontSize: 10, color: cls.color, fontWeight: 700 }}>{p}%</div>
-                <div style={{ fontSize: 9, color: "#9ca3af" }}>C{cls.num}</div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div style={{ padding: "0 16px 20px" }}>
-        <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#9ca3af", marginBottom: 8 }}>
-          Your scenario
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          {SCENARIOS.map(s => {
-            const active = groupState.scenario === s.id;
-            return (
-              <button key={s.id} onClick={() => handleScenario(s.id)} style={{
-                display: "flex", alignItems: "flex-start", gap: 10, textAlign: "left",
-                padding: "10px 13px", borderRadius: 10,
-                border: `1.5px solid ${active ? s.color : "#e5e7eb"}`,
-                background: active ? s.color + "12" : "white",
-                cursor: "pointer", transition: "all 0.15s",
-              }}>
-                <div style={{
-                  width: 16, height: 16, borderRadius: "50%", flexShrink: 0, marginTop: 2,
-                  border: `2px solid ${s.color}`, background: active ? s.color : "white",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                }}>
-                  {active && <div style={{ width: 6, height: 6, borderRadius: "50%", background: "white" }} />}
-                </div>
-                <div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: active ? s.color : "#374151" }}>{s.label}</div>
-                  <div style={{ fontSize: 11, color: "#6b7280", marginTop: 1 }}>{s.title}</div>
-                  <div style={{ fontSize: 10, color: "#9ca3af", marginTop: 2, fontStyle: "italic" }}>{s.tags}</div>
-                </div>
-              </button>
-            );
-          })}
-          {(() => {
-            const customActive = groupState.scenario === "custom";
-            return (
-              <button onClick={() => handleScenario("custom")} style={{
-                display: "flex", alignItems: "flex-start", gap: 10, textAlign: "left",
-                padding: "10px 13px", borderRadius: 10,
-                border: `1.5px solid ${customActive ? "#6B7280" : "#e5e7eb"}`,
-                background: customActive ? "#F3F4F6" : "white",
-                cursor: "pointer", transition: "all 0.15s",
-              }}>
-                <div style={{
-                  width: 16, height: 16, borderRadius: "50%", flexShrink: 0, marginTop: 2,
-                  border: `2px solid #6B7280`, background: customActive ? "#6B7280" : "white",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                }}>
-                  {customActive && <div style={{ width: 6, height: 6, borderRadius: "50%", background: "white" }} />}
-                </div>
-                <div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: customActive ? "#374151" : "#374151" }}>Our own scenario</div>
-                  <div style={{ fontSize: 11, color: "#6b7280", marginTop: 1 }}>We are investigating a different food system</div>
-                </div>
-              </button>
-            );
-          })()}
-        </div>
-
-        {groupState.scenario === "custom" && (
-          <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 8 }}>
-            <input
-              value={groupState.customTitle || ""}
-              onChange={e => {
-                const next = { ...groupState, customTitle: e.target.value };
-                setGroupState(next);
-                scheduleAutoSave(selectedGroup?.id, next);
-              }}
-              placeholder="Scenario name — e.g. Water scarcity and crop yields in Peru"
-              style={{
-                border: "1.5px solid #e5e7eb", borderRadius: 8,
-                padding: "9px 12px", fontSize: 13, fontFamily: "Georgia, serif",
-                outline: "none", color: "#374151", width: "100%", boxSizing: "border-box",
-              }}
-              onFocus={e => e.target.style.borderColor = "#6B7280"}
-              onBlur={e => e.target.style.borderColor = "#e5e7eb"}
-            />
-            <input
-              value={groupState.customFocus || ""}
-              onChange={e => {
-                const next = { ...groupState, customFocus: e.target.value };
-                setGroupState(next);
-                scheduleAutoSave(selectedGroup?.id, next);
-              }}
-              placeholder="Key variables — e.g. rainfall · crop yield · export volume · price"
-              style={{
-                border: "1.5px solid #e5e7eb", borderRadius: 8,
-                padding: "9px 12px", fontSize: 13, fontFamily: "Georgia, serif",
-                outline: "none", color: "#374151", width: "100%", boxSizing: "border-box",
-                fontStyle: "italic",
-              }}
-              onFocus={e => e.target.style.borderColor = "#6B7280"}
-              onBlur={e => e.target.style.borderColor = "#e5e7eb"}
-            />
-          </div>
-        )}
-
-        {!groupState.scenario && (
-          <div style={{ fontSize: 11, color: "#9ca3af", marginTop: 8, fontStyle: "italic" }}>
-            Select your scenario above — it saves automatically.
-          </div>
-        )}
-      </div>
-
-      <div style={{ padding: "0 16px" }}>
-        <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#9ca3af", marginBottom: 10 }}>
-          Five-class arc
-        </div>
-        {CLASSES.map((cls, i) => (
-          <ClassPanel key={cls.id} cls={cls}
-            checks={groupState.checks} notes={groupState.notes}
-            onCheck={handleCheck} onNote={handleNote}
-            defaultOpen={i === 0} />
-        ))}
-      </div>
-
-      <div style={{
-        margin: "20px 16px 0", padding: "13px 16px",
-        background: "#FFFDE7", border: "1.5px solid #F9A825", borderRadius: 10,
-        display: "flex", gap: 10, alignItems: "flex-start",
-      }}>
-        <span style={{ fontSize: 18, flexShrink: 0 }}>🤖</span>
-        <div>
-          <div style={{ fontSize: 12, fontWeight: 800, color: "#E65100", marginBottom: 3 }}>Remember: Consult Flint AI</div>
-          <div style={{ fontSize: 12, color: "#5D4037", lineHeight: 1.65 }}>
-            Use Flint when stuck, revising, or uncertain — not to complete the project. Bring data and specific questions. Save meaningful interactions in your journal and note what you accepted, modified, or rejected.
-          </div>
-        </div>
-      </div>
-
-      <div style={{ textAlign: "center", marginTop: 24, fontSize: 11, color: "#d1d5db" }}>
-        Systems Under Pressure · Algebra 2 Cumulative Semester Final Project · Progress saves automatically and is shared across all group members
-      </div>
+    <div style={sx.card}>
+      <h3>Join existing group</h3>
+      {groups.length === 0 ? <p>No groups yet.</p> : groups.map((group) => <button key={group.id} onClick={() => loadGroup(group)} style={{ width: "100%", textAlign: "left", ...sx.btn, background: "#f8fafc", color: "#111827", marginBottom: 8 }}><strong>{group.group_name}</strong><br /><span style={{ color: "#64748b" }}>{group.student_names || "No names listed"}</span></button>)}
     </div>
-  );
+  </div>;
+}
 
-  return (
-    <div style={{ fontFamily: "Georgia, serif", maxWidth: 480, margin: "0 auto", padding: "32px 20px 48px" }}>
-      <div style={{ textAlign: "center", marginBottom: 28 }}>
-        <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.14em", textTransform: "uppercase", color: "#0F6E56", marginBottom: 10 }}>
-          Algebra 2 · Cumulative Semester Final Project
-        </div>
-        <h1 style={{ fontSize: 26, fontWeight: 700, color: "#111", margin: "0 0 6px", lineHeight: 1.2 }}>
-          Systems Under Pressure
-        </h1>
-        <p style={{ fontSize: 14, color: "#374151", margin: "0 0 6px", fontWeight: 600 }}>
-          The Mathematics of Food Systems
-        </p>
-        <p style={{ fontSize: 13, color: "#6b7280", margin: 0, fontStyle: "italic" }}>
-          "All models are wrong, but some are useful." — George Box
-        </p>
+function groupMetrics(group) {
+  const checks = {}; (group.progress_items || []).forEach((item) => { checks[item.item_key] = !!item.completed; });
+  const total = overallProgress(checks);
+  const byClass = CLASSES.map((cls) => ({ cls, ...classProgress(cls.id, checks) }));
+  const missing = ALL_ITEMS.filter((item) => !checks[item.key]);
+  const cp = Object.fromEntries((group.checkpoints || []).map((c) => [c.checkpoint_number, c]));
+  const warning = total.pct < 30 || (cp[1]?.status || "Not started") === "Not started" || missing.length > ALL_ITEMS.length * 0.55;
+  return { checks, total, byClass, missing, cp, warning };
+}
+
+function TeacherDashboard() {
+  const [passcode, setPasscode] = useState(localStorage.getItem("sup_teacher_passcode") || "");
+  const [authed, setAuthed] = useState(false);
+  const [groups, setGroups] = useState([]);
+  const [selectedId, setSelectedId] = useState(null);
+  const [filter, setFilter] = useState("all");
+  const [error, setError] = useState("");
+  const selected = groups.find((g) => g.id === selectedId) || groups[0];
+
+  const load = async () => {
+    try {
+      const data = await api("teacher", { passcode });
+      localStorage.setItem("sup_teacher_passcode", passcode);
+      setGroups(data.groups || []); setAuthed(true); setError("");
+    } catch (err) { setError(err.message); setAuthed(false); }
+  };
+
+  const saveFeedback = async (checkpointNumber, fields) => {
+    await api("teacherFeedback", { method: "PATCH", passcode, body: { group_id: selected.id, checkpoint_number: checkpointNumber, ...fields } });
+    await load();
+  };
+
+  const exportCsv = () => {
+    const rows = [["Group", "Students", "Overall", "Class 1", "Class 2", "Class 3", "Class 4", "Class 5", "Checkpoint 1", "Checkpoint 2", "Last updated"]];
+    groups.forEach((group) => {
+      const m = groupMetrics(group);
+      rows.push([group.group_name, group.student_names || "", `${m.total.pct}%`, ...m.byClass.map((p) => `${p.done}/${p.total}`), m.cp[1]?.status || "Not started", m.cp[2]?.status || "Not started", group.updated_at || ""]);
+    });
+    const csv = rows.map((row) => row.map((cell) => `"${String(cell).replaceAll('"', '""')}"`).join(",")).join("\n");
+    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+    const link = document.createElement("a"); link.href = url; link.download = "systems-under-pressure-progress.csv"; link.click(); URL.revokeObjectURL(url);
+  };
+
+  if (!authed) return <div style={sx.narrow}><h1>Teacher Dashboard</h1><p>Enter the teacher passcode to view all group progress.</p><input type="password" value={passcode} onChange={(e) => setPasscode(e.target.value)} style={{ ...sx.input, width: "100%", marginBottom: 10 }} /><button onClick={load} style={{ ...sx.btn, background: "#111827", color: "white" }}>Open dashboard</button>{error && <p style={{ color: "#b45353" }}>{error}</p>}</div>;
+
+  const visible = groups.filter((group) => filter === "all" || (groupMetrics(group).cp[Number(filter)]?.status || "Not started") !== "Feedback given");
+  const m = selected ? groupMetrics(selected) : null;
+  return <div style={{ ...sx.page, maxWidth: 1280 }}>
+    <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}><h1 style={{ flex: 1 }}>Teacher Dashboard</h1><button onClick={load} style={{ ...sx.btn, background: "#f8fafc" }}>Refresh</button><button onClick={exportCsv} style={{ ...sx.btn, background: "#111827", color: "white" }}>Export CSV</button><a href="/" style={{ color: "#64748b" }}>Student view</a></div>
+    <div style={{ display: "grid", gridTemplateColumns: "minmax(520px, .95fr) minmax(360px, 1.05fr)", gap: 14 }}>
+      <div style={sx.card}>
+        <div style={{ display: "flex", gap: 8, alignItems: "center" }}><h3 style={{ flex: 1 }}>Groups</h3><select value={filter} onChange={(e) => setFilter(e.target.value)} style={sx.input}><option value="all">All</option><option value="1">Needs CP1 feedback</option><option value="2">Needs CP2 feedback</option></select></div>
+        <div style={{ overflowX: "auto" }}><table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}><thead><tr><th>Group</th><th>Overall</th><th>Phases</th><th>CP1</th><th>CP2</th><th>Flag</th></tr></thead><tbody>{visible.map((group) => { const gm = groupMetrics(group); return <tr key={group.id} onClick={() => setSelectedId(group.id)} style={{ cursor: "pointer", background: selected?.id === group.id ? "#f8fafc" : "white" }}><td><strong>{group.group_name}</strong><br /><span style={{ color: "#64748b" }}>{group.student_names}</span></td><td>{gm.total.pct}%</td><td>{gm.byClass.map((p) => `C${p.cls.num} ${p.done}/${p.total}`).join(" · ")}</td><td>{gm.cp[1]?.status || "Not started"}</td><td>{gm.cp[2]?.status || "Not started"}</td><td>{gm.warning ? "Review" : ""}</td></tr>; })}</tbody></table></div>
       </div>
-
-      <div style={{ background: "#f9fafb", border: "1.5px solid #e5e7eb", borderRadius: 12, padding: "14px 16px", marginBottom: 16, fontSize: 12, color: "#374151", lineHeight: 1.7 }}>
-        <div style={{ fontWeight: 700, color: "#111", marginBottom: 4 }}>A model is useful, but incomplete.</div>
-        This project is about increasingly thoughtful mathematical reasoning. Revision, critique, and clearer assumptions are evidence that your understanding is becoming more sophisticated. Do not split the math — everyone reasons across every mathematical lens.
-      </div>
-
-      <div style={{ background: "#FFFDE7", border: "1.5px solid #F9A825", borderRadius: 12, padding: "12px 16px", marginBottom: 20, fontSize: 12, color: "#5D4037", lineHeight: 1.65, display: "flex", gap: 10 }}>
-        <span style={{ fontSize: 16, flexShrink: 0 }}>🤖</span>
-        <div>
-          <strong style={{ color: "#E65100" }}>Flint AI is part of this project.</strong> Each class phase includes suggested Flint prompts. Use them during revision, critique, and interpretation — not to replace your own reasoning. Always save interactions in your journal.
-        </div>
-      </div>
-
-      <div style={{ border: "1.5px solid #e5e7eb", borderRadius: 14, padding: 18, marginBottom: 24, background: "white" }}>
-        <div style={{ fontSize: 13, fontWeight: 700, color: "#111", marginBottom: 12 }}>Create a new group</div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <input
-            value={newName}
-            onChange={e => setNewName(e.target.value)}
-            onKeyDown={e => e.key === "Enter" && createGroup()}
-            placeholder="e.g. Group 3 — Colombia"
-            style={{
-              flex: 1, border: "1.5px solid #e5e7eb", borderRadius: 8,
-              padding: "9px 12px", fontSize: 13, fontFamily: "Georgia, serif", outline: "none", color: "#374151",
-            }}
-            onFocus={e => e.target.style.borderColor = "#0F6E56"}
-            onBlur={e => e.target.style.borderColor = "#e5e7eb"}
-          />
-          <button onClick={createGroup} disabled={!newName.trim()} style={{
-            background: newName.trim() ? "#0F6E56" : "#e5e7eb",
-            color: newName.trim() ? "white" : "#9ca3af",
-            border: "none", borderRadius: 8, padding: "9px 18px",
-            fontSize: 13, fontWeight: 700, cursor: newName.trim() ? "pointer" : "default",
-            fontFamily: "Georgia, serif", transition: "all 0.15s",
-          }}>Create</button>
-        </div>
-      </div>
-
-      {groups.length === 0 ? (
-        <div style={{ textAlign: "center", padding: "32px 20px", color: "#9ca3af", fontSize: 13, border: "1.5px dashed #e5e7eb", borderRadius: 14 }}>
-          No groups yet. Create one above to get started.
-        </div>
-      ) : (
-        <>
-          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#9ca3af", marginBottom: 10 }}>
-            Your groups
-          </div>
-          {groups.map(group => (
-            <div key={group.id} onClick={() => openGroup(group)} style={{
-              display: "flex", alignItems: "center", gap: 12,
-              padding: "13px 16px", border: "1.5px solid #e5e7eb",
-              borderRadius: 12, marginBottom: 8, cursor: "pointer",
-              background: "white", transition: "all 0.15s",
-            }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor = "#0F6E56"; e.currentTarget.style.background = "#f0fdf8"; }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor = "#e5e7eb"; e.currentTarget.style.background = "white"; }}
-            >
-              <div style={{ width: 36, height: 36, borderRadius: 10, background: "#E1F5EE", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 17, flexShrink: 0 }}>🌱</div>
-              <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: 700, fontSize: 14, color: "#111" }}>{group.name}</div>
-                <div style={{ fontSize: 11, color: "#9ca3af" }}>Created {group.created}</div>
-              </div>
-              <button onClick={e => deleteGroup(group.id, e)} style={{ background: "none", border: "none", color: "#d1d5db", fontSize: 15, cursor: "pointer", padding: "4px 6px", borderRadius: 6 }} title="Delete group">✕</button>
-              <span style={{ color: "#9ca3af", fontSize: 18 }}>›</span>
-            </div>
-          ))}
-        </>
-      )}
-
-      <div style={{ marginTop: 20, padding: "14px 16px", background: "#f9fafb", borderRadius: 10, fontSize: 12, color: "#6b7280", lineHeight: 1.65 }}>
-        <strong style={{ color: "#374151" }}>How it works:</strong> Create one group per team. Any member can open it from any device — progress and notes sync automatically. Select your scenario, check off items, and consult Flint AI at each class phase when you are stuck or revising.
-      </div>
+      {selected && m && <div style={sx.card}>
+        <h2>{selected.group_name}</h2><p style={{ color: "#64748b" }}>{selected.student_names || "No student names"}<br />Last update: {selected.updated_at ? new Date(selected.updated_at).toLocaleString() : "—"}</p>
+        <h3>Missing items</h3><div style={{ maxHeight: 170, overflow: "auto", background: "#f8fafc", padding: 10, borderRadius: 10 }}>{m.missing.slice(0, 25).map((item) => <div key={item.key}>C{item.classNum}: {item.section} — {item.item}</div>)}{m.missing.length > 25 && <div>+ {m.missing.length - 25} more</div>}</div>
+        <h3>Named notes / reflections</h3>{(selected.group_notes || []).map((note) => <div key={note.id} style={{ padding: 10, background: "#f8fafc", borderRadius: 10, marginBottom: 8 }}>
+          <strong>{note.note_author || "Unidentified student"}</strong>
+          <span style={{ color: "#64748b" }}> · {note.class_phase} · {note.updated_at ? new Date(note.updated_at).toLocaleString() : ""}</span>
+          <p style={{ whiteSpace: "pre-wrap" }}>{note.note_text || "—"}</p>
+        </div>)}
+        <h3>Checkpoint feedback</h3>{CHECKPOINTS.map((cp) => <FeedbackEditor key={cp.number} cp={cp} checkpoint={m.cp[cp.number]} onSave={saveFeedback} />)}
+      </div>}
     </div>
-  );
+  </div>;
+}
+
+function FeedbackEditor({ cp, checkpoint, onSave }) {
+  const [fields, setFields] = useState({ status: checkpoint?.status || "Feedback given", strengths: checkpoint?.strengths || "", next_steps: checkpoint?.next_steps || "", concerns: checkpoint?.concerns || "", teacher_notes: checkpoint?.teacher_notes || "" });
+  useEffect(() => setFields({ status: checkpoint?.status || "Feedback given", strengths: checkpoint?.strengths || "", next_steps: checkpoint?.next_steps || "", concerns: checkpoint?.concerns || "", teacher_notes: checkpoint?.teacher_notes || "" }), [checkpoint?.id, checkpoint?.updated_at]);
+  const update = (key, value) => setFields((f) => ({ ...f, [key]: value }));
+  return <div style={{ ...sx.card, borderLeft: `5px solid ${cp.number === 1 ? "#185FA5" : "#993556"}` }}><strong>{cp.title}</strong><p style={{ color: "#64748b" }}>Student status: {checkpoint?.status || "Not started"}</p><p><strong>Student summary:</strong> {checkpoint?.student_summary || "—"}</p><select value={fields.status} onChange={(e) => update("status", e.target.value)} style={{ ...sx.input, width: "100%", marginBottom: 8 }}>{CHECKPOINT_STATUSES.map((s) => <option key={s}>{s}</option>)}</select>{["strengths", "next_steps", "concerns", "teacher_notes"].map((key) => <textarea key={key} rows={2} value={fields[key]} onChange={(e) => update(key, e.target.value)} placeholder={key.replace("_", " ")} style={{ ...sx.input, width: "100%", marginBottom: 8 }} />)}<button onClick={() => onSave(cp.number, fields)} style={{ ...sx.btn, background: "#111827", color: "white" }}>Save feedback</button></div>;
+}
+
+export default function App() {
+  return window.location.pathname.startsWith("/teacher") ? <TeacherDashboard /> : <StudentApp />;
 }

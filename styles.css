@@ -1033,6 +1033,12 @@ details[open] summary {
   font-weight: 800;
   color: #334155;
 }
+.tracker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.15rem;
+}
 .tracker-shell {
   max-width: 1400px;
   margin: 0 auto;

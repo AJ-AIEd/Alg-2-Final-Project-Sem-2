@@ -27,13 +27,16 @@ const config = () => {
 
 const supabase = async (path, options = {}) => {
   const { url, key } = config();
+  const prefer = path.includes("on_conflict=")
+    ? "resolution=merge-duplicates,return=representation"
+    : "return=representation";
   const response = await fetch(`${url}/rest/v1/${path}`, {
     ...options,
     headers: {
       apikey: key,
       Authorization: `Bearer ${key}`,
       "Content-Type": "application/json",
-      Prefer: "return=representation",
+      Prefer: prefer,
       ...(options.headers || {}),
     },
   });
@@ -85,10 +88,29 @@ export default async function handler(req, res) {
       const payload = {
         group_name: groupName,
         student_names: body.student_names || "",
+        scenario_id: body.scenario_id || null,
+        custom_title: body.custom_title || "",
+        custom_focus: body.custom_focus || "",
         updated_at: new Date().toISOString(),
       };
       const existing = await supabase(`groups?group_name=eq.${encodeURIComponent(groupName)}&select=*`);
       const group = existing?.[0] || (await supabase("groups", { method: "POST", body: JSON.stringify(payload) }))[0];
+      return json(res, 200, { group });
+    }
+
+    if (req.method === "PATCH" && action === "updateGroup") {
+      const body = await readBody(req);
+      if (!body.group_id) return json(res, 400, { error: "group_id is required" });
+      const payload = {
+        group_name: body.group_name,
+        student_names: body.student_names,
+        scenario_id: body.scenario_id,
+        custom_title: body.custom_title,
+        custom_focus: body.custom_focus,
+        updated_at: new Date().toISOString(),
+      };
+      Object.keys(payload).forEach((key) => payload[key] === undefined && delete payload[key]);
+      const group = (await supabase(`groups?id=eq.${body.group_id}`, { method: "PATCH", body: JSON.stringify(payload) }))[0];
       return json(res, 200, { group });
     }
 
@@ -98,7 +120,7 @@ export default async function handler(req, res) {
       const [groups, progress, notes, checkpoints] = await Promise.all([
         supabase(`groups?id=eq.${groupId}&select=*`),
         supabase(`progress_items?group_id=eq.${groupId}&select=*`),
-        supabase(`group_notes?group_id=eq.${groupId}&select=*`),
+        supabase(`group_notes?group_id=eq.${groupId}&select=*&order=updated_at.desc`),
         supabase(`checkpoints?group_id=eq.${groupId}&select=*`),
       ]);
       if (!groups[0]) return json(res, 404, { error: "Group not found" });
@@ -121,13 +143,16 @@ export default async function handler(req, res) {
 
     if (req.method === "PATCH" && action === "note") {
       const body = await readBody(req);
+      const noteAuthor = String(body.note_author || "").trim();
+      if (!noteAuthor) return json(res, 400, { error: "Student name is required before saving a note" });
       const row = {
         group_id: body.group_id,
         class_phase: body.class_phase,
+        note_author: noteAuthor,
         note_text: body.note_text || "",
         updated_at: new Date().toISOString(),
       };
-      await supabase("group_notes?on_conflict=group_id,class_phase", { method: "POST", body: JSON.stringify(row) });
+      await supabase("group_notes?on_conflict=group_id,class_phase,note_author", { method: "POST", body: JSON.stringify(row) });
       await supabase(`groups?id=eq.${row.group_id}`, { method: "PATCH", body: JSON.stringify({ updated_at: row.updated_at }) });
       return json(res, 200, { ok: true });
     }
@@ -151,7 +176,7 @@ export default async function handler(req, res) {
       const [groups, progress, notes, checkpoints] = await Promise.all([
         supabase("groups?select=*&order=updated_at.desc"),
         supabase("progress_items?select=*"),
-        supabase("group_notes?select=*"),
+        supabase("group_notes?select=*&order=updated_at.desc"),
         supabase("checkpoints?select=*"),
       ]);
       return json(res, 200, { groups: groups.map((group) => normalizeGroup(group, progress, notes, checkpoints)) });

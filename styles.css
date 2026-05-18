@@ -150,26 +150,26 @@ h3 { margin: 0 0 .75rem; font-size: 1.28rem; line-height: 1.18; }
 h4 { margin: 0 0 .5rem; font-size: .95rem; }
 p { margin: 0 0 1rem; }
 .lead {
-  font-size: 1.16rem;
+  font-size: 1.12rem;
   color: #334155;
-  max-width: 680px;
+  max-width: 620px;
 }
 .hero {
   max-width: none;
-  padding-top: 5rem;
-  padding-bottom: 5.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4.8rem;
   background:
     radial-gradient(circle at 84% 24%, rgba(37, 99, 235, .08), transparent 32%),
     linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   border-bottom: 1px solid var(--line);
 }
 .hero-grid {
-  max-width: 1180px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 1.25rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 42%);
-  gap: 4.5rem;
+  grid-template-columns: minmax(320px, .72fr) minmax(560px, 1.28fr);
+  gap: 3.2rem;
   align-items: center;
 }
 blockquote {
@@ -209,13 +209,13 @@ blockquote cite {
 }
 .hero-quote {
   display: inline-block;
-  margin: 1.55rem 0 0;
-  padding: .9rem 1.1rem;
+  margin: 1rem 0 0;
+  padding: .72rem .95rem;
   border: 1px solid var(--line);
   border-left: 5px solid var(--ink);
   border-radius: 14px;
   background: rgba(255, 255, 255, .72);
-  font-size: 1rem;
+  font-size: .94rem;
   box-shadow: var(--shadow-soft);
 }
 .hero-quote cite { font-size: .78rem; }
@@ -225,6 +225,8 @@ blockquote cite {
 }
 .investigation-board img {
   width: 100%;
+  min-height: 520px;
+  object-fit: contain;
   border-radius: 30px;
 }
 .hero-actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 1.5rem; }
@@ -300,7 +302,7 @@ blockquote cite {
   border-bottom: 1px solid var(--line);
 }
 .dashboard-card-grid {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
 }
 .dashboard-card {
   min-height: 190px;
@@ -345,12 +347,16 @@ blockquote cite {
   line-height: 1.35;
 }
 .philosophy-snapshot .principle-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .ecosystem-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .ecosystem-grid article {
+  min-height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 1.2rem;

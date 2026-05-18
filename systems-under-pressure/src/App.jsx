@@ -373,11 +373,11 @@ const CHECKPOINT_STATUSES = ["Not started", "In progress", "Ready for feedback",
 const API = "/api/data";
 
 const sx = {
-  page: { fontFamily: "Georgia, serif", maxWidth: 980, margin: "0 auto", padding: "28px 18px 52px", color: "#111827" },
-  narrow: { fontFamily: "Georgia, serif", maxWidth: 560, margin: "0 auto", padding: "32px 20px 52px", color: "#111827" },
-  card: { border: "1.5px solid #e5e7eb", borderRadius: 14, background: "white", padding: 16, marginBottom: 12 },
-  btn: { border: "none", borderRadius: 9, padding: "9px 14px", fontWeight: 700, cursor: "pointer", fontFamily: "Georgia, serif" },
-  input: { border: "1.5px solid #e5e7eb", borderRadius: 8, padding: "9px 11px", fontSize: 13, fontFamily: "Georgia, serif", boxSizing: "border-box" },
+  page: { fontFamily: "Inter, system-ui, sans-serif", maxWidth: 1060, margin: "0 auto", padding: "26px 18px 56px", color: "#111827" },
+  narrow: { fontFamily: "Inter, system-ui, sans-serif", maxWidth: 620, margin: "0 auto", padding: "38px 20px 56px", color: "#111827" },
+  card: { border: "1px solid #e2e8f0", borderRadius: 18, background: "rgba(255,255,255,.94)", padding: 18, marginBottom: 14, boxShadow: "0 14px 34px rgba(15,23,42,.055)" },
+  btn: { border: "none", borderRadius: 10, padding: "9px 14px", fontWeight: 800, cursor: "pointer", fontFamily: "Inter, system-ui, sans-serif" },
+  input: { border: "1.5px solid #e2e8f0", borderRadius: 10, padding: "10px 12px", fontSize: 13, fontFamily: "Inter, system-ui, sans-serif", boxSizing: "border-box", outline: "none" },
   label: { fontSize: 10, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "#64748b", marginBottom: 7 },
 };
 
@@ -445,6 +445,51 @@ function Ring({ done, total, color, size = 46 }) {
   </svg>;
 }
 
+function PhaseProgressStrip({ checks }) {
+  const progress = overallProgress(checks);
+  return <div style={{
+    margin: "0 0 18px",
+    padding: "18px 18px 16px",
+    border: "1px solid #e2e8f0",
+    borderRadius: 22,
+    background: "rgba(255,255,255,.92)",
+    boxShadow: "0 18px 46px rgba(15,23,42,.06)",
+  }}>
+    <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "end", marginBottom: 12 }}>
+      <div>
+        <div style={sx.label}>Five-class arc</div>
+        <div style={{ fontSize: 18, fontWeight: 900, color: "#111827" }}>Progress by class phase</div>
+      </div>
+      <div style={{ textAlign: "right" }}>
+        <div style={{ fontSize: 24, fontWeight: 950, color: "#534AB7", lineHeight: 1 }}>{progress.pct}%</div>
+        <div style={{ fontSize: 11, color: "#64748b", fontWeight: 800 }}>{progress.done}/{progress.total} total</div>
+      </div>
+    </div>
+    <div style={{ height: 8, borderRadius: 999, background: "#e5e7eb", overflow: "hidden", marginBottom: 12 }}>
+      <div style={{
+        height: "100%",
+        width: `${progress.pct}%`,
+        background: "linear-gradient(90deg, #0F6E56 0%, #185FA5 42%, #993556 72%, #534AB7 100%)",
+        borderRadius: 999,
+        transition: "width .35s ease",
+      }} />
+    </div>
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(5, minmax(0, 1fr))", gap: 6 }}>
+      {CLASSES.map((cls) => {
+        const { done, total } = classProgress(cls.id, checks);
+        const pct = total ? Math.round((done / total) * 100) : 0;
+        return <div key={cls.id} style={{ textAlign: "center", padding: "8px 4px", borderRadius: 12, background: pct === 100 ? cls.light : "transparent" }}>
+          <div style={{ fontSize: 12, color: cls.color, fontWeight: 950 }}>{pct}%</div>
+          <div style={{ fontSize: 10, color: "#64748b", fontWeight: 900 }}>C{cls.num}</div>
+          <div style={{ height: 4, borderRadius: 999, background: "#e5e7eb", overflow: "hidden", marginTop: 6 }}>
+            <div style={{ width: `${pct}%`, height: "100%", background: cls.color, borderRadius: 999 }} />
+          </div>
+        </div>;
+      })}
+    </div>
+  </div>;
+}
+
 function SetupError({ error }) {
   return <div style={{ ...sx.narrow }}>
     <h1>Tracker database setup needed</h1>
@@ -495,12 +540,12 @@ function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOp
   const [draft, setDraft] = useState("");
   const { done, total } = classProgress(cls.id, checks);
   const classNotes = (notes || []).filter((note) => note.class_phase === cls.id);
-  return <div style={{ border: `1.5px solid ${open ? cls.color + "66" : "#e5e7eb"}`, borderRadius: 14, overflow: "hidden", marginBottom: 10, background: "white" }}>
-    <button onClick={() => setOpen((o) => !o)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "13px 16px", background: open ? cls.light : "white", border: 0, cursor: "pointer", textAlign: "left" }}>
-      <div style={{ width: 30, height: 30, borderRadius: "50%", background: cls.color, color: "white", display: "grid", placeItems: "center", fontWeight: 700 }}>{cls.num}</div>
+  return <div style={{ border: `1.5px solid ${open ? cls.color + "66" : "#e5e7eb"}`, borderRadius: 18, overflow: "hidden", marginBottom: 12, background: "white", boxShadow: open ? "0 16px 38px rgba(15,23,42,.07)" : "0 8px 24px rgba(15,23,42,.035)" }}>
+    <button onClick={() => setOpen((o) => !o)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "15px 18px", background: open ? cls.light : "white", border: 0, cursor: "pointer", textAlign: "left" }}>
+      <div style={{ width: 34, height: 34, borderRadius: 12, background: cls.color, color: "white", display: "grid", placeItems: "center", fontWeight: 900 }}>C{cls.num}</div>
       <div style={{ flex: 1 }}><strong>{cls.label}</strong><div style={{ fontSize: 11, color: "#64748b" }}>{cls.sub}</div></div>
       <Ring done={done} total={total} color={cls.color} />
-      <span>{open ? "−" : "+"}</span>
+      <span style={{ color: cls.color, fontWeight: 900, fontSize: 18 }}>{open ? "−" : "+"}</span>
     </button>
     {open && <div style={{ padding: "12px 16px 18px" }}>
       <div style={{ fontSize: 12, color: "#475569", padding: 10, background: cls.light, borderRadius: 8, marginBottom: 14 }}>
@@ -511,7 +556,7 @@ function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOp
         <div style={{ display: "grid", gap: 6 }}>
           {sec.items.map((item, index) => {
             const key = `${cls.id}__${sec.title}__${index}`;
-            return <label key={key} style={{ display: "flex", gap: 10, alignItems: "flex-start", padding: 9, borderRadius: 8, background: checks[key] ? cls.light : "#f8fafc", border: "1px solid #e5e7eb" }}>
+            return <label key={key} style={{ display: "flex", gap: 10, alignItems: "flex-start", padding: 10, borderRadius: 10, background: checks[key] ? cls.light : "#f8fafc", border: "1px solid #e5e7eb" }}>
               <input type="checkbox" checked={!!checks[key]} onChange={(e) => onCheck(cls.id, key, e.target.checked)} style={{ marginTop: 3, accentColor: cls.color }} />
               <span style={{ fontSize: 13, lineHeight: 1.45 }}>{item}</span>
             </label>;
@@ -607,14 +652,17 @@ function StudentApp() {
   if (screen === "tracker" && selectedGroup) {
     const progress = overallProgress(state.checks);
     const selectedScenario = SCENARIOS.find((s) => s.id === selectedGroup.scenario_id);
-    return <div style={sx.page}>
-      <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 18, flexWrap: "wrap" }}>
+    return <div style={{ minHeight: "100vh", background: "radial-gradient(circle at 88% 4%, rgba(37,99,235,.08), transparent 28%), linear-gradient(180deg, #f8fafc 0%, #ffffff 52%)" }}>
+    <div style={sx.page}>
+      <div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 18, flexWrap: "wrap", padding: 16, border: "1px solid #e2e8f0", borderRadius: 22, background: "rgba(255,255,255,.9)", boxShadow: "0 16px 42px rgba(15,23,42,.06)" }}>
         <button onClick={() => { setScreen("home"); loadGroups(); }} style={{ ...sx.btn, background: "white", border: "1px solid #e5e7eb" }}>← Groups</button>
-        <div style={{ flex: 1 }}><h1 style={{ margin: 0 }}>{selectedGroup.group_name}</h1><div style={{ color: "#64748b" }}>{selectedGroup.student_names || "No student names yet"}</div></div>
+        <div style={{ flex: 1 }}><h1 style={{ margin: 0, fontSize: 28, lineHeight: 1.05 }}>{selectedGroup.group_name}</h1><div style={{ color: "#64748b", marginTop: 4 }}>{selectedGroup.student_names || "No student names yet"}</div></div>
         <a href="/teacher" style={{ color: "#64748b", fontSize: 12 }}>Teacher dashboard</a>
         <div style={{ fontWeight: 800, color: "#534AB7", background: "#EEEDFE", padding: "7px 12px", borderRadius: 999 }}>{progress.pct}% complete</div>
         <div style={{ minWidth: 62, fontSize: 12, color: saveStatus === "saved" ? "#0F6E56" : "#64748b" }}>{saveStatus}</div>
       </div>
+
+      <PhaseProgressStrip checks={state.checks} />
 
       <div style={{ ...sx.card, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
         <div><div style={sx.label}>Scenario</div><select value={selectedGroup.scenario_id || ""} onChange={(e) => updateGroup({ scenario_id: e.target.value || null })} style={{ ...sx.input, width: "100%" }}><option value="">Select scenario</option>{SCENARIOS.map((s) => <option key={s.id} value={s.id}>{s.label}: {s.title}</option>)}<option value="custom">Our own scenario</option></select>{selectedScenario && <p style={{ color: selectedScenario.color, marginBottom: 0 }}>{selectedScenario.tags}</p>}</div>
@@ -631,10 +679,11 @@ function StudentApp() {
       <div style={{ ...sx.card }}><div style={sx.label}>Formative checkpoints</div>{CHECKPOINTS.map((cp) => <CheckpointBox key={cp.number} groupId={selectedGroup.id} number={cp.number} checkpoint={state.checkpoints[cp.number]} onUpdate={() => loadGroup(selectedGroup)} />)}</div>
 
       {CLASSES.map((cls, index) => <ClassPanel key={cls.id} cls={cls} checks={state.checks} notes={state.notes} noteAuthor={currentStudentName} onCheck={handleCheck} onNote={handleNote} defaultOpen={index === 0} />)}
+    </div>
     </div>;
   }
 
-  return <div style={sx.narrow}>
+  return <div style={{ minHeight: "100vh", background: "radial-gradient(circle at 86% 8%, rgba(21,128,61,.1), transparent 28%), linear-gradient(180deg, #f8fafc 0%, #ffffff 58%)" }}><div style={sx.narrow}>
     <h1>Systems Investigation Tracker</h1>
     <p style={{ color: "#475569", lineHeight: 1.6 }}>Shared progress saves to the class database, so group members and the teacher can see updates across devices.</p>
     <div style={sx.card}>
@@ -647,7 +696,7 @@ function StudentApp() {
       <h3>Join existing group</h3>
       {groups.length === 0 ? <p>No groups yet.</p> : groups.map((group) => <button key={group.id} onClick={() => loadGroup(group)} style={{ width: "100%", textAlign: "left", ...sx.btn, background: "#f8fafc", color: "#111827", marginBottom: 8 }}><strong>{group.group_name}</strong><br /><span style={{ color: "#64748b" }}>{group.student_names || "No names listed"}</span></button>)}
     </div>
-  </div>;
+  </div></div>;
 }
 
 function groupMetrics(group) {

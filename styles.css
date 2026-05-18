@@ -164,12 +164,12 @@ p { margin: 0 0 1rem; }
   border-bottom: 1px solid var(--line);
 }
 .hero-grid {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 1.25rem;
   display: grid;
-  grid-template-columns: minmax(320px, .72fr) minmax(560px, 1.28fr);
-  gap: 3.2rem;
+  grid-template-columns: minmax(300px, .62fr) minmax(680px, 1.38fr);
+  gap: 2.8rem;
   align-items: center;
 }
 blockquote {
@@ -225,7 +225,7 @@ blockquote cite {
 }
 .investigation-board img {
   width: 100%;
-  min-height: 520px;
+  min-height: 610px;
   object-fit: contain;
   border-radius: 30px;
 }
@@ -294,6 +294,22 @@ blockquote cite {
   color: #334155;
   font-size: 1.08rem;
   font-weight: 650;
+}
+.case-study-note {
+  max-width: 980px;
+  margin: -1.2rem 0 1.5rem;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--ink);
+  border-radius: 16px;
+  padding: 1.15rem 1.25rem;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+.case-study-note p {
+  margin: 0;
+  color: #334155;
+  font-size: 1.05rem;
+  line-height: 1.55;
 }
 .home-dashboard {
   padding-top: 4.5rem;

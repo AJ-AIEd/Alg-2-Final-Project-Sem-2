@@ -34,14 +34,14 @@
   </header>
 
   <main id="main">
-    <section class="hero section dashboard-section active" id="home" data-dashboard-tab="overview">
+    <section class="hero section dashboard-section active documentary-hero" id="home" data-dashboard-tab="overview">
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Algebra 2 Cumulative Semester Final Project</p>
           <h1>Systems Under Pressure</h1>
           <p class="hero-subtitle">The Mathematics of Food Systems</p>
-          <p class="hero-claim">No single equation fully explains a complex system.</p>
-          <p class="lead">In Bogotá’s 2024 water crisis, a short data window made collapse look obvious. Zooming out changed the story. Adding demand, supply, and storage changed the question.</p>
+          <p class="hero-claim">A convincing model can still produce a misleading conclusion.</p>
+          <p class="lead">Watch one real water system change meaning as the frame expands: crisis window, historical context, demand pressure, physical limits, and synthesis.</p>
           <blockquote class="hero-quote">
             “A model is useful, but incomplete.”
             <cite>adapted from George Box</cite>
@@ -51,44 +51,145 @@
             <a class="button secondary" href="tracker/">Launch Tracker</a>
           </div>
         </div>
-        <div class="hero-art investigation-board" aria-label="Bogotá water-system case study graph showing demand, supply, storage, thresholds, and hidden assumptions">
-          <img src="assets/model-board.svg" alt="Bogotá water-system case study graph with demand pressure, infrastructure response, Chingaza storage points, threshold, and annotations">
+        <div class="case-file-card">
+          <p class="eyebrow">Case File</p>
+          <h2>Bogotá’s Chingaza Water System</h2>
+          <p>In April 2024, Bogotá began water restrictions as Chingaza fell near crisis levels. That short window looked catastrophic. The longer system story was harder, and more mathematical.</p>
+          <div class="case-stats">
+            <span><strong>16.32%</strong>Apr. 11, 2024</span>
+            <span><strong>14.9%</strong>Apr. 18, 2024</span>
+            <span><strong>42.77%</strong>Jun. 28, 2024</span>
+            <span><strong>41.33%</strong>Apr. 11, 2025</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section compact dashboard-section active hook-section" data-dashboard-tab="overview">
+    <section class="section dashboard-section active investigation-arc" data-dashboard-tab="overview">
       <div class="section-header">
-        <p class="eyebrow">Investigation Hook</p>
-        <h2>Here is one real system. Watch the math get more honest.</h2>
-        <p>In April 2024, Chingaza data made the danger visible. Historical recovery, demand pressure, infrastructure response, and storage limits made the investigation more complex.</p>
+        <p class="eyebrow">Overview Investigation Arc</p>
+        <h2>The model changed when the frame changed.</h2>
+        <p>Do not start with the final graph. Experience why earlier models became incomplete.</p>
       </div>
-      <div class="case-study-note">
-        <p>Instead of asking, “Will water run out tomorrow?”, a stronger model asks: <strong>When does pressure exceed capacity, and which assumptions make that prediction fragile?</strong></p>
+
+      <article class="story-step crisis">
+        <div class="story-copy">
+          <span class="step-number">Step 1</span>
+          <h3>The system looks catastrophic.</h3>
+          <p>A short April 2024 window made continued decline feel mathematically reasonable.</p>
+          <p class="model-note">Sequence thinking: local trend, repeated change, extrapolation.</p>
+          <strong class="investigation-question">What would you predict from this graph?</strong>
+        </div>
+        <figure class="story-visual">
+          <svg viewBox="0 0 620 360" role="img" aria-label="Short Chingaza crisis window graph">
+            <rect width="620" height="360" rx="22" fill="#fff"/>
+            <path d="M70 50V295H570" fill="none" stroke="#94a3b8" stroke-width="2"/>
+            <g stroke="#e2e8f0" stroke-width="1"><path d="M70 245H570"/><path d="M70 195H570"/><path d="M70 145H570"/><path d="M70 95H570"/></g>
+            <text x="70" y="28" font-size="20" font-weight="800" fill="#111827">April 2024 crisis window</text>
+            <text x="70" y="328" font-size="12" fill="#64748b">Apr 11</text><text x="265" y="328" font-size="12" fill="#64748b">Apr 18</text><text x="500" y="328" font-size="12" fill="#64748b">Apr 29</text>
+            <text x="18" y="96" font-size="12" fill="#64748b">17%</text><text x="18" y="246" font-size="12" fill="#64748b">15%</text>
+            <path d="M105 112 L285 236 L520 163" fill="none" stroke="#7e22ce" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M105 112 L285 236 L505 318" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="7 7"/>
+            <circle cx="105" cy="112" r="7" fill="#7e22ce"/><circle cx="285" cy="236" r="7" fill="#7e22ce"/><circle cx="520" cy="163" r="7" fill="#7e22ce"/>
+            <text x="116" y="104" font-size="13" font-weight="800" fill="#111827">16.32%</text><text x="296" y="232" font-size="13" font-weight="800" fill="#111827">14.9%</text><text x="463" y="151" font-size="13" font-weight="800" fill="#111827">17.07%</text>
+            <text x="300" y="300" font-size="14" font-weight="800" fill="#ef4444">local extrapolation: collapse?</text>
+          </svg>
+          <figcaption>A strong graph is not automatically a strong explanation.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-step zoom">
+        <div class="story-copy">
+          <span class="step-number">Step 2</span>
+          <h3>Zooming out revealed the missing story.</h3>
+          <p>Across decades, the system shows fluctuation, drought cycles, recovery, infrastructure change, and intervention.</p>
+          <p class="model-note">Historical frame: the same data can tell different stories.</p>
+          <strong class="investigation-question">Which timeframe is responsible?</strong>
+        </div>
+        <figure class="story-visual">
+          <svg viewBox="0 0 620 360" role="img" aria-label="Historical zoom out graph from 1980 to 2025">
+            <rect width="620" height="360" rx="22" fill="#fff"/>
+            <path d="M68 50V292H572" fill="none" stroke="#94a3b8" stroke-width="2"/>
+            <g stroke="#e2e8f0" stroke-width="1"><path d="M68 242H572"/><path d="M68 192H572"/><path d="M68 142H572"/><path d="M68 92H572"/></g>
+            <text x="68" y="28" font-size="20" font-weight="800" fill="#111827">Historical frame: 1980 → 2025</text>
+            <path d="M78 120 C120 70 150 230 190 160 S260 90 300 185 S370 260 410 145 S470 80 506 240 S548 205 565 168" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+            <rect x="500" y="62" width="54" height="210" rx="8" fill="#fee2e2" opacity=".8"/>
+            <text x="512" y="84" font-size="12" font-weight="800" fill="#991b1b">2024</text>
+            <text x="78" y="325" font-size="12" fill="#64748b">1980</text><text x="292" y="325" font-size="12" fill="#64748b">2000</text><text x="530" y="325" font-size="12" fill="#64748b">2025</text>
+            <text x="115" y="78" font-size="12" font-weight="800" fill="#334155">recovery</text><text x="260" y="220" font-size="12" font-weight="800" fill="#334155">drought cycle</text><text x="360" y="126" font-size="12" font-weight="800" fill="#334155">policy / supply response</text>
+            <text x="300" y="278" font-size="14" font-weight="800" fill="#111827">Short data windows can create false certainty.</text>
+          </svg>
+          <figcaption>Approximate indexed teaching model anchored to reported crisis values.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-step demand">
+        <div class="story-copy">
+          <span class="step-number">Step 3</span>
+          <h3>Recovery did not remove long-term pressure.</h3>
+          <p>Population, consumption, and urban demand can compound even after reservoirs recover.</p>
+          <p class="model-note">Exponential model: D(t) = 100(1 + r)<sup>t</sup>.</p>
+          <strong class="investigation-question">What compounds over time?</strong>
+        </div>
+        <figure class="story-visual">
+          <svg viewBox="0 0 620 360" role="img" aria-label="Demand pressure and supply response graph">
+            <rect width="620" height="360" rx="22" fill="#fff"/>
+            <path d="M70 50V292H570" fill="none" stroke="#94a3b8" stroke-width="2"/>
+            <g stroke="#e2e8f0" stroke-width="1"><path d="M70 242H570"/><path d="M70 192H570"/><path d="M70 142H570"/><path d="M70 92H570"/></g>
+            <text x="70" y="28" font-size="20" font-weight="800" fill="#111827">Normalized index, 2025 = 100</text>
+            <path d="M84 230 C170 222 260 204 350 170 C438 137 500 94 558 54" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+            <path d="M84 230 L558 150" fill="none" stroke="#15803d" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="394" cy="163" r="8" fill="#111827"/><path d="M394 50V292" stroke="#111827" stroke-width="2" stroke-dasharray="6 7"/>
+            <text x="410" y="157" font-size="13" font-weight="800" fill="#111827">threshold</text><text x="454" y="78" font-size="14" font-weight="800" fill="#2563eb">demand compounds</text><text x="350" y="205" font-size="14" font-weight="800" fill="#15803d">supply responds slowly</text>
+            <text x="84" y="325" font-size="12" fill="#64748b">2025</text><text x="528" y="325" font-size="12" fill="#64748b">2050</text>
+          </svg>
+          <figcaption>Demand and infrastructure do not move at the same speed.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-step limits">
+        <div class="story-copy">
+          <span class="step-number">Step 4</span>
+          <h3>Some growth becomes physically impossible.</h3>
+          <p>Reservoirs, storage, treatment, transport, and environmental recovery have capacity limits and realistic domains.</p>
+          <p class="model-note">Polynomial thinking: extrema, turning points, end behavior, constraints.</p>
+          <strong class="investigation-question">Where does the graph stop making physical sense?</strong>
+        </div>
+        <figure class="story-visual">
+          <svg viewBox="0 0 620 360" role="img" aria-label="Physical limits and nonlinear storage graph">
+            <rect width="620" height="360" rx="22" fill="#fff"/>
+            <path d="M70 50V292H570" fill="none" stroke="#94a3b8" stroke-width="2"/>
+            <g stroke="#e2e8f0" stroke-width="1"><path d="M70 242H570"/><path d="M70 192H570"/><path d="M70 142H570"/><path d="M70 92H570"/></g>
+            <text x="70" y="28" font-size="20" font-weight="800" fill="#111827">Storage stability is nonlinear</text>
+            <path d="M85 210 C165 85 240 85 295 165 S405 292 500 115 S565 128 572 144" fill="none" stroke="#7e22ce" stroke-width="5" stroke-linecap="round"/>
+            <path d="M70 104H570" stroke="#ef4444" stroke-width="2" stroke-dasharray="7 7"/><path d="M70 250H570" stroke="#ef4444" stroke-width="2" stroke-dasharray="7 7"/>
+            <text x="452" y="95" font-size="13" font-weight="800" fill="#991b1b">upper physical limit</text><text x="418" y="272" font-size="13" font-weight="800" fill="#991b1b">critical low threshold</text>
+            <circle cx="214" cy="93" r="7" fill="#7e22ce"/><circle cx="388" cy="273" r="7" fill="#7e22ce"/><circle cx="504" cy="115" r="7" fill="#7e22ce"/>
+            <text x="130" y="72" font-size="13" font-weight="800" fill="#111827">local maximum</text><text x="310" y="293" font-size="13" font-weight="800" fill="#111827">local minimum</text><text x="100" y="325" font-size="12" fill="#64748b">realistic domain only</text>
+          </svg>
+          <figcaption>The polynomial is a local model for structure, not a forever prediction.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-step synthesis">
+        <div class="story-copy">
+          <span class="step-number">Step 5</span>
+          <h3>The question changed.</h3>
+          <p>The investigation is no longer “Will water run out tomorrow?” It becomes: “When does pressure exceed capacity, and which assumptions make that prediction fragile?”</p>
+          <p class="model-note">Synthesis: compare incomplete explanations inside one evolving system.</p>
+        </div>
+        <div class="synthesis-board">
+          <p><strong>Short window:</strong> danger looks inevitable.</p>
+          <p><strong>Historical frame:</strong> fluctuation and recovery appear.</p>
+          <p><strong>Demand model:</strong> future pressure compounds.</p>
+          <p><strong>Physical limits:</strong> capacity and domains matter.</p>
+          <p><strong>Final insight:</strong> no single equation fully explains the system.</p>
+        </div>
+      </article>
+
+      <div class="source-note">
+        Sources used for the case anchors: <a href="https://bogota.gov.co/mi-ciudad/habitat/racionamiento-de-agua-en-bogota-asi-fue-el-consumo-en-abril-de-2024">Bogotá April 2024 reservoir reports</a>, <a href="https://bogota.gov.co/mi-ciudad/habitat/racionamiento-de-agua-en-bogota-consumo-viernes-28-de-junio-2024">Bogotá June 2024 report</a>, <a href="https://bogota.gov.co/mi-ciudad/habitat/niveles-embalses-por-racionamiento-de-agua-bogota-viernes-11-de-abril">Bogotá April 2025 report</a>, <a href="https://bogota.gov.co/mi-ciudad/habitat/racionamiento-de-agua-que-municipios-dependen-del-sistema-chingaza">Chingaza supply context</a>, and <a href="https://www.dane.gov.co/files/investigaciones/fichas/Proyecciones_poblacion.pdf">DANE population projection methodology</a>.
       </div>
-      <div class="question-grid">
-        <article>
-          <h3>Demand</h3>
-          <p>When does growth outpace supply?</p>
-        </article>
-        <article>
-          <h3>Climate</h3>
-          <p>How do changing rainfall patterns reshape systems?</p>
-        </article>
-        <article>
-          <h3>Price</h3>
-          <p>What happens when small increases compound over time?</p>
-        </article>
-        <article>
-          <h3>Movement</h3>
-          <p>How does transportation failure spread through a system?</p>
-        </article>
-        <article>
-          <h3>Capacity</h3>
-          <p>What happens when physical systems reach their limits?</p>
-        </article>
-      </div>
-      <p class="hook-line">This project uses Algebra 2 to investigate those questions through modeling, graph analysis, comparison, critique, and revision.</p>
     </section>
 
     <section class="section dashboard-section active home-dashboard" data-dashboard-tab="overview">
@@ -98,48 +199,12 @@
       </div>
       <div class="dashboard-card-grid">
         <button class="dashboard-card dashboard-link" type="button" data-tab="scenarios"><span>01</span><strong>Start the Investigation</strong><small>Choose a system under pressure.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="scenarios"><span>02</span><strong>Explore Scenarios</strong><small>Find a focused, measurable question.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="roadmap"><span>03</span><strong>View Roadmap</strong><small>See the five-class modeling arc.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="journal"><span>04</span><strong>Open Journal</strong><small>Use the field notebook system.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="roadmap"><span>02</span><strong>View Roadmap</strong><small>See the five-class modeling arc.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="lenses"><span>03</span><strong>Use Lenses</strong><small>Choose math that reveals something.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="journal"><span>04</span><strong>Open Journal</strong><small>Make thinking visible.</small></button>
         <a class="dashboard-card" href="tracker/"><span>05</span><strong>Launch Tracker</strong><small>Document live progress and named notes.</small></a>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>06</span><strong>Flint Cognitive Companion</strong><small>Use AI for critique and revision.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>06</span><strong>Critique + Verify</strong><small>Use AI and model fit carefully.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="rubric"><span>07</span><strong>View Rubric</strong><small>Understand how reasoning is assessed.</small></button>
-      </div>
-    </section>
-
-    <section class="section collaboration-section dashboard-section active philosophy-snapshot" data-dashboard-tab="overview">
-      <div class="section-header">
-        <p class="eyebrow">Modeling Philosophy</p>
-        <h2>Mathematics helps us reason through uncertainty.</h2>
-      </div>
-      <div class="principle-grid">
-        <article>
-          <h3>Models Reveal. Models Hide.</h3>
-          <p>Different mathematical structures reveal different parts of reality.</p>
-        </article>
-        <article>
-          <h3>Revision Is Evidence of Learning.</h3>
-          <p>Changing a model means your understanding evolved.</p>
-        </article>
-        <article>
-          <h3>Strong Thinkers Verify.</h3>
-          <p>Graphs reveal patterns, but they do not automatically prove truth.</p>
-        </article>
-        <article>
-      </div>
-    </section>
-
-    <section class="section anchor-section dashboard-section active ecosystem-strip" data-dashboard-tab="overview" aria-label="Project ecosystem">
-      <div class="section-header">
-        <p class="eyebrow">Your Investigation Toolkit</p>
-        <h2>Use the right tool for the thinking you need.</h2>
-      </div>
-      <div class="ecosystem-grid">
-        <article><strong>Website</strong><span>project hub</span></article>
-        <article><strong>Journal</strong><span>field notebook</span></article>
-        <article><strong>Tracker</strong><span>live progress workspace</span></article>
-        <article><strong>Flint</strong><span>cognitive partner</span></article>
-        <article><strong>Rubric</strong><span>assessment guide</span></article>
       </div>
     </section>
 

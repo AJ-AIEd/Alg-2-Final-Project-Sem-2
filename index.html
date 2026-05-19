@@ -30,7 +30,7 @@
           <span class="nav-zone-label">Build</span>
           <button class="dashboard-tab" type="button" data-tab="lenses" data-zone="build" role="tab" aria-selected="false">Models</button>
           <button class="dashboard-tab" type="button" data-tab="journal" data-zone="build" role="tab" aria-selected="false">Notebook</button>
-          <button class="dashboard-tab" type="button" data-tab="ai-fit" data-zone="build" role="tab" aria-selected="false">Challenge the Model</button>
+          <button class="dashboard-tab" type="button" data-tab="ai-fit" data-zone="build" role="tab" aria-selected="false">Test Your Model</button>
         </div>
         <div class="nav-zone" data-zone="synthesize">
           <span class="nav-zone-label">Synthesize</span>
@@ -115,6 +115,8 @@
         </figure>
       </article>
 
+      <details class="quiet-details reveal-sequence">
+        <summary>Open later: zoom out, add pressure, test limits, and synthesize</summary>
       <article class="story-step zoom">
         <div class="story-copy">
           <span class="step-number">Step 2</span>
@@ -207,6 +209,7 @@
       <div class="source-note">
         Sources used for the case anchors: <a href="https://bogota.gov.co/mi-ciudad/habitat/racionamiento-de-agua-en-bogota-asi-fue-el-consumo-en-abril-de-2024">Bogotá April 2024 reservoir reports</a>, <a href="https://bogota.gov.co/mi-ciudad/habitat/racionamiento-de-agua-en-bogota-consumo-viernes-28-de-junio-2024">Bogotá June 2024 report</a>, <a href="https://bogota.gov.co/mi-ciudad/habitat/niveles-embalses-por-racionamiento-de-agua-bogota-viernes-11-de-abril">Bogotá April 2025 report</a>, <a href="https://bogota.gov.co/mi-ciudad/habitat/racionamiento-de-agua-que-municipios-dependen-del-sistema-chingaza">Chingaza supply context</a>, and <a href="https://www.dane.gov.co/files/investigaciones/fichas/Proyecciones_poblacion.pdf">DANE population projection methodology</a>.
       </div>
+      </details>
     </section>
 
     <section class="section dashboard-section active home-dashboard" data-dashboard-tab="overview">
@@ -219,7 +222,7 @@
         <button class="dashboard-card dashboard-link" type="button" data-tab="roadmap"><span>02</span><strong>View Timeline</strong><small>See the five-class modeling arc.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="lenses"><span>03</span><strong>Build Models</strong><small>Choose math that reveals something.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="journal"><span>04</span><strong>Open Notebook</strong><small>Make thinking visible.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>05</span><strong>Challenge the Model</strong><small>Use AI and model fit carefully.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>05</span><strong>Test Your Model</strong><small>Check whether your graph actually makes sense.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="progress"><span>06</span><strong>Open Progress Tracker</strong><small>Document live progress and named notes.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="rubric"><span>07</span><strong>View Evidence</strong><small>Understand how reasoning is assessed.</small></button>
       </div>
@@ -293,6 +296,15 @@
         <h3>Strong Focus Test</h3>
         <p>A strong investigation usually includes one main changing quantity, one measurable relationship, one prediction or threshold question, one physical or cost constraint, and one clear connection across mathematical lenses.</p>
       </div>
+      <details class="quiet-details source-defense-preview">
+        <summary>Source Defense: how you decide what evidence matters</summary>
+        <div class="source-defense-grid">
+          <article><strong>Possible Variables</strong><span>Reservoir percentage, rainfall, consumption, population growth, infrastructure capacity, drought severity, rationing dates, conservation behavior.</span></article>
+          <article><strong>Possible Source Types</strong><span>Government dashboards, public datasets, news reporting, climate organizations, scientific reporting, and international organizations.</span></article>
+          <article><strong>Source Defense Questions</strong><span>What does this data measure? What does it ignore? Would another source or timeframe tell a different story?</span></article>
+        </div>
+        <p class="policy-line">AI can help you find possible evidence. You must check the original source and decide whether it is trustworthy.</p>
+      </details>
     </section>
 
     <section class="section dashboard-section" id="roadmap" data-dashboard-tab="roadmap" hidden>
@@ -302,18 +314,30 @@
         <p>Each phase adds a new kind of evidence.</p>
       </div>
       <div class="orchestration-strip">
-        <strong>Core routine:</strong>
+        <strong>What to do each phase:</strong>
         <span>Observe a pattern</span>
         <span>Build an early model</span>
         <span>Encounter contradiction</span>
         <span>Revise assumptions</span>
         <span>Defend a more responsible interpretation</span>
       </div>
+      <details class="quiet-details produce-panel" open>
+        <summary>What You Must Produce</summary>
+        <div class="deliverable-grid compact-deliverables">
+          <article><strong>Notebook</strong><span>Visible sketches, equations, graph annotations, revisions, and short investigation logs.</span></article>
+          <article><strong>Progress Updates</strong><span>Named notes showing what changed, who contributed, and what needs feedback.</span></article>
+          <article><strong>Models + Graphs</strong><span>Sequence, exponential/threshold, polynomial/model-limits, and at least one comparison.</span></article>
+          <article><strong>Source Defense</strong><span>Explain where data came from, what it measures, and what it leaves out.</span></article>
+          <article><strong>Reflection Vlogs</strong><span>Short recorded conversations about revision, disagreement, uncertainty, and next questions.</span></article>
+          <article><strong>Final Communication</strong><span>A clear mathematical claim with evidence, limitations, and responsible model choice.</span></article>
+        </div>
+      </details>
       <div class="phase-stack">
         <article class="phase-card">
           <div class="phase-meta">Class 1</div>
           <h3>Entering the System</h3>
           <p class="phase-question">What relationships are we beginning to notice?</p>
+          <div class="math-phase-box"><strong>Mathematics in this phase:</strong> variables, units, rough graphs, source measures, suspected relationships, and first predictions.</div>
           <div class="phase-grid">
             <p><strong>Conceptual move:</strong> Notice relationships before choosing equations.</p>
             <p><strong>Modeling question:</strong> Which variables seem connected, and which are hard to measure?</p>
@@ -327,6 +351,7 @@
           <div class="phase-meta">Class 2</div>
           <h3>Modeling Change</h3>
           <p class="phase-question">How is the system changing over time?</p>
+          <div class="math-phase-box"><strong>Mathematics in this phase:</strong> recursive reasoning, arithmetic/geometric patterns, explicit formulas, prediction, and graph interpretation.</div>
           <div class="phase-grid">
             <p><strong>Conceptual move:</strong> Represent repeated change with terms, formulas, and accumulated totals.</p>
             <p><strong>Modeling question:</strong> Is change happening in steps, continuously, additively, or multiplicatively?</p>
@@ -351,6 +376,7 @@
           <div class="phase-meta">Class 3</div>
           <h3>Acceleration, Decay, and Thresholds</h3>
           <p class="phase-question">When does repeated change become accelerated or compounding?</p>
+          <div class="math-phase-box"><strong>Mathematics in this phase:</strong> exponential growth/decay, logarithms, thresholds, intersections, regression comparison, and long-term prediction critique.</div>
           <div class="phase-grid">
             <p><strong>Conceptual move:</strong> Model compounding, decay, and threshold moments.</p>
             <p><strong>Modeling question:</strong> What changes when growth is treated as continuous rather than sampled in steps?</p>
@@ -375,6 +401,7 @@
           <div class="phase-meta">Class 4</div>
           <h3>Constraints, Capacity, and Cost</h3>
           <p class="phase-question">How do physical and economic constraints reshape the system?</p>
+          <div class="math-phase-box"><strong>Mathematics in this phase:</strong> turning points, end behavior, local vs global behavior, polynomial regression, overfitting critique, zeros, intervals, and realistic domains.</div>
           <div class="phase-grid">
             <p><strong>Conceptual move:</strong> Use structure and graph behavior to understand constraints.</p>
             <p><strong>Modeling question:</strong> Which parts of the polynomial are physically meaningful, and which must be rejected?</p>
@@ -388,6 +415,7 @@
           <div class="phase-meta">Class 5</div>
           <h3>Revision, Synthesis, and Communication</h3>
           <p class="phase-question">What story does our mathematics tell?</p>
+          <div class="math-phase-box"><strong>Mathematics in this phase:</strong> model comparison, source defense, graph critique, equation interpretation, limitation analysis, and final claim evidence.</div>
           <div class="phase-grid">
             <p><strong>Conceptual move:</strong> Turn separate models into one mathematical claim.</p>
             <p><strong>Modeling question:</strong> What did each model reveal, and where did each stop being useful?</p>
@@ -748,60 +776,95 @@
 
     <section class="section dashboard-section" id="ai" data-dashboard-tab="ai-fit" hidden>
       <div class="section-header">
-        <p class="eyebrow">Challenge the Model</p>
-        <h2>Do not trust the first explanation.</h2>
-        <p>Use AI, graphs, statistics, and critique to test your model.</p>
+        <p class="eyebrow">Test Your Model</p>
+        <h2>A graph can look convincing and still be misleading.</h2>
+        <p>Use this page when your graph looks too perfect, your prediction feels unrealistic, two models disagree, or you are unsure what the graph means.</p>
+      </div>
+      <div class="test-routine" aria-label="Model testing routine">
+        <article><span>1</span><strong>Think First</strong><p>What do we currently believe? Which graph seems strongest? What feels uncertain?</p></article>
+        <article><span>2</span><strong>Ask Flint</strong><p>Use Flint to test your ideas, not generate final answers.</p></article>
+        <article><span>3</span><strong>Verify</strong><p>Check the source, the graph behavior, and whether the prediction makes sense.</p></article>
+        <article><span>4</span><strong>Revise</strong><p>Change the graph, equation, interpretation, or claim. Name what changed.</p></article>
       </div>
       <div class="ai-responsibility-grid">
         <article class="card">
-          <h3>Flint is epistemic friction.</h3>
-          <p>Use Flint to destabilize confidence, surface hidden assumptions, and create revision pressure.</p>
+          <h3>Use Flint to test the model.</h3>
+          <p>Ask Flint after your group has a graph, equation, source, or claim that can be challenged.</p>
         </article>
         <article class="card">
-          <h3>Human judgment remains central.</h3>
-          <p>Students remain responsible for interpretation, model choice, explanation, critique, and revision.</p>
+          <h3>You still make the decision.</h3>
+          <p>You are responsible for choosing the model, explaining the mathematics, checking the evidence, and deciding what makes sense.</p>
         </article>
       </div>
       <details class="quiet-details" open>
-        <summary>How AI fits into the investigation</summary>
+        <summary>Student prompts for Flint</summary>
         <div class="ai-grid">
           <article class="card">
-            <h3>Use Flint To Challenge</h3>
+            <h3>Hidden Assumptions</h3>
             <ul>
-              <li>What evidence weakens your conclusion?</li>
-              <li>Would this prediction still make sense if the timeframe changed?</li>
-              <li>What assumptions are invisible in this graph?</li>
-              <li>Does this equation explain the system or only imitate the data?</li>
-              <li>What variable could completely change this model?</li>
+              <li>What assumptions are hidden here?</li>
+              <li>What variable might we be missing?</li>
+              <li>Would another timeframe change the story?</li>
+              <li>What evidence would weaken this conclusion?</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Use Flint To Compare</h3>
+            <h3>Graph Behavior</h3>
             <ul>
-              <li>Why might two reasonable models disagree?</li>
-              <li>Would policymakers trust this graph?</li>
+              <li>Does this graph stop making sense later?</li>
               <li>What happens outside the observed interval?</li>
-              <li>What does this model hide?</li>
-              <li>What does the graph suggest that reality may not support?</li>
+              <li>Does this model fit globally or only locally?</li>
+              <li>Which graph feature should we interpret?</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Do Not Use AI To</h3>
+            <h3>Model Choice</h3>
             <ul>
-              <li>replace your reasoning,</li>
-              <li>generate unexplained mathematics,</li>
-              <li>complete the investigation for you,</li>
-              <li>or hide meaningful AI use.</li>
+              <li>Does this equation explain the system or only imitate the data?</li>
+              <li>Which model seems strongest mathematically?</li>
+              <li>Which model seems strongest realistically?</li>
+              <li>What should we reject or revise?</li>
             </ul>
           </article>
         </div>
       </details>
+      <details class="quiet-details">
+        <summary>Using Desmos + Flint responsibly</summary>
+        <div class="graph-workflow">
+          <strong>Think First → Sketch → Desmos → Flint → Verify → Interpret</strong>
+          <p>Sketch before software. Desmos helps test and visualize thinking. It does not replace thinking. Your graph is part of your argument.</p>
+          <ul>
+            <li>Use Desmos to enter tables, create scatterplots, test regressions, graph functions, compare models, and export screenshots.</li>
+            <li>Use Flint for mechanics: “How do we create a scatterplot?” “How do we test exponential regression?” “What does this R² output mean?”</li>
+            <li>Then verify: Does the graph make physical sense? Does it continue unrealistically? What does it hide?</li>
+          </ul>
+        </div>
+      </details>
+      <details class="quiet-details">
+        <summary>Data Transparency Policy</summary>
+        <div class="data-policy">
+          <h3>You are not graded on finding perfect datasets.</h3>
+          <p>You are graded on being honest about where data came from, how reliable it is, what assumptions you made, and what limitations your graph has.</p>
+          <p><strong>A simpler but honest model is stronger than a fake perfect model.</strong></p>
+          <div class="data-type-grid">
+            <span>Real Data</span>
+            <span>Partial Real Data</span>
+            <span>Estimated Data</span>
+            <span>Simulated Data</span>
+            <span>Hypothetical Model</span>
+          </div>
+          <div class="graph-footer-example">
+            <strong>Every graph footer:</strong>
+            <span>Data type · Source(s) · Limitations · AI support used?</span>
+          </div>
+        </div>
+      </details>
       <div class="flint-card">
         <div>
-          <p class="eyebrow">Flint AI: Mathematical Skeptic</p>
-          <h3>Use Flint after you have something to challenge.</h3>
-          <p>Flint can support source discovery, Desmos mechanics, regression testing, statistics explanations, and model comparison. It should not begin the thinking for you.</p>
-          <p><strong>Document AI Was Wrong Here moments:</strong> overconfident summaries, misleading extrapolations, inappropriate regressions, and unrealistic assumptions.</p>
+          <p class="eyebrow">Flint Support</p>
+          <h3>Think first before using Flint.</h3>
+          <p>Flint can help generate possibilities, find possible sources, explain Desmos mechanics, compare models, and identify hidden variables. You decide what is meaningful.</p>
+          <p><strong>Always check original sources.</strong> AI can help locate evidence. AI cannot decide whether evidence is trustworthy.</p>
         </div>
         <a class="button primary" href="https://app.flintk12.com/activities/systems-under-p-6bbd67/sessions/new" target="_blank" rel="noopener">Launch Flint AI</a>
       </div>
@@ -872,7 +935,7 @@
       </details>
       <div class="final-reminder">
         <h3>Final Reminder</h3>
-        <p>AI can support mathematical thinking. It cannot replace interpretation, critique, revision, contextual reasoning, or intellectual responsibility.</p>
+        <p>Flint can reduce technical struggle. It cannot choose the model, explain the mathematics, check the evidence, or decide what makes sense.</p>
         <p><strong>A model is useful, but incomplete.</strong></p>
       </div>
     </section>
@@ -892,6 +955,28 @@
         </div>
         <a class="button primary rubric-download" href="downloads/rubrics.pdf">Download the Evidence Rubric PDF</a>
       </div>
+      <div class="required-math-panel">
+        <h3>Minimum Required Mathematical Work</h3>
+        <div class="required-math-grid">
+          <article><strong>A. Repeated Change Model</strong><span>Recursive or explicit sequence, graph, prediction, interpretation, and limitation.</span></article>
+          <article><strong>B. Exponential / Threshold Model</strong><span>Exponential equation, logarithmic solving, threshold interpretation, graph, prediction, and realism critique.</span></article>
+          <article><strong>C. Polynomial / Model Limits Investigation</strong><span>Polynomial behavior, turning points, zeros, intervals, end behavior, graph features, and realism critique.</span></article>
+          <article><strong>D. Model Comparison</strong><span>Compare at least two models and explain which became stronger, weaker, or more responsible to use.</span></article>
+          <article><strong>E. Equation Solving + Prediction</strong><span>Solve equations, estimate thresholds, predict future values, compare outputs, and critique extrapolation.</span></article>
+          <article><strong>F. Source Defense</strong><span>Justify at least one source and explain what it measures, ignores, and changes about your graph.</span></article>
+        </div>
+      </div>
+      <details class="quiet-details graph-checklist" open>
+        <summary>Global graph / model checklist</summary>
+        <ul class="checklist">
+          <li><span class="box" aria-hidden="true"></span><span>Equation or model with variables defined.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Graph with data type, source(s), and realistic domain.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Key feature interpretation: slope/rate, intercept, threshold, turning point, interval, asymptote, R², or domain restriction.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Prediction or threshold calculation with units.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Limitation: what this graph hides, simplifies, or gets wrong outside the interval.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Flint used? Say yes/no and what you accepted, rejected, or verified.</span></li>
+        </ul>
+      </details>
     </section>
 
     <section class="section dashboard-section progress-section" id="progress" data-dashboard-tab="progress" hidden>
@@ -904,7 +989,7 @@
         <div>
           <h3>Open the live investigation tracker</h3>
           <p>Use the tracker to record what your group has completed, what changed in your thinking, who contributed notes, and which checkpoint needs feedback.</p>
-          <p><strong>Progress is not only completion.</strong> Track changed assumptions, revised claims, rejected models, AI disagreements, uncertainty notes, and model audits.</p>
+          <p><strong>Progress is not only completion.</strong> Track changed assumptions, revised claims, rejected models, AI disagreements, graph updates, source decisions, uncertainty notes, and model audits.</p>
         </div>
         <div class="tracker-actions">
           <a class="button primary" href="https://systems-under-pressure.vercel.app">Open Progress Tracker</a>
@@ -923,6 +1008,17 @@
         <strong>Example progress note:</strong>
         <span>“We no longer trust our original exponential projection because the recovery rate changed after rainfall increased.”</span>
       </div>
+      <details class="quiet-details graph-checklist" open>
+        <summary>What a useful progress update includes</summary>
+        <ul class="checklist">
+          <li><span class="box" aria-hidden="true"></span><span>What mathematics are we using?</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Which graph feature matters most?</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Which equation or model currently seems strongest?</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Which model became weaker?</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>What mathematical assumption failed?</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>What changed our interpretation?</span></li>
+        </ul>
+      </details>
     </section>
 
     <section class="section downloads-section dashboard-section" id="downloads" data-dashboard-tab="downloads" hidden>

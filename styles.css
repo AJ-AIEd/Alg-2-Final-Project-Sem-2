@@ -500,7 +500,10 @@ blockquote cite {
 .model-audit,
 .overfitting-trap,
 .ai-wrong-card,
-.tracker-example {
+.tracker-example,
+.math-phase-box,
+.required-math-panel,
+.source-defense-preview {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 1.15rem 1.25rem;
@@ -521,6 +524,69 @@ blockquote cite {
   color: #334155;
   font-size: .86rem;
   font-weight: 800;
+}
+.produce-panel {
+  margin-bottom: 1.35rem;
+}
+.reveal-sequence {
+  margin-top: 1.2rem;
+}
+.reveal-sequence[open] {
+  padding-bottom: 1.2rem;
+}
+.reveal-sequence > summary {
+  font-size: 1rem;
+}
+.compact-deliverables {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+.compact-deliverables article,
+.required-math-grid article,
+.source-defense-grid article {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: .95rem;
+  background: #f8fafc;
+}
+.compact-deliverables strong,
+.compact-deliverables span,
+.required-math-grid strong,
+.required-math-grid span,
+.source-defense-grid strong,
+.source-defense-grid span {
+  display: block;
+}
+.compact-deliverables span,
+.required-math-grid span,
+.source-defense-grid span {
+  margin-top: .35rem;
+  color: #475569;
+  line-height: 1.45;
+}
+.math-phase-box {
+  margin: .85rem 0 1rem;
+  background: #f8fafc;
+  border-left: 6px solid var(--blue);
+  box-shadow: none;
+  color: #334155;
+  line-height: 1.55;
+}
+.source-defense-grid,
+.required-math-grid,
+.data-type-grid,
+.test-routine {
+  display: grid;
+  gap: .9rem;
+}
+.source-defense-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1rem 0;
+}
+.policy-line {
+  margin-bottom: 0;
+  font-weight: 800;
+  color: #0f766e;
 }
 .model-thesis {
   display: grid;
@@ -631,6 +697,84 @@ blockquote cite {
 .tracker-example {
   margin-top: 1rem;
   background: #f8fafc;
+}
+.test-routine {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 1.2rem;
+}
+.test-routine article {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+.test-routine span {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: .7rem;
+}
+.test-routine strong,
+.test-routine p { display: block; }
+.test-routine p {
+  color: #475569;
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+.graph-workflow,
+.data-policy {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem;
+  background: #f8fafc;
+}
+.graph-workflow strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: .55rem;
+}
+.data-type-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 1rem 0;
+}
+.data-type-grid span {
+  display: grid;
+  place-items: center;
+  min-height: 62px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  text-align: center;
+  font-weight: 900;
+  color: #334155;
+}
+.graph-footer-example {
+  border-radius: 12px;
+  padding: .9rem;
+  background: #fff7ed;
+  color: #7c2d12;
+}
+.graph-footer-example strong,
+.graph-footer-example span { display: block; }
+.required-math-panel {
+  margin-top: 1.2rem;
+  background: #ffffff;
+}
+.required-math-panel h3 {
+  margin-bottom: 1rem;
+}
+.required-math-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.graph-checklist {
+  margin-top: 1.2rem;
 }
 .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .rubric-grid, .download-grid, .scenario-grid, .collab-grid, .comparison-grid {
   display: grid;
@@ -1684,7 +1828,7 @@ details[open] summary {
   .story-step:nth-of-type(even) .story-copy,
   .story-step:nth-of-type(even) .story-visual { order: initial; }
   .hero-art { min-height: 0; }
-  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr 1fr; }
+  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr 1fr; }
   .flint-card, .rubric-single-card, .tracker-panel, .model-thesis, .overfitting-trap { grid-template-columns: 1fr; }
   .audit-grid, .log-grid { grid-template-columns: 1fr 1fr; }
   .journal-layout { grid-template-columns: 1fr; }
@@ -1700,7 +1844,7 @@ details[open] summary {
   .story-copy { padding: .9rem; }
   .story-visual { border-radius: 16px; }
   h1 { font-size: 2.85rem; line-height: 1.03; }
-  .principle-grid, .deliverable-grid, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr; }
+  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr; }
   .audit-grid, .log-grid { grid-template-columns: 1fr; }
   .question-grid article, .dashboard-card { min-height: auto; }
   .vlog-prompts ul { columns: 1; }

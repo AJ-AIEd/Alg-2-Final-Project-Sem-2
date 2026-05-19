@@ -277,6 +277,18 @@ blockquote cite {
   font-weight: 850;
   color: var(--ink);
 }
+.start-question {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 .85rem;
+  padding: .55rem .75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #7c2d12;
+  font-weight: 900;
+  box-shadow: var(--shadow-soft);
+}
 .page-subtitle {
   max-width: 620px;
   margin: -.25rem 0 1rem;
@@ -704,17 +716,32 @@ blockquote cite {
   gap: .9rem;
   margin-top: 1.2rem;
 }
+.home-role-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .9rem;
+  margin-top: 1.2rem;
+}
 .ecosystem-roles article {
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: .95rem;
   background: #ffffff;
 }
+.home-role-strip article {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  background: #f8fafc;
+}
 .ecosystem-roles strong,
-.ecosystem-roles span {
+.ecosystem-roles span,
+.home-role-strip strong,
+.home-role-strip span {
   display: block;
 }
-.ecosystem-roles span {
+.ecosystem-roles span,
+.home-role-strip span {
   color: #475569;
   margin-top: .35rem;
   line-height: 1.35;
@@ -1849,7 +1876,7 @@ details[open] summary {
   .story-step:nth-of-type(even) .story-copy,
   .story-step:nth-of-type(even) .story-visual { order: initial; }
   .hero-art { min-height: 0; }
-  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr 1fr; }
+  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .home-role-strip, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr 1fr; }
   .flint-card, .rubric-single-card, .tracker-panel, .model-thesis, .overfitting-trap { grid-template-columns: 1fr; }
   .audit-grid, .log-grid { grid-template-columns: 1fr 1fr; }
   .journal-layout { grid-template-columns: 1fr; }
@@ -1865,7 +1892,7 @@ details[open] summary {
   .story-copy { padding: .9rem; }
   .story-visual { border-radius: 16px; }
   h1 { font-size: 2.85rem; line-height: 1.03; }
-  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr; }
+  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .home-role-strip, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr; }
   .audit-grid, .log-grid { grid-template-columns: 1fr; }
   .question-grid article, .dashboard-card { min-height: auto; }
   .vlog-prompts ul { columns: 1; }

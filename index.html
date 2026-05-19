@@ -396,26 +396,26 @@
         <article class="checkpoint-card purple">
           <div class="phase-meta">Formative Checkpoint 2 · Beginning of Class 4</div>
           <h3>Polynomial + Physical Constraints Check-In</h3>
-          <p class="phase-question">Are physical constraints becoming visible mathematically?</p>
+          <p class="phase-question">When does the system stop behaving simply?</p>
           <div class="phase-grid">
-            <p><strong>Purpose:</strong> Confirm students understand why the polynomial model exists before final synthesis begins.</p>
-            <p><strong>Students show:</strong> blueprint or sketch, dimensions, polynomial model, graph, annotations, early interpretation, and domain reasoning.</p>
-            <p><strong>Students explain:</strong> why the relationship is polynomial, what zeros and y-intercepts mean, what turning points mean physically, and which regions are unrealistic.</p>
-            <p><strong>Teacher feedback focus:</strong> Factor interpretation, quadratic vs cubic behavior, overfitting, end behavior, constraints, realism, and model comparison.</p>
+            <p><strong>Purpose:</strong> Confirm the polynomial is a meaningful model choice, not a decorative curve.</p>
+            <p><strong>Students show:</strong> one polynomial model or comparison, graph, variable definitions, data type, source or scenario basis, and realistic interval.</p>
+            <p><strong>Students explain:</strong> what one feature means: zero, threshold intersection, y-intercept, turning point, multiplicity, interval, or end behavior.</p>
+            <p><strong>Teacher feedback focus:</strong> Does the polynomial explain turning behavior, thresholds, instability, recovery, or model failure? Did students reject an irresponsible model or interval?</p>
           </div>
         </article>
         <article class="phase-card purple">
           <div class="phase-meta">Class 4</div>
-          <h3>Constraints, Capacity, and Cost</h3>
-          <p class="phase-question">How do physical and economic constraints reshape the system?</p>
+          <h3>When does the system stop behaving simply?</h3>
+          <p class="phase-question">Use polynomial models when your system bends, turns, crosses thresholds, stabilizes, or becomes unrealistic outside an interval.</p>
           <div class="math-phase-box"><strong>Mathematics in this phase:</strong> turning points, end behavior, local vs global behavior, polynomial regression, overfitting critique, zeros, intervals, and realistic domains.</div>
           <div class="phase-grid">
-            <p><strong>Conceptual move:</strong> Use structure and graph behavior to understand constraints.</p>
-            <p><strong>Modeling question:</strong> Which parts of the polynomial are physically meaningful, and which must be rejected?</p>
-            <p><strong>Thinking shift:</strong> From “bigger is better” to tradeoffs, extrema, and restricted domains.</p>
-            <p><strong>Focus:</strong> Polynomial structure, capacity, cost, physical interpretation.</p>
-            <p><strong>Vlog:</strong> Explain which polynomial fit looked strongest, which became misleading, and what happened outside the interval.</p>
-            <p><strong>Stop and synthesize:</strong> Where did simpler models stop working, and which polynomial was most responsible to use?</p>
+            <p><strong>Think first:</strong> Where does the graph bend, turn, peak, flatten, cross a threshold, or stop making sense?</p>
+            <p><strong>Use Flint:</strong> Ask for possible quadratic, cubic, quartic, or higher-degree interpretations in your context.</p>
+            <p><strong>Verify:</strong> Test in Desmos. Check whether features are meaningful or decorative, and whether the model overfits.</p>
+            <p><strong>Decide:</strong> Choose the most responsible polynomial model, explain why this degree makes sense, and reject one model or interval.</p>
+            <p><strong>Vlog:</strong> Explain which feature matters, what you solved, and where the polynomial fails.</p>
+            <p><strong>Stop and synthesize:</strong> Does this polynomial explain the system, or only imitate the points?</p>
           </div>
         </article>
         <article class="phase-card">
@@ -457,9 +457,9 @@
           <p>Use this lens for growth factors, thresholds, logarithmic solving, and model breakdown.</p>
         </article>
         <article class="comparison-card purple">
-          <h3>Polynomials</h3>
-          <p><strong>Big question:</strong> Why did simpler models stop working?</p>
-          <p>Use this lens when systems bend, reverse, stabilize, overshoot, or show multiple competing pressures.</p>
+          <h3>When does the system stop behaving simply?</h3>
+          <p><strong>Big question:</strong> What polynomial behavior could meaningfully model this system?</p>
+          <p>Use polynomial models when your system bends, turns, crosses thresholds, stabilizes, or becomes unrealistic outside an interval.</p>
         </article>
         <article class="comparison-card">
           <h3>Responsible Model Choice</h3>
@@ -491,6 +491,61 @@
           <span>Critique realism, domain validity, physical meaning, extrapolation, and interpretability.</span>
         </div>
       </div>
+      <section class="polynomial-modeling-panel" aria-labelledby="polynomial-modeling-title">
+        <div class="section-header compact-header">
+          <p class="eyebrow">Polynomial Modeling</p>
+          <h3 id="polynomial-modeling-title">Polynomials are not just curves.</h3>
+          <p>A polynomial is only useful if its features mean something in the system.</p>
+        </div>
+        <div class="test-routine polynomial-routine">
+          <article><span>1</span><strong>Think First</strong><p>Where does our graph bend, turn, peak, flatten, or cross a threshold? What intervals actually make sense?</p></article>
+          <article><span>2</span><strong>Use Flint</strong><p>Ask Flint to suggest possible quadratic, cubic, quartic, or higher-degree interpretations for your system.</p></article>
+          <article><span>3</span><strong>Verify</strong><p>Test models in Desmos. Check fit, impossible values, overfitting, and whether features are meaningful.</p></article>
+          <article><span>4</span><strong>Decide</strong><p>Choose the most responsible model. Explain why this degree makes sense and why another model or interval was rejected.</p></article>
+        </div>
+        <div class="flint-prompt-card">
+          <h4>Flint prompt</h4>
+          <p>“Our system is ____. Help us explore what polynomial models could represent this behavior. Suggest possible quadratic, cubic, quartic, or higher-degree models. Explain what zeros, multiplicity, turning points, y-intercepts, intervals, and end behavior could mean in our context.”</p>
+        </div>
+        <div class="poly-options-grid">
+          <article><h4>Quadratic</h4><p>Best for optimization, maximum/minimum, diminishing returns, and tradeoffs.</p><span>Examples: fertilizer vs yield, refrigeration cost vs spoilage reduction, transportation speed vs food loss, local price spike.</span></article>
+          <article><h4>Cubic</h4><p>Best for reversal, recovery, instability, and crossing thresholds.</p><span>Examples: reservoir decline → recovery → renewed vulnerability; price spike → stabilization → renewed increase.</span></article>
+          <article><h4>Quartic / Higher Degree</h4><p>Best for multiple turning points, repeated instability, competing pressures, and overfitting critique.</p><span>Important: higher degree may fit better but explain less.</span></article>
+        </div>
+        <div class="poly-feature-grid">
+          <article><strong>Zeros</strong><span>Depletion, break-even, supply-demand balance, policy threshold, or transition between surplus and deficit.</span></article>
+          <article><strong>P(x)=k</strong><span>Crossing a real threshold: safe reservoir level, emergency level, price stress level, minimum production, or spoilage limit.</span></article>
+          <article><strong>Y-intercept</strong><span>Initial system condition.</span></article>
+          <article><strong>Turning points</strong><span>Peak, low point, recovery point, saturation, instability, maximum pressure, or minimum stability.</span></article>
+          <article><strong>Multiplicity</strong><span>Touching a threshold without crossing it, temporary stabilization, or fragile balance.</span></article>
+          <article><strong>End behavior / domain</strong><span>Use this to critique unrealistic long-term predictions and name where the model stops making sense.</span></article>
+        </div>
+        <details class="quiet-details" open>
+          <summary>Required polynomial tasks</summary>
+          <ul class="checklist">
+            <li><span class="box" aria-hidden="true"></span><span>One polynomial model or polynomial comparison.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>At least one interpreted feature: zero, threshold intersection, y-intercept, turning point, multiplicity, interval, or end behavior.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>One equation evaluated or solved at specific points in context, such as P(x)=k or P(x)=Q(x).</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>One model limitation.</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>One rejected polynomial or rejected interval.</span></li>
+          </ul>
+        </details>
+        <details class="quiet-details">
+          <summary>Polynomial operations that support modeling</summary>
+          <div class="poly-operations-grid">
+            <article><strong>Add / subtract</strong><span>Combine or compare pressures. Example: net pressure = demand pressure - recovery effect.</span></article>
+            <article><strong>Multiply factors</strong><span>Build from meaningful transition times, interventions, or threshold crossings.</span></article>
+            <article><strong>Long division</strong><span>Check whether a proposed transition point actually belongs to the model: if x=a matters, does (x-a) divide evenly?</span></article>
+            <article><strong>Remainder</strong><span>Use a remainder as evidence that a proposed factor or threshold is not exact.</span></article>
+          </div>
+        </details>
+        <div class="poly-example-grid">
+          <article><h4>Water system</h4><p>Cubic or quartic local fit for decline, recovery, and instability. Solve P(t)=critical threshold. Limitation: local reservoir behavior is not a forever prediction.</p></article>
+          <article><h4>Food prices</h4><p>Quadratic for a local price spike. Vertex = peak pressure. Solve P(t)=stress threshold. Limitation: outside the window, prices may not curve symmetrically.</p></article>
+          <article><h4>Coffee production</h4><p>Cubic for decline and rebound. Turning point = recovery shift. Multiplicity could mean touching a production threshold without sustained recovery.</p></article>
+          <article><h4>Transportation and food loss</h4><p>Quadratic or cubic for spoilage increasing with delay. Solve P(h)=unacceptable loss threshold. Limitation: delay is not the only variable.</p></article>
+        </div>
+      </section>
     </section>
 
     <section class="section comparison-section dashboard-section" id="comparisons" data-dashboard-tab="lenses" hidden>

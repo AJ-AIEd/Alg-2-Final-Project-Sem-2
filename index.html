@@ -19,18 +19,34 @@
         <span>Systems Under Pressure</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <div class="nav-links dashboard-tabs" id="nav-links" role="tablist" aria-label="Project areas">
-        <button class="dashboard-tab active" type="button" data-tab="overview" role="tab" aria-selected="true">Overview</button>
-        <button class="dashboard-tab" type="button" data-tab="scenarios" role="tab" aria-selected="false">Scenarios</button>
-        <button class="dashboard-tab" type="button" data-tab="roadmap" role="tab" aria-selected="false">Roadmap</button>
-        <button class="dashboard-tab" type="button" data-tab="lenses" role="tab" aria-selected="false">Mathematical Lenses</button>
-        <button class="dashboard-tab" type="button" data-tab="journal" role="tab" aria-selected="false">Journal</button>
-        <button class="dashboard-tab" type="button" data-tab="ai-fit" role="tab" aria-selected="false">AI + Model Fit</button>
-        <button class="dashboard-tab" type="button" data-tab="rubric" role="tab" aria-selected="false">Rubric</button>
-        <a class="dashboard-tab" href="tracker/">Tracker</a>
-        <button class="dashboard-tab download-link" type="button" data-tab="downloads" role="tab" aria-selected="false">Downloads</button>
+      <div class="nav-links dashboard-tabs" id="nav-links" role="tablist" aria-label="Investigation pathway">
+        <div class="nav-zone" data-zone="start">
+          <span class="nav-zone-label">Start</span>
+          <button class="dashboard-tab active" type="button" data-tab="overview" data-zone="start" role="tab" aria-selected="true">Start Here</button>
+          <button class="dashboard-tab" type="button" data-tab="scenarios" data-zone="start" role="tab" aria-selected="false">Systems</button>
+          <button class="dashboard-tab" type="button" data-tab="roadmap" data-zone="start" role="tab" aria-selected="false">Timeline</button>
+        </div>
+        <div class="nav-zone" data-zone="build">
+          <span class="nav-zone-label">Build</span>
+          <button class="dashboard-tab" type="button" data-tab="lenses" data-zone="build" role="tab" aria-selected="false">Models</button>
+          <button class="dashboard-tab" type="button" data-tab="journal" data-zone="build" role="tab" aria-selected="false">Notebook</button>
+          <button class="dashboard-tab" type="button" data-tab="ai-fit" data-zone="build" role="tab" aria-selected="false">Challenge the Model</button>
+        </div>
+        <div class="nav-zone" data-zone="synthesize">
+          <span class="nav-zone-label">Synthesize</span>
+          <button class="dashboard-tab" type="button" data-tab="rubric" data-zone="synthesize" role="tab" aria-selected="false">Evidence</button>
+          <button class="dashboard-tab" type="button" data-tab="progress" data-zone="synthesize" role="tab" aria-selected="false">Progress</button>
+          <button class="dashboard-tab" type="button" data-tab="downloads" data-zone="synthesize" role="tab" aria-selected="false">Resources</button>
+        </div>
       </div>
     </nav>
+    <div class="investigation-progress" aria-label="Investigation progression">
+      <span data-stage="observation">Observation</span>
+      <span data-stage="prediction">Prediction</span>
+      <span data-stage="comparison">Comparison</span>
+      <span data-stage="revision">Revision</span>
+      <span data-stage="synthesis">Synthesis</span>
+    </div>
   </header>
 
   <main id="main">
@@ -40,15 +56,16 @@
           <p class="eyebrow">Algebra 2 Cumulative Semester Final Project</p>
           <h1>Systems Under Pressure</h1>
           <p class="hero-subtitle">The Mathematics of Food Systems</p>
-          <p class="hero-claim">A convincing model can still produce a misleading conclusion.</p>
+          <p class="hero-claim">Begin with a model that might fail.</p>
+          <p class="page-subtitle">A convincing graph can still hide the missing story.</p>
           <p class="lead">Watch one real water system change meaning as the frame expands: crisis window, historical context, demand pressure, physical limits, and synthesis.</p>
           <blockquote class="hero-quote">
             “A model is useful, but incomplete.”
             <cite>adapted from George Box</cite>
           </blockquote>
           <div class="hero-actions">
-            <button class="button primary dashboard-link" type="button" data-tab="scenarios">Start the Investigation</button>
-            <a class="button secondary" href="tracker/">Launch Tracker</a>
+            <button class="button primary dashboard-link" type="button" data-tab="scenarios">Explore Systems</button>
+            <button class="button secondary dashboard-link" type="button" data-tab="progress">Open Progress Tracker</button>
           </div>
         </div>
         <div class="case-file-card">
@@ -67,7 +84,7 @@
 
     <section class="section dashboard-section active investigation-arc" data-dashboard-tab="overview">
       <div class="section-header">
-        <p class="eyebrow">Overview Investigation Arc</p>
+        <p class="eyebrow">Start Here</p>
         <h2>The model changed when the frame changed.</h2>
         <p>Do not start with the final graph. Experience why earlier models became incomplete.</p>
       </div>
@@ -198,13 +215,13 @@
         <h2>Choose the tool you need next.</h2>
       </div>
       <div class="dashboard-card-grid">
-        <button class="dashboard-card dashboard-link" type="button" data-tab="scenarios"><span>01</span><strong>Start the Investigation</strong><small>Choose a system under pressure.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="roadmap"><span>02</span><strong>View Roadmap</strong><small>See the five-class modeling arc.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="lenses"><span>03</span><strong>Use Lenses</strong><small>Choose math that reveals something.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="journal"><span>04</span><strong>Open Journal</strong><small>Make thinking visible.</small></button>
-        <a class="dashboard-card" href="tracker/"><span>05</span><strong>Launch Tracker</strong><small>Document live progress and named notes.</small></a>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>06</span><strong>Critique + Verify</strong><small>Use AI and model fit carefully.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="rubric"><span>07</span><strong>View Rubric</strong><small>Understand how reasoning is assessed.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="scenarios"><span>01</span><strong>Explore Systems</strong><small>Choose a system under pressure.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="roadmap"><span>02</span><strong>View Timeline</strong><small>See the five-class modeling arc.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="lenses"><span>03</span><strong>Build Models</strong><small>Choose math that reveals something.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="journal"><span>04</span><strong>Open Notebook</strong><small>Make thinking visible.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>05</span><strong>Challenge the Model</strong><small>Use AI and model fit carefully.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="progress"><span>06</span><strong>Open Progress Tracker</strong><small>Document live progress and named notes.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="rubric"><span>07</span><strong>View Evidence</strong><small>Understand how reasoning is assessed.</small></button>
       </div>
     </section>
 
@@ -224,9 +241,9 @@
 
     <section class="section dashboard-section" id="scenarios" data-dashboard-tab="scenarios" hidden>
       <div class="section-header">
-        <p class="eyebrow">Choose One Scenario</p>
-        <h2>Start with a real system under pressure</h2>
-        <p>Do not begin by looking for a formula. Begin by noticing quantities, relationships, and questions worth investigating.</p>
+        <p class="eyebrow">Systems</p>
+        <h2>Choose a real system under pressure.</h2>
+        <p>Start with variables, relationships, and measurable change. Do not begin by looking for a formula.</p>
       </div>
       <div class="scenario-grid">
         <article class="scenario-card">
@@ -280,9 +297,17 @@
 
     <section class="section dashboard-section" id="roadmap" data-dashboard-tab="roadmap" hidden>
       <div class="section-header">
-        <p class="eyebrow">Class Roadmap</p>
-        <h2>Five phases, one investigation</h2>
-        <p>Roadmap = conceptual flow. Open a phase when you need the next modeling move.</p>
+        <p class="eyebrow">Timeline</p>
+        <h2>Your investigation evolves over five phases.</h2>
+        <p>Each phase adds a new kind of evidence.</p>
+      </div>
+      <div class="orchestration-strip">
+        <strong>Core routine:</strong>
+        <span>Observe a pattern</span>
+        <span>Build an early model</span>
+        <span>Encounter contradiction</span>
+        <span>Revise assumptions</span>
+        <span>Defend a more responsible interpretation</span>
       </div>
       <div class="phase-stack">
         <article class="phase-card">
@@ -295,6 +320,7 @@
             <p><strong>Thinking shift:</strong> From topic choice to a measurable system relationship.</p>
             <p><strong>Focus:</strong> Observation, variables, systems thinking, uncertainty.</p>
             <p><strong>Vlog:</strong> Discuss patterns, unclear ideas, assumptions, and important variables.</p>
+            <p><strong>Stop and synthesize:</strong> What do we currently believe about this system, and what evidence do we still need?</p>
           </div>
         </article>
         <article class="phase-card green">
@@ -307,6 +333,7 @@
             <p><strong>Thinking shift:</strong> From noticing change to predicting and testing reliability.</p>
             <p><strong>Focus:</strong> Sequences, series, prediction, recalculation.</p>
             <p><strong>Vlog:</strong> Explain why the model fits and where it begins to fail.</p>
+            <p><strong>Stop and synthesize:</strong> Which short-window pattern convinced us, and what might make it fail later?</p>
           </div>
         </article>
         <article class="checkpoint-card green">
@@ -330,6 +357,7 @@
             <p><strong>Thinking shift:</strong> From prediction to threshold interpretation and model breakdown.</p>
             <p><strong>Focus:</strong> Exponential models, logarithmic solving, realism.</p>
             <p><strong>Vlog:</strong> Explain what the graph reveals and when exponential behavior stops making sense.</p>
+            <p><strong>Stop and synthesize:</strong> Which threshold changed our interpretation, and which assumption became dangerous?</p>
           </div>
         </article>
         <article class="checkpoint-card purple">
@@ -339,8 +367,8 @@
           <div class="phase-grid">
             <p><strong>Purpose:</strong> Confirm students understand why the polynomial model exists before final synthesis begins.</p>
             <p><strong>Students show:</strong> blueprint or sketch, dimensions, polynomial model, graph, annotations, early interpretation, and domain reasoning.</p>
-            <p><strong>Students explain:</strong> why the relationship is polynomial, what suggests cubic behavior, what turning points mean physically, and which regions are unrealistic.</p>
-            <p><strong>Teacher feedback focus:</strong> Long division meaning, factor interpretation, quadratic vs cubic behavior, end behavior, constraints, realism, and model comparison.</p>
+            <p><strong>Students explain:</strong> why the relationship is polynomial, what zeros and y-intercepts mean, what turning points mean physically, and which regions are unrealistic.</p>
+            <p><strong>Teacher feedback focus:</strong> Factor interpretation, quadratic vs cubic behavior, overfitting, end behavior, constraints, realism, and model comparison.</p>
           </div>
         </article>
         <article class="phase-card purple">
@@ -352,7 +380,8 @@
             <p><strong>Modeling question:</strong> Which parts of the polynomial are physically meaningful, and which must be rejected?</p>
             <p><strong>Thinking shift:</strong> From “bigger is better” to tradeoffs, extrema, and restricted domains.</p>
             <p><strong>Focus:</strong> Polynomial structure, capacity, cost, physical interpretation.</p>
-            <p><strong>Vlog:</strong> Explain how the cubic structure reveals constraints and impossible regions.</p>
+            <p><strong>Vlog:</strong> Explain which polynomial fit looked strongest, which became misleading, and what happened outside the interval.</p>
+            <p><strong>Stop and synthesize:</strong> Where did simpler models stop working, and which polynomial was most responsible to use?</p>
           </div>
         </article>
         <article class="phase-card">
@@ -365,6 +394,7 @@
             <p><strong>Thinking shift:</strong> From completed work to a defensible explanation of uncertainty.</p>
             <p><strong>Focus:</strong> Synthesis, revision, interpretation, limitations.</p>
             <p><strong>Vlog:</strong> Discuss how understanding evolved and what limitations remain.</p>
+            <p><strong>Stop and synthesize:</strong> What do we currently believe, what remains uncertain, and which model was most responsible at that moment?</p>
           </div>
         </article>
       </div>
@@ -372,9 +402,13 @@
 
     <section class="section dashboard-section" id="mathematical-lenses" data-dashboard-tab="lenses" hidden>
       <div class="section-header">
-        <p class="eyebrow">Mathematical Lenses</p>
-        <h2>Different structures reveal different parts of the system.</h2>
-        <p>Use each lens to make a different kind of mathematical meaning. The goal is not to complete units in order; the goal is to understand the system more clearly.</p>
+        <p class="eyebrow">Models</p>
+        <h2>Different models reveal different parts of the system.</h2>
+        <p>Use the model that answers the question you are asking. Then audit where it becomes incomplete.</p>
+      </div>
+      <div class="model-thesis">
+        <strong>The model changed when the frame changed.</strong>
+        <span>Students should not search for one perfect equation. They should compare incomplete explanations and decide which model is most responsible to use at that moment.</span>
       </div>
       <div class="comparison-grid lens-grid">
         <article class="comparison-card green">
@@ -389,15 +423,44 @@
         </article>
         <article class="comparison-card purple">
           <h3>Polynomials</h3>
-          <p><strong>Big question:</strong> How do physical and economic constraints reshape the system?</p>
-          <p>Use this lens for structure, capacity, cost, extrema, end behavior, and realistic domains.</p>
+          <p><strong>Big question:</strong> Why did simpler models stop working?</p>
+          <p>Use this lens when systems bend, reverse, stabilize, overshoot, or show multiple competing pressures.</p>
         </article>
+        <article class="comparison-card">
+          <h3>Responsible Model Choice</h3>
+          <p><strong>Big question:</strong> Which model is most responsible right now?</p>
+          <p>Use this lens to compare fit, realism, interpretability, source quality, domain, and uncertainty.</p>
+        </article>
+      </div>
+      <div class="model-audit">
+        <p class="eyebrow">Reusable Model Audit</p>
+        <h3>Every major model should be audited.</h3>
+        <div class="audit-grid">
+          <span>What does this model reveal?</span>
+          <span>What does it hide?</span>
+          <span>What assumptions does it depend on?</span>
+          <span>Where does it fail?</span>
+          <span>What variable could break it?</span>
+          <span>Does it make sense outside the observed interval?</span>
+          <span>Would you trust this model for a real decision?</span>
+        </div>
+      </div>
+      <div class="overfitting-trap">
+        <div>
+          <p class="eyebrow">Productive Dead End</p>
+          <h3>The Overfitting Trap</h3>
+          <p>Find the mathematically impressive model that becomes conceptually irresponsible. A fifth-degree polynomial may fit beautifully, then explode outside the interval.</p>
+        </div>
+        <div class="trap-note">
+          <strong>Perfect fit ≠ meaningful explanation.</strong>
+          <span>Critique realism, domain validity, physical meaning, extrapolation, and interpretability.</span>
+        </div>
       </div>
     </section>
 
     <section class="section comparison-section dashboard-section" id="comparisons" data-dashboard-tab="lenses" hidden>
       <div class="section-header">
-        <p class="eyebrow">Required Mathematical Comparisons</p>
+        <p class="eyebrow">Model Comparisons</p>
         <h2>Use comparisons only when they clarify the model.</h2>
         <p>Comparisons should reveal representation, structure, realism, interpretation, assumptions, or constraints.</p>
       </div>
@@ -426,8 +489,10 @@
         <details class="comparison-card purple">
           <summary><span>Class 4 — Polynomials</span><em>Structure, behavior, and physical constraints</em></summary>
           <ul>
-            <li><strong>Cubic structure:</strong> What does multiplying interacting dimensions reveal?</li>
+            <li><strong>Polynomial behavior:</strong> Where does the system bend, reverse, stabilize, or overshoot?</li>
             <li><strong>Factored vs standard form:</strong> Which form makes zeros, dimensions, or comparison easier to see?</li>
+            <li><strong>Zeros:</strong> Do they represent threshold crossings, equilibrium, deficit, failure, or loss of viability?</li>
+            <li><strong>Y-intercept:</strong> What initial system condition does it represent?</li>
             <li><strong>Odd vs even degree:</strong> How would the graph behave differently if the degree changed?</li>
             <li><strong>Leading coefficient:</strong> Why does one side rise while the other falls?</li>
             <li><strong>End behavior:</strong> Interpret as x → ∞ and as x → −∞ in context.</li>
@@ -440,9 +505,9 @@
 
     <section class="section dashboard-section journal-guide" id="journal" data-dashboard-tab="journal" hidden>
       <div class="section-header">
-        <p class="eyebrow">Investigation Journal</p>
-        <h2>How to think visibly in the journal</h2>
-        <p>This tab is a field guide for using the journal well. The downloadable PDF is the actual collaborative workspace where groups write, sketch, annotate, revise, and synthesize.</p>
+        <p class="eyebrow">Notebook</p>
+        <h2>Make your thinking visible.</h2>
+        <p>Messy thinking is acceptable. Hidden thinking is not.</p>
       </div>
 
       <div class="journal-callout">
@@ -459,20 +524,24 @@
       </section>
 
       <section class="journal-block" aria-labelledby="journal-belongs">
-        <h3 id="journal-belongs">What Belongs in the Journal</h3>
-        <div class="journal-tile-grid">
-          <article><h4>System Maps</h4><p>Relationships, variables, pressures, and feedback loops.</p></article>
-          <article><h4>Rough Sketches</h4><p>Predictions before graphing digitally.</p></article>
-          <article><h4>Graph Annotations</h4><p>Intercepts, behavior, realism, and interpretation.</p></article>
-          <article><h4>Desmos Screenshots</h4><p>Digital evidence connected to written reasoning.</p></article>
-          <article><h4>Recursive and Explicit Formulas</h4><p>Models with variables and parameters defined.</p></article>
-          <article><h4>Model Comparisons</h4><p>What each model reveals, hides, or assumes.</p></article>
-          <article><h4>Threshold Work</h4><p>When a system crosses a meaningful point.</p></article>
-          <article><h4>Polynomial Interpretations</h4><p>Structure, constraints, extrema, and domains.</p></article>
-          <article><h4>Revisions</h4><p>What changed, why it changed, and what became stronger.</p></article>
-          <article><h4>Hidden-Variable Analysis</h4><p>What the model cannot see.</p></article>
-          <article><h4>AI Critique Notes</h4><p>How AI challenged or supported your reasoning.</p></article>
-          <article><h4>Realism and Limitation Reflections</h4><p>Where predictions stop making sense.</p></article>
+        <h3 id="journal-belongs">Four recurring actions</h3>
+        <p>Everything should feed into one evolving investigation notebook. Do not treat these as separate worksheets.</p>
+        <div class="journal-tile-grid notebook-actions">
+          <article><h4>NOTICE</h4><p>Observations, patterns, variables, sketches, contradictions, and surprising trends.</p></article>
+          <article><h4>MODEL</h4><p>Equations, graphs, regressions, thresholds, zeroes, intercepts, turning points, and domains.</p></article>
+          <article><h4>REVISE</h4><p>Crossed-out thinking, changed assumptions, rejected models, AI critiques, and failed predictions.</p></article>
+          <article><h4>SYNTHESIZE</h4><p>Comparisons, uncertainty, source defense, final claims, limitations, and responsible model choice.</p></article>
+        </div>
+      </section>
+
+      <section class="journal-block investigation-log" aria-labelledby="investigation-log">
+        <h3 id="investigation-log">Timestamped investigation logs</h3>
+        <p>Record short, honest moments when the investigation changes. These logs should feel unfinished, not polished.</p>
+        <div class="log-grid">
+          <article><strong>April 18 — 10:42 PM</strong><span>“The graph honestly looks terrifying.”</span></article>
+          <article><strong>April 20 — 4:13 PM</strong><span>“Flint pointed out that our model assumes the decline continues forever.”</span></article>
+          <article><strong>April 22 — 8:51 PM</strong><span>“The recovery graph makes the rationing seem exaggerated.”</span></article>
+          <article><strong>April 23 — 9:16 PM</strong><span>“Wait. Recovery later does not mean the original decision was wrong.”</span></article>
         </div>
       </section>
 
@@ -494,14 +563,15 @@
       <section class="journal-block revision-thinking" aria-labelledby="revision-thinking">
         <h3 id="revision-thinking">Revision is evidence of stronger understanding</h3>
         <p>Students are expected to revise assumptions, update graphs, change models, critique unrealistic predictions, recalculate when assumptions change, and explain why their thinking evolved.</p>
-        <p>The strongest journals often contain arrows, annotations, crossed-out models, recalculations, competing ideas, and revised interpretations. Strong investigations often become more nuanced, not more certain.</p>
+        <p>The strongest notebooks often contain arrows, annotations, crossed-out models, recalculations, competing ideas, rejected AI suggestions, and revised interpretations. Strong investigations often become more nuanced, not more certain.</p>
+        <p><strong>AI Was Wrong Here moments belong in the notebook.</strong> If Flint makes an overconfident claim, suggests an unrealistic regression, or misses a hidden assumption, document what you rejected and why.</p>
         <div class="journal-callout dark">
           <p>Messy thinking is acceptable. Hidden thinking is not.</p>
         </div>
       </section>
 
       <section class="journal-block" aria-labelledby="journal-lenses">
-        <h3 id="journal-lenses">Mathematical Lenses</h3>
+        <h3 id="journal-lenses">Models in the Notebook</h3>
         <div class="journal-lens-grid">
           <article class="green">
             <h4>Sequences & Series</h4>
@@ -595,7 +665,7 @@
 
     <section class="section dashboard-section" id="evidence" data-dashboard-tab="lenses" hidden>
       <div class="section-header">
-        <p class="eyebrow">Evidence Checklist</p>
+        <p class="eyebrow">Model Evidence</p>
         <h2>What your mathematics must show</h2>
         <p>Evidence = observable artifacts. This section answers: what proves the reasoning happened?</p>
       </div>
@@ -678,44 +748,41 @@
 
     <section class="section dashboard-section" id="ai" data-dashboard-tab="ai-fit" hidden>
       <div class="section-header">
-        <p class="eyebrow">AI + Model Fit</p>
-        <h2>AI should deepen thinking, not replace thinking.</h2>
-        <p>This investigation treats AI as a cognitive partner for critique, revision, interpretation, questioning assumptions, and identifying blind spots — not as a replacement for mathematical reasoning.</p>
+        <p class="eyebrow">Challenge the Model</p>
+        <h2>Do not trust the first explanation.</h2>
+        <p>Use AI, graphs, statistics, and critique to test your model.</p>
       </div>
       <div class="ai-responsibility-grid">
         <article class="card">
-          <h3>CNG SAIL Level L5 — Co-Create</h3>
-          <p>Students remain responsible for understanding their mathematics, defending their choices, explaining assumptions, and interpreting limitations.</p>
+          <h3>Flint is epistemic friction.</h3>
+          <p>Use Flint to destabilize confidence, surface hidden assumptions, and create revision pressure.</p>
         </article>
         <article class="card">
-          <h3>Reasoning Still Comes First</h3>
-          <p>Strong mathematical thinking still requires graph ↔ algebra ↔ context ↔ interpretation.</p>
+          <h3>Human judgment remains central.</h3>
+          <p>Students remain responsible for interpretation, model choice, explanation, critique, and revision.</p>
         </article>
       </div>
       <details class="quiet-details" open>
         <summary>How AI fits into the investigation</summary>
         <div class="ai-grid">
           <article class="card">
-            <h3>Use AI When</h3>
+            <h3>Use Flint To Challenge</h3>
             <ul>
-              <li>your investigation becomes uncertain,</li>
-              <li>your assumptions need critique,</li>
-              <li>your model stops making sense,</li>
-              <li>your interpretation feels incomplete,</li>
-              <li>or your reasoning needs revision.</li>
+              <li>What evidence weakens your conclusion?</li>
+              <li>Would this prediction still make sense if the timeframe changed?</li>
+              <li>What assumptions are invisible in this graph?</li>
+              <li>Does this equation explain the system or only imitate the data?</li>
+              <li>What variable could completely change this model?</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Useful AI Support</h3>
+            <h3>Use Flint To Compare</h3>
             <ul>
-              <li>comparing models,</li>
-              <li>identifying hidden variables,</li>
-              <li>questioning unrealistic assumptions,</li>
-              <li>interpreting graph behavior,</li>
-              <li>organizing thinking,</li>
-              <li>explaining r and R²,</li>
-              <li>checking recalculations,</li>
-              <li>or helping clarify communication.</li>
+              <li>Why might two reasonable models disagree?</li>
+              <li>Would policymakers trust this graph?</li>
+              <li>What happens outside the observed interval?</li>
+              <li>What does this model hide?</li>
+              <li>What does the graph suggest that reality may not support?</li>
             </ul>
           </article>
           <article class="card">
@@ -731,24 +798,39 @@
       </details>
       <div class="flint-card">
         <div>
-          <p class="eyebrow">Flint AI: Cognitive Partner</p>
-          <h3>Use Flint as a Socratic support tool for this investigation.</h3>
-          <p>Flint is designed to challenge assumptions, deepen interpretation, compare models, support revision, and push mathematical reasoning through questioning.</p>
-          <p>Flint may provide more direct support for scatterplots, trendlines, Desmos setup, graph interpretation, r and R², and technical modeling tools.</p>
-          <p><strong>Flint should function as:</strong> a cognitive partner, a reflective coach, and an inquiry support system. It is not an answer machine, a shortcut, or a replacement for understanding.</p>
+          <p class="eyebrow">Flint AI: Mathematical Skeptic</p>
+          <h3>Use Flint after you have something to challenge.</h3>
+          <p>Flint can support source discovery, Desmos mechanics, regression testing, statistics explanations, and model comparison. It should not begin the thinking for you.</p>
+          <p><strong>Document AI Was Wrong Here moments:</strong> overconfident summaries, misleading extrapolations, inappropriate regressions, and unrealistic assumptions.</p>
         </div>
         <a class="button primary" href="https://app.flintk12.com/activities/systems-under-p-6bbd67/sessions/new" target="_blank" rel="noopener">Launch Flint AI</a>
+      </div>
+      <div class="ai-wrong-card">
+        <h3>AI Was Wrong Here</h3>
+        <p><strong>Flint suggests:</strong> “The exponential recovery suggests the system will stabilize naturally.”</p>
+        <p><strong>Student critique:</strong> AI assumed conditions remained stable. The real system changed because rainfall, rationing, conservation behavior, and infrastructure response changed.</p>
       </div>
     </section>
 
     <section class="section fit-section dashboard-section" id="model-fit" data-dashboard-tab="ai-fit" hidden>
       <div class="section-header">
-        <p class="eyebrow">Lightweight Model Fit Check</p>
+        <p class="eyebrow">Verification Tools</p>
         <h2>Correlation, r, and R²: How strong is the relationship?</h2>
         <p>This is a credibility and critique tool, not a full statistics unit. The goal is interpretation, not manual calculation.</p>
       </div>
       <div class="fit-note">
         <strong>Correlation does not prove causation.</strong> A high R² can still produce misleading conclusions if assumptions are weak, variables are missing, the context is misunderstood, or the relationship is interpreted carelessly.
+      </div>
+      <div class="overfitting-trap compact">
+        <div>
+          <p class="eyebrow">Model Failure Moment</p>
+          <h3>Make the most convincing wrong model.</h3>
+          <p>Try a flexible regression that fits the observed points extremely well. Then extend the graph and ask whether the model explains the system or only imitates the data.</p>
+        </div>
+        <div class="trap-note">
+          <strong>More flexible can mean less responsible.</strong>
+          <span>Connect this to AI, machine learning, forecasting, and overfitting.</span>
+        </div>
       </div>
       <details class="quiet-details" open>
         <summary>What r and R² help reveal</summary>
@@ -797,26 +879,57 @@
 
     <section class="section dashboard-section" id="rubrics" data-dashboard-tab="rubric" hidden>
       <div class="section-header">
-        <p class="eyebrow">Rubrics</p>
-        <h2>Use the official final rubric.</h2>
-        <p>This PDF is the single source of truth for assessment language, standards, skill grades, and performance descriptors.</p>
+        <p class="eyebrow">Evidence</p>
+        <h2>What counts as convincing mathematical reasoning?</h2>
+        <p>Collaborative process. Individual assessment.</p>
       </div>
       <div class="rubric-single-card">
         <div>
           <span class="standard-type">Official Assessment Document</span>
-          <h3>Algebra 2 Final Project Rubric</h3>
+          <h3>Evidence Guide and Final Rubric</h3>
           <p>The rubric assesses content standards, cross-cutting skill grades, reasoning, interpretation, critique, revision, mathematical communication, and algebraic precision.</p>
           <p>Use this document when self-assessing, preparing final communication, and checking that mathematical evidence is visible.</p>
         </div>
-        <a class="button primary rubric-download" href="downloads/rubrics.pdf">Download the Final Rubric PDF</a>
+        <a class="button primary rubric-download" href="downloads/rubrics.pdf">Download the Evidence Rubric PDF</a>
+      </div>
+    </section>
+
+    <section class="section dashboard-section progress-section" id="progress" data-dashboard-tab="progress" hidden>
+      <div class="section-header">
+        <p class="eyebrow">Progress</p>
+        <h2>Document what changed.</h2>
+        <p>Track group progress, named contributions, checkpoints, and feedback.</p>
+      </div>
+      <div class="tracker-panel">
+        <div>
+          <h3>Open the live investigation tracker</h3>
+          <p>Use the tracker to record what your group has completed, what changed in your thinking, who contributed notes, and which checkpoint needs feedback.</p>
+          <p><strong>Progress is not only completion.</strong> Track changed assumptions, revised claims, rejected models, AI disagreements, uncertainty notes, and model audits.</p>
+        </div>
+        <div class="tracker-actions">
+          <a class="button primary" href="https://systems-under-pressure.vercel.app">Open Progress Tracker</a>
+          <a class="button secondary" href="https://systems-under-pressure.vercel.app/teacher">Teacher Dashboard</a>
+        </div>
+      </div>
+      <div class="ecosystem-grid progress-grid">
+        <article><strong>Group Progress</strong><span>Current phase, checklist status, and class percentages.</span></article>
+        <article><strong>Named Notes</strong><span>Students identify who wrote each contribution.</span></article>
+        <article><strong>Checkpoints</strong><span>Ready for feedback, feedback given, revised.</span></article>
+        <article><strong>Teacher View</strong><span>Groups needing support become visible early.</span></article>
+        <article><strong>Revision Trail</strong><span>The tracker records what changed over time.</span></article>
+        <article><strong>Model Audits</strong><span>Groups name what a model reveals, hides, and where it fails.</span></article>
+      </div>
+      <div class="tracker-example">
+        <strong>Example progress note:</strong>
+        <span>“We no longer trust our original exponential projection because the recovery rate changed after rainfall increased.”</span>
       </div>
     </section>
 
     <section class="section downloads-section dashboard-section" id="downloads" data-dashboard-tab="downloads" hidden>
       <div class="section-header">
-        <p class="eyebrow">Downloads</p>
-        <h2>Two core documents for the investigation</h2>
-        <p>The website is the overview and resource hub. These are the essential documents students need to document and evaluate the mathematical investigation.</p>
+        <p class="eyebrow">Resources</p>
+        <h2>Get the files you need.</h2>
+        <p>Download the journal, rubric, and supporting documents.</p>
       </div>
       <div class="download-grid">
         <a class="download-card featured-download" href="downloads/investigation-journal.pdf">

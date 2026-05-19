@@ -522,7 +522,7 @@ function CheckpointBox({ groupId, number, checkpoint, onUpdate }) {
     <h3 style={{ marginTop: 0 }}>{meta.title}</h3>
     <div style={{ display: "grid", gridTemplateColumns: "170px 1fr auto", gap: 8, alignItems: "start" }}>
       <select value={status} onChange={(e) => setStatus(e.target.value)} style={sx.input}>{CHECKPOINT_STATUSES.map((s) => <option key={s}>{s}</option>)}</select>
-      <textarea rows={3} value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="Student summary: what is ready for feedback, what changed, what still needs help?" style={{ ...sx.input, width: "100%" }} />
+      <textarea rows={3} value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="Student summary: What do we currently believe? What evidence matters most? Which model became weaker? What remains uncertain? What are we investigating next?" style={{ ...sx.input, width: "100%" }} />
       <button onClick={save} style={{ ...sx.btn, background: "#111827", color: "white" }}>Save</button>
     </div>
     {(checkpoint?.strengths || checkpoint?.next_steps || checkpoint?.concerns || checkpoint?.teacher_notes) && <div style={{ marginTop: 12, padding: 12, borderRadius: 10, background: "#f8fafc", lineHeight: 1.55 }}>
@@ -564,6 +564,20 @@ function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOp
         </div>
       </div>)}
       <div style={sx.label}>Named notes / reflections</div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 8, marginBottom: 10 }}>
+        {[
+          ["Changed assumption", "What assumption changed or failed?"],
+          ["Rejected model", "Which model looked good but became irresponsible?"],
+          ["AI disagreement", "What did Flint suggest that you questioned or rejected?"],
+          ["Model audit", "What does the model reveal, hide, and fail to explain?"],
+          ["Current belief", "What do we currently believe, not finally know?"],
+        ].map(([title, prompt]) => (
+          <div key={title} style={{ padding: 10, borderRadius: 10, background: "#f8fafc", border: "1px solid #e5e7eb" }}>
+            <strong style={{ display: "block", fontSize: 12, color: "#111827", marginBottom: 3 }}>{title}</strong>
+            <span style={{ display: "block", fontSize: 11, color: "#64748b", lineHeight: 1.35 }}>{prompt}</span>
+          </div>
+        ))}
+      </div>
       {classNotes.length > 0 && <div style={{ display: "grid", gap: 8, marginBottom: 10 }}>
         {classNotes.map((note) => <div key={note.id || `${note.class_phase}-${note.note_author}`} style={{ padding: 10, borderRadius: 10, background: "#f8fafc", border: "1px solid #e5e7eb" }}>
           <div style={{ display: "flex", justifyContent: "space-between", gap: 8, color: "#64748b", fontSize: 11, marginBottom: 4 }}>
@@ -573,7 +587,7 @@ function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOp
           <div style={{ fontSize: 13, lineHeight: 1.5, whiteSpace: "pre-wrap" }}>{note.note_text || "—"}</div>
         </div>)}
       </div>}
-      <textarea value={draft} onChange={(e) => setDraft(e.target.value)} rows={4} placeholder={noteAuthor ? "Write your own named note: revisions, assumptions, model comparisons, evidence, limitations, questions..." : "Enter your name near the top before saving notes."} style={{ ...sx.input, width: "100%", resize: "vertical" }} />
+      <textarea value={draft} onChange={(e) => setDraft(e.target.value)} rows={4} placeholder={noteAuthor ? "Write your own named note: What changed? Which model became weaker? What did Flint challenge? What did you reject? What uncertainty remains?" : "Enter your name near the top before saving notes."} style={{ ...sx.input, width: "100%", resize: "vertical" }} />
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 8 }}>
         <button disabled={!noteAuthor.trim() || !draft.trim()} onClick={async () => { await onNote(cls.id, draft); setDraft(""); }} style={{ ...sx.btn, background: noteAuthor.trim() && draft.trim() ? cls.color : "#e5e7eb", color: noteAuthor.trim() && draft.trim() ? "white" : "#94a3b8" }}>Save named note</button>
         <span style={{ color: "#64748b", fontSize: 12 }}>{noteAuthor.trim() ? `Saving as ${noteAuthor.trim()}` : "Name required so your teacher can see who wrote the note."}</span>
@@ -676,7 +690,11 @@ function StudentApp() {
         <input value={currentStudentName} onChange={(e) => { setCurrentStudentName(e.target.value); localStorage.setItem("sup_student_name", e.target.value); }} placeholder="Your name" style={{ ...sx.input, width: "100%", maxWidth: 420 }} />
       </div>
 
-      <div style={{ ...sx.card }}><div style={sx.label}>Formative checkpoints</div>{CHECKPOINTS.map((cp) => <CheckpointBox key={cp.number} groupId={selectedGroup.id} number={cp.number} checkpoint={state.checkpoints[cp.number]} onUpdate={() => loadGroup(selectedGroup)} />)}</div>
+      <div style={{ ...sx.card }}>
+        <div style={sx.label}>Formative checkpoints</div>
+        <p style={{ marginTop: 0, color: "#475569", lineHeight: 1.55 }}>Use checkpoints to show epistemic movement: what you believed, what evidence disrupted that belief, what model became weaker, and what you plan to investigate next.</p>
+        {CHECKPOINTS.map((cp) => <CheckpointBox key={cp.number} groupId={selectedGroup.id} number={cp.number} checkpoint={state.checkpoints[cp.number]} onUpdate={() => loadGroup(selectedGroup)} />)}
+      </div>
 
       {CLASSES.map((cls, index) => <ClassPanel key={cls.id} cls={cls} checks={state.checks} notes={state.notes} noteAuthor={currentStudentName} onCheck={handleCheck} onNote={handleNote} defaultOpen={index === 0} />)}
     </div>

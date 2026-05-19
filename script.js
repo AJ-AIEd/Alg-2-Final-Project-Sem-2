@@ -3,31 +3,78 @@ const navLinks = document.querySelector("#nav-links");
 const dashboardTabs = [...document.querySelectorAll(".dashboard-tab[data-tab]")];
 const dashboardLinks = [...document.querySelectorAll(".dashboard-link")];
 const dashboardSections = [...document.querySelectorAll(".dashboard-section")];
+const navZones = [...document.querySelectorAll(".nav-zone")];
+const progressStages = [...document.querySelectorAll(".investigation-progress [data-stage]")];
 
 const tabAliases = {
   home: "overview",
   overview: "overview",
+  start: "overview",
+  "start-here": "overview",
   scenarios: "scenarios",
+  systems: "scenarios",
   roadmap: "roadmap",
+  timeline: "roadmap",
   lenses: "lenses",
+  models: "lenses",
   comparisons: "lenses",
   evidence: "lenses",
   journal: "journal",
+  notebook: "journal",
   ai: "ai-fit",
   "model-fit": "ai-fit",
   "ai-fit": "ai-fit",
+  challenge: "ai-fit",
+  "challenge-the-model": "ai-fit",
   rubrics: "rubric",
   rubric: "rubric",
-  downloads: "downloads"
+  progress: "progress",
+  tracker: "progress",
+  downloads: "downloads",
+  resources: "downloads"
+};
+
+const tabZones = {
+  overview: "start",
+  scenarios: "start",
+  roadmap: "start",
+  lenses: "build",
+  journal: "build",
+  "ai-fit": "build",
+  rubric: "synthesize",
+  progress: "synthesize",
+  downloads: "synthesize"
+};
+
+const tabStages = {
+  overview: "observation",
+  scenarios: "observation",
+  roadmap: "prediction",
+  lenses: "comparison",
+  journal: "revision",
+  "ai-fit": "revision",
+  rubric: "synthesis",
+  progress: "synthesis",
+  downloads: "synthesis"
 };
 
 function setDashboardTab(tabName, updateHash = true) {
   const activeTab = tabAliases[tabName] || "overview";
+  const activeZone = tabZones[activeTab] || "start";
+  const activeStage = tabStages[activeTab] || "observation";
 
   dashboardTabs.forEach((tab) => {
     const isActive = tab.dataset.tab === activeTab;
     tab.classList.toggle("active", isActive);
     tab.setAttribute("aria-selected", String(isActive));
+  });
+
+  navZones.forEach((zone) => {
+    zone.classList.toggle("active-zone", zone.dataset.zone === activeZone);
+  });
+
+  progressStages.forEach((stage) => {
+    stage.classList.toggle("active", stage.dataset.stage === activeStage);
   });
 
   dashboardSections.forEach((section) => {

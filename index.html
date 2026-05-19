@@ -35,7 +35,7 @@
         <div class="nav-zone" data-zone="synthesize">
           <span class="nav-zone-label">Synthesize</span>
           <button class="dashboard-tab" type="button" data-tab="rubric" data-zone="synthesize" role="tab" aria-selected="false">Evidence</button>
-          <button class="dashboard-tab" type="button" data-tab="progress" data-zone="synthesize" role="tab" aria-selected="false">Progress</button>
+          <button class="dashboard-tab" type="button" data-tab="progress" data-zone="synthesize" role="tab" aria-selected="false">Investigation Board</button>
           <button class="dashboard-tab" type="button" data-tab="downloads" data-zone="synthesize" role="tab" aria-selected="false">Resources</button>
         </div>
       </div>
@@ -57,6 +57,7 @@
           <h1>Systems Under Pressure</h1>
           <p class="hero-subtitle">The Mathematics of Food Systems</p>
           <p class="hero-claim">Begin with a model that might fail.</p>
+          <p class="start-question">Start question: Should Bogotá ration water?</p>
           <p class="page-subtitle">A convincing graph can still hide the missing story.</p>
           <p class="lead">Watch one real water system change meaning as the frame expands: crisis window, historical context, demand pressure, physical limits, and synthesis.</p>
           <blockquote class="hero-quote">
@@ -65,7 +66,7 @@
           </blockquote>
           <div class="hero-actions">
             <button class="button primary dashboard-link" type="button" data-tab="scenarios">Explore Systems</button>
-            <button class="button secondary dashboard-link" type="button" data-tab="progress">Open Progress Tracker</button>
+            <button class="button secondary dashboard-link" type="button" data-tab="progress">Open Investigation Board</button>
           </div>
         </div>
         <div class="case-file-card">
@@ -223,8 +224,14 @@
         <button class="dashboard-card dashboard-link" type="button" data-tab="lenses"><span>03</span><strong>Build Models</strong><small>Choose math that reveals something.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="journal"><span>04</span><strong>Open Notebook</strong><small>Make thinking visible.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="ai-fit"><span>05</span><strong>Test Your Model</strong><small>Check whether your graph actually makes sense.</small></button>
-        <button class="dashboard-card dashboard-link" type="button" data-tab="progress"><span>06</span><strong>Open Progress Tracker</strong><small>Document live progress and named notes.</small></button>
+        <button class="dashboard-card dashboard-link" type="button" data-tab="progress"><span>06</span><strong>Open Investigation Board</strong><small>Coordinate sources, models, graphs, and next steps.</small></button>
         <button class="dashboard-card dashboard-link" type="button" data-tab="rubric"><span>07</span><strong>View Evidence</strong><small>Understand how reasoning is assessed.</small></button>
+      </div>
+      <div class="home-role-strip">
+        <article><strong>Notebook</strong><span>Messy mathematical thinking.</span></article>
+        <article><strong>Vlogs</strong><span>Short conversations about revision and uncertainty.</span></article>
+        <article><strong>Investigation Board</strong><span>Optional but recommended coordination space. Use short updates.</span></article>
+        <article><strong>Final Product</strong><span>Your coherent mathematical argument.</span></article>
       </div>
     </section>
 
@@ -325,7 +332,7 @@
         <summary>What You Must Produce</summary>
         <div class="deliverable-grid compact-deliverables">
           <article><strong>Notebook</strong><span>Visible sketches, equations, graph annotations, revisions, and short investigation logs.</span></article>
-          <article><strong>Progress Updates</strong><span>Named notes showing what changed, who contributed, and what needs feedback.</span></article>
+          <article><strong>Investigation Board</strong><span>Optional but recommended coordination space for sources, models, graphs, next steps, and teacher feedback.</span></article>
           <article><strong>Models + Graphs</strong><span>Sequence, exponential/threshold, polynomial/model-limits, and at least one comparison.</span></article>
           <article><strong>Source Defense</strong><span>Explain where data came from, what it measures, and what it leaves out.</span></article>
           <article><strong>Reflection Vlogs</strong><span>Short recorded conversations about revision, disagreement, uncertainty, and next questions.</span></article>
@@ -981,44 +988,51 @@
 
     <section class="section dashboard-section progress-section" id="progress" data-dashboard-tab="progress" hidden>
       <div class="section-header">
-        <p class="eyebrow">Progress</p>
-        <h2>Document what changed.</h2>
-        <p>Track group progress, named contributions, checkpoints, and feedback.</p>
+        <p class="eyebrow">Investigation Board</p>
+        <h2>What state is our investigation currently in?</h2>
+        <p>Optional but recommended. Use short updates to coordinate work, not to write another reflection.</p>
       </div>
       <div class="tracker-panel">
         <div>
-          <h3>Open the live investigation tracker</h3>
-          <p>Use the tracker to record what your group has completed, what changed in your thinking, who contributed notes, and which checkpoint needs feedback.</p>
-          <p><strong>Progress is not only completion.</strong> Track changed assumptions, revised claims, rejected models, AI disagreements, graph updates, source decisions, uncertainty notes, and model audits.</p>
+          <h3>Open the live Investigation Board</h3>
+          <p><strong>This board is optional but recommended.</strong> Use it to help your group track sources, models, graphs, revisions, and next steps as your investigation evolves.</p>
+          <p>You do not need to write long reflections here. The Notebook and Vlogs are the main places where deeper thinking and revision become visible.</p>
+          <p><strong>Recommended to update as you complete work.</strong> Use short updates. This board is meant to support the investigation, not slow it down.</p>
         </div>
         <div class="tracker-actions">
-          <a class="button primary" href="https://systems-under-pressure.vercel.app">Open Progress Tracker</a>
+          <a class="button primary" href="https://systems-under-pressure.vercel.app">Open Investigation Board</a>
           <a class="button secondary" href="https://systems-under-pressure.vercel.app/teacher">Teacher Dashboard</a>
         </div>
       </div>
       <div class="ecosystem-grid progress-grid">
-        <article><strong>Group Progress</strong><span>Current phase, checklist status, and class percentages.</span></article>
-        <article><strong>Named Notes</strong><span>Students identify who wrote each contribution.</span></article>
-        <article><strong>Checkpoints</strong><span>Ready for feedback, feedback given, revised.</span></article>
-        <article><strong>Teacher View</strong><span>Groups needing support become visible early.</span></article>
-        <article><strong>Revision Trail</strong><span>The tracker records what changed over time.</span></article>
-        <article><strong>Model Audits</strong><span>Groups name what a model reveals, hides, and where it fails.</span></article>
+        <article><strong>Current Phase</strong><span>Observation, Prediction, Comparison, Revision, or Synthesis.</span></article>
+        <article><strong>Current Claim</strong><span>One short evolving statement about what the group currently believes.</span></article>
+        <article><strong>Models + Graphs</strong><span>Which models exist and whether graph evidence is missing, drafted, or ready.</span></article>
+        <article><strong>Sources</strong><span>Short source list, data type, and what still needs verification.</span></article>
+        <article><strong>Next Step</strong><span>One clear action for the group’s next work session.</span></article>
+        <article><strong>Teacher View</strong><span>Quickly shows groups that are stuck, missing sources, missing model variety, or need feedback.</span></article>
       </div>
       <div class="tracker-example">
-        <strong>Example progress note:</strong>
-        <span>“We no longer trust our original exponential projection because the recovery rate changed after rainfall increased.”</span>
+        <strong>Short board update examples:</strong>
+        <span>“The longer timeframe changed our interpretation.” · “We replaced the cubic model.” · “We found a conflicting source.”</span>
       </div>
       <details class="quiet-details graph-checklist" open>
-        <summary>What a useful progress update includes</summary>
+        <summary>What a useful board update includes</summary>
         <ul class="checklist">
-          <li><span class="box" aria-hidden="true"></span><span>What mathematics are we using?</span></li>
-          <li><span class="box" aria-hidden="true"></span><span>Which graph feature matters most?</span></li>
-          <li><span class="box" aria-hidden="true"></span><span>Which equation or model currently seems strongest?</span></li>
-          <li><span class="box" aria-hidden="true"></span><span>Which model became weaker?</span></li>
-          <li><span class="box" aria-hidden="true"></span><span>What mathematical assumption failed?</span></li>
-          <li><span class="box" aria-hidden="true"></span><span>What changed our interpretation?</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Current investigation claim: one short evolving statement.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Current models: sequence, exponential, polynomial, or statistics.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Graphs completed: missing, sketched, in Desmos, annotated, or revised.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Sources located and data type: real, partial, estimated, simulated, or hypothetical.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>What changed? One sentence maximum.</span></li>
+          <li><span class="box" aria-hidden="true"></span><span>Next step: one clear action.</span></li>
         </ul>
       </details>
+      <div class="ecosystem-roles">
+        <article><strong>Notebook</strong><span>Messy mathematical thinking.</span></article>
+        <article><strong>Vlogs</strong><span>Verbal synthesis and revision.</span></article>
+        <article><strong>Investigation Board</strong><span>Lightweight coordination and progress visibility.</span></article>
+        <article><strong>Final Product</strong><span>Coherent mathematical argument.</span></article>
+      </div>
     </section>
 
     <section class="section downloads-section dashboard-section" id="downloads" data-dashboard-tab="downloads" hidden>

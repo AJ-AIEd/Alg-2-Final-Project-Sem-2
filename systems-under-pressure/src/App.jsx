@@ -492,8 +492,8 @@ function PhaseProgressStrip({ checks }) {
 
 function SetupError({ error }) {
   return <div style={{ ...sx.narrow }}>
-    <h1>Tracker database setup needed</h1>
-    <p style={{ color: "#475569", lineHeight: 1.6 }}>The tracker is configured for shared progress, but the backend is not reachable yet.</p>
+    <h1>Investigation Board setup needed</h1>
+    <p style={{ color: "#475569", lineHeight: 1.6 }}>The Investigation Board is configured for shared progress, but the backend is not reachable yet.</p>
     <div style={{ ...sx.card, borderLeft: "6px solid #b45353" }}>
       <strong>Error:</strong> {error}
       <p>Set these Vercel environment variables, then redeploy:</p>
@@ -522,7 +522,7 @@ function CheckpointBox({ groupId, number, checkpoint, onUpdate }) {
     <h3 style={{ marginTop: 0 }}>{meta.title}</h3>
     <div style={{ display: "grid", gridTemplateColumns: "170px 1fr auto", gap: 8, alignItems: "start" }}>
       <select value={status} onChange={(e) => setStatus(e.target.value)} style={sx.input}>{CHECKPOINT_STATUSES.map((s) => <option key={s}>{s}</option>)}</select>
-      <textarea rows={3} value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="Student summary: What do we currently believe? What mathematics are we using? What evidence matters most? Which graph feature changed our interpretation? Which model became weaker? What remains uncertain?" style={{ ...sx.input, width: "100%" }} />
+      <textarea rows={2} maxLength={280} value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="Short summary: current claim, model/graph/source status, what is missing, or next step." style={{ ...sx.input, width: "100%" }} />
       <button onClick={save} style={{ ...sx.btn, background: "#111827", color: "white" }}>Save</button>
     </div>
     {(checkpoint?.strengths || checkpoint?.next_steps || checkpoint?.concerns || checkpoint?.teacher_notes) && <div style={{ marginTop: 12, padding: 12, borderRadius: 10, background: "#f8fafc", lineHeight: 1.55 }}>
@@ -563,21 +563,19 @@ function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOp
           })}
         </div>
       </div>)}
-      <div style={sx.label}>Named notes / reflections</div>
+      <div style={sx.label}>Short board updates</div>
       <div style={{ padding: 11, borderRadius: 12, background: "#f8fafc", border: "1px solid #e5e7eb", marginBottom: 10, color: "#334155", lineHeight: 1.45, fontSize: 12 }}>
-        <strong style={{ display: "block", color: "#111827", marginBottom: 4 }}>Think First → Flint Support → Verify → Decide</strong>
-        Write what you thought first, what Flint helped with, what you checked yourself, and what your group decided to keep, reject, or revise.
+        <strong style={{ display: "block", color: "#111827", marginBottom: 4 }}>Use short updates.</strong>
+        This board is for coordination: claim, models, graphs, sources, what changed, and next step. Save deeper thinking for the Notebook and Vlogs.
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 8, marginBottom: 10 }}>
         {[
-          ["Math visible", "What Algebra 2 idea are we using here?"],
-          ["Graph feature", "Which slope, intercept, zero, turning point, threshold, interval, or R² matters most?"],
-          ["Data label", "Real, partial, estimated, simulated, or hypothetical? What source and limitation?"],
-          ["Changed assumption", "What assumption changed or failed?"],
-          ["Rejected model", "Which model looked good but became irresponsible?"],
-          ["Flint check", "What did Flint suggest? What did you verify or reject?"],
-          ["Model audit", "What does the model reveal, hide, and fail to explain?"],
-          ["Current belief", "What do we currently believe, not finally know?"],
+          ["Current claim", "One short evolving statement."],
+          ["Current models", "Sequence, exponential, polynomial, statistics."],
+          ["Graphs", "Missing, sketched, Desmos, annotated, or revised."],
+          ["Sources", "Short source list plus data type."],
+          ["What changed?", "One sentence maximum."],
+          ["Next step", "One clear action for the group."],
         ].map(([title, prompt]) => (
           <div key={title} style={{ padding: 10, borderRadius: 10, background: "#f8fafc", border: "1px solid #e5e7eb" }}>
             <strong style={{ display: "block", fontSize: 12, color: "#111827", marginBottom: 3 }}>{title}</strong>
@@ -594,10 +592,10 @@ function ClassPanel({ cls, checks, notes, noteAuthor, onCheck, onNote, defaultOp
           <div style={{ fontSize: 13, lineHeight: 1.5, whiteSpace: "pre-wrap" }}>{note.note_text || "—"}</div>
         </div>)}
       </div>}
-      <textarea value={draft} onChange={(e) => setDraft(e.target.value)} rows={4} placeholder={noteAuthor ? "Write your own named note: What mathematics are we using? Which graph feature matters? What data type/source/limitation applies? What did Flint help with? What did we verify, reject, or revise?" : "Enter your name near the top before saving notes."} style={{ ...sx.input, width: "100%", resize: "vertical" }} />
+      <textarea value={draft} onChange={(e) => setDraft(e.target.value)} rows={3} maxLength={280} placeholder={noteAuthor ? "Short update: current claim, model/graph/source status, what changed, or next step. One or two sentences is enough." : "Enter your name near the top before saving updates."} style={{ ...sx.input, width: "100%", resize: "vertical" }} />
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 8 }}>
-        <button disabled={!noteAuthor.trim() || !draft.trim()} onClick={async () => { await onNote(cls.id, draft); setDraft(""); }} style={{ ...sx.btn, background: noteAuthor.trim() && draft.trim() ? cls.color : "#e5e7eb", color: noteAuthor.trim() && draft.trim() ? "white" : "#94a3b8" }}>Save named note</button>
-        <span style={{ color: "#64748b", fontSize: 12 }}>{noteAuthor.trim() ? `Saving as ${noteAuthor.trim()}` : "Name required so your teacher can see who wrote the note."}</span>
+        <button disabled={!noteAuthor.trim() || !draft.trim()} onClick={async () => { await onNote(cls.id, draft); setDraft(""); }} style={{ ...sx.btn, background: noteAuthor.trim() && draft.trim() ? cls.color : "#e5e7eb", color: noteAuthor.trim() && draft.trim() ? "white" : "#94a3b8" }}>Save short update</button>
+        <span style={{ color: "#64748b", fontSize: 12 }}>{noteAuthor.trim() ? `Saving as ${noteAuthor.trim()}` : "Name required so your teacher can see who wrote the update."}</span>
       </div>
     </div>}
   </div>;
@@ -668,7 +666,7 @@ function StudentApp() {
   };
 
   if (screen === "error") return <SetupError error={error} />;
-  if (screen === "loading") return <div style={sx.narrow}>Loading shared tracker…</div>;
+  if (screen === "loading") return <div style={sx.narrow}>Loading shared Investigation Board…</div>;
 
   if (screen === "tracker" && selectedGroup) {
     const progress = overallProgress(state.checks);
@@ -685,6 +683,12 @@ function StudentApp() {
 
       <PhaseProgressStrip checks={state.checks} />
 
+      <div style={{ ...sx.card, borderLeft: "6px solid #185FA5" }}>
+        <div style={sx.label}>Investigation Board</div>
+        <h2 style={{ marginTop: 0, marginBottom: 6 }}>Optional but recommended</h2>
+        <p style={{ color: "#475569", margin: 0, lineHeight: 1.55 }}>Use this board to help your group track sources, models, graphs, revisions, and next steps. You do not need to write long reflections here. The Notebook and Vlogs are where deeper thinking and revision become visible.</p>
+      </div>
+
       <div style={{ ...sx.card, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
         <div><div style={sx.label}>Scenario</div><select value={selectedGroup.scenario_id || ""} onChange={(e) => updateGroup({ scenario_id: e.target.value || null })} style={{ ...sx.input, width: "100%" }}><option value="">Select scenario</option>{SCENARIOS.map((s) => <option key={s.id} value={s.id}>{s.label}: {s.title}</option>)}<option value="custom">Our own scenario</option></select>{selectedScenario && <p style={{ color: selectedScenario.color, marginBottom: 0 }}>{selectedScenario.tags}</p>}</div>
         <div><div style={sx.label}>Student names</div><input value={selectedGroup.student_names || ""} onChange={(e) => updateGroup({ student_names: e.target.value })} style={{ ...sx.input, width: "100%" }} /></div>
@@ -693,13 +697,13 @@ function StudentApp() {
 
       <div style={{ ...sx.card, borderLeft: "6px solid #0F6E56" }}>
         <div style={sx.label}>Your note identity</div>
-        <p style={{ color: "#475569", marginTop: 0, lineHeight: 1.55 }}>Progress belongs to the group. Notes are saved with your name so your teacher can see who wrote each reflection, critique, revision, or question.</p>
+        <p style={{ color: "#475569", marginTop: 0, lineHeight: 1.55 }}>The board belongs to the group. Short updates are saved with your name so your teacher can quickly see who added sources, model status, graph status, or next steps.</p>
         <input value={currentStudentName} onChange={(e) => { setCurrentStudentName(e.target.value); localStorage.setItem("sup_student_name", e.target.value); }} placeholder="Your name" style={{ ...sx.input, width: "100%", maxWidth: 420 }} />
       </div>
 
       <div style={{ ...sx.card }}>
-        <div style={sx.label}>Formative checkpoints</div>
-        <p style={{ marginTop: 0, color: "#475569", lineHeight: 1.55 }}>Use checkpoints to show what changed: what you first believed, what evidence disrupted that belief, what mathematics you used, what model became weaker, and what you plan to investigate next.</p>
+        <div style={sx.label}>Teacher feedback checkpoints</div>
+        <p style={{ marginTop: 0, color: "#475569", lineHeight: 1.55 }}>Use these when your group is ready for quick feedback. Keep the summary short: current claim, model status, missing evidence, and next step.</p>
         {CHECKPOINTS.map((cp) => <CheckpointBox key={cp.number} groupId={selectedGroup.id} number={cp.number} checkpoint={state.checkpoints[cp.number]} onUpdate={() => loadGroup(selectedGroup)} />)}
       </div>
 
@@ -709,8 +713,8 @@ function StudentApp() {
   }
 
   return <div style={{ minHeight: "100vh", background: "radial-gradient(circle at 86% 8%, rgba(21,128,61,.1), transparent 28%), linear-gradient(180deg, #f8fafc 0%, #ffffff 58%)" }}><div style={sx.narrow}>
-    <h1>Systems Investigation Tracker</h1>
-    <p style={{ color: "#475569", lineHeight: 1.6 }}>Shared progress saves to the class database, so group members and the teacher can see updates across devices.</p>
+    <h1>Investigation Board</h1>
+    <p style={{ color: "#475569", lineHeight: 1.6 }}><strong>Optional but recommended.</strong> Use this shared board to coordinate sources, models, graphs, next steps, and teacher feedback across devices. Use short updates.</p>
     <div style={sx.card}>
       <h3>Create a new group</h3>
       <input value={newName} onChange={(e) => setNewName(e.target.value)} placeholder="Group name" style={{ ...sx.input, width: "100%", marginBottom: 8 }} />
@@ -781,7 +785,7 @@ function TeacherDashboard() {
       {selected && m && <div style={sx.card}>
         <h2>{selected.group_name}</h2><p style={{ color: "#64748b" }}>{selected.student_names || "No student names"}<br />Last update: {selected.updated_at ? new Date(selected.updated_at).toLocaleString() : "—"}</p>
         <h3>Missing items</h3><div style={{ maxHeight: 170, overflow: "auto", background: "#f8fafc", padding: 10, borderRadius: 10 }}>{m.missing.slice(0, 25).map((item) => <div key={item.key}>C{item.classNum}: {item.section} — {item.item}</div>)}{m.missing.length > 25 && <div>+ {m.missing.length - 25} more</div>}</div>
-        <h3>Named notes / reflections</h3>{(selected.group_notes || []).map((note) => <div key={note.id} style={{ padding: 10, background: "#f8fafc", borderRadius: 10, marginBottom: 8 }}>
+        <h3>Short board updates</h3>{(selected.group_notes || []).map((note) => <div key={note.id} style={{ padding: 10, background: "#f8fafc", borderRadius: 10, marginBottom: 8 }}>
           <strong>{note.note_author || "Unidentified student"}</strong>
           <span style={{ color: "#64748b" }}> · {note.class_phase} · {note.updated_at ? new Date(note.updated_at).toLocaleString() : ""}</span>
           <p style={{ whiteSpace: "pre-wrap" }}>{note.note_text || "—"}</p>

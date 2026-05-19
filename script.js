@@ -32,6 +32,9 @@ const tabAliases = {
   rubrics: "rubric",
   rubric: "rubric",
   progress: "progress",
+  board: "progress",
+  "investigation-board": "progress",
+  "project-board": "progress",
   tracker: "progress",
   downloads: "downloads",
   resources: "downloads"

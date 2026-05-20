@@ -710,6 +710,75 @@ blockquote cite {
   margin-top: 1rem;
   background: #f8fafc;
 }
+.polynomial-modeling-panel {
+  margin-top: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.35rem;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(126, 34, 206, .08), transparent 28%),
+    #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+.compact-header {
+  margin-bottom: 1.2rem;
+}
+.polynomial-routine {
+  margin-bottom: 1rem;
+}
+.flint-prompt-card {
+  border: 1px solid #c4b5fd;
+  border-radius: 16px;
+  padding: 1rem;
+  background: #f5f3ff;
+  color: #312e81;
+  margin: 1rem 0;
+}
+.flint-prompt-card p {
+  margin-bottom: 0;
+  line-height: 1.55;
+}
+.poly-options-grid,
+.poly-feature-grid,
+.poly-operations-grid,
+.poly-example-grid {
+  display: grid;
+  gap: .9rem;
+  margin: 1rem 0;
+}
+.poly-options-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.poly-feature-grid,
+.poly-operations-grid,
+.poly-example-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.poly-options-grid article,
+.poly-feature-grid article,
+.poly-operations-grid article,
+.poly-example-grid article {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  background: #f8fafc;
+}
+.poly-options-grid h4,
+.poly-example-grid h4 {
+  color: #581c87;
+}
+.poly-options-grid span,
+.poly-feature-grid span,
+.poly-operations-grid span {
+  display: block;
+  color: #475569;
+  line-height: 1.45;
+}
+.poly-feature-grid strong,
+.poly-operations-grid strong {
+  display: block;
+  margin-bottom: .35rem;
+}
 .ecosystem-roles {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1876,7 +1945,7 @@ details[open] summary {
   .story-step:nth-of-type(even) .story-copy,
   .story-step:nth-of-type(even) .story-visual { order: initial; }
   .hero-art { min-height: 0; }
-  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .home-role-strip, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr 1fr; }
+  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .poly-options-grid, .poly-feature-grid, .poly-operations-grid, .poly-example-grid, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .fit-grid, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .home-role-strip, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr 1fr; }
   .flint-card, .rubric-single-card, .tracker-panel, .model-thesis, .overfitting-trap { grid-template-columns: 1fr; }
   .audit-grid, .log-grid { grid-template-columns: 1fr 1fr; }
   .journal-layout { grid-template-columns: 1fr; }
@@ -1892,7 +1961,7 @@ details[open] summary {
   .story-copy { padding: .9rem; }
   .story-visual { border-radius: 16px; }
   h1 { font-size: 2.85rem; line-height: 1.03; }
-  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .home-role-strip, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr; }
+  .principle-grid, .deliverable-grid, .compact-deliverables, .required-math-grid, .source-defense-grid, .data-type-grid, .test-routine, .poly-options-grid, .poly-feature-grid, .poly-operations-grid, .poly-example-grid, .evidence-grid, .ai-grid, .ai-responsibility-grid, .rubric-grid, .download-grid, .scenario-grid, .phase-grid, .timeline, .workspace-grid, .fit-grid, .submit-check .checklist, .reasoning-grid, .collab-grid, .comparison-grid, .communication-panel, .anchor-grid, .journal-tile-grid, .journal-lens-grid, .individual-thinking, .journal-download-panel, .vlog-grid, .vlog-studio-panel, .question-grid, .dashboard-card-grid, .ecosystem-grid, .ecosystem-roles, .home-role-strip, .philosophy-snapshot .principle-grid { grid-template-columns: 1fr; }
   .audit-grid, .log-grid { grid-template-columns: 1fr; }
   .question-grid article, .dashboard-card { min-height: auto; }
   .vlog-prompts ul { columns: 1; }

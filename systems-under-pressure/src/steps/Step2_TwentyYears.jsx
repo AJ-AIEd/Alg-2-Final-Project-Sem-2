@@ -8,9 +8,9 @@ import { systemConnections } from "../data/homeData.js";
 export default function Step2TwentyYears() {
   return (
     <section className="space-y-6">
-      <StepIntro kicker="Systems · Predict" title="The reservoir is only the first system.">
+      <StepIntro kicker="Notice Patterns" title="The reservoir is only the first signal.">
         <p>
-          Before building a model, predict where pressure might travel. A drought can begin as a
+          Before building a model, notice where pressure might travel. A drought can begin as a
           water problem and become an energy, food, infrastructure, market, and household problem.
         </p>
       </StepIntro>
@@ -25,7 +25,7 @@ export default function Step2TwentyYears() {
         ))}
       </div>
 
-      <Callout variant="warn" prefix="Prediction check:">
+      <Callout variant="warn" prefix="Pattern check:">
         If your model only tracks reservoir percentage, name at least one pressure it cannot see.
       </Callout>
 
@@ -38,7 +38,7 @@ export default function Step2TwentyYears() {
       </RevealPanel>
 
       <QuestionBox
-        question="Which connected system would you investigate next, and what variable would you need to measure?"
+        question="Which connected system might move next, and what variable would make that visible?"
         promptText={stepMeta[1].prompt}
       />
     </section>

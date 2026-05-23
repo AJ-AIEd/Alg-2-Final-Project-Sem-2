@@ -40,10 +40,10 @@ export default function Step4LinearModel() {
 
   return (
     <section className="space-y-6">
-      <StepIntro kicker="Models · Interpret" title="A model is a story with conditions.">
+      <StepIntro kicker="Test Claims" title="A model is a claim with conditions.">
         <p>
-          The same data can support different claims. Your job is not to find the fanciest equation;
-          it is to explain what the model reveals, where it breaks, and why.
+          The same data can support different stories. Test each claim by asking what it reveals,
+          what it hides, and where the assumptions stop holding.
         </p>
       </StepIntro>
 
@@ -88,7 +88,7 @@ export default function Step4LinearModel() {
 
       <Callout variant="success">The linear model made danger visible before recovery was obvious.</Callout>
 
-      <RevealPanel title="Reveal the critique">
+      <RevealPanel title="Reveal the stress test">
         <p>
           The model assumes a constant daily loss. That assumption helps during a short decline, but
           it fails once rainfall, rationing, and recovery change the system behavior.

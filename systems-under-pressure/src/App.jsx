@@ -9,7 +9,7 @@ import {
 } from "chart.js";
 import { useEffect, useMemo, useState } from "react";
 import StepShell from "./components/StepShell.jsx";
-import { navigationGroups, projectArc } from "./data/homeData.js";
+import { phaseSubtitles, projectArc } from "./data/homeData.js";
 import Step1TheSystem from "./steps/Step1_TheSystem.jsx";
 import Step2TwentyYears from "./steps/Step2_TwentyYears.jsx";
 import Step3CrisisWindow from "./steps/Step3_CrisisWindow.jsx";
@@ -78,34 +78,27 @@ export default function App() {
                 Mathematical Modeling in the Real World
               </h1>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-300">
-                Bogotá's water crisis opens a larger question: what happens when pressure moves
-                from one system into many others?
+                An unfolding investigation into how one reservoir crisis can become a story about
+                systems, assumptions, thresholds, and defensible mathematical claims.
               </p>
             </div>
             <div className="rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-sm">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Driving question</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Question in play</p>
               <p className="mt-1 max-w-sm font-medium text-slate-100">
                 Which mathematical story would you defend before the outcome was obvious?
               </p>
             </div>
           </div>
 
-          <nav className="grid gap-3 border-t border-slate-800 pt-4 md:grid-cols-3" aria-label="Project navigation">
-            {navigationGroups.map((group) => (
-              <div key={group.label} className="min-w-0">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">{group.label}</p>
-                <div className="flex flex-wrap gap-2">
-                  {group.items.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-md border border-slate-700 bg-slate-900 px-2.5 py-1 text-xs font-medium text-slate-200"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <nav className="border-t border-slate-800 pt-4" aria-label="Investigation phases">
+            <ol className="grid gap-2 md:grid-cols-7">
+              {projectArc.map((phase, index) => (
+                <li key={phase} className="rounded-md border border-slate-800 bg-slate-900 p-2.5">
+                  <span className="text-[0.65rem] font-semibold text-cyan-300">0{index + 1}</span>
+                  <p className="mt-1 text-xs font-semibold uppercase leading-4 tracking-wide text-slate-100">{phase}</p>
+                </li>
+              ))}
+            </ol>
           </nav>
         </div>
       </header>
@@ -114,6 +107,7 @@ export default function App() {
         currentStep={currentStep}
         totalSteps={steps.length}
         arc={projectArc}
+        phaseSubtitles={phaseSubtitles}
         onPrev={() => goToStep(currentStep - 1)}
         onNext={() => {
           if (currentStep < steps.length - 1) goToStep(currentStep + 1);

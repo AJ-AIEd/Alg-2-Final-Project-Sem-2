@@ -34,10 +34,10 @@ export default function Step3CrisisWindow() {
 
   return (
     <section className="space-y-6">
-      <StepIntro kicker="Timeline · Model" title="Zoom out before you zoom in.">
+      <StepIntro kicker="Build Mathematical Models" title="Zoom out before choosing an equation.">
         <p>
-          The April 2024 crisis was not a random dip. Look for repeated drought pressure, then
-          decide which time interval deserves a model.
+          The April 2024 crisis was not a random dip. First inspect the long pattern, then decide
+          which interval deserves a model.
         </p>
       </StepIntro>
 

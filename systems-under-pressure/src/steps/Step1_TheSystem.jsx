@@ -7,7 +7,7 @@ import StepIntro from "../components/StepIntro.jsx";
 export default function Step1TheSystem() {
   return (
     <section className="space-y-6">
-      <StepIntro kicker="Start Here · Notice" title="A drought does not stay inside the reservoir.">
+      <StepIntro kicker="The Crisis" title="A drought does not stay inside the reservoir.">
         <p>
           Begin with one graph, one city, and one uncomfortable question. If the water level is
           falling, what else might start changing before anyone can prove the final outcome?
@@ -16,7 +16,7 @@ export default function Step1TheSystem() {
 
       <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Launch case</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Bogotá water crisis</p>
           <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">Bogotá, April 2024</h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-650">
             A mountain reservoir system that supplies most of Bogotá's water dropped into crisis.
@@ -41,7 +41,7 @@ export default function Step1TheSystem() {
         Do not explain the crisis yet. Notice what the graph might be hiding.
       </Callout>
 
-      <RevealPanel title="Reveal the driving question">
+      <RevealPanel title="Reveal what this crisis asks you to decide">
         <p className="text-lg font-semibold text-slate-950">
           Which mathematical story would you defend before the outcome was obvious?
         </p>

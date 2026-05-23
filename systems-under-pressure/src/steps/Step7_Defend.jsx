@@ -17,10 +17,10 @@ const defenseChecks = [
 export default function Step7Defend() {
   return (
     <section className="space-y-6">
-      <StepIntro kicker="Evidence · Defend" title="Defend the story, not just the answer.">
+      <StepIntro kicker="Support" title="Use support without surrendering the thinking.">
         <p>
-          A strong conclusion sounds like a student who understands the model's power and limits.
-          It uses math, evidence, uncertainty, and revision.
+          Flint, sources, checkpoints, and feedback are tools for pressure-testing your reasoning.
+          They should sharpen your voice, not replace it.
         </p>
       </StepIntro>
 
@@ -44,7 +44,7 @@ export default function Step7Defend() {
       </div>
 
       <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Defense checks</p>
+        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Before asking for support</p>
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           {defenseChecks.map((check) => (
             <div key={check} className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm leading-6 text-slate-650">
@@ -62,19 +62,19 @@ export default function Step7Defend() {
       </div>
 
       <Callout variant="success">
-        The strongest mathematical story is honest about what it can support, what it cannot see,
-        and what would change the conclusion.
+        THINK FIRST → FLINT → VERIFY → DECIDE. Student work should still sound like the student.
       </Callout>
 
       <QuestionBox
-        question="If you were speaking before the outcome was obvious, which model story would you defend and what warning would you attach to it?"
+        question="What do you want Flint to challenge: evidence, source reliability, assumptions, graph scale, or model choice?"
         promptText={stepMeta[6].prompt}
       />
 
-      <RevealPanel title="Reveal a sentence frame for revision">
+      <RevealPanel title="Reveal useful Flint moves">
         <p>
-          “I would revise my model if new evidence showed that the rate changed because of rainfall,
-          rationing behavior, infrastructure limits, or another variable not included in my graph.”
+          Ask Flint to identify hidden variables, critique assumptions, compare interpretations,
+          troubleshoot Desmos, or name evidence that would challenge your conclusion. Do not ask it
+          to write the final defense.
         </p>
       </RevealPanel>
     </section>

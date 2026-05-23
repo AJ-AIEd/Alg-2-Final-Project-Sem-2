@@ -10,10 +10,10 @@ import { stepMeta } from "../data/stepMeta.js";
 export default function Step5ExponentialModel() {
   return (
     <section className="space-y-6">
-      <StepIntro kicker="Notebook · Challenge" title="Make the mathematics visible.">
+      <StepIntro kicker="Defend Conclusions" title="What mathematical story survives the test?">
         <p>
-          Your notebook is where the model gets tested. Use equations, tables, thresholds, and
-          graph features to show what your claim can and cannot support.
+          A conclusion is stronger when it admits what failed. The exponential story is tempting,
+          but the ratio evidence makes it hard to defend for this crisis window.
         </p>
       </StepIntro>
 
@@ -28,7 +28,7 @@ export default function Step5ExponentialModel() {
       </Callout>
 
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Notebook checks</p>
+        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Readiness criteria</p>
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           {notebookPrompts.map((prompt) => (
             <div key={prompt} className="flex gap-3 rounded-md bg-white p-3 text-sm leading-6 text-slate-650">
@@ -56,7 +56,7 @@ export default function Step5ExponentialModel() {
       </RevealPanel>
 
       <QuestionBox
-        question="Which notebook check would most weaken your current model if it failed?"
+        question="Which piece of evidence would make your current conclusion weaker?"
         promptText={stepMeta[4].prompt}
       />
     </section>

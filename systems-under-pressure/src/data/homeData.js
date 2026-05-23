@@ -1,9 +1,21 @@
-export const projectArc = ["Notice", "Predict", "Model", "Interpret", "Challenge", "Revise", "Defend"];
+export const projectArc = [
+  "The Crisis",
+  "Notice Patterns",
+  "Build Mathematical Models",
+  "Test Claims",
+  "Defend Conclusions",
+  "Investigation Notebook",
+  "Support",
+];
 
-export const navigationGroups = [
-  { label: "Start", items: ["Start Here", "Systems", "Timeline"] },
-  { label: "Build", items: ["Models", "Notebook", "AI Support + Test Your Model"] },
-  { label: "Synthesize", items: ["Evidence", "Progress", "Resources"] },
+export const phaseSubtitles = [
+  "A city faces a decision before the ending is known.",
+  "The graph starts to reveal repeated pressure.",
+  "Equations turn observations into testable stories.",
+  "Every claim needs a stress test.",
+  "A conclusion must own its limits.",
+  "Keep the evidence, revisions, and questions visible.",
+  "Use Flint and resources to sharpen thinking.",
 ];
 
 export const systemConnections = [

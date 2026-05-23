@@ -6,9 +6,27 @@ import QuestionBox from "../components/QuestionBox.jsx";
 import RevealPanel from "../components/RevealPanel.jsx";
 import StepIntro from "../components/StepIntro.jsx";
 import { FULL_DANGER_THRESHOLD_LINE, FULL_LABELS, FULL_LEVELS } from "../data/chartData.js";
-import { aiProtocol } from "../data/homeData.js";
 import { stepMeta } from "../data/stepMeta.js";
 import { sharedOptions } from "../utils/chartOptions.js";
+
+const notebookTrail = [
+  {
+    label: "Claim",
+    detail: "Write the story your model currently supports, even if you expect it to change.",
+  },
+  {
+    label: "Evidence",
+    detail: "Attach the graph, equation, source note, and interval that make the claim possible.",
+  },
+  {
+    label: "Test",
+    detail: "Check a threshold, ratio, zero, slope, turning point, or assumption.",
+  },
+  {
+    label: "Revision",
+    detail: "Record what changed and which new evidence caused the shift.",
+  },
+];
 
 const verticalLinePlugin = {
   id: "verticalMarkers",
@@ -65,10 +83,10 @@ export default function Step6FullPicture() {
 
   return (
     <section className="space-y-6">
-      <StepIntro kicker="AI Support + Test Your Model · Revise" title="AI can pressure-test the model.">
+      <StepIntro kicker="Investigation Notebook" title="Keep the revision trail visible.">
         <p>
-          AI is not the answer source. Use it after you have a claim, then verify every suggestion
-          against the graph, the equation, and the data.
+          The notebook is the record of what changed: the graph you trusted, the claim you tested,
+          the variable you added, and the model you revised.
         </p>
       </StepIntro>
 
@@ -96,7 +114,7 @@ export default function Step6FullPicture() {
       </ChartCard>
 
       <div className="grid gap-3 md:grid-cols-4">
-        {aiProtocol.map((step, index) => (
+        {notebookTrail.map((step, index) => (
           <article key={step.label} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-cyan-700">0{index + 1}</p>
             <h2 className="mt-2 text-base font-semibold text-slate-950">{step.label}</h2>
@@ -105,21 +123,21 @@ export default function Step6FullPicture() {
         ))}
       </div>
 
-      <Callout variant="warn" prefix="Protocol:">
-        THINK FIRST → FLINT → VERIFY → DECIDE
+      <Callout variant="warn" prefix="Notebook rhythm:">
+        CLAIM → EVIDENCE → TEST → REVISION
       </Callout>
 
-      <RevealPanel title="Reveal useful Flint moves">
+      <RevealPanel title="Reveal embedded pacing and checkpoints">
         <ul className="list-disc space-y-2 pl-5">
-          <li>Ask what hidden variable might explain a model failure.</li>
-          <li>Ask how to test whether a graph supports linear, exponential, or polynomial behavior.</li>
-          <li>Ask for Desmos troubleshooting, not a finished conclusion.</li>
-          <li>Ask what evidence would challenge your interpretation.</li>
+          <li>Pause after the first graph to write what you notice before explaining it.</li>
+          <li>Checkpoint when your graph, equation, variables, and interval all match.</li>
+          <li>Vlog when a model fails or your group changes its interpretation.</li>
+          <li>Move on when you can name what evidence would change your mind.</li>
         </ul>
       </RevealPanel>
 
       <QuestionBox
-        question="What should Flint challenge in your model: the interval, variables, threshold, graph scale, or assumptions?"
+        question="What changed in your thinking, and what evidence caused the revision?"
         promptText={stepMeta[6].prompt}
       />
     </section>

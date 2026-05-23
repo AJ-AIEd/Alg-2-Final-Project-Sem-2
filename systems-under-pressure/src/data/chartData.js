@@ -77,3 +77,15 @@ export const FULL_LABELS = [
 export const FULL_LEVELS = [39, 16.5, 25, 28, 34, 38, 39, 40.4, 42, 60, 70, 89.7];
 export const FULL_DANGER_THRESHOLD = 20;
 export const FULL_DANGER_THRESHOLD_LINE = FULL_LABELS.map(() => FULL_DANGER_THRESHOLD);
+
+export const ENTRY_CRISIS_LABELS = ["Jan 1", "Mar 4", "Apr 9", "Apr 11", "Apr 15"];
+export const ENTRY_CRISIS_LEVELS = [40, 22.75, 18.78, 16.32, 15];
+export const ENTRY_CRISIS_DANGER_LINE = ENTRY_CRISIS_LABELS.map(() => 20);
+export const ENTRY_RATIONING_START_INDEX = 3;
+export const ENTRY_CRISIS_NOTES = [
+  "Jan 1 is an approximate reported starting level: Acueducto later said Chingaza was received at around 40% capacity.",
+  "Mar 4 and Apr 9 values are reported by Infobae from EAAB communication: 22.75% to 18.78%.",
+  "Apr 11 value is from Bogotá city public reporting: Chingaza at 16.32% when rationing began.",
+  "Apr 15 value is from AP reporting: Chingaza around 15%, its lowest level ever at that point.",
+  "No recovery data is shown in this entry graph. Lines connect reported points; missing days are not daily measurements.",
+];

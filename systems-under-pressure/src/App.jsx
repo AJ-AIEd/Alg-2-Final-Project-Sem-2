@@ -69,37 +69,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
-      <header className="border-b border-slate-800 bg-slate-950 text-white">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-5 py-5 sm:px-8 lg:px-10">
-          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-cyan-300">Systems Under Pressure</p>
-              <h1 className="mt-1 text-xl font-semibold tracking-tight sm:text-2xl">
-                Mathematical Modeling in the Real World
-              </h1>
-              <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-300">
-                An unfolding investigation into how one reservoir crisis can become a story about
-                systems, assumptions, thresholds, and defensible mathematical claims.
-              </p>
-            </div>
-            <div className="rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-sm">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Question in play</p>
-              <p className="mt-1 max-w-sm font-medium text-slate-100">
-                Which mathematical story would you defend before the outcome was obvious?
-              </p>
-            </div>
-          </div>
-
-          <nav className="border-t border-slate-800 pt-4" aria-label="Investigation phases">
-            <ol className="grid gap-2 md:grid-cols-7">
-              {projectArc.map((phase, index) => (
-                <li key={phase} className="rounded-md border border-slate-800 bg-slate-900 p-2.5">
-                  <span className="text-[0.65rem] font-semibold text-cyan-300">0{index + 1}</span>
-                  <p className="mt-1 text-xs font-semibold uppercase leading-4 tracking-wide text-slate-100">{phase}</p>
-                </li>
-              ))}
-            </ol>
-          </nav>
+      <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:px-10">
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Systems Under Pressure</p>
+          <p className="hidden text-xs font-medium text-slate-500 sm:block">Bogotá water crisis entry event</p>
         </div>
       </header>
 

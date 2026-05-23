@@ -2,10 +2,12 @@ import { Line } from "react-chartjs-2";
 import Callout from "../components/Callout.jsx";
 import ChartCard from "../components/ChartCard.jsx";
 import Legend from "../components/Legend.jsx";
+import PhaseSupport from "../components/PhaseSupport.jsx";
 import QuestionBox from "../components/QuestionBox.jsx";
 import RevealPanel from "../components/RevealPanel.jsx";
 import StepIntro from "../components/StepIntro.jsx";
 import { FULL_DANGER_THRESHOLD_LINE, FULL_LABELS, FULL_LEVELS } from "../data/chartData.js";
+import { phaseSupport } from "../data/homeData.js";
 import { stepMeta } from "../data/stepMeta.js";
 import { sharedOptions } from "../utils/chartOptions.js";
 
@@ -140,6 +142,8 @@ export default function Step6FullPicture() {
         question="What changed in your thinking, and what evidence caused the revision?"
         promptText={stepMeta[6].prompt}
       />
+
+      <PhaseSupport support={phaseSupport.notebook} />
     </section>
   );
 }

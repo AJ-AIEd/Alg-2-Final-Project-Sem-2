@@ -3,10 +3,11 @@ import Callout from "../components/Callout.jsx";
 import ChartCard from "../components/ChartCard.jsx";
 import Legend from "../components/Legend.jsx";
 import MathChip from "../components/MathChip.jsx";
+import PhaseSupport from "../components/PhaseSupport.jsx";
 import RevealPanel from "../components/RevealPanel.jsx";
 import StepIntro from "../components/StepIntro.jsx";
 import { LINEAR_ACTUAL, LINEAR_LABELS, LINEAR_MODEL, LINEAR_TRUE_BOTTOM_LINE } from "../data/chartData.js";
-import { modelLenses } from "../data/homeData.js";
+import { modelLenses, phaseSupport } from "../data/homeData.js";
 import { sharedOptions } from "../utils/chartOptions.js";
 
 export default function Step4LinearModel() {
@@ -94,6 +95,8 @@ export default function Step4LinearModel() {
           it fails once rainfall, rationing, and recovery change the system behavior.
         </p>
       </RevealPanel>
+
+      <PhaseSupport support={phaseSupport.claims} />
     </section>
   );
 }

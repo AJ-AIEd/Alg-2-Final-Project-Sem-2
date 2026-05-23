@@ -3,9 +3,11 @@ import Callout from "../components/Callout.jsx";
 import ChartCard from "../components/ChartCard.jsx";
 import Legend from "../components/Legend.jsx";
 import NoticeBox from "../components/NoticeBox.jsx";
+import PhaseSupport from "../components/PhaseSupport.jsx";
 import QuestionBox from "../components/QuestionBox.jsx";
 import StepIntro from "../components/StepIntro.jsx";
 import { HISTORY_DANGER_LINE, HISTORY_EL_NINO, HISTORY_LABELS, HISTORY_LEVELS } from "../data/chartData.js";
+import { phaseSupport } from "../data/homeData.js";
 import { stepMeta } from "../data/stepMeta.js";
 import { sharedOptions } from "../utils/chartOptions.js";
 
@@ -74,6 +76,8 @@ export default function Step3CrisisWindow() {
         question="What time interval would you model first: the 20-year pattern, the April crisis window, or the recovery?"
         promptText={stepMeta[2].prompt}
       />
+
+      <PhaseSupport support={phaseSupport.models} />
     </section>
   );
 }

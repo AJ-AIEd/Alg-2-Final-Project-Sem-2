@@ -1,10 +1,11 @@
 import Callout from "../components/Callout.jsx";
 import MathChip from "../components/MathChip.jsx";
 import MetricCard from "../components/MetricCard.jsx";
+import PhaseSupport from "../components/PhaseSupport.jsx";
 import QuestionBox from "../components/QuestionBox.jsx";
 import RevealPanel from "../components/RevealPanel.jsx";
 import StepIntro from "../components/StepIntro.jsx";
-import { notebookPrompts } from "../data/homeData.js";
+import { notebookPrompts, phaseSupport } from "../data/homeData.js";
 import { stepMeta } from "../data/stepMeta.js";
 
 export default function Step5ExponentialModel() {
@@ -59,6 +60,8 @@ export default function Step5ExponentialModel() {
         question="Which piece of evidence would make your current conclusion weaker?"
         promptText={stepMeta[4].prompt}
       />
+
+      <PhaseSupport support={phaseSupport.defend} />
     </section>
   );
 }

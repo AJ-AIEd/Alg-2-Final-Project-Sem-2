@@ -152,7 +152,7 @@ export const phaseSupport = {
     pacing: "Suggested pacing: begin near the end of Class 4 and revise before final publication.",
     homework:
       "Personalize the defense, challenge your strongest claim, and prepare a counterargument.",
-    group: ["Select the shared dashboard/story evidence.", "Compare models and defend the final choice."],
+    group: ["Select the shared visual story evidence.", "Compare models and defend the final choice."],
     individual: ["Write mathematical interpretation.", "Explain local vs global behavior and source limits."],
     artifacts: ["model comparison", "source defense", "confounding variable", "final claim draft"],
     vlog: "Vlog 4: defend the current conclusion and name what still feels uncertain.",
@@ -165,7 +165,7 @@ export const phaseSupport = {
     group: ["Keep shared graphs, source notes, and model comparisons visible.", "Track who owns each evidence piece."],
     individual: ["Upload graph images or sketches.", "Keep AI logs, rejected sources, and thinking changes."],
     artifacts: ["graph annotations", "equations", "polynomial construction", "AI log", "rejected model/source"],
-    vlog: "Use vlog notes here: each vlog documents a change in thinking, not a generic reflection.",
+    vlog: "Use vlog notes here: each vlog documents a change in thinking.",
     readiness: ["A reader can follow my revision trail.", "My notebook includes evidence and rejected ideas.", "My final defense has source support."],
   },
   support: {

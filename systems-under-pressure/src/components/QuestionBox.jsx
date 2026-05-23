@@ -5,6 +5,9 @@ export default function QuestionBox({ question, promptText }) {
     <div className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-4">
       <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Think first</p>
       <p className="mb-3 text-sm italic leading-relaxed text-slate-700">{question}</p>
+      <p className="mb-3 text-xs font-medium leading-5 text-slate-500">
+        Flint should strengthen your thinking, not replace it. Think First → Flint → Verify → Decide.
+      </p>
       <button
         type="button"
         onClick={() => sendPrompt(promptText)}

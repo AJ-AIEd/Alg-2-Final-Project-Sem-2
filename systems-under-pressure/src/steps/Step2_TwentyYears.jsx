@@ -1,9 +1,10 @@
 import Callout from "../components/Callout.jsx";
+import PhaseSupport from "../components/PhaseSupport.jsx";
 import QuestionBox from "../components/QuestionBox.jsx";
 import RevealPanel from "../components/RevealPanel.jsx";
 import StepIntro from "../components/StepIntro.jsx";
 import { stepMeta } from "../data/stepMeta.js";
-import { systemConnections } from "../data/homeData.js";
+import { investigationCategories, phaseSupport, systemConnections } from "../data/homeData.js";
 
 export default function Step2TwentyYears() {
   return (
@@ -37,10 +38,23 @@ export default function Step2TwentyYears() {
         </p>
       </RevealPanel>
 
+      <RevealPanel title="Choose inside a broad category">
+        <div className="grid gap-3 md:grid-cols-2">
+          {investigationCategories.map((category) => (
+            <article key={category.label} className="rounded-md border border-slate-200 bg-slate-50 p-3">
+              <p className="text-sm font-semibold text-slate-950">{category.label}</p>
+              <p className="mt-1 font-mono text-xs text-slate-600">{category.example}</p>
+            </article>
+          ))}
+        </div>
+      </RevealPanel>
+
       <QuestionBox
         question="Which connected system might move next, and what variable would make that visible?"
         promptText={stepMeta[1].prompt}
       />
+
+      <PhaseSupport support={phaseSupport.patterns} />
     </section>
   );
 }

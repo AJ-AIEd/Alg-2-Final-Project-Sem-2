@@ -160,7 +160,7 @@ export default function Step1TheSystem() {
             </p>
             <p className="mt-2">
               <strong>Limitations:</strong> this is not a complete daily time series. Lines connect
-              reported reference points. No later recovery data is shown.
+              reported reference points. No outcomes after Apr 15 are shown.
             </p>
           </div>
         </div>
@@ -215,8 +215,8 @@ export default function Step1TheSystem() {
             <div className="flex flex-wrap gap-2">
               <MathChip>R(t)</MathChip>
               <MathChip>R(t)=20</MathChip>
-              <MathChip>m=\frac{\Delta R}{\Delta t}</MathChip>
-              <MathChip>\text{claim}\neq\text{cause}</MathChip>
+              <MathChip>{"m=\\frac{\\Delta R}{\\Delta t}"}</MathChip>
+              <MathChip>{"\\text{claim}\\neq\\text{cause}"}</MathChip>
             </div>
           </div>
         )}

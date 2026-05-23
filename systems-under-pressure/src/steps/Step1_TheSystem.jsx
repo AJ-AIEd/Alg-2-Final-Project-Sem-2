@@ -148,7 +148,7 @@ export default function Step1TheSystem() {
               <a className="underline" href="https://www.yahoo.com/news/colombia-capital-bogota-ration-water-145526886.html">
                 Reuters
               </a>
-              , and{" "}
+              ,{" "}
               <a className="underline" href="https://www.infobae.com/colombia/2024/04/14/sigue-bajando-el-nivel-de-los-embalses-de-chingaza-a-pesar-del-racionamiento-de-agua-en-bogota/">
                 Infobae reporting from EAAB communication
               </a>

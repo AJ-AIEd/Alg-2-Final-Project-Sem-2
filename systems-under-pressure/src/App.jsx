@@ -69,12 +69,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
-      <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Systems Under Pressure</p>
-        </div>
-      </header>
-
       <StepShell
         currentStep={currentStep}
         totalSteps={steps.length}

@@ -1,8 +1,10 @@
 import Callout from "../components/Callout.jsx";
 import MathChip from "../components/MathChip.jsx";
 import MetricCard from "../components/MetricCard.jsx";
+import PhaseSupport from "../components/PhaseSupport.jsx";
 import RevealPanel from "../components/RevealPanel.jsx";
 import StepIntro from "../components/StepIntro.jsx";
+import { phaseSupport } from "../data/homeData.js";
 
 export default function Step1TheSystem() {
   return (
@@ -50,6 +52,8 @@ export default function Step1TheSystem() {
           threshold you defend, the graph scale you use, and the assumptions you are willing to own.
         </p>
       </RevealPanel>
+
+      <PhaseSupport support={phaseSupport.crisis} />
     </section>
   );
 }

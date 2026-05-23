@@ -68,37 +68,37 @@ export default function Step1TheSystem() {
 
   return (
     <section className="space-y-6">
-      <div className="grid min-h-[calc(100vh-11rem)] gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
-        <div className="space-y-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">The Crisis</p>
-          <h1 className="text-4xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-5xl">
+      <div className="min-h-[calc(100vh-11rem)] space-y-5">
+        <div className="mx-auto max-w-4xl space-y-4 text-center">
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Systems Under Pressure</p>
+          <h1 className="text-4xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
             Bogotá began rationing water as reservoirs reached historic lows.
           </h1>
-          <p className="text-base leading-7 text-slate-650">
+          <p className="mx-auto max-w-3xl text-base leading-7 text-slate-650">
             In April 2024, Bogotá introduced rotating water rationing after reservoir levels in the
             Chingaza system fell to historically low levels during El Niño-driven drought conditions.
           </p>
+        </div>
 
-          <div className="space-y-2 border-l-2 border-slate-200 pl-4 text-sm leading-6 text-slate-650">
-            <p>
-              “Millions in Colombia's capital forced to ration water...” —{" "}
-              <a className="font-semibold underline" href="https://www.cbsnews.com/news/millions-colombia-bogota-capital-forced-ration-water-reservoirs-hit-critically-low-levels/">
-                CBS News
-              </a>
-            </p>
-            <p>
-              “Bogota to ration water as reservoirs dry” —{" "}
-              <a className="font-semibold underline" href="https://www.yahoo.com/news/colombia-capital-bogota-ration-water-145526886.html">
-                Reuters via Yahoo News
-              </a>
-            </p>
-            <p>
-              “Reservoirs hit historically low levels” —{" "}
-              <a className="font-semibold underline" href="https://apnews.com/article/f4f6acfa07a31290ca0fe89eac27645c">
-                AP News
-              </a>
-            </p>
-          </div>
+        <div className="grid gap-2 border-y border-slate-200 py-3 text-sm leading-6 text-slate-650 md:grid-cols-3">
+          <p>
+            “Millions forced to ration water...” —{" "}
+            <a className="font-semibold underline" href="https://www.cbsnews.com/news/millions-colombia-bogota-capital-forced-ration-water-reservoirs-hit-critically-low-levels/">
+              CBS News
+            </a>
+          </p>
+          <p>
+            “Bogotá to ration water as reservoirs dry” —{" "}
+            <a className="font-semibold underline" href="https://www.yahoo.com/news/colombia-capital-bogota-ration-water-145526886.html">
+              Reuters
+            </a>
+          </p>
+          <p>
+            “Reservoirs hit historically low levels” —{" "}
+            <a className="font-semibold underline" href="https://apnews.com/article/f4f6acfa07a31290ca0fe89eac27645c">
+              AP News
+            </a>
+          </p>
         </div>
 
         <div className="space-y-3">
@@ -146,7 +146,7 @@ export default function Step1TheSystem() {
               </a>
               ,{" "}
               <a className="underline" href="https://www.yahoo.com/news/colombia-capital-bogota-ration-water-145526886.html">
-                Reuters via Yahoo News
+                Reuters
               </a>
               , and{" "}
               <a className="underline" href="https://www.infobae.com/colombia/2024/04/14/sigue-bajando-el-nivel-de-los-embalses-de-chingaza-a-pesar-del-racionamiento-de-agua-en-bogota/">

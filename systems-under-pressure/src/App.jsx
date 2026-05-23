@@ -72,7 +72,6 @@ export default function App() {
       <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Systems Under Pressure</p>
-          <p className="hidden text-xs font-medium text-slate-500 sm:block">Bogotá water crisis entry event</p>
         </div>
       </header>
 
